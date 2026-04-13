@@ -1,0 +1,260 @@
+﻿/*
+Theme Name: New Earth Child
+Theme URI: https://www.new-earth.uk
+Description: Child theme for the New Earth website.
+Author: New Earth
+Author URI: https://www.new-earth.uk
+Template: twentytwentyfour
+Version: 0.1.0
+Text Domain: new-earth-child
+*/
+
+/* ---------------------------------------------------------
+   NEW EARTH CHILD THEME
+   Foundation styles only.
+   Keep this file clean and expand slowly.
+--------------------------------------------------------- */
+
+:root {
+  --ne-color-earth-green: #2f4f3b;
+  --ne-color-earth-green-dark: #243c2d;
+  --ne-color-sand: #f4efe4;
+  --ne-color-offwhite: #fcfaf5;
+  --ne-color-brown: #6c5944;
+  --ne-color-gold: #b89d5b;
+  --ne-color-text: #1f1f1f;
+  --ne-color-text-soft: #5a564f;
+  --ne-color-border: #ddd5c8;
+
+  --ne-radius-sm: 8px;
+  --ne-radius-md: 14px;
+  --ne-radius-lg: 24px;
+
+  --ne-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  --ne-space-xs: 0.5rem;
+  --ne-space-sm: 0.75rem;
+  --ne-space-md: 1rem;
+  --ne-space-lg: 1.5rem;
+  --ne-space-xl: 2rem;
+  --ne-space-2xl: 3rem;
+  --ne-space-3xl: 5rem;
+
+  --ne-content-width: 760px;
+  --ne-wide-width: 1200px;
+}
+
+/* ---------------------------------------------------------
+   BASE
+--------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ne-color-offwhite);
+  color: var(--ne-color-text);
+}
+
+p,
+li {
+  color: var(--ne-color-text-soft);
+}
+
+a {
+  color: var(--ne-color-earth-green);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+a:hover,
+a:focus {
+  color: var(--ne-color-earth-green-dark);
+}
+
+/* ---------------------------------------------------------
+   TYPOGRAPHY
+--------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ne-color-earth-green);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  margin-bottom: var(--ne-space-md);
+}
+
+h2,
+h3 {
+  margin-top: var(--ne-space-xl);
+  margin-bottom: var(--ne-space-md);
+}
+
+p {
+  line-height: 1.75;
+  margin-bottom: var(--ne-space-md);
+}
+
+/* ---------------------------------------------------------
+   LAYOUT
+--------------------------------------------------------- */
+
+.wp-site-blocks {
+  background: var(--ne-color-offwhite);
+}
+
+main {
+  min-height: 60vh;
+}
+
+.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: var(--ne-content-width);
+}
+
+.alignwide {
+  max-width: var(--ne-wide-width);
+}
+
+.alignfull.ne-section-sand,
+.ne-section-sand {
+  background: var(--ne-color-sand);
+}
+
+.alignfull.ne-section-green,
+.ne-section-green {
+  background: var(--ne-color-earth-green);
+  color: #ffffff;
+}
+
+.ne-section-green h1,
+.ne-section-green h2,
+.ne-section-green h3,
+.ne-section-green h4,
+.ne-section-green h5,
+.ne-section-green h6,
+.ne-section-green p,
+.ne-section-green li,
+.ne-section-green a {
+  color: #ffffff;
+}
+
+/* ---------------------------------------------------------
+   BUTTONS
+--------------------------------------------------------- */
+
+.wp-block-button .wp-block-button__link {
+  border-radius: 999px;
+  padding: 0.85rem 1.35rem;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-button .is-style-outline.wp-block-button__link {
+  border-width: 1.5px;
+}
+
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus {
+  transform: translateY(-1px);
+}
+
+/* ---------------------------------------------------------
+   CARDS / GROUPS
+--------------------------------------------------------- */
+
+.ne-card,
+.wp-block-group.is-style-ne-card {
+  background: #ffffff;
+  border: 1px solid var(--ne-color-border);
+  border-radius: var(--ne-radius-md);
+  box-shadow: var(--ne-shadow-soft);
+  padding: var(--ne-space-xl);
+}
+
+.ne-card h3,
+.wp-block-group.is-style-ne-card h3 {
+  margin-top: 0;
+}
+
+/* ---------------------------------------------------------
+   QUOTES / DECLARATIONS
+--------------------------------------------------------- */
+
+.wp-block-quote,
+.ne-declaration {
+  border-left: 3px solid var(--ne-color-gold);
+  padding-left: var(--ne-space-lg);
+  color: var(--ne-color-earth-green);
+}
+
+.ne-declaration {
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------
+   SEPARATORS
+--------------------------------------------------------- */
+
+.wp-block-separator {
+  border-color: var(--ne-color-border);
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------
+   HEADER / FOOTER POLISH
+--------------------------------------------------------- */
+
+header.wp-block-template-part,
+footer.wp-block-template-part {
+  background: transparent;
+}
+
+footer.wp-block-template-part {
+  border-top: 1px solid var(--ne-color-border);
+  margin-top: var(--ne-space-3xl);
+}
+
+/* ---------------------------------------------------------
+   FORMS
+--------------------------------------------------------- */
+
+input,
+textarea,
+select {
+  border: 1px solid var(--ne-color-border);
+  border-radius: var(--ne-radius-sm);
+  padding: 0.8rem 0.9rem;
+  background: #ffffff;
+  color: var(--ne-color-text);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgba(47, 79, 59, 0.15);
+  border-color: var(--ne-color-earth-green);
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 781px) {
+  h1 {
+    line-height: 1.08;
+  }
+
+  .ne-card,
+  .wp-block-group.is-style-ne-card {
+    padding: var(--ne-space-lg);
+  }
+}

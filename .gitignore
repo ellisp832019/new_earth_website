@@ -1,0 +1,25 @@
+# Deployment credentials and local secrets
+08_DEPLOYMENT/IONOS_ACCESS.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.crt
+*.csr
+
+# Editor-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files and local backups
+*.tmp
+*.bak
+*.swp

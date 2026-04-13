@@ -1,0 +1,6 @@
+﻿# 10 ENVIRONMENT AND RELATIONSHIP WITH NATURE
+
+Status: Draft
+
+TODO: Fill this file.
+
