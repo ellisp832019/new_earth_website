@@ -1,0 +1,56 @@
+Batch,Section,Folder,Filename,Size,Format,Status,Notes
+0,BRAND,00_BRAND\logos,new_earth_logo_concept_board.png,2000x2000,png,TODO,Main logo concept board
+0,BRAND,00_BRAND\symbols,new_earth_symbol_mark.png,1024x1024,png,TODO,Symbol mark / icon mark
+0,BRAND,00_BRAND\logos,microgrow_brand_lockup.png,1600x900,png,TODO,MicroGrow lockup under New Earth brand
+0,BRAND,00_BRAND\textures,brand_texture_cosmic_earth.webp,1920x1080,webp,TODO,Brand texture cosmic earth
+0,BRAND,00_BRAND\textures,brand_texture_sunrise_horizon.webp,1920x1080,webp,TODO,Brand texture sunrise horizon
+1,GLOBAL_SITE,01_GLOBAL_SITE\heroes,global_page_hero_template.webp,1920x1080,webp,TODO,Reusable internal page hero
+0,GLOBAL_SITE,01_GLOBAL_SITE\footer,footer_background_new_earth.webp,1920x500,webp,TODO,Footer background
+2,GLOBAL_SITE,01_GLOBAL_SITE\cta,global_cta_join_new_earth.webp,1600x900,webp,TODO,Global CTA join image
+0,GLOBAL_SITE,01_GLOBAL_SITE\utility,global_under_construction_light.webp,1600x900,webp,TODO,Under construction / 404 image
+1,HOME,02_HOME\hero,home_hero_new_earth_main.webp,1920x1080,webp,TODO,Homepage hero
+2,HOME,02_HOME\sections,home_section_vision.webp,1400x900,webp,TODO,Home vision section
+2,HOME,02_HOME\sections,home_section_unity.webp,1400x900,webp,TODO,Home unity section
+2,HOME,02_HOME\sections,home_section_regeneration.webp,1400x900,webp,TODO,Home regeneration section
+2,HOME,02_HOME\sections,home_section_conscious_systems.webp,1400x900,webp,TODO,Home conscious systems section
+2,HOME,02_HOME\sections,home_section_microgrow.webp,1400x900,webp,TODO,Home MicroGrow section
+1,MANIFESTO,03_MANIFESTO\hero,manifesto_hero.webp,1920x1080,webp,TODO,Manifesto hero
+0,MANIFESTO,03_MANIFESTO\sections,manifesto_quote_background.webp,1600x900,webp,TODO,Manifesto quote background
+0,MANIFESTO,03_MANIFESTO\print,manifesto_affirmation_poster_a3.png,3508x4961,png,TODO,Manifesto affirmation poster A3
+1,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.webp,1920x1080,webp,TODO,Blueprint hero
+3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_12_pillars_overview.png,2000x2000,png,TODO,12 pillars overview
+3,BLUEPRINT,04_BLUEPRINT\icons,blueprint_12_pillars_icon_sheet.png,2400x2400,png,TODO,12 pillars icon sheet
+3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_ecosystem_map.webp,1600x900,webp,TODO,Blueprint ecosystem map
+3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_systems_relationship_diagram.png,1800x1200,png,TODO,Systems relationship diagram
+1,SYSTEMS,05_SYSTEMS\hero,systems_hero.webp,1920x1080,webp,TODO,Systems hero
+2,SYSTEMS,05_SYSTEMS\categories,systems_food.webp,1200x800,webp,TODO,Systems food
+2,SYSTEMS,05_SYSTEMS\categories,systems_water.webp,1200x800,webp,TODO,Systems water
+2,SYSTEMS,05_SYSTEMS\categories,systems_energy.webp,1200x800,webp,TODO,Systems energy
+2,SYSTEMS,05_SYSTEMS\categories,systems_housing.webp,1200x800,webp,TODO,Systems housing
+2,SYSTEMS,05_SYSTEMS\categories,systems_education.webp,1200x800,webp,TODO,Systems education
+2,SYSTEMS,05_SYSTEMS\categories,systems_health.webp,1200x800,webp,TODO,Systems health
+2,SYSTEMS,05_SYSTEMS\categories,systems_governance_community.webp,1200x800,webp,TODO,Systems governance and community
+1,MICROGROW,06_MICROGROW\hero,microgrow_hero.webp,1920x1080,webp,TODO,MicroGrow hero
+2,MICROGROW,06_MICROGROW\product,microgrow_product_closeup.webp,1600x900,webp,TODO,MicroGrow product close-up
+2,MICROGROW,06_MICROGROW\product,microgrow_lifestyle_home.webp,1600x900,webp,TODO,MicroGrow lifestyle in home
+2,MICROGROW,06_MICROGROW\app,microgrow_app_mockup.png,1600x900,png,TODO,MicroGrow app mockup
+3,MICROGROW,06_MICROGROW\diagrams,microgrow_how_it_works.png,1600x900,png,TODO,MicroGrow how it works
+3,MICROGROW,06_MICROGROW\icons,microgrow_feature_icons.png,2000x2000,png,TODO,MicroGrow feature icons
+1,ABOUT,07_ABOUT\hero,about_hero.webp,1920x1080,webp,TODO,About hero
+0,ABOUT,07_ABOUT\sections,about_mission_visual.webp,1400x900,webp,TODO,About mission visual
+1,CONTACT,08_CONTACT\banners,contact_banner.webp,1600x900,webp,TODO,Contact banner
+0,BLOG,09_BLOG\hero,blog_hero.webp,1920x1080,webp,TODO,Blog hero
+3,BLOG,09_BLOG\templates,blog_featured_template.png,1200x630,png,TODO,Blog featured template
+0,RESOURCES,10_RESOURCES\hero,resources_hero.webp,1920x1080,webp,TODO,Resources hero
+3,RESOURCES,10_RESOURCES\covers,resources_pdf_cover_template.png,1600x2400,png,TODO,Resources PDF cover template
+1,COMMUNITY,11_COMMUNITY\hero,community_hero.webp,1920x1080,webp,TODO,Community hero
+0,COMMUNITY,11_COMMUNITY\cta,community_join_cta.webp,1600x900,webp,TODO,Community join CTA
+3,SOCIAL_OG,12_SOCIAL_OG\global,og_homepage.png,1200x630,png,TODO,Homepage Open Graph image
+3,SOCIAL_OG,12_SOCIAL_OG\global,og_manifesto.png,1200x630,png,TODO,Manifesto Open Graph image
+3,SOCIAL_OG,12_SOCIAL_OG\global,og_blueprint.png,1200x630,png,TODO,Blueprint Open Graph image
+3,SOCIAL_OG,12_SOCIAL_OG\global,og_systems.png,1200x630,png,TODO,Systems Open Graph image
+3,SOCIAL_OG,12_SOCIAL_OG\global,og_microgrow.png,1200x630,png,TODO,MicroGrow Open Graph image
+3,SOCIAL_OG,12_SOCIAL_OG\global,social_quote_card_template.png,1080x1080,png,TODO,Social quote card template
+3,PRINT,13_PRINT\posters,print_new_earth_wall_poster_a2.png,4961x7016,png,TODO,New Earth wall poster A2
+3,PRINT,13_PRINT\posters,print_blueprint_poster_a2.png,4961x7016,png,TODO,Blueprint poster A2
+3,PRINT,13_PRINT\posters,print_microgrow_product_poster_a2.png,4961x7016,png,TODO,MicroGrow product poster A2
