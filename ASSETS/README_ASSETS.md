@@ -1,6 +1,6 @@
 # New Earth Asset System
 
-This folder contains the visual asset structure for new-earth.uk and MicroGrow.
+This folder contains the visual asset structure for the live new-earth.uk site and MicroGrow.
 
 Main tracking file:
 ASSET_REGISTER.csv
