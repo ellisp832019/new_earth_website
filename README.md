@@ -1,6 +1,8 @@
-﻿# NEW_EARTH_WEBSITE
+# NEW_EARTH_WEBSITE
 
 The official build workspace for **www.new-earth.uk**.
+
+The first public page shells are now live at **www.new-earth.uk**.
 
 This project is the structured source of truth for the New Earth website and its future expansion into a wider New Earth ecosystem.
 
@@ -19,6 +21,12 @@ The website is being built from the ground up using:
 This project workspace is the source of truth.**
 
 That means all structure, copy, system logic, and design direction should be created and maintained here first, then implemented in WordPress.
+
+---
+
+## Current status
+
+The first launch is published. This workspace now tracks post-launch refinement, asset completion, and future expansion.
 
 ---
 
@@ -72,3 +80,4 @@ NEW_EARTH_WEBSITE/
 ├── 08_DEPLOYMENT/                 # IONOS access, SFTP workflow, release process
 ├── 09_LOGS/                       # Changelog, decisions, open items, build history
 └── README.md
+```
