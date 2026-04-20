@@ -1,6 +1,10 @@
 # Asset Gap Report
 
-Updated: 2026-04-14
+Updated: 2026-04-20
+
+## Launch state
+- The first public page shells are live on www.new-earth.uk.
+- This report still reflects the asset register inventory, not live deployment confirmation.
 
 ## Structure
 - No missing top-level `ASSETS/` folders found.
