@@ -14,6 +14,8 @@ The objective is to make the repo ready for clean, repeatable asset production b
 - asset status tracking is reliable,
 - the system is easy for a human to continue using.
 
+The first public page shells are now live on www.new-earth.uk, so this workflow now supports an active release as well as pre-launch asset prep.
+
 ---
 
 ## Context
