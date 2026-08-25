@@ -1,6 +1,6 @@
 # Asset Gap Report
 
-Updated: 2026-04-20
+Updated: 2026-08-25
 
 ## Launch state
 - The first public page shells are live on www.new-earth.uk.
@@ -17,7 +17,7 @@ Updated: 2026-04-20
 ## Register
 - `ASSET_REGISTER.csv` has the required columns: `Batch`, `Section`, `Folder`, `Filename`, `Size`, `Format`, `Status`, `Notes`.
 - No prompt-defined assets are missing from the register.
-- No invalid status values found. All current rows use `TODO`.
+- No invalid status values found. Current rows use `DONE` or `TODO`.
 - No obvious filename or folder-placement issues found during this pass.
 
 ## Workflow docs
@@ -25,9 +25,11 @@ Updated: 2026-04-20
 - `ASSET_REVIEW_STANDARD.md` created.
 - `ASSET_GAP_REPORT.md` created.
 
-## Tracked but not yet created
-- All 55 tracked assets are still marked `TODO`.
-- Batch 1 prompt assets pending: 9.
-- Batch 2 prompt assets pending: 16.
-- Batch 3 prompt assets pending: 17.
-- Batch 0 support assets pending: `new_earth_logo_concept_board.png`, `new_earth_symbol_mark.png`, `microgrow_brand_lockup.png`, `brand_texture_cosmic_earth.webp`, `brand_texture_sunrise_horizon.webp`, `footer_background_new_earth.webp`, `global_under_construction_light.webp`, `manifesto_quote_background.webp`, `manifesto_affirmation_poster_a3.png`, `about_mission_visual.webp`, `blog_hero.webp`, `resources_hero.webp`, `community_join_cta.webp`.
+## Current production state
+- The register contains 55 assets: 10 `DONE` and 45 `TODO`.
+- The nine normalized production heroes are present at their registered paths.
+- Eight heroes use `1920x1080`; `contact_banner.webp` uses `1600x900`.
+- The remaining 45 registered assets are not yet produced.
+- Raw files under `ASSETS/_INBOX/` are excluded from source control and remain available for review.
+- Reference PNGs under `ASSETS/_REFERENCE/global_images/` await an archival-policy decision.
+- `06_THEME/new-earth-child.zip` is generated release material and is excluded from source control.
