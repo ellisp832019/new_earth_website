@@ -23,3 +23,8 @@ desktop.ini
 *.tmp
 *.bak
 *.swp
+
+# Raw asset drops and generated theme packages
+ASSETS/_INBOX/*
+!ASSETS/_INBOX/README.md
+06_THEME/*.zip
