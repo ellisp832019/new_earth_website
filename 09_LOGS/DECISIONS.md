@@ -205,6 +205,17 @@ Related files:
 
 ---
 
+### 2026-08-25 — Registered hero dimensions remain authoritative
+Decision:
+Registered hero dimensions remain authoritative. Existing approved 3:2 source imagery is converted into production 16:9 WebP derivatives through deliberate cropping and resizing without distortion.
+
+Effect:
+- Eight hero assets use `1920x1080`.
+- Contact uses `1600x900`.
+- Lossless source PNGs remain reference material.
+- Production exports must pass technical and visual review.
+- This decision does not publish assets to WordPress.
+
 ## LOGGING RULES
 
 ### Log a decision when:

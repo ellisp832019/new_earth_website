@@ -13,6 +13,14 @@ Use these checks before changing any asset status beyond `TODO` or `IN_PROGRESS`
 - Brand alignment: passes if the image still reads as premium, spiritual-modern, regenerative, earth-centered, peaceful, cinematic, elegant, and uncluttered.
 - Use fit: passes if the asset is suitable for its intended website or print purpose.
 
+## Production export rule
+- Exact registered dimensions are mandatory.
+- Preserve aspect ratio; crop rather than stretch.
+- Use the highest-quality approved source available.
+- Visually inspect focal subjects and responsive safe areas.
+- Validate file signature, dimensions, and SHA-256 hash.
+- Production WebP is distinct from source and reference imagery.
+
 ## Review outcome
 - Mark `APPROVED` when all checks pass.
 - Mark `NEEDS_EDIT` when the asset is usable but needs correction.
