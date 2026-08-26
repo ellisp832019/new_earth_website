@@ -64,4 +64,3 @@ The public website may explain and link to New Earth systems. It must not absorb
 Command Centre operations, Dashboard operations, GAIA administration, NEOS
 engineering controls, repository control, private financial records, hardware
 control, sensitive research, or internal company administration.
-

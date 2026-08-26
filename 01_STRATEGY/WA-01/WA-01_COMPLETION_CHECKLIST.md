@@ -36,4 +36,3 @@
 - [x] Repository-relative Markdown links resolve.
 - [x] Reference material remains untouched.
 - [x] `git diff --check` passes before commit.
-
