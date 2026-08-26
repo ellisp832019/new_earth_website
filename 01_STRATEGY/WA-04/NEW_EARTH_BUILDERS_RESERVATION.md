@@ -12,10 +12,10 @@ referral arrangement, member content, events feed, account system, data
 sharing, embedded content, SSO, API integration, or tracking script has been
 approved or activated.
 
-The offline homepage reserves a clearly labelled Community & Collaboration
-tile and a future footer Participate position. Neither reservation is a public
-New Earth Builders link or a claim that the external partner is owned or
-operated by New Earth. The approved seven-item header remains unchanged.
+The offline homepage reserves a neutral Community & Collaboration tile marked
+Coming Later and a future footer Participate position. Neither reservation is
+a public New Earth Builders link or a claim that the external partner is owned
+or operated by New Earth. The approved seven-item header remains unchanged.
 
 ## Activation Gates
 

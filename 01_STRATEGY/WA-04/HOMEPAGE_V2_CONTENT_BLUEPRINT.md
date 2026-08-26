@@ -40,10 +40,10 @@ readiness that has not been approved.
    evidence.
 9. **Get Involved:** Learn, Contribute, Collaborate, and Support pathways with
    no account or form processing, supported by an approved community hero. A
-   clearly labelled Community & Collaboration planning reservation is held for
-   New Earth Builders, subject to partner approval and future activation gates.
-10. **External applications:** Labelled, privacy-friendly patterns for LinkedIn,
-    YouTube, Telegram, and GitHub; placeholders only in this phase.
+   neutral Community & Collaboration space is marked Coming Later, subject to
+   the separate partner approval gates.
+10. **External connections:** A compact supporting treatment names possible
+    public channels without active destinations, feeds, scripts, or trackers.
 
 ## Twelve Pillars
 

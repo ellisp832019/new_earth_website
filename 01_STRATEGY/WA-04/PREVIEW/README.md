@@ -10,7 +10,8 @@ placeholders rather than unrelated assets. Image-led cards use a reusable
 one-third media and two-thirds written-content structure. The New Earth
 Builders space is a planning reservation only and has no active external link.
 
-Review at approximately 320px, 375px, 768px, 1024px, and 1440px. Test the skip
+Review at approximately 390px, 768px, 1024px, and 1440px. Test the skip
 link, mobile menu, keyboard focus, links with JavaScript disabled, ecosystem
-text equivalent, image alt text, production placeholders, and reduced-motion
-preference. External application cards are safe placeholders only.
+relationship list, image alt text, the remaining MicroGrow project image gap,
+and reduced-motion preference. External connections remain a compact supporting
+treatment with no active external destinations.
