@@ -81,4 +81,3 @@ FAQ, and glossary.
 
 **Success:** Legal routes are canonical, the footer is not overloaded, content
 is readable with assistive technology, and no duplicate policy creates doubt.
-

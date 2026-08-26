@@ -74,4 +74,3 @@ feeds without changing the meaning of the core types above.
 - Do not use a generic blog category as a substitute for a project, product,
   guide, or person type.
 - Do not expose private platform controls or operational data as public fields.
-
