@@ -12,8 +12,9 @@ technical review, and Peter approval.
 - **Subject represented:** Field Scanner project subject, not generic systems
 - **Evidence or source material:** Approved Field Scanner project description,
   verified project owner material, and any approved public demonstration
-- **Visual description:** Documentary field or scanning context that genuinely
-  shows the project subject without implying operational readiness
+- **Visual description:** A handheld device used to discover, identify, and
+  inspect MicroGrow nodes; it must not depict generic field or landscape
+  scanning and must not imply operational readiness
 - **Earth and Future requirements:** Natural light, grounded palette, calm
   technical clarity, restrained overlay compatibility
 - **Classification:** DOCUMENTARY
@@ -25,11 +26,11 @@ technical review, and Peter approval.
 - **Focal-point safe zone:** Central 60 percent
 - **Text-overlay safe zone:** No text in image; card text remains below
 - **People or faces:** Only if evidenced and rights-cleared; no posed stock scene
-- **Technology accuracy:** Show only verified Field Scanner context; no invented
-  screens, sensors, dashboards, or performance readouts
+- **Technology accuracy:** Show only verified handheld node-inspection context;
+  no invented screens, sensors, dashboards, or performance readouts
 - **Prohibited elements:** Generic systems image, unsupported metrics, private
   infrastructure, or operational claims
-- **Alt-text draft:** `Subject-specific Field Scanner project context`
+- **Alt-text draft:** `Conceptual handheld device for discovering and inspecting MicroGrow nodes`
 - **Caption requirement:** Required if the image documents a real activity
 - **Rights/licensing requirement:** Written source and usage permission required
 - **Required approver:** Peter and asset/content owner
@@ -37,16 +38,18 @@ technical review, and Peter approval.
 - **V2.0 necessity:** REQUIRED
 - **Current status:** SOURCE EVIDENCE NEEDED
 
-## NE-HOME-IMG-002 - New Earth Living
+## NE-HOME-IMG-002 - New Earth Living app
 
-- **Exact filename:** `new_earth_living_project.webp`
-- **Proposed tracked destination:** `ASSETS/11_COMMUNITY/projects/new_earth_living_project.webp`
+- **Exact filename:** `new_earth_living_app.webp`
+- **Proposed tracked destination:** `ASSETS/10_RESOURCES/hero/new_earth_living_app.webp`
 - **Homepage placement:** Featured Projects / New Earth Living combined tile
-- **Subject represented:** New Earth Living project context
-- **Evidence or source material:** Approved project description, verified owner
-  material, and approved place-based references
-- **Visual description:** Specific place, activity, or material context connected
-  to New Earth Living, not a generic community image
+- **Subject represented:** New Earth Living app connected to the New Earth
+  Conscious Living ecosystem lane
+- **Evidence or source material:** Approved app scope and the approved public
+  Conscious Living ecosystem lane
+- **Visual description:** An app-oriented conceptual visual that communicates
+  the named ecosystem lane without inventing features or implying a physical
+  development, settlement, or community
 - **Earth and Future requirements:** Warm, natural, documentary, low spectacle,
   compatible with cream, sage, clay, and forest cards
 - **Classification:** DOCUMENTARY
@@ -57,9 +60,11 @@ technical review, and Peter approval.
 - **Focal-point safe zone:** Central 60 percent
 - **Text-overlay safe zone:** No embedded text; card text remains separate
 - **People or faces:** Only with documented rights and meaningful relevance
-- **Technology accuracy:** Do not imply a product, service, or operational system
-- **Prohibited elements:** Unrelated community stock imagery or readiness claims
-- **Alt-text draft:** `Subject-specific New Earth Living place-based context`
+- **Technology accuracy:** Do not invent screens, functionality, service claims,
+  or operational readiness
+- **Prohibited elements:** Physical development, settlement, community claims,
+  unrelated stock imagery, or readiness claims
+- **Alt-text draft:** `Conceptual New Earth Living app visual connected to the Conscious Living ecosystem lane`
 - **Caption requirement:** Required for documentary material
 - **Rights/licensing requirement:** Written permission and provenance required
 - **Required approver:** Peter and asset/content owner
@@ -187,6 +192,30 @@ technical review, and Peter approval.
 - **Production priority:** High
 - **V2.0 necessity:** REQUIRED
 - **Current status:** SOURCE EVIDENCE NEEDED
+
+## NE-HOME-IMG-007 - MicroGrow project card
+
+- **Exact filename:** `microgrow_project_card.webp`
+- **Proposed tracked destination:** `ASSETS/06_MICROGROW/product/microgrow_project_card.webp`
+- **Homepage placement:** Featured Projects / MicroGrow combined tile
+- **Subject represented:** Dedicated MicroGrow AI Lab project-card context
+- **Evidence or source material:** Approved MicroGrow project description and
+  a separately approved project-card visual brief
+- **Visual description:** A truthful project-specific visual distinct from the
+  MicroGrow page hero candidate
+- **Classification:** CONCEPTUAL
+- **Required dimensions:** 1600x900 minimum
+- **Aspect ratio:** 16:9
+- **Technology accuracy:** No invented product availability, outcomes, or
+  operational performance
+- **Prohibited elements:** Reuse of the page hero candidate as the homepage
+  project-card image, readiness claims, or documentary implication
+- **Alt-text draft:** Must identify the dedicated MicroGrow project-card subject
+- **Rights/licensing requirement:** Provenance and written usage permission
+- **Required approver:** Peter and asset/content owner
+- **Production priority:** High
+- **V2.0 necessity:** REQUIRED
+- **Current status:** SOURCE ASSET NEEDED
 
 ## Shared approval gate
 

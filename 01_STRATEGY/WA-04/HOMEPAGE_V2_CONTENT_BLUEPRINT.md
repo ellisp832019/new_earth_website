@@ -18,8 +18,8 @@ readiness that has not been approved.
    forest overlay; the text remains HTML content.
 2. **What is New Earth?:** A short explanation of a living framework for
    conscious civilization, with links to `/vision/` and `/manifesto/`. A
-   subject-specific production placeholder is used until an accurate approved
-   introduction image exists; the Manifesto hero is not reused here.
+   the adopted conceptual introduction image supports the exact copy; the
+   Manifesto hero is not reused here and the visual is not documentary proof.
 3. **Explore the pathway:** Vision -> Blueprint -> The 12 Pillars -> Projects
    -> Get Involved, implemented as ordinary links with a Blueprint visual and
    a restrained cream, teal, clay, and sage progression.
@@ -28,14 +28,16 @@ readiness that has not been approved.
    projects, and participation connect, with a richer CSS treatment and a text
    equivalent. No production diagram is silently substituted.
 6. **Featured projects:** Combined image-and-writing tiles with honest status
-   labels and canonical project links. MicroGrow retains its exact approved
-   image; Field Scanner and New Earth Living show labelled production
-   placeholders until subject-specific assets exist.
+   labels and canonical project links. Field Scanner uses a conceptual handheld
+   node-inspection visual and New Earth Living uses an app-lane visual connected
+   to Conscious Living. The MicroGrow page hero is not used as the homepage
+   project-card image; a dedicated card visual remains a labelled production gap.
 7. **Progress and Transparency:** Dated-update and milestone patterns with
    ownership placeholders and a `/progress/` link; no fabricated metrics.
-8. **Journal and learning:** Combined Journal/resource tiles with labelled
-   production placeholders and a `/journal/` and `/resources/` discovery route.
-   Dedicated editorial imagery remains a later asset need.
+8. **Journal and learning:** Combined Journal/resource tiles with adopted
+   conceptual visuals, honest status labels, and `/journal/` and `/resources/`
+   discovery routes. The visuals do not claim specific publication or resource
+   evidence.
 9. **Get Involved:** Learn, Contribute, Collaborate, and Support pathways with
    no account or form processing, supported by an approved community hero.
 10. **External applications:** Labelled, privacy-friendly patterns for LinkedIn,
