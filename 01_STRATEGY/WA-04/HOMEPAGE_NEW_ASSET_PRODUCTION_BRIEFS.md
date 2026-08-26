@@ -1,8 +1,9 @@
 # Homepage New Asset Production Briefs
 
-These briefs define missing subject-specific assets only. No image is generated
-or added by WA-04A.2. Every brief remains gated by source evidence, rights,
-technical review, and Peter approval.
+These briefs define subject-specific homepage assets and the remaining
+MicroGrow project-card gap. The supplied conceptual candidates have been
+adopted offline; rights, technical review, and production approval remain
+separate gates.
 
 ## NE-HOME-IMG-001 - Field Scanner
 
@@ -36,7 +37,7 @@ technical review, and Peter approval.
 - **Required approver:** Peter and asset/content owner
 - **Production priority:** High
 - **V2.0 necessity:** REQUIRED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-002 - New Earth Living app
 
@@ -70,7 +71,7 @@ technical review, and Peter approval.
 - **Required approver:** Peter and asset/content owner
 - **Production priority:** High
 - **V2.0 necessity:** REQUIRED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-003 - Journal feature
 
@@ -101,7 +102,7 @@ technical review, and Peter approval.
 - **Required approver:** Article owner and Peter
 - **Production priority:** Medium
 - **V2.0 necessity:** RECOMMENDED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-004 - Resources feature
 
@@ -130,7 +131,7 @@ technical review, and Peter approval.
 - **Required approver:** Resource owner and Peter
 - **Production priority:** Medium
 - **V2.0 necessity:** RECOMMENDED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-005 - FAQ and Glossary
 
@@ -160,7 +161,7 @@ technical review, and Peter approval.
 - **Required approver:** Content owner and Peter
 - **Production priority:** Medium
 - **V2.0 necessity:** RECOMMENDED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-006 - New Earth introduction
 
@@ -191,7 +192,7 @@ technical review, and Peter approval.
 - **Required approver:** Peter and content/asset owner
 - **Production priority:** High
 - **V2.0 necessity:** REQUIRED
-- **Current status:** SOURCE EVIDENCE NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## NE-HOME-IMG-007 - MicroGrow project card
 

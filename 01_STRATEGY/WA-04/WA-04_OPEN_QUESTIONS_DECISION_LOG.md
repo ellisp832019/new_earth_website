@@ -20,10 +20,11 @@
 
 ## Non-blocking implementation questions
 
-- Which approved reviewed image supports each non-hero section?
-- Which dedicated Journal and ecosystem images receive production approval?
-- Which source evidence and rights records support Field Scanner, New Earth
-  Living, the introduction, Journal, Resources, and FAQ/Glossary visuals?
+- Which final rights, caption, and credit records support the adopted conceptual
+  Field Scanner, New Earth Living, introduction, Journal, Resources, and
+  FAQ/Glossary visuals?
+- Which dedicated MicroGrow homepage project-card asset should replace the
+  remaining Coming Later space?
 - Which WordPress template-part and navigation entities will be retained after
   staging inventory?
 - Which project cards have publishable evidence and final status ownership?
