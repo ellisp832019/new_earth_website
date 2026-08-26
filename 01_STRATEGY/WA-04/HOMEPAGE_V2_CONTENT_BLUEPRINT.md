@@ -17,8 +17,9 @@ readiness that has not been approved.
    action to `/projects/`. The hero uses an immersive image and controlled
    forest overlay; the text remains HTML content.
 2. **What is New Earth?:** A short explanation of a living framework for
-   conscious civilization, with links to `/vision/` and `/manifesto/`.
-   A reviewed manifesto hero provides warm visual context.
+   conscious civilization, with links to `/vision/` and `/manifesto/`. A
+   subject-specific production placeholder is used until an accurate approved
+   introduction image exists; the Manifesto hero is not reused here.
 3. **Explore the pathway:** Vision -> Blueprint -> The 12 Pillars -> Projects
    -> Get Involved, implemented as ordinary links with a Blueprint visual and
    a restrained cream, teal, clay, and sage progression.
@@ -26,12 +27,15 @@ readiness that has not been approved.
 5. **Ecosystem map:** Semantic relationship groups showing how pillars, systems,
    projects, and participation connect, with a richer CSS treatment and a text
    equivalent. No production diagram is silently substituted.
-6. **Featured projects:** Honest status labels and canonical project links.
+6. **Featured projects:** Combined image-and-writing tiles with honest status
+   labels and canonical project links. MicroGrow retains its exact approved
+   image; Field Scanner and New Earth Living show labelled production
+   placeholders until subject-specific assets exist.
 7. **Progress and Transparency:** Dated-update and milestone patterns with
    ownership placeholders and a `/progress/` link; no fabricated metrics.
-8. **Journal and learning:** Image-led Journal/resource placeholders and a
-   `/journal/` and `/resources/` discovery route. Dedicated editorial imagery
-   remains a later asset need.
+8. **Journal and learning:** Combined Journal/resource tiles with labelled
+   production placeholders and a `/journal/` and `/resources/` discovery route.
+   Dedicated editorial imagery remains a later asset need.
 9. **Get Involved:** Learn, Contribute, Collaborate, and Support pathways with
    no account or form processing, supported by an approved community hero.
 10. **External applications:** Labelled, privacy-friendly patterns for LinkedIn,
@@ -53,6 +57,13 @@ readiness that has not been approved.
 | 10 | Environment and Relationship with Nature | `/blueprint/pillars/environment-and-relationship-with-nature/` |
 | 11 | Culture, Spirituality and Human Development | `/blueprint/pillars/culture-spirituality-human-development/` |
 | 12 | Family, Childhood and Eldership | `/blueprint/pillars/family-childhood-eldership/` |
+
+## Visual system decision
+
+The twelve pillars use a colour-and-symbol card system rather than twelve
+unrelated photographs. Names, numbering, descriptions, and links remain the
+primary meaning. A future controlled icon or illustration set may be considered
+only after subject evidence and approval.
 
 ## Project statuses
 

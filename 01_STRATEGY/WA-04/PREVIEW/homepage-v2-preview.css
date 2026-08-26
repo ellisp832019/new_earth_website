@@ -86,6 +86,7 @@ p { max-width: 68ch; }
 .participation-grid { grid-template-columns: repeat(4, 1fr); }
 .project-card { overflow: hidden; padding: 0; }.project-card .project-copy { padding: 1.2rem; }.project-image { aspect-ratio: 16 / 9; border-radius: 0; }
 .journal-image { aspect-ratio: 16 / 9; margin-bottom: 1rem; }.journal-card { overflow: hidden; padding: 0; }.journal-card .journal-copy { padding: 0 1.2rem 1.2rem; }
+.asset-placeholder { display: flex; min-height: 12rem; flex-direction: column; justify-content: center; gap: .35rem; border-bottom: 1px solid #b9cbc3; padding: 1.25rem; background: radial-gradient(circle at 80% 20%, rgba(182,111,82,.25), transparent 32%), linear-gradient(135deg, #e5eff0, #f3e8df 58%, #e8eee2); color: var(--deep); }.asset-placeholder strong { font-family: var(--serif); font-size: 1.35rem; }.placeholder-kicker { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }.placeholder-detail { max-width: 34ch; color: #3e4d47; font-size: .92rem; }
 .involvement-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1rem; align-items: stretch; }.involvement-image { min-height: 18rem; }
 .integration-card { border: 1px solid #b9cbc3; border-radius: var(--radius-card); padding: 1.2rem; background: #f4f7f3; }
 .integration-label { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
