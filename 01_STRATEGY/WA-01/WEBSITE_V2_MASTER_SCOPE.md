@@ -2,7 +2,7 @@
 
 ## Status
 
-WA-01A planning foundation, 2026-08-26.
+WA-01C complete, 2026-08-26.
 
 This document is a planning baseline. It does not authorize WordPress changes,
 publishing, redirects, design implementation, or deployment.
@@ -61,6 +61,49 @@ WA-00B public and authenticated evidence records:
 - The primary navigation direction is concise: Vision, Blueprint, Ecosystem,
   Projects, Journal, About, and Get Involved. This is not a live menu change.
 
+## Approved WA-01C decisions
+
+Peter approved all WA-01 final decisions on 2026-08-26. These decisions close
+the WA-01 scope audit and authorize planning inputs only; they do not authorize
+WordPress, IONOS, publishing, or deployment changes.
+
+- Civilizational Vision is a dedicated public `/vision/` page. Home carries a
+  concise preview and route to it.
+- A public New Earth Advanced Technologies Ltd page is in the V2.0 foundation.
+  It may describe public purpose, structure, projects, operating principles,
+  and disclosures, but must not invent or expose private company information.
+- Platform Core, NEOS, GAIA, Command Centre, Local AI Runtime, and MCP/tool
+  control may be described publicly at purpose, ecosystem, status, benefit, and
+  safety level only. Credentials, ports, private architecture, repositories,
+  internal controls, and operational data remain excluded.
+- Project status truth uses only LIVE, VALIDATED, IN DEVELOPMENT, PROTOTYPE,
+  RESEARCH, PLANNED, and FUTURE. Initial evidence-conservative directions are
+  recorded in the capability register, including MicroGrow AI Lab as RESEARCH,
+  Field Scanner as PROTOTYPE, New Earth Living as IN DEVELOPMENT, BioCalm as
+  RESEARCH, Platform Core/NEOS/Command Centre as IN DEVELOPMENT, and GAIA as
+  RESEARCH.
+- Peter owns and approves New Earth Practical Guides. Hayley owns and approves
+  New Earth Conscious Living. No content is published in Hayley's name without
+  her approval; shared founder content requires shared approval.
+- V2 legal and company disclosures must cover registered identity, company
+  number, office, jurisdiction, privacy, cookies, terms, disclaimer,
+  accessibility, future product sales, and refund terms. Professional review is
+  required before publication, and no unverified company details are added now.
+- V2 targets WCAG 2.2 AA with automated and manual keyboard, focus, contrast,
+  responsive, and assistive-technology review before release and after material
+  changes.
+- Public image use requires confirmed rights, licence, and attribution. Raw or
+  reference material remains private unless approved.
+- Peter owns progress and transparency. Claims must be evidence-based, dated,
+  and status-labelled, with regular review.
+- The WordPress/IONOS version discrepancy remains a controlled, non-blocking
+  maintenance investigation. No update is authorized by WA-01.
+- `/articles/` remains a legacy redirect to `/journal/`; `/cookie-policy-uk/`
+  remains a legacy redirect to `/legal/cookie-policy/`. Journal is authoritative;
+  About, Founder's Journey, and Team remain distinct; Home fulfils Start Here;
+  Blueprint Alignment remains reusable; New Earth Test remains retained on
+  repository evidence; legal links belong in secondary or footer navigation.
+
 ## Delivery horizons and status truth
 
 Every V2 page or capability has one delivery horizon and one status truth in the
@@ -75,8 +118,8 @@ V2 Page and Capability Register.
 - `NOT REQUIRED`: intentionally excluded from the public website model.
 
 Status truth is deliberately conservative: LIVE, VALIDATED, IN DEVELOPMENT,
-PLANNED, RESEARCH, or FUTURE. Planned entries do not assert that an unfinished
-product or service exists.
+PROTOTYPE, RESEARCH, PLANNED, or FUTURE. Planned entries do not assert that an
+unfinished product or service exists.
 
 ## V2 delivery phases
 
@@ -209,3 +252,6 @@ WA-01 is complete when:
 - Duplicate, divergent, corrupted, and placeholder content is recorded.
 - Open questions have owners and a next decision point.
 - No live change has been made.
+
+WA-01 is now complete. WA-02 is the next phase and will convert the approved
+destinations into information architecture without silently changing live URLs.

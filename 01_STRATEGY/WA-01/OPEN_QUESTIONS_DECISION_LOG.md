@@ -20,20 +20,33 @@
 | D08 | The homepage initially fulfils Start Here. | A separate Start Here page is not created unless WA-02 proves a distinct need. |
 | D09 | Primary navigation is planned as a concise concept set. | Vision, Blueprint, Ecosystem, Projects, Journal, About, and Get Involved are planning concepts only; no live menu change is authorized. |
 
-## Questions requiring Peter's decision
+## Peter approval record
 
-| ID | Question | Current safe position | Decision point |
+| Date | Approval | Effect |
+| --- | --- | --- |
+| 2026-08-26 | Peter approved all WA-01C final decisions. | WA-01 is complete; WA-02 is next. No live implementation is authorized by this approval. |
+
+## Approved WA-01C decision set
+
+The approved decisions are recorded in `WEBSITE_V2_MASTER_SCOPE.md` and the
+capability register. They cover the dedicated `/vision/` page, the public
+Advanced Technologies company page, bounded public system descriptions,
+conservative project status truth, creator ownership, legal disclosures,
+WCAG 2.2 AA, image rights, progress ownership, the WordPress/IONOS discrepancy,
+and the canonical route decisions.
+
+## Remaining implementation gates
+
+| ID | Gate | Owner | Horizon |
 | --- | --- | --- | --- |
-| P01 | Should the proposed primary concept `Vision` be a separate page or a Home section? | Keep as a V2.0 foundation concept; do not create a route yet. | WA-02 IA review. |
-| P02 | What public description and ownership should be used for New Earth Advanced Technologies Ltd? | Keep as an INVESTIGATE capability. | Before company or technology page copy. |
-| P03 | Which Platform Core, NEOS, GAIA, Command Centre, Local AI Runtime, and MCP descriptions are safe for public release? | External/internal system horizon; no operational detail. | Before ecosystem copy is drafted. |
-| P04 | Which listed projects are public and ready for a page: MicroGrow AI Lab, Field Scanner, BioCalm, and New Earth Living? | Planned only; no factual readiness claims. | Before project directory population. |
-| P05 | Who owns and approves Peter Practical Guides and Hayley Conscious Living content? | Creator lanes remain planned and consent-dependent. | Before author pages or publishing workflows. |
-| P06 | What legal/company disclosure information is required for the public site? | Legal routes remain canonical but unchanged. | Before legal or company-page rewrite. |
-| P07 | What accessibility standard and review process should govern V2? | Accessibility is a foundation requirement. | Before WA-03 design acceptance. |
-| P08 | What rights and attribution rules govern a public image archive? | Image Archive is V2.x later. | Before public archive activation. |
-| P09 | What owner and freshness policy should govern Progress and Transparency? | V2.x later; no placeholder status feed. | Before progress page creation. |
-| P10 | Is the WordPress/IONOS version discrepancy environmental drift or dashboard metadata? | Record as a technical limitation; no live change in WA-01. | Later controlled technical review. |
+| G01 | Convert approved destinations into information architecture and route decisions. | WA-02 lead | V2.0 FOUNDATION |
+| G02 | Confirm final company identity and legal disclosure facts, then obtain professional review. | New Earth / legal owner | V2.0 FOUNDATION |
+| G03 | Draft public system and project descriptions from evidence without private operational detail. | Named system and project owners | EXTERNAL/INTERNAL SYSTEM or V2.x |
+| G04 | Apply creator approval and consent before Peter or Hayley lanes are published. | Peter / Hayley | V2.x ENABLED LATER |
+| G05 | Complete WCAG 2.2 AA design, keyboard, focus, contrast, responsive, and assistive-technology review. | Design and implementation owners | WA-03 onward |
+| G06 | Confirm rights, licence, and attribution before any image archive activation. | New Earth | V2.x ENABLED LATER |
+| G07 | Establish dated, evidence-based progress reporting and review cadence. | Peter | V2.x ENABLED LATER |
+| G08 | Investigate the WordPress/IONOS version discrepancy under controlled maintenance. | Technical owner | Maintenance; non-blocking |
 
 ## Deferred implementation questions
 
