@@ -12,22 +12,26 @@
 - [x] Homepage Start Here direction is locked for planning.
 - [x] Concise primary navigation direction is recorded without changing live menus.
 - [x] Every capability has exactly one delivery horizon.
-- [x] Status truth distinguishes live, validated, development, planned, research,
-  and future states.
+- [x] Status truth uses LIVE, VALIDATED, IN DEVELOPMENT, PROTOTYPE, RESEARCH,
+  PLANNED, and FUTURE.
+- [x] Every V2.0 foundation capability has a firm non-INVESTIGATE decision.
+- [x] Every later capability has an owner and explicit decision gate.
 
 ## Registers and questions
 
 - [x] Every current published page has a controlled decision.
 - [x] Every redirect requirement is recorded in the page register.
 - [x] Every V2 capability has a canonical destination or explicit future marker.
-- [x] Remaining questions requiring Peter's decision are listed.
+- [x] Peter approved all WA-01C scope decisions on 2026-08-26.
 - [x] No private system operation is included in the public website boundary.
+- [x] WA-01 closeout report records the approved scope and handoff.
 
 ## Validation
 
-- [ ] Peter approves the remaining strategic questions.
+- [x] All WA-01C validation checks pass before commit.
+- [x] WA-01 is complete; WA-02 is the next phase.
 - [ ] WA-02 converts approved destinations into information architecture.
-- [ ] No WordPress, IONOS, live-site, or deployment action is taken in WA-01.
+- [x] No WordPress, IONOS, live-site, or deployment action is taken in WA-01.
 - [x] CSV schemas are stable and parseable.
 - [x] Repository-relative Markdown links resolve.
 - [x] Reference material remains untouched.

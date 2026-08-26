@@ -16,7 +16,7 @@ redirect changes.
 4. `PRINCIPAL_VISITOR_JOURNEYS.md` - the visitor outcomes the architecture
    should support.
 5. `CONTENT_TYPES_TAXONOMY_REQUIREMENTS.md` - the content model needed to scale.
-6. `OPEN_QUESTIONS_DECISION_LOG.md` - unresolved decisions and ownership.
+6. `OPEN_QUESTIONS_DECISION_LOG.md` - approval evidence and remaining gates.
 7. `WA-01_COMPLETION_CHECKLIST.md` - completion proof and handoff conditions.
 
 ## Evidence basis
@@ -33,8 +33,8 @@ redirect changes.
 - Treat KEEP, REWRITE, and other decisions as planning decisions for review,
   not live instructions.
 - Treat INVESTIGATE as a deliberate hold, not a missing answer.
-- Read the Delivery Horizon and Status Truth columns before proposing any page
-  or capability for implementation.
+- Read the Delivery Horizon, Status Truth, and Decision Gate columns before
+  proposing any page or capability for implementation.
 - Add evidence before changing a route, legal page, owner, or public claim.
 - A redirect row may reference the same canonical destination as its target;
   this is intentional and does not create a second canonical page.
@@ -57,3 +57,17 @@ planned for redirect to the Legal cookie-policy route. The homepage initially
 fulfils Start Here. The primary navigation is planned as a concise set of
 concepts rather than a live implementation. See the decision register and open
 questions log for the controlled detail.
+
+## WA-01C closeout
+
+Peter approved all WA-01 final decisions on 2026-08-26. The dedicated
+`/vision/` route, public company page, bounded public system descriptions,
+status truth, creator ownership, legal, accessibility, image-rights, progress,
+and route decisions are now locked for planning. Remaining items are explicit
+implementation gates in the decision log, not unresolved WA-01 scope questions.
+
+## WA-02 handoff
+
+WA-02 is the next phase. It may convert approved destinations into information
+architecture and navigation proposals, but it must not modify WordPress, change
+live routes, or expose private system details.
