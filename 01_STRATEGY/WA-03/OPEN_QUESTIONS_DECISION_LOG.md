@@ -1,34 +1,34 @@
-# WA-03 Open Questions and Decision Log
+# WA-03 Decision Log
 
-## Status
+## Approval status
 
-These are the remaining visual-system decisions for Peter after WA-01 and WA-02
-approval. No implementation is authorized until the blocking choices are
-resolved.
+Peter approved the WA-03 design-system decisions on 2026-08-26. Direction C -
+Earth and Future is the only approved direction. Directions A and B remain in
+the repository as historical comparison evidence and are explicitly not
+selected.
 
-## Blocking WA-03 decisions
+## Resolved decisions
 
-| ID | Decision | Recommended answer | Why it matters |
-| --- | --- | --- | --- |
-| D01 | Preferred visual direction: A, B, or C? | Direction C - Earth and Future | Best balance across doctrine, projects, research, creator lanes, Journal, and technology. |
-| D02 | Final heading/body typography approach | System serif display plus privacy-respecting system sans body | Preserves warmth while keeping reading, legal, and metadata clear. |
-| D03 | Logo presentation | Clear New Earth wordmark/mark with generous space and accessible Home link | Protects recognition and keeps Home available without a crowded nav item. |
-| D04 | Gold/accent restraint | Accent only for small highlights, rules, and approved emphasis; never body text | Prevents low contrast and decorative overuse. |
-| D05 | Image treatment | Cinematic but grounded, with focal-point metadata, safe overlay surfaces, and confirmed rights | Preserves the existing hero strength without harming readability. |
-| D06 | Border-radius character | Moderate 12-14px cards and controls; larger radii only for feature surfaces | Balances warmth with technical credibility. |
-| D07 | Motion level | Short purposeful transitions; no essential motion and reduced-motion alternative | Supports calm usability and accessibility. |
-| D08 | Creator-lane relationship | Share the core system with controlled accent variations only | Preserves one coherent website while allowing approved editorial distinction. |
+| ID | Decision | Approved resolution |
+| --- | --- | --- |
+| D01 | Preferred visual direction | Direction C - Earth and Future |
+| D02 | Heading and body typography | System serif display with privacy-respecting system sans body |
+| D03 | Logo presentation | Full New Earth wordmark/mark with generous space; logo provides accessible Home access; compact mark is mobile-only if an approved asset exists |
+| D04 | Gold and accent restraint | Restrained accent use for small highlights, rules, and approved emphasis; never body text or status-only communication |
+| D05 | Image treatment | Warm, natural, truthful, documentary imagery with focal-point metadata, safe overlays, alt text, captions, credits, and confirmed rights |
+| D06 | Border-radius character | Moderate 12-16px cards, 8-12px controls, and pill badges |
+| D07 | Motion level | Short purposeful transitions, no essential motion or parallax, and a reduced-motion alternative |
+| D08 | Creator-lane relationship | One shared core system with controlled accents: deeper technical/earth for Peter and calm sage/warm for Hayley; one accent at a time and no unapproved Hayley content |
 
-## Non-blocking implementation details
+## Non-blocking implementation validation
 
-- Exact token values after direction selection.
-- Final component state names and WordPress pattern granularity.
-- Which approved production hero receives each page template.
-- Final icon, diagram, and illustration decisions.
-- Exact breakpoint adjustments after content testing.
-- Self-hosted font evaluation, if licensing and privacy review support it.
-- Final form-provider styling after implementation planning.
-- Manual contrast and assistive-technology test schedule.
+- Confirm final token values in the implemented WordPress system.
+- Confirm component state names and WordPress pattern granularity.
+- Assign approved production heroes to page templates after rights review.
+- Finalise icons, diagrams, and illustrations from approved assets.
+- Tune breakpoints after real content testing.
+- Evaluate self-hosted fonts only if licensing and privacy review support it.
+- Style the final form provider during implementation planning.
+- Schedule manual contrast and assistive-technology testing.
 
-All proposed tokens remain PROPOSED. WA-03B should record Peter's answers,
-lock the selected direction, and prepare the implementation handoff.
+There are no unresolved blocking WA-03 decisions.

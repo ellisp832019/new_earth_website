@@ -4,9 +4,10 @@ Open 'design-system-preview.html' directly in a browser. It is fully offline:
 the HTML references only the sibling CSS file and uses no external fonts,
 scripts, trackers, images, or network dependencies.
 
-The page is a proposed comparison surface for Directions A, B, and C. It
-contains representative placeholder text and is not a dashboard, WordPress
-preview, live-site mirror, or final design approval.
+The page is an offline comparison surface with the approved Direction C first
+and default. Directions A and B are retained for historical comparison and
+are explicitly not selected. It contains representative placeholder text and
+is not a dashboard, WordPress preview, live-site mirror, or implementation.
 
 Keyboard review points:
 
