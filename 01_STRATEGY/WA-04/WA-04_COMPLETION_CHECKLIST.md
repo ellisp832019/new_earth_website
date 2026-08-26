@@ -8,7 +8,7 @@
 - [x] WA-04 work stayed inside the New Earth Website repository.
 - [x] AGENTS.md was read before work.
 - [x] No WordPress, IONOS, live-site, or production deployment work was performed.
-- [x] No production asset or `ASSETS/ASSET_REGISTER.csv` change was made in WA-04B.
+- [x] WA-04B.1 adopted the approved conceptual MicroGrow card asset and reconciled `ASSETS/ASSET_REGISTER.csv`; no live production deployment was performed.
 - [x] The 12 intentional untracked reference files remain unchanged.
 
 ## Approved Homepage Baseline
@@ -37,8 +37,8 @@
 - [x] External integrations remain compact, labelled, and inactive, with no scripts, feeds, embeds, trackers, or unapproved URLs.
 - [x] New Earth Builders remains a neutral Community & Collaboration reservation marked Coming Later in the preview.
 - [x] No partner name, logo, URL, partnership claim, embed, tracking, SSO, or data sharing is public.
-- [x] `NE-HOME-IMG-007` is recorded as the only required homepage production-image blocker.
-- [x] The MicroGrow page hero is not reused as the homepage project-card image.
+- [x] `NE-HOME-IMG-007` is produced and adopted; the required homepage production-image blocker is resolved.
+- [x] The MicroGrow page hero is not reused as the homepage project-card image; the dedicated card asset is used instead.
 - [x] WA-05 detailed content production is the next phase.
 - [ ] Tablet browser acceptance at approximately 768px.
 - [ ] Mobile browser acceptance at approximately 390px.

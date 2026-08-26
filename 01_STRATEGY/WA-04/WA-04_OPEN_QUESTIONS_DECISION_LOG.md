@@ -23,8 +23,8 @@
 - Which final rights, caption, and credit records support the adopted conceptual
   Field Scanner, New Earth Living, introduction, Journal, Resources, and
   FAQ/Glossary visuals?
-- Which dedicated MicroGrow homepage project-card asset should replace the
-  remaining Coming Later space?
+- Which rights, caption, credit, and production approvals should accompany the
+  adopted MicroGrow homepage project-card visual?
 - Which WordPress template-part and navigation entities will be retained after
   staging inventory?
 - Which project cards have publishable evidence and final status ownership?

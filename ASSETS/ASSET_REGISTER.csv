@@ -31,6 +31,7 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,SYSTEMS,05_SYSTEMS\categories,systems_health.webp,1200x800,webp,TODO,Systems health
 2,SYSTEMS,05_SYSTEMS\categories,systems_governance_community.webp,1200x800,webp,DONE,Systems governance and community
 1,MICROGROW,06_MICROGROW\hero,microgrow_hero.webp,1920x1080,webp,APPROVED,WA-04A.3 conceptual MicroGrow page hero; not homepage project-card image; not operational proof; not live
+2,MICROGROW,06_MICROGROW\product,microgrow_ai_lab_project_card.webp,1600x900,webp,APPROVED,WA-04B.1 conceptual MicroGrow AI Lab homepage project-card visual; not documentary evidence, commercial availability or proven performance; not live
 2,SYSTEMS,05_SYSTEMS\projects,field_scanner_project.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual handheld Field Scanner for discovering and inspecting MicroGrow nodes; not operational proof; not live
 2,RESOURCES,10_RESOURCES\hero,new_earth_living_app.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual New Earth Living app visual connected to Conscious Living; not a physical place or operational proof; not live
 2,HOME,02_HOME\sections,home_introduction_new_earth.webp,1600x1000,webp,APPROVED,WA-04A.3 conceptual New Earth introduction visual; not documentary evidence; not live

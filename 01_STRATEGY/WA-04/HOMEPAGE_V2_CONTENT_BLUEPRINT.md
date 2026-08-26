@@ -31,7 +31,8 @@ readiness that has not been approved.
    labels and canonical project links. Field Scanner uses a conceptual handheld
    node-inspection visual and New Earth Living uses an app-lane visual connected
    to Conscious Living. The MicroGrow page hero is not used as the homepage
-   project-card image; a dedicated card visual remains a labelled production gap.
+   project-card image; the dedicated conceptual card visual is now adopted
+   with its separate rights and production gates retained.
 7. **Progress and Transparency:** Dated-update and milestone patterns with
    ownership placeholders and a `/progress/` link; no fabricated metrics.
 8. **Journal and learning:** Combined Journal/resource tiles with adopted
