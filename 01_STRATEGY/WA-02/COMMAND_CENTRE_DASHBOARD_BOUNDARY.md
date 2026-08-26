@@ -2,7 +2,7 @@
 
 ## Status
 
-WA-02A boundary decision, 2026-08-26. Planning only. No application, link,
+WA-02B approved boundary, 2026-08-26. Planning only. No application, link,
 authentication, or deployment change is authorized.
 
 ## Locked public direction

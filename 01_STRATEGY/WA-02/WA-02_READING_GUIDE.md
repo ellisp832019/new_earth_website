@@ -29,25 +29,27 @@ No website implementation has started.
   the no-private-data boundary remain locked.
 - No live navigation, route, page, theme, asset, or WordPress change is included.
 
-## What Peter must decide
+## WA-02B approval
 
-Peter should review only the blocking V2.0 architecture questions A01-A05:
+Peter approved all five blocking V2.0 architecture decisions on 2026-08-26:
 
-- Public label and relationship between Ecosystem and Systems.
-- Whether Get Involved is a lightweight hub.
-- Whether Research and Development can launch with evidence and ownership.
-- Pillar URL slug convention.
-- New Earth Test child placement and readiness.
+- Ecosystem is the public label and canonical destination; Systems receives a
+  gated redirect after replacement validation.
+- Get Involved is a lightweight V2.0 hub.
+- Research and Development is `/research-development/` beneath Ecosystem.
+- Pillar slugs have no numeric prefixes while display order remains numbered.
+- New Earth Test is reserved and has a content-preservation-gated redirect to
+  Inner Blueprint.
 
-The recommended answers are recorded in the decision log. V2.x questions are
-non-blocking and should not delay the V2.0 architecture.
+The approved header is Vision, Blueprint, Ecosystem, Projects, Journal, About,
+and Get Involved. Home is reached through the New Earth logo. Footer groups are
+Explore, Participate, Learn, Legal, and Trust. V2.x questions are non-blocking.
 
-## WA-02B next step
+## WA-03 handoff
 
-WA-02B should review the sitemap and URL register with Peter, test labels and
-hierarchy against the ten principal journeys, resolve A01-A05, and produce an
-approved IA baseline. It should then hand off to design-system planning without
-editing WordPress.
+WA-02 is closed. WA-03 is the next phase for design-system planning. It should
+use the approved sitemap, URL register, navigation model, templates, and
+journey validation without editing WordPress or starting live implementation.
 
 ## Review boundary
 

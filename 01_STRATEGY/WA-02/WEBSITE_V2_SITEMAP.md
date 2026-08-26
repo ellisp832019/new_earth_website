@@ -27,21 +27,23 @@ design, or deployment changes.
 - **Vision** `/vision/` - new, dedicated civilizational vision page.
 - **Blueprint** `/blueprint/` - current live, retained.
   - **The 12 Pillars** `/blueprint/pillars/` - current live index, retained.
-    - **Governance** `/blueprint/pillars/governance/`
-    - **Economics** `/blueprint/pillars/economics/`
-    - **Education** `/blueprint/pillars/education/`
-    - **Health and Healing** `/blueprint/pillars/health-and-healing/`
-    - **Food and Agriculture** `/blueprint/pillars/food-and-agriculture/`
-    - **Housing and Habitat** `/blueprint/pillars/housing-and-habitat/`
-    - **Energy and Technology** `/blueprint/pillars/energy-and-technology/`
-    - **Justice and Conflict Transformation** `/blueprint/pillars/justice-and-conflict-transformation/`
-    - **Media and Information** `/blueprint/pillars/media-and-information/`
-    - **Environment and Relationship with Nature** `/blueprint/pillars/environment-and-relationship-with-nature/`
-    - **Culture, Spirituality and Human Development** `/blueprint/pillars/culture-spirituality-human-development/`
-    - **Family, Childhood and Eldership** `/blueprint/pillars/family-childhood-eldership/`
+    - **01 Governance** `/blueprint/pillars/governance/`
+    - **02 Economics** `/blueprint/pillars/economics/`
+    - **03 Education** `/blueprint/pillars/education/`
+    - **04 Health and Healing** `/blueprint/pillars/health-and-healing/`
+    - **05 Food and Agriculture** `/blueprint/pillars/food-and-agriculture/`
+    - **06 Housing and Habitat** `/blueprint/pillars/housing-and-habitat/`
+    - **07 Energy and Technology** `/blueprint/pillars/energy-and-technology/`
+    - **08 Justice and Conflict Transformation** `/blueprint/pillars/justice-and-conflict-transformation/`
+    - **09 Media and Information** `/blueprint/pillars/media-and-information/`
+    - **10 Environment and Relationship with Nature** `/blueprint/pillars/environment-and-relationship-with-nature/`
+    - **11 Culture, Spirituality and Human Development** `/blueprint/pillars/culture-spirituality-human-development/`
+    - **12 Family, Childhood and Eldership** `/blueprint/pillars/family-childhood-eldership/`
   - **Inner Blueprint** `/blueprint/inner-blueprint/` - current live, retained.
   - **Transition Path** `/blueprint/transition-path/` - current live, retained.
-  - **New Earth Test** `/blueprint/new-earth-test/` - current live, retained pending WA-02B route/content review.
+  - **New Earth Test** `/blueprint/new-earth-test/` - reserved for review only;
+    conditionally redirects to `/blueprint/inner-blueprint/` after unique
+    content is preserved. A future interactive assessment is V2.x, not live.
 - **Ecosystem** `/ecosystem/` - new public explanatory hub.
   - **Advanced Technologies** `/technology/` - public company and technology
     explanation; no private company facts unless verified.
@@ -49,9 +51,12 @@ design, or deployment changes.
   - **NEOS** `/ecosystem/neos/` - bounded public explainer.
   - **GAIA** `/ecosystem/gaia/` - bounded public explainer.
   - **Command Centre** `/ecosystem/command-centre/` - public information page.
+  - **Research and Development** `/research-development/` - public research
+    purpose and areas, evidence and status labelled.
 - **Projects** `/projects/` - new directory with conservative status labels.
   - **MicroGrow** `/microgrow/` - current live product/project destination.
-- **Systems** `/systems/` - current live, rewritten as a public overview.
+- **Systems** `/systems/` - current live alias retained until `/ecosystem/` is
+  published and validated; then a planned permanent redirect applies.
 - **Journal** `/journal/` - current live, canonical publication hub.
 - **About** `/about/` - current live, rewritten.
   - **Founder's Journey** `/founders-journey/` - distinct shared story.
@@ -61,8 +66,6 @@ design, or deployment changes.
   - **Contact** `/contact/` - current live, rewritten.
 - **Resources** `/resources/` - new public knowledge hub.
   - **FAQ and Glossary** `/resources/faq-glossary/`
-- **Research and Development** `/research/` - new collection, evidence and
-  status labelled.
 - **Legal** `/legal/` - current live hub, retained.
   - **Privacy Policy** `/legal/privacy-policy/`
   - **Terms of Use** `/legal/terms/`
@@ -94,6 +97,10 @@ These are architectural reservations, not live pages or activation instructions:
 - Systems, About, Contact, and Home are rewritten rather than duplicated.
 - Articles `/articles/` redirects to Journal.
 - Cookie Policy (UK) `/cookie-policy-uk/` redirects to the canonical legal route.
+- Systems `/systems/` redirects to Ecosystem only after the replacement is
+  published and validated.
+- New Earth Test redirects to Inner Blueprint only after unique content is
+  preserved and the redirect is validated.
 - Blueprint Alignment remains a reusable method beneath the relevant project; it
   is not promoted to a primary top-level page.
 - No additional alias is approved without evidence and a later redirect decision.

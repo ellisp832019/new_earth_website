@@ -16,7 +16,7 @@ changes, WordPress templates, or implementation are included.
 - Journal index and Journal article.
 - About, founder story, people/team, and creator lane.
 - Participation: Get Involved, collaboration, and contact.
-- Research index and research paper.
+- Research and Development index and research paper.
 - Resource/FAQ and glossary.
 - Legal/policy.
 - Progress/transparency.

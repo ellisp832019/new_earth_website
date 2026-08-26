@@ -17,6 +17,7 @@ Use the existing Journal strategy as the source for a controlled category set:
 - Technology and Tools
 - Practical Guides
 - Projects and Progress
+- Research and Development
 
 Categories describe the primary editorial purpose. A post has one primary
 category; additional relationships use taxonomies or links.
@@ -87,6 +88,8 @@ Search should cover published public pages and Journal content, with:
 - Accessible empty, loading, and error states.
 - Exclusion of drafts, private systems, credentials, and internal records.
 - No duplicate Articles index.
+- Research and Development is discoverable under the Ecosystem relationship;
+  private research and unpublished material remain excluded.
 
 ## Future V2.x search
 
