@@ -15,6 +15,8 @@ The WA-04A offline prototype is accepted only when the following remain true:
   shift; the above-the-fold hero has explicit dimensions and priority.
 - Informative image overlays retain readable HTML text and do not put important
   content inside imagery.
+- Production placeholders expose an asset ID, subject description, and
+  `Production asset required` text to assistive technology and sighted reviewers.
 - Focus indicators are visible against adjacent colours.
 - Text remains readable at the approved responsive widths and at increased zoom.
 - No horizontal overflow is introduced at 320px.
@@ -23,6 +25,8 @@ The WA-04A offline prototype is accepted only when the following remain true:
 - Section colour changes support orientation but never replace headings, labels,
   link text, or status text.
 - The ecosystem map has an equivalent semantic list.
+- Pillar cards retain name, number, description, and action without requiring an
+  image; colour and symbols are secondary cues.
 - External applications have clear labels, consent/fallback text, and no
   automatic network request.
 - No account, form submission, tracker, feed, or live embed is presented as

@@ -11,11 +11,15 @@
 - The prototype is offline and JavaScript is progressive enhancement.
 - Existing approved hero assets may provide contextual imagery, but their
   page-specific suitability and rights remain subject to later review.
+- Six subject-specific homepage assets remain required; unrelated approved
+  heroes must not be used as substitutes.
 
 ## Non-blocking implementation questions
 
 - Which approved reviewed image supports each non-hero section?
 - Which dedicated Journal and ecosystem images receive production approval?
+- Which source evidence and rights records support Field Scanner, New Earth
+  Living, the introduction, Journal, Resources, and FAQ/Glossary visuals?
 - Which WordPress template-part and navigation entities will be retained after
   staging inventory?
 - Which project cards have publishable evidence and final status ownership?
