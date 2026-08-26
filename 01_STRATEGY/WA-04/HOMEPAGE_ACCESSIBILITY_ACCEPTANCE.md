@@ -11,12 +11,17 @@ The WA-04A offline prototype is accepted only when the following remain true:
   styling; links remain present when JavaScript is unavailable.
 - Current-page treatment is communicated by text and style, not colour alone.
 - Every image has meaningful alt text or an empty decorative alt attribute.
-- Non-critical images are lazy-loaded and have dimensions to reduce layout shift.
+- Non-critical images are lazy-loaded and have dimensions to reduce layout
+  shift; the above-the-fold hero has explicit dimensions and priority.
+- Informative image overlays retain readable HTML text and do not put important
+  content inside imagery.
 - Focus indicators are visible against adjacent colours.
 - Text remains readable at the approved responsive widths and at increased zoom.
 - No horizontal overflow is introduced at 320px.
 - Reduced-motion preferences remove non-essential transitions.
 - Status labels are text labels and are never colour-only.
+- Section colour changes support orientation but never replace headings, labels,
+  link text, or status text.
 - The ecosystem map has an equivalent semantic list.
 - External applications have clear labels, consent/fallback text, and no
   automatic network request.
