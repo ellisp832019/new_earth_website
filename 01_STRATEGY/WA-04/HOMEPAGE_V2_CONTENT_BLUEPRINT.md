@@ -39,7 +39,9 @@ readiness that has not been approved.
    discovery routes. The visuals do not claim specific publication or resource
    evidence.
 9. **Get Involved:** Learn, Contribute, Collaborate, and Support pathways with
-   no account or form processing, supported by an approved community hero.
+   no account or form processing, supported by an approved community hero. A
+   clearly labelled Community & Collaboration planning reservation is held for
+   New Earth Builders, subject to partner approval and future activation gates.
 10. **External applications:** Labelled, privacy-friendly patterns for LinkedIn,
     YouTube, Telegram, and GitHub; placeholders only in this phase.
 

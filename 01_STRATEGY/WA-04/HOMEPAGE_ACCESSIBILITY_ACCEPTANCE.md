@@ -17,6 +17,11 @@ The WA-04A offline prototype is accepted only when the following remain true:
   content inside imagery.
 - Production placeholders expose an asset ID, subject description, and
   `Production asset required` text to assistive technology and sighted reviewers.
+- Image-content cards use a consistent media/body structure: media is visually
+  limited to approximately one-third and the complete status, heading,
+  explanation, and action remain in the body.
+- The New Earth Builders reservation is visibly labelled as planning-only and
+  approval-pending, with no external link or partnership claim.
 - Focus indicators are visible against adjacent colours.
 - Text remains readable at the approved responsive widths and at increased zoom.
 - No horizontal overflow is introduced at 320px.

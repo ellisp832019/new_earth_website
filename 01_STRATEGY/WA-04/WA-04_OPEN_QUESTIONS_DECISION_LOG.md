@@ -11,8 +11,12 @@
 - The prototype is offline and JavaScript is progressive enhancement.
 - Existing approved hero assets may provide contextual imagery, but their
   page-specific suitability and rights remain subject to later review.
-- Six subject-specific homepage assets remain required; unrelated approved
-  heroes must not be used as substitutes.
+- A dedicated MicroGrow homepage project-card asset remains required; its page
+  hero must not be reused in that card.
+- Homepage image-led cards use one reusable one-third media/two-thirds writing
+  contract with visible status, title, explanation, and action.
+- New Earth Builders is reserved as PARTNER APPROVAL PENDING only; no public
+  partnership or external link is active.
 
 ## Non-blocking implementation questions
 
@@ -25,6 +29,9 @@
 - Which project cards have publishable evidence and final status ownership?
 - Which provider, if any, passes the future newsletter and donation review?
 - Which final production assets receive rights, caption, and credit approval?
+- Will Alli approve New Earth Builders, and if so which organisation wording,
+  URL, image, branding permission, ownership language, and future content may
+  be activated?
 
 These questions do not block the offline prototype. They must be resolved in
 staging or later content/asset work before production implementation.
