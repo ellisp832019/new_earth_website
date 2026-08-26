@@ -48,4 +48,3 @@ V2.0 foundation capabilities, owner and gate coverage for later capabilities,
 canonical non-redirect destinations, redirect agreement, parseable CSV schemas,
 resolvable repository-relative links, clean diff checks, and untouched
 preserved references. WA-02 is the next phase and is ready for separate review.
-
