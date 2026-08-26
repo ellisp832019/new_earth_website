@@ -35,6 +35,7 @@ capabilities in the primary header.
   - NEOS
   - GAIA
   - Command Centre
+  - Research and Development
 - Projects:
   - Projects Directory
   - MicroGrow
@@ -44,6 +45,8 @@ capabilities in the primary header.
   - Team
 - Get Involved:
   - Collaborate and Partnerships
+  - Community and Start a Circle
+  - Support or funding
   - Contact
 
 Dropdowns should not be the only route to a parent page. Each parent remains a
@@ -97,7 +100,7 @@ lane.
 
 ## Blueprint and pillar navigation
 
-The Pillars index must list all 12 pillars, show the current pillar, and provide
+The Pillars index must list all 12 pillars in approved numerical order, show the current pillar, and provide
 previous/next navigation without implying a ranking. Every pillar page links
 back to Blueprint and the Pillars index. Pillar navigation must remain usable
 with keyboard and assistive technology.
@@ -131,5 +134,6 @@ Target WCAG 2.2 AA. Navigation acceptance requires:
 
 ## Implementation boundary
 
+Home is reached through the New Earth logo and normal accessible Home mechanisms.
 This model is a WA-02 planning input. It does not authorize editing current
 WordPress navigation entity 27, entity 4, entity 2595, or the active footer.
