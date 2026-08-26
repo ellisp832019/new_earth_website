@@ -8,7 +8,7 @@ comparison preview. No implementation has started.
 ## Review order
 
 1. `CURRENT_VISUAL_BASELINE_AUDIT.md`
-2. `BRAND_VISUAL_DIRECTION.md`
+2. `BRAND_VISUAL_DIRECTION.md` - Direction C is approved; A and B are historical comparisons.
 3. `DESIGN_TOKENS_PROPOSED.csv`
 4. `COLOUR_ACCESSIBILITY_MATRIX.csv`
 5. `TYPOGRAPHY_SYSTEM.md`
@@ -30,7 +30,7 @@ and is labelled PROPOSED throughout.
 ## Already locked
 
 - The V2.0 IA and 38 public destinations.
-- Calm, grounded, regenerative, human, trustworthy, technically credible,
+- Direction C: calm, grounded, regenerative, human, trustworthy, technically credible,
   accessible, future-ready principles.
 - WCAG 2.2 AA target.
 - Public Command Centre explanation versus separate protected applications.
@@ -38,19 +38,12 @@ and is labelled PROPOSED throughout.
 - Rights and attribution must be confirmed before imagery is publishable.
 - No production theme, content, asset, WordPress, IONOS, or live-site change.
 
-## Peter must decide
+## WA-03B approval
 
-- Direction A, B, or C.
-- Final heading/body typography approach.
-- Logo presentation.
-- Gold/accent restraint.
-- Image treatment.
-- Border-radius character.
-- Motion level.
-- Whether creator lanes use controlled accent variations.
+Peter approved Direction C and all eight blocking visual decisions on 2026-08-26.
+Remaining questions are implementation validation details only.
 
-## WA-03B
+## Next phase
 
-After Peter's direction decision, WA-03B should lock the selected tokens, resolve
-blocking open questions, refine component states and wireframe specifications,
-and prepare an implementation-ready design-system handoff without implementing it.
+WA-03 is approved and ready for PR review. After merge, WA-04 Homepage V2 is
+the next phase. Any implementation validation must preserve the approved core.

@@ -5,7 +5,7 @@
 Three proposed directions for Peter review. All tokens remain PROPOSED. No
 direction is approved or implemented.
 
-## Direction A - Regenerative Foundation
+## Direction A - Regenerative Foundation - NOT SELECTED
 
 ### Character
 
@@ -40,7 +40,7 @@ Excellent for Vision, Blueprint, Pillars, About, creator lanes, Community, and
 Journal. Suitable for technology when paired with clear diagrams and status
 labels.
 
-## Direction B - Living Systems
+## Direction B - Living Systems - NOT SELECTED
 
 ### Character
 
@@ -73,7 +73,7 @@ remain public explainers, not interfaces.
 Excellent for Ecosystem, technology explainers, research, Projects, Journal
 discovery, and status components. Needs warmth from imagery and editorial type.
 
-## Direction C - Earth and Future
+## Direction C - Earth and Future - APPROVED
 
 ### Character
 
@@ -109,10 +109,8 @@ future-facing accent must remain restrained.
 Strong across all 38 V2.0 destinations and future V2.x capabilities. It is the
 most resilient direction for a long-lived shared system.
 
-## Recommendation
+## Approval
 
-Recommend Direction C - Earth and Future for Peter's review. It is the most
-evidence-aligned synthesis of the existing earth-centred identity and the
-approved V2 architecture: warm enough for people and doctrine, clear enough for
-research and technology, and restrained enough to protect trust. Peter should
-choose A, B, or C before implementation.
+Peter approved Direction C - Earth and Future on 2026-08-26. Directions A and B
+remain in this document as historical comparison evidence and are not selected.
+Direction C is the only approved visual direction for implementation planning.

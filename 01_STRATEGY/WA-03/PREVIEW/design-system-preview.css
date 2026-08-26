@@ -1,6 +1,6 @@
 :root {
   --ink: #202522; --forest: #234f43; --deep: #17372f; --ivory: #fcfaf5;
-  --sage: #eef2ee; --gold: #9a7a3a; --teal: #3f746b; --line: #d4dad4;
+  --sage: #eef2ee; --gold: #8a6f32; --teal: #3f746b; --line: #d4dad4;
   --radius: 14px; --shadow: 0 16px 40px rgba(24,52,44,.09);
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: ui-serif, Georgia, Cambria, serif;
@@ -38,6 +38,7 @@ p { max-width: 68ch; }
 .direction-a { background: #f4efe4; }
 .direction-b { background: #e8f0ec; }
 .direction-c { background: linear-gradient(135deg, #eef2ee, #f4efe4); border-color: #b9cbc3; }
+.direction-c { order: -1; }
 .direction-head { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 .direction-head .eyebrow { margin: 0; }
 .direction-head h2 { margin-right: auto; }
@@ -55,6 +56,11 @@ p { max-width: 68ch; }
 .component-showcase { padding: 0 0 6rem; }
 .showcase-grid { grid-template-columns: repeat(2, 1fr); }
 .showcase-grid h3 { font-size: 1.1rem; }
+.integration-showcase { padding: 0 0 6rem; }
+.integration-card { padding: 1.15rem; background: rgba(255,255,255,.62); border: 1px solid rgba(35,79,67,.2); border-radius: var(--radius); }
+.integration-card p { margin-top: .35rem; }
+.integration-label { color: var(--gold); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.fallback-note { color: #3e4d47; font-size: .92rem; }
 label { display: block; font-weight: 700; margin-bottom: .35rem; }
 input { width: 100%; min-height: 44px; border: 1px solid #85988f; border-radius: 8px; padding: .7rem; font: inherit; background: white; }
 details { border-top: 1px solid var(--line); padding: .75rem 0; } summary { cursor: pointer; font-weight: 700; }
