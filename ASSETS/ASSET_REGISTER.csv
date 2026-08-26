@@ -30,7 +30,14 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,SYSTEMS,05_SYSTEMS\categories,systems_education.webp,1200x800,webp,TODO,Systems education
 2,SYSTEMS,05_SYSTEMS\categories,systems_health.webp,1200x800,webp,TODO,Systems health
 2,SYSTEMS,05_SYSTEMS\categories,systems_governance_community.webp,1200x800,webp,DONE,Systems governance and community
-1,MICROGROW,06_MICROGROW\hero,microgrow_hero.webp,1920x1080,webp,DONE,MicroGrow hero
+1,MICROGROW,06_MICROGROW\hero,microgrow_hero.webp,1920x1080,webp,APPROVED,WA-04A.3 conceptual MicroGrow page hero; not homepage project-card image; not operational proof; not live
+2,MICROGROW,06_MICROGROW\product,microgrow_ai_lab_project_card.webp,1600x900,webp,APPROVED,WA-04B.1 conceptual MicroGrow AI Lab homepage project-card visual; not documentary evidence, commercial availability or proven performance; not live
+2,SYSTEMS,05_SYSTEMS\projects,field_scanner_project.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual handheld Field Scanner for discovering and inspecting MicroGrow nodes; not operational proof; not live
+2,RESOURCES,10_RESOURCES\hero,new_earth_living_app.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual New Earth Living app visual connected to Conscious Living; not a physical place or operational proof; not live
+2,HOME,02_HOME\sections,home_introduction_new_earth.webp,1600x1000,webp,APPROVED,WA-04A.3 conceptual New Earth introduction visual; not documentary evidence; not live
+2,BLOG,09_BLOG\featured,journal_featured_home.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual Journal editorial visual; no specific publication claim; not live
+2,RESOURCES,10_RESOURCES\featured,resources_featured_home.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual resources and practical learning visual; no specific resource claim; not live
+2,RESOURCES,10_RESOURCES\featured,faq_glossary_featured.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual FAQ and Glossary discovery visual; text remains primary; not live
 2,MICROGROW,06_MICROGROW\product,microgrow_product_closeup.webp,1600x900,webp,TODO,MicroGrow product close-up
 2,MICROGROW,06_MICROGROW\product,microgrow_lifestyle_home.webp,1600x900,webp,TODO,MicroGrow lifestyle in home
 2,MICROGROW,06_MICROGROW\app,microgrow_app_mockup.png,1600x900,png,TODO,MicroGrow app mockup
