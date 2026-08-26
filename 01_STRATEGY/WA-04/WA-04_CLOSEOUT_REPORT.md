@@ -60,9 +60,10 @@ Activation requires approval, approved wording and URL, approved image or
 logo, written usage permission, external-link review, privacy and tracking
 review, ownership wording, and confirmation of any future shared content.
 
-`NE-HOME-IMG-007` is the only remaining required homepage production-image
-blocker. The MicroGrow page hero is intentionally not used for that homepage
-project card. No replacement image was generated or adopted in WA-04B.
+`NE-HOME-IMG-007` has been produced and adopted as the dedicated homepage
+project-card image. The MicroGrow page hero remains intentionally excluded from
+that card. The conceptual image does not claim documentary evidence, commercial
+availability, proven performance, or direct actuator control.
 
 ## Validation
 
@@ -100,5 +101,6 @@ authorise WordPress implementation, live deployment, external integration
 activation, or production use of conceptual imagery without its separate
 approval and rights gates.
 
-No WordPress, IONOS, live-site, production asset, or other repository changes
-were performed.
+No WordPress, IONOS, live-site, or production deployment was performed. The
+controlled WA-04B.1 asset adoption updated the approved asset register and
+homepage control records inside the website repository only.

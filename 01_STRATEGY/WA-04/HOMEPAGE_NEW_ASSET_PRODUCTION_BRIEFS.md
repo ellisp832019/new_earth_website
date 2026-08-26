@@ -196,8 +196,8 @@ separate gates.
 
 ## NE-HOME-IMG-007 - MicroGrow project card
 
-- **Exact filename:** `microgrow_project_card.webp`
-- **Proposed tracked destination:** `ASSETS/06_MICROGROW/product/microgrow_project_card.webp`
+- **Exact filename:** `microgrow_ai_lab_project_card.webp`
+- **Proposed tracked destination:** `ASSETS/06_MICROGROW/product/microgrow_ai_lab_project_card.webp`
 - **Homepage placement:** Featured Projects / MicroGrow combined tile
 - **Subject represented:** Dedicated MicroGrow AI Lab project-card context
 - **Evidence or source material:** Approved MicroGrow project description and
@@ -216,7 +216,7 @@ separate gates.
 - **Required approver:** Peter and asset/content owner
 - **Production priority:** High
 - **V2.0 necessity:** REQUIRED
-- **Current status:** SOURCE ASSET NEEDED
+- **Current status:** CONCEPT ADOPTED - RIGHTS REVIEW OUTSTANDING
 
 ## Shared approval gate
 
