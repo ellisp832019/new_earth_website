@@ -35,6 +35,49 @@ WA-00B public and authenticated evidence records:
 - The public baseline recorded visible title and heading character corruption on
   several pages. Exact corrections require content review.
 
+## WA-01B scope locks
+
+- Journal is the authoritative publishing hub.
+- `/articles/` is a legacy route and is planned to redirect to `/journal/`.
+  The final WordPress posts-page assignment remains an implementation decision.
+- About explains the mission, organisation, and operating principles.
+- Founder's Journey is a distinct shared origin and development story for Peter
+  and Hayley.
+- Team is a distinct people and responsibilities page and must not duplicate the
+  founders narrative.
+- Peter Practical Guides and Hayley Conscious Living are distinct future creator
+  lanes.
+- `/legal/cookie-policy/` is the canonical cookie-policy route; `/cookie-policy-uk/`
+  is planned as a legacy redirect after legal review.
+- Terms, Privacy, Cookie Policy, Disclaimer, accessibility, company disclosure,
+  and future digital-product terms belong in footer or secondary navigation,
+  not the primary header.
+- Blueprint Alignment is retained as a reusable method and should be applied
+  beneath the relevant project.
+- New Earth Test is retained because dedicated repository source exists; its
+  content and route are still subject to WA-02 review.
+- The V2 homepage initially fulfils Start Here. A separate page is not created
+  unless WA-02 proves a distinct need.
+- The primary navigation direction is concise: Vision, Blueprint, Ecosystem,
+  Projects, Journal, About, and Get Involved. This is not a live menu change.
+
+## Delivery horizons and status truth
+
+Every V2 page or capability has one delivery horizon and one status truth in the
+V2 Page and Capability Register.
+
+- `V2.0 FOUNDATION`: architecture and public foundations required first.
+- `V2.x ENABLED LATER`: designed for later activation without being activated in
+  WA-01.
+- `EXTERNAL/INTERNAL SYSTEM`: may be explained publicly but remains operated in
+  another system or private environment.
+- `DEFERRED RESEARCH`: requires evidence, ownership, or research before scope.
+- `NOT REQUIRED`: intentionally excluded from the public website model.
+
+Status truth is deliberately conservative: LIVE, VALIDATED, IN DEVELOPMENT,
+PLANNED, RESEARCH, or FUTURE. Planned entries do not assert that an unfinished
+product or service exists.
+
 ## V2 delivery phases
 
 The V2 programme extends the existing foundation through controlled phases:
@@ -166,4 +209,3 @@ WA-01 is complete when:
 - Duplicate, divergent, corrupted, and placeholder content is recorded.
 - Open questions have owners and a next decision point.
 - No live change has been made.
-
