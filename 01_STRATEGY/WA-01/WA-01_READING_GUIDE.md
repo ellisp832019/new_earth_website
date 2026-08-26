@@ -17,6 +17,7 @@ redirect changes.
    should support.
 5. `CONTENT_TYPES_TAXONOMY_REQUIREMENTS.md` - the content model needed to scale.
 6. `OPEN_QUESTIONS_DECISION_LOG.md` - unresolved decisions and ownership.
+7. `WA-01_COMPLETION_CHECKLIST.md` - completion proof and handoff conditions.
 
 ## Evidence basis
 
@@ -32,7 +33,11 @@ redirect changes.
 - Treat KEEP, REWRITE, and other decisions as planning decisions for review,
   not live instructions.
 - Treat INVESTIGATE as a deliberate hold, not a missing answer.
+- Read the Delivery Horizon and Status Truth columns before proposing any page
+  or capability for implementation.
 - Add evidence before changing a route, legal page, owner, or public claim.
+- A redirect row may reference the same canonical destination as its target;
+  this is intentional and does not create a second canonical page.
 - Keep private platform and operational details out of public content.
 - When WA-02 begins, use the page register as the input to route and navigation
   design rather than creating a parallel page list.
@@ -43,3 +48,12 @@ All committed documents should use repository-relative paths, stable CSV headers
 and plain Markdown links that resolve inside the repository. Sensitive WA-00B
 backup contents must remain external.
 
+## WA-01B locked decisions
+
+Journal is the authoritative publishing hub. Articles is a legacy route planned
+for redirect. The About, Founder's Journey, Team, Peter Practical Guides, and
+Hayley Conscious Living roles are distinct. The UK cookie-policy duplicate is
+planned for redirect to the Legal cookie-policy route. The homepage initially
+fulfils Start Here. The primary navigation is planned as a concise set of
+concepts rather than a live implementation. See the decision register and open
+questions log for the controlled detail.

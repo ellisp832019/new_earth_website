@@ -1,35 +1,35 @@
-Name,Type,Proposed Route or Namespace,Layer,Source or Evidence,Decision,Priority,Owner or Question,Notes
-Start Here,Page,/start-here/,Participation,WA-01 locked scope,CREATE,P1,New Earth,Orientation gateway; route not yet approved.
-Civilizational Vision,Page,/vision/,Doctrine,00_BLUEPRINT and 01_STRATEGY,CREATE,P1,New Earth,May be a section of Start Here rather than a separate page.
-Ecosystem Map,Page,/ecosystem/,Interpretation,WA-01 locked scope,INVESTIGATE,P1,New Earth,Must distinguish public map from private operational systems.
-Advanced Technologies,Page,/technology/,Implementation,WA-01 locked scope,INVESTIGATE,P2,New Earth Advanced Technologies Ltd,Company and public product relationship needs confirmation.
-Platform Core,Page,/ecosystem/platform-core/,Implementation,WA-01 locked scope,INVESTIGATE,P2,Platform owner,Public description only; no internal interface.
-NEOS,Page,/ecosystem/neos/,Implementation,WA-01 locked scope,INVESTIGATE,P2,Platform owner,Public purpose and naming require confirmation.
-GAIA,Page,/ecosystem/gaia/,Implementation,WA-01 locked scope,INVESTIGATE,P2,GAIA owner,No administration or private runtime details.
-Command Centre,Page,/ecosystem/command-centre/,Implementation,WA-01 locked scope,INVESTIGATE,P2,New Earth,Public explanation only; internal dashboard excluded.
-Local AI Runtime,Page,/ecosystem/local-ai-runtime/,Implementation,WA-01 locked scope,INVESTIGATE,P3,Technical owner,Public capability framing needs review.
-MCP and Tool Control,Page,/ecosystem/mcp-tools/,Implementation,WA-01 locked scope,INVESTIGATE,P3,Technical owner,Explain concept without exposing controls or credentials.
-Projects Directory,Collection,/projects/,Implementation,WA-01 locked scope,CREATE,P1,New Earth,Needs project status model and owner fields.
-MicroGrow AI Lab,Project,/projects/microgrow-ai-lab/,Implementation,WA-01 locked scope,INVESTIGATE,P2,MicroGrow owner,Confirm public readiness and relationship to MicroGrow.
-Field Scanner,Project,/projects/field-scanner/,Implementation,WA-01 locked scope,INVESTIGATE,P2,Project owner,Confirm status before creating public page.
-BioCalm,Project,/projects/biocalm/,Implementation,WA-01 locked scope,INVESTIGATE,P2,Project owner,Confirm name, audience, and evidence.
-New Earth Living,Project,/projects/new-earth-living/,Implementation,WA-01 locked scope,INVESTIGATE,P2,Project owner,Confirm whether product, programme, or editorial lane.
-Future Projects,Collection,/projects/future/,Implementation,WA-01 locked scope,INVESTIGATE,P3,New Earth,Do not publish a placeholder directory without real entries.
-Peter - Practical Guides,Author lane,/guides/peter/,Participation,WA-01 locked scope; FOUNDER_STORY.md,INVESTIGATE,P2,Peter,Needs author/content ownership model.
-Hayley - Conscious Living,Author lane,/conscious-living/hayley/,Participation,WA-01 locked scope; journal taxonomy,INVESTIGATE,P2,Hayley,Needs consent, biography, and editorial model.
-Research and Development,Collection,/research/,Interpretation,WA-01 locked scope,CREATE,P2,New Earth,Needs research status and publication requirements.
-Public Knowledge and Resources,Collection,/resources/,Participation,01_STRATEGY and journal sources,CREATE,P1,New Earth,Must not duplicate Journal without clear content types.
-Image Archive,Collection,/image-archive/,Participation,WA-01 locked scope; ASSETS,INVESTIGATE,P3,New Earth,Define public/private asset boundaries and licensing.
-Community and Start a Circle,Page,/community/,Participation,WA-01 locked scope,INVESTIGATE,P2,Community owner,Needs safeguarding, moderation, and form decision.
-Partnerships and Funding,Page,/collaborate/,Participation,WA-01 locked scope; contact sources,INVESTIGATE,P2,New Earth,Separate partnership, funding, and press pathways if needed.
-FAQ and Glossary,Collection,/resources/faq-glossary/,Participation,WA-01 locked scope,CREATE,P2,New Earth,Define reusable terms and canonical cross-links.
-Progress and Transparency,Page,/progress/,Participation,WA-01 locked scope,INVESTIGATE,P2,New Earth,Needs public status policy and update owner.
-Newsletter,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,New Earth,Consent and provider not selected.
-Events and Circles,Collection,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,Community owner,Requires event and location data model.
-Partner Submissions,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,New Earth,Requires moderation and privacy controls.
-Audio and Video,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,New Earth,Define hosting and accessibility requirements.
-Multi-author Publishing,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,Editorial owner,Role model and byline rules needed.
-Research Papers,Content type,Future capability,Interpretation,WA-01 future-ready capability,INVESTIGATE,P3,Research owner,Needs citation and version policy.
-Donations and Project Support,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,New Earth,Legal and payment review required.
-Future Member Portal,Capability,Future capability,Participation,WA-01 future-ready capability,INVESTIGATE,P3,New Earth,Explicitly outside current activation scope.
-Public Project Status Feeds,Capability,Future capability,Implementation,WA-01 future-ready capability,INVESTIGATE,P3,Project owners,Define source and freshness expectations.
+"Name","Type","Proposed Route or Namespace","Canonical Destination","Layer","Source or Evidence","Decision","Delivery Horizon","Status Truth","Priority","Owner or Question","Notes"
+"Start Here","Page","/","/","Participation","WA-01 authoritative direction","CREATE","V2.0 FOUNDATION","PLANNED","P1","New Earth","Homepage initially fulfils the Start Here function; no redundant page unless WA-02 proves need."
+"Civilizational Vision","Page","/vision/","/vision/","Doctrine","00_BLUEPRINT and 01_STRATEGY","CREATE","V2.0 FOUNDATION","PLANNED","P1","New Earth","May be a section of Start Here rather than a separate page."
+"Ecosystem Map","Page","/ecosystem/","/ecosystem/","Interpretation","WA-01 authoritative direction","CREATE","V2.0 FOUNDATION","PLANNED","P1","New Earth","Public map must distinguish public explanations from private operations."
+"Advanced Technologies","Page","/technology/","/technology/","Implementation","WA-01 authoritative direction","INVESTIGATE","V2.0 FOUNDATION","PLANNED","P2","New Earth Advanced Technologies Ltd","Confirm company relationship and public scope before route lock."
+"Platform Core","Page","/ecosystem/platform-core/","/ecosystem/platform-core/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P2","Platform owner","Public description only; no internal interface or controls."
+"NEOS","Page","/ecosystem/neos/","/ecosystem/neos/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P2","Platform owner","Public purpose and naming require confirmation."
+"GAIA","Page","/ecosystem/gaia/","/ecosystem/gaia/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P2","GAIA owner","No administration or private runtime details."
+"Command Centre","Page","/ecosystem/command-centre/","/ecosystem/command-centre/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P2","New Earth","Public explanation only; internal dashboard operations excluded."
+"Local AI Runtime","Page","/ecosystem/local-ai-runtime/","/ecosystem/local-ai-runtime/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P3","Technical owner","Public capability framing requires review."
+"MCP and Tool Control","Page","/ecosystem/mcp-tools/","/ecosystem/mcp-tools/","Implementation","WA-01 scope","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","PLANNED","P3","Technical owner","Explain the public concept without exposing controls or credentials."
+"Projects Directory","Collection","/projects/","/projects/","Implementation","WA-01 authoritative direction","CREATE","V2.0 FOUNDATION","PLANNED","P1","New Earth","Needs project status, owner, evidence, and audience fields."
+"MicroGrow AI Lab","Project","/projects/microgrow-ai-lab/","/projects/microgrow-ai-lab/","Implementation","WA-01 scope","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","MicroGrow owner","No public readiness claim is made in WA-01."
+"Field Scanner","Project","/projects/field-scanner/","/projects/field-scanner/","Implementation","WA-01 scope","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Project owner","Confirm status before creating a public page."
+"BioCalm","Project","/projects/biocalm/","/projects/biocalm/","Implementation","WA-01 scope","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Project owner","Confirm name, audience, and evidence."
+"New Earth Living","Project","/projects/new-earth-living/","/projects/new-earth-living/","Implementation","WA-01 scope","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Project owner","Confirm whether this is a product, programme, or editorial lane."
+"Future Projects","Collection","/projects/future/","/projects/future/","Implementation","WA-01 scope","INVESTIGATE","DEFERRED RESEARCH","FUTURE","P3","New Earth","Do not publish a placeholder directory without real entries."
+"Peter - Practical Guides","Author lane","/guides/peter/","/guides/peter/","Participation","WA-01 authoritative direction; FOUNDER_STORY.md","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Peter","Needs author, ownership, consent, and content model."
+"Hayley - Conscious Living","Author lane","/conscious-living/hayley/","/conscious-living/hayley/","Participation","WA-01 authoritative direction; journal taxonomy","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Hayley","Needs biography, consent, and editorial model."
+"Research and Development","Collection","/research/","/research/","Interpretation","WA-01 authoritative direction","CREATE","V2.0 FOUNDATION","RESEARCH","P2","New Earth","Needs research status and publication requirements."
+"Public Knowledge and Resources","Collection","/resources/","/resources/","Participation","01_STRATEGY and journal sources","CREATE","V2.0 FOUNDATION","PLANNED","P1","New Earth","Must not duplicate Journal without clear content types."
+"Image Archive","Collection","/image-archive/","/image-archive/","Participation","WA-01 scope; ASSETS","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P3","New Earth","Define public/private asset boundaries, rights, and source attribution."
+"Community and Start a Circle","Page","/community/","/community/","Participation","WA-01 authoritative direction","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","Community owner","Needs safeguarding, moderation, and form decisions."
+"Partnerships and Funding","Page","/collaborate/","/collaborate/","Participation","WA-01 authoritative direction; contact sources","CREATE","V2.0 FOUNDATION","PLANNED","P2","New Earth","Separate partnership, funding, and press pathways if needed."
+"FAQ and Glossary","Collection","/resources/faq-glossary/","/resources/faq-glossary/","Participation","WA-01 authoritative direction","CREATE","V2.0 FOUNDATION","PLANNED","P2","New Earth","Define reusable terms and canonical cross-links."
+"Progress and Transparency","Page","/progress/","/progress/","Participation","WA-01 authoritative direction","INVESTIGATE","V2.x ENABLED LATER","PLANNED","P2","New Earth","Needs public status policy and update owner."
+"Newsletter","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","New Earth","Consent and provider are not selected."
+"Events and Circles","Collection","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","Community owner","Requires event and location data model."
+"Partner Submissions","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","New Earth","Requires moderation and privacy controls."
+"Audio and Video","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","New Earth","Define hosting, transcripts, captions, and accessibility requirements."
+"Multi-author Publishing","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","Editorial owner","Role model and byline rules are needed."
+"Research Papers","Content type","Future capability","Future capability","Interpretation","WA-01 future-ready capability","INVESTIGATE","DEFERRED RESEARCH","RESEARCH","P3","Research owner","Needs citation and version policy."
+"Donations and Project Support","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","DEFERRED RESEARCH","RESEARCH","P3","New Earth","Legal and payment review required."
+"Future Member Portal","Capability","Future capability","Future capability","Participation","WA-01 future-ready capability","INVESTIGATE","EXTERNAL/INTERNAL SYSTEM","FUTURE","P3","New Earth","Explicitly outside current activation scope."
+"Public Project Status Feeds","Capability","Future capability","Future capability","Implementation","WA-01 future-ready capability","INVESTIGATE","V2.x ENABLED LATER","FUTURE","P3","Project owners","Define source, freshness, and fallback expectations."
