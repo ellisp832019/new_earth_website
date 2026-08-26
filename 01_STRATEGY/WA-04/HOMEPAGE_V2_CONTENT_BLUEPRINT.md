@@ -14,21 +14,26 @@ readiness that has not been approved.
 
 1. **Hero:** A concise proposition, existing approved homepage hero, primary
    `Explore the Blueprint` action to `/blueprint/`, and secondary `See Projects`
-   action to `/projects/`.
+   action to `/projects/`. The hero uses an immersive image and controlled
+   forest overlay; the text remains HTML content.
 2. **What is New Earth?:** A short explanation of a living framework for
    conscious civilization, with links to `/vision/` and `/manifesto/`.
+   A reviewed manifesto hero provides warm visual context.
 3. **Explore the pathway:** Vision -> Blueprint -> The 12 Pillars -> Projects
-   -> Get Involved, implemented as ordinary links.
+   -> Get Involved, implemented as ordinary links with a Blueprint visual and
+   a restrained cream, teal, clay, and sage progression.
 4. **The 12 Pillars:** Twelve consistently structured cards in approved order.
 5. **Ecosystem map:** Semantic relationship groups showing how pillars, systems,
-   projects, and participation connect, with a text equivalent.
+   projects, and participation connect, with a richer CSS treatment and a text
+   equivalent. No production diagram is silently substituted.
 6. **Featured projects:** Honest status labels and canonical project links.
 7. **Progress and Transparency:** Dated-update and milestone patterns with
    ownership placeholders and a `/progress/` link; no fabricated metrics.
-8. **Journal and learning:** Featured Journal/resource placeholders and a
-   `/journal/` and `/resources/` discovery route.
+8. **Journal and learning:** Image-led Journal/resource placeholders and a
+   `/journal/` and `/resources/` discovery route. Dedicated editorial imagery
+   remains a later asset need.
 9. **Get Involved:** Learn, Contribute, Collaborate, and Support pathways with
-   no account or form processing.
+   no account or form processing, supported by an approved community hero.
 10. **External applications:** Labelled, privacy-friendly patterns for LinkedIn,
     YouTube, Telegram, and GitHub; placeholders only in this phase.
 

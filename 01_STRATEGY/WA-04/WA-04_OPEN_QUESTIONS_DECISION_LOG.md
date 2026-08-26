@@ -9,10 +9,13 @@
 - The twelve pillars use the approved descriptive URLs and display order.
 - External integrations are placeholders or normal links only.
 - The prototype is offline and JavaScript is progressive enhancement.
+- Existing approved hero assets may provide contextual imagery, but their
+  page-specific suitability and rights remain subject to later review.
 
 ## Non-blocking implementation questions
 
 - Which approved reviewed image supports each non-hero section?
+- Which dedicated Journal and ecosystem images receive production approval?
 - Which WordPress template-part and navigation entities will be retained after
   staging inventory?
 - Which project cards have publishable evidence and final status ownership?
