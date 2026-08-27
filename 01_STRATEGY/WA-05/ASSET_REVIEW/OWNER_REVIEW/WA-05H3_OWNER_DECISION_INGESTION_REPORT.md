@@ -154,3 +154,9 @@ Main and origin/main were untouched. This dedicated branch was used. No push,
 PR, merge, publication, deployment, WordPress, IONOS or live-site access
 occurred. No image source or reference asset was modified or deleted, and no
 external repository was accessed.
+
+## Subsequent H4 Owner-Use Decision
+
+On 2026-08-27 Peter approved AST-001 through AST-031 for New Earth Website use.
+That later approval is recorded separately in `OWNER_ASSET_USE_APPROVAL.md` and
+does not alter this historical H3 import or convert KEEP into rights approval.

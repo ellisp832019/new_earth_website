@@ -190,9 +190,11 @@ testimonials and customer imagery.
 
 ## Review Decision
 
-**ASSET READINESS - TARGETED RIGHTS INPUT REQUIRED.** Peter's owner visual
-decisions are now preserved and imported, but KEEP is not rights approval. The
-current estate remains controlled for review and is not cleared for public build.
+**ASSET READINESS - TARGETED RIGHTS INPUT REQUIRED.** Peter has approved all 31
+governed assets for Website use, but repository evidence does not establish
+rights or provenance for the 30 non-logo assets, and AST-017 requires brand
+permission. The estate remains controlled and blocked from public build until
+those specific gates are resolved.
 
 ## Remaining WA-05 Work
 
@@ -200,6 +202,9 @@ Use `OWNER_REVIEW/WA-05H3_OWNER_DECISION_INGESTION_REPORT.md` and the governed
 registers as the current asset baseline. Resolve the targeted rights/provenance
 queue, complete specialist accessibility, legal/privacy, SEO and runtime checks,
 and retain all selected assets from public build until those gates close.
+
+The H4 owner-use approval is recorded in `OWNER_ASSET_USE_APPROVAL.md`, and the
+future exclusion rule is defined in `PUBLIC_ASSET_BUILD_GATE.md`.
 
 ## Reusable owner review tool
 
