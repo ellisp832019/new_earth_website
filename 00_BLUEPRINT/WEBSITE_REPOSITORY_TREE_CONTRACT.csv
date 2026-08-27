@@ -1,0 +1,15 @@
+tree_id,path,type,purpose,source_of_truth_status,public_build_eligible,local_only,historical,future_build_role,owner_area,notes
+TREE-001,00_BLUEPRINT,directory,Doctrine and architecture,GOVERNANCE,NO,NO,NO,Input,Blueprint,Long-lived structural authority
+TREE-002,01_STRATEGY,directory,Programme decisions and specialist gates,GOVERNANCE,NO,NO,NO,Input,Strategy,Current phase controls
+TREE-003,02_INFORMATION_ARCHITECTURE,directory,Routes navigation and hierarchy,ARCHITECTURE,NO,NO,NO,Input,Architecture,Canonical URL and menu controls
+TREE-004,03_CONTENT,directory,Implementation-ready public content,CONTENT SOURCE,INDIRECT,NO,NO,Input,Content,Promote only after approval
+TREE-005,04_DESIGN_SYSTEM,directory,Visual foundations and patterns,DESIGN SOURCE,INDIRECT,NO,NO,Input,Design,Reusable UI rules
+TREE-006,05_WORDPRESS,directory,WordPress implementation material,REFERENCE,NO,NO,NO,Reference,Implementation,Preserved while runtime architecture is open
+TREE-007,06_THEME,directory,Theme and presentation material,IMPLEMENTATION SOURCE,INDIRECT,NO,NO,Reference,Implementation,Role reviewed by WB-00
+TREE-008,07_CODEX,directory,Task support and safe automation,OPERATIONAL,NO,NO,NO,Build support,Codex,Not ordinary programme records
+TREE-009,08_DEPLOYMENT,directory,Release and deployment architecture,OPERATIONAL,NO,NO,NO,Deployment,Deployment,No deployment performed
+TREE-010,09_LOGS,directory,Historical and execution records,HISTORICAL,NO,NO,YES,Audit,Logs,Not current authority by default
+TREE-011,ASSETS,directory,Curated Website V2 source assets,CURATED ASSET SOURCE,INDIRECT / BUILD ONLY,NO,NO,Build input,Assets,Requires promotion controls
+TREE-012,ASSETS_REFERENCE,directory,Local review and selection references,NO,NEVER,YES,NO,Review only,Assets,Never directly deploy
+TREE-013,.vscode,directory,Editor configuration,LOCAL SUPPORT,NO,YES,NO,None,Tooling,Not public output
+TREE-014,root controls,file,Project instructions and entry points,GOVERNANCE,NO,NO,NO,Build guidance,Repository,Keep root deliberately small

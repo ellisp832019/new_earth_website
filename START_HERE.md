@@ -65,10 +65,10 @@ These are the main root-level guide files:
 
 1. `START_HERE.md`
 2. `MASTER_BUILD_MAP.md`
-3. `TODAY_BUILD_ACTION_SHEET.md`
-4. `SECOND_SESSION_ACTION_SHEET.md`
-5. `THIRD_SESSION_ACTION_SHEET.md`
-6. `FOURTH_SESSION_ACTION_SHEET.md`
+3. `09_LOGS/SESSIONS/TODAY_BUILD_ACTION_SHEET.md`
+4. `09_LOGS/SESSIONS/SECOND_SESSION_ACTION_SHEET.md`
+5. `09_LOGS/SESSIONS/THIRD_SESSION_ACTION_SHEET.md`
+6. `09_LOGS/SESSIONS/FOURTH_SESSION_ACTION_SHEET.md`
 
 ---
 
@@ -76,19 +76,19 @@ These are the main root-level guide files:
 
 ### If you are starting the project for the first time
 Open:
-`TODAY_BUILD_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/TODAY_BUILD_ACTION_SHEET.md`
 
 ### If Session 1 is complete and you are building the first real pages
 Open:
-`SECOND_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/SECOND_SESSION_ACTION_SHEET.md`
 
 ### If Home, Manifesto, and Blueprint are already built
 Open:
-`THIRD_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/THIRD_SESSION_ACTION_SHEET.md`
 
 ### If the main public site shell is complete and you are preparing for launch
 Open:
-`FOURTH_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/FOURTH_SESSION_ACTION_SHEET.md`
 
 ### If you are unsure where you are
 Open:
@@ -280,4 +280,4 @@ That is how the New Earth website stays coherent.
 
 If you are starting now:
 
-**Open `TODAY_BUILD_ACTION_SHEET.md` and begin at Step 1.**
+**Open `MASTER_BUILD_MAP.md` and follow the latest governed phase record.**
