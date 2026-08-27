@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { page, canonical, searchTitle, metaDescription } = Astro.props;
+---
+<BaseLayout title={searchTitle} description={metaDescription} canonical={canonical}>
+  <article class="core-page">
+    <header class="page-hero shell">
+      <p class="eyebrow">{page.eyebrow}</p>
+      <h1>{page.title}</h1>
+      <p class="lede">{page.intro}</p>
+    </header>
+    <div class="shell core-page__body">
+      {page.sections.map(([heading, copy]) => (
+        <section class="core-page__section">
+          <h2>{heading}</h2>
+          {copy.split('\n\n').map((paragraph) => <p>{paragraph}</p>)}
+        </section>
+      ))}
+      <nav class="page-actions core-page__actions" aria-label="Continue exploring">
+        {page.links.map(([label, href]) => <a class="button" href={href}>{label}</a>)}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
