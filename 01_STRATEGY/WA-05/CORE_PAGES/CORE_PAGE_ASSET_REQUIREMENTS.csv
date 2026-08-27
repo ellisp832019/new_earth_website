@@ -1,0 +1,11 @@
+page_id,page_title,placement,asset_requirement,subject_or_purpose,alt_text_or_accessibility_note,dependency
+CORE-001,Vision,Hero,EXISTING REVIEW REQUIRED,Earth-centred orientation image,Describe visible subject without claiming proof,Asset rights and crop review
+CORE-001,Vision,Framework section,OPTIONAL,Quiet supporting image,Decorative if adjacent text carries meaning,None
+CORE-002,Manifesto,Hero,EXISTING REVIEW REQUIRED,Reflective earth-centred image,No essential text inside image,Asset rights and crop review
+CORE-003,Blueprint,Hero,EXISTING REVIEW REQUIRED,Structure and connection,Describe visible structure and provide text alternative,Asset rights and crop review
+CORE-003,Blueprint,Pillar overview,EXISTING APPROVED,12 pillar overview or accessible diagram,Text alternative must list all relationships,Existing asset review
+CORE-004,Ecosystem,Relationship model,NEW REQUIRED,Public ecosystem relationship diagram,Full text alternative required; colour is not sole meaning,Design and accessibility review
+CORE-004,Ecosystem,Hero,OPTIONAL,Spacious systems context,Do not imply operational capacity,Asset rights review
+CORE-005,About,Hero,EXISTING REVIEW REQUIRED,Welcoming people or place context,Describe visible subject; do not imply team evidence,Image rights and people consent
+CORE-006,Get Involved,Participation,EXISTING REVIEW REQUIRED,Welcoming community context,Do not imply membership or programme outcome,Asset rights and crop review
+CORE-006,Get Involved,New Earth Builders card,EXISTING APPROVED,Approved provisional partner logo,Decorative beside visible heading; preserve external label,Partner courtesy and branding review

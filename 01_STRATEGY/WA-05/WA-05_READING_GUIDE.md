@@ -1,10 +1,11 @@
-# WA-05A Reading Guide
+# WA-05 Reading Guide
 
 ## What this phase establishes
 
-WA-05A establishes the authority hierarchy, public voice, evidence classes,
-controlled terminology, source register, 38-page V2.0 content inventory,
-production sequence, acceptance checks, and open decision boundaries.
+WA-05A established the authority hierarchy, public voice, evidence classes,
+controlled terminology, source register, and V2.0 content inventory. WA-05B
+adds six complete core orientation page drafts, their cross-links, visual needs,
+and editorial review controls.
 
 ## Reading order
 
@@ -17,6 +18,8 @@ production sequence, acceptance checks, and open decision boundaries.
 7. `WEBSITE_V2_CONTENT_PRODUCTION_SEQUENCE.md`
 8. `WEBSITE_V2_CONTENT_ACCEPTANCE_CHECKLIST.md`
 9. `WA-05_OPEN_QUESTIONS_DECISION_LOG.md`
+
+Then read the six drafts and the four `CORE_PAGES` registers.
 
 ## How to use the records
 
@@ -38,6 +41,6 @@ app direction; and future intent is not availability.
 
 ## Safe next step
 
-After this controlled baseline is reviewed and approved, the safe next step is
-WA-05B core-page drafting. WA-05A itself does not authorise that drafting or
-any live implementation.
+The safe next step is editorial and owner review of the six core drafts, then
+controlled reconciliation before pillar drafting. This commit does not
+authorise publication, WordPress implementation, or live changes.
