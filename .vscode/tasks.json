@@ -220,6 +220,20 @@
       "command": "powershell.exe",
       "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\07_CODEX\\TOOLS\\website-asset-review\\launch.ps1"],
       "problemMatcher": []
+    },
+    {
+      "label": "New Earth: Run Website V2 Local Preview",
+      "type": "process",
+      "command": "npm.cmd",
+      "args": ["run", "dev"],
+      "problemMatcher": []
+    },
+    {
+      "label": "New Earth: Build Website V2",
+      "type": "process",
+      "command": "npm.cmd",
+      "args": ["run", "build"],
+      "problemMatcher": []
     }
   ],
   "inputs": [

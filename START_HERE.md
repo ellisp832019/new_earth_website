@@ -12,6 +12,12 @@ It tells you:
 - what order to work in
 - how not to lose the structure
 
+## Current local Website V2 path
+
+Run the VS Code task `New Earth: Run Website V2 Local Preview`, or use
+`npm.cmd run dev` from the repository root. This is a local owner preview only;
+it is not a WordPress or production deployment.
+
 ---
 
 ## WHAT THIS PROJECT IS

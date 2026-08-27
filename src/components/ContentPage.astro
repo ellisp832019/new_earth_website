@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pages } from '../data/site';
+const { slug }=Astro.props; const page=pages[slug];
+---
+<BaseLayout title={page.title} canonical={`/${slug}/`}><article class="content-page"><header class="page-hero shell"><p class="eyebrow">{page.eyebrow}</p><h1>{page.title}</h1><p class="lede">{page.intro}</p></header><div class="shell content-flow">{page.sections.map(([heading,copy])=><section><h2>{heading}</h2>{copy.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</section>)}{page.builders&&<section class="builders-note"><p class="eyebrow">Independent community platform</p><h2>New Earth Builders</h2><p>An intentional community connecting innovators, healers, inventors and creators who want to collaborate, exchange knowledge and help bring New Earth-aligned projects into being.</p><a class="button" href="https://new-earth-builders.com/" target="_blank" rel="noopener noreferrer">Visit New Earth Builders <span aria-hidden="true">(external)</span></a></section>}<nav class="page-actions" aria-label="Continue exploring">{page.links.map(([label,href])=><a class="button" href={href}>{label}</a>)}</nav></div></article></BaseLayout>
