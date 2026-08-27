@@ -1,0 +1,9 @@
+mapping_id,route,section,asset_requirement,candidate_asset_id,usage_role,rights_ready,accessibility_ready,seo_social_ready,caption_required,extended_text_required,status,notes
+CPAAM-001,/vision/,Hero,EXISTING REVIEW REQUIRED,AST-002,Informative context,no,no,no,no,no,HOLD,No rights evidence
+CPAAM-002,/manifesto/,Hero,EXISTING REVIEW REQUIRED,AST-003,Informative context,no,no,no,no,no,HOLD,No rights evidence
+CPAAM-003,/blueprint/,Hero,EXISTING REVIEW REQUIRED,AST-004,Informative context,no,no,no,optional,yes,HOLD,Diagram equivalent if needed
+CPAAM-004,/ecosystem/,Relationship model,NEW REQUIRED,None,Complex diagram,no,no,no,yes,yes,HOLD,Text equivalent required
+CPAAM-005,/ecosystem/,Hero,OPTIONAL,None,NO ASSET NEEDED,no,yes,no,no,no,DEFER,Text works without image
+CPAAM-006,/about/,Hero,EXISTING REVIEW REQUIRED,AST-014,Informative context,no,no,no,yes,no,HOLD,People/likeness review
+CPAAM-007,/get-involved/,Participation,EXISTING REVIEW REQUIRED,AST-016,Informative context,no,no,no,optional,no,HOLD,Do not imply programme outcome
+CPAAM-008,/get-involved/,New Earth Builders card,EXISTING APPROVED,AST-017,Logo/brand,no,no,no,yes,no,HOLD,Approved copy and external URL exist; rights/brand evidence required
