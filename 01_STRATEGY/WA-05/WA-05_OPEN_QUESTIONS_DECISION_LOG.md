@@ -23,6 +23,17 @@ separate from technical integration, operational capacity, protected systems
 and production readiness. Technical, legal/privacy, accessibility, SEO and
 asset gates remain open for the page as a whole.
 
+## WA-05D founder-attribution review
+
+The six current drafts were reviewed on 2026-08-27. No passage represents
+Hayley's personal history, beliefs, intentions, experience, voice or position,
+and no substantive shared-founder statement was found. The organisational
+first-person wording in the Manifesto does not require Hayley approval.
+
+**FOUNDER ATTRIBUTION REVIEW - PASS / NOT REQUIRED** for the current drafts.
+Reopen this gate if personal history, biography, quotation, attributed voice or
+shared-founder wording is added.
+
 ## Blocking V2 content decisions
 
 - Confirm final public wording and evidence owner for each project and technology page.

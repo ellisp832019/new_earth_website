@@ -33,7 +33,7 @@ public content only and does not authorise WordPress publication.
 
 - Content owner approval: [x] Peter approved all six pages on 2026-08-27
 - Peter review: [x] Approved for all six pages on 2026-08-27
-- Hayley review where founder or voice attribution applies: [ ] Pending
+- Hayley founder-attribution review for current drafts: [x] NOT REQUIRED; reopen if personal history or attributed voice is added
 - Legal, accessibility and SEO checks: [ ] Pending
 - Asset rights, captions and alternative-text confirmation: [ ] Pending
 - Final publication status: OWNER APPROVED - SPECIALIST REVIEW PENDING
