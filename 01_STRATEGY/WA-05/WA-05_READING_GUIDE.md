@@ -60,3 +60,10 @@ current result is `LEGAL / PRIVACY READINESS - OWNER SCOPE CLOSED / PUBLICATION
 INPUTS REMAIN`. WA-05E1 closes initial informational scope, defers commerce,
 native community and data-bearing services, and leaves only verified operator and
 business-contact inputs open before launch.
+
+## WA-05F accessibility review
+
+Read `ACCESSIBILITY_REVIEW/WA-05F_ACCESSIBILITY_READINESS_REVIEW.md` first,
+then the implementation specification, requirements register, test matrix and
+future gates. The result is `ACCESSIBILITY READINESS - PASS WITH IMPLEMENTATION
+REQUIREMENTS`; no WCAG conformance claim has been made.

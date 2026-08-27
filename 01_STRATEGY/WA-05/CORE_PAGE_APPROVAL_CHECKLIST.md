@@ -38,4 +38,6 @@ public content only and does not authorise WordPress publication.
 - Asset rights, captions and alternative-text confirmation: [ ] Pending
 - WA-05E legal/privacy readiness: [ ] Pending owner input and runtime verification;
   no legal approval claimed
+- WA-05F accessibility readiness: [ ] PASS WITH IMPLEMENTATION REQUIREMENTS;
+  rendered conformance remains untested
 - Final publication status: OWNER APPROVED - SPECIALIST REVIEW PENDING
