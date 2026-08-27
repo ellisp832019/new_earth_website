@@ -75,3 +75,12 @@ the page manifest, purpose map, internal-link map, structured-data, social,
 sitemap, robots, migration and automation controls. The result is `SEO /
 METADATA READINESS - PASS WITH IMPLEMENTATION REQUIREMENTS`; no ranking,
 indexing or rich-result claim has been made.
+
+## WA-05H asset rights, captions and alt text review
+
+Read `ASSET_REVIEW/WA-05H_ASSET_RIGHTS_ACCESSIBILITY_READINESS_REVIEW.md` first,
+then the owner review pack and asset registers. Current candidates are controlled
+for review but held from public build pending rights/provenance, owner selection,
+accessibility and runtime checks. Read `ASSET_REVIEW/AUTOMATED_ASSET_BUILD_CONTRACT.md`
+for future WB-00 inputs. This gate does not approve assets, alter public copy or
+start automated build/deployment work.

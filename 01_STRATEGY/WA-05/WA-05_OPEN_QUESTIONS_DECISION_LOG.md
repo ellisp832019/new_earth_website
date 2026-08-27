@@ -72,6 +72,18 @@ shared-founder wording is added.
 No other question is resolved by assumption. Each resolution must record
 evidence, owner, date, and approval state.
 
+## WA-05H asset rights and accessibility review
+
+- Current candidates are inventoried, but no file has sufficient repository evidence
+  to be treated as rights-cleared for public build.
+- Owner decisions are required for hero selection, About/participation imagery,
+  the New Earth Builders logo, and any future Ecosystem relationship diagram.
+- The registered `systems_governance_community.webp` source is missing locally and
+  remains blocked; no replacement was invented.
+- Complex diagrams require concise alt text and a visible structured text equivalent.
+- No public wording changed in WA-05H. Six core pages remain
+  `OWNER APPROVED - SPECIALIST REVIEW PENDING`.
+
 ## WA-05F accessibility readiness
 
 The Website V2 accessibility gate is **ACCESSIBILITY READINESS - PASS WITH
