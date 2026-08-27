@@ -31,6 +31,15 @@ Owner approval does not complete technical verification, legal/privacy review,
 accessibility review, SEO review, asset rights checks, or any required Hayley
 approval for founder history or attributed voice.
 
+## WA-05D founder-attribution outcome
+
+The six current drafts contain no Hayley-specific history, biography, personal
+belief, intention, experience, quote, paraphrased view, or shared-founder
+statement. The Manifesto's first-person `we` is organisational and principled,
+not personal or jointly attributed. Hayley review is therefore **PASS / NOT
+REQUIRED** for the current drafts; reopen the gate if personal history or
+attributed founder voice is introduced.
+
 ## WA-05C technical verification outcome
 
 The Ecosystem technical review passed with qualifications on 2026-08-27. The

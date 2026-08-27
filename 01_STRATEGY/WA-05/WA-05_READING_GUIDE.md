@@ -10,6 +10,8 @@ Manifesto route with WA-02, and adds the approval checklist.
 WA-05B.1 records Peter's owner approval of the six drafts while retaining all
 specialist review gates. WA-05C Omega records a qualified technical review of
 the Ecosystem page without changing the approved copy.
+WA-05D records that Hayley founder-attribution review is not required for the
+current six drafts because no personal or shared-founder attribution is present.
 
 ## Reading order
 
