@@ -30,3 +30,11 @@ Their controlled status is `OWNER APPROVED - SPECIALIST REVIEW PENDING`.
 Owner approval does not complete technical verification, legal/privacy review,
 accessibility review, SEO review, asset rights checks, or any required Hayley
 approval for founder history or attributed voice.
+
+## WA-05C technical verification outcome
+
+The Ecosystem technical review passed with qualifications on 2026-08-27. The
+approved wording was not changed because it already describes a public
+relationship model, keeps the Command Centre route future-facing, and expressly
+avoids unverified integration or operational-capacity claims. Any later
+system-specific wording requires a new claim-level review.

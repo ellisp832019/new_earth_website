@@ -55,7 +55,8 @@ Labels must remain readable without colour, animation or hover interaction.
 
 ## Evidence and approval notes
 
-**Content status:** DRAFTED - REVIEW REQUIRED. **Evidence class:** PRINCIPLE,
+**Content status:** OWNER APPROVED - TECHNICAL REVIEW PASS WITH QUALIFICATIONS;
+**Evidence class:** PRINCIPLE,
 VISION and UNKNOWN / REQUIRES VERIFICATION for technical references. **Source
 basis:** WA-02 architecture, boundary record and tracked systems summaries.
 **Dependencies:** technical owner review for any system detail and New Earth
