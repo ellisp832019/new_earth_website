@@ -18,6 +18,7 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,HOME,02_HOME\sections,home_section_conscious_systems.webp,1400x900,webp,TODO,Home conscious systems section
 2,HOME,02_HOME\sections,home_section_microgrow.webp,1400x900,webp,TODO,Home MicroGrow section
 1,MANIFESTO,03_MANIFESTO\hero,manifesto_hero.webp,1920x1080,webp,DONE,Manifesto hero
+2,MANIFESTO,03_MANIFESTO\heroes,manifesto_hero.png,1536x1024,png,TODO,AST-019 selected Manifesto hero candidate promoted from ASSETS/_INBOX/home_section_manifesto.png; local preview only pending rights/provenance and public-build review
 0,MANIFESTO,03_MANIFESTO\sections,manifesto_quote_background.webp,1600x900,webp,TODO,Manifesto quote background
 0,MANIFESTO,03_MANIFESTO\print,manifesto_affirmation_poster_a3.png,3508x4961,png,TODO,Manifesto affirmation poster A3
 1,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.webp,1920x1080,webp,DONE,Blueprint hero
