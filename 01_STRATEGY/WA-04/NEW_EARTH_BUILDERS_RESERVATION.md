@@ -18,8 +18,8 @@ following sanitised public wording:
 Public link, logo use and descriptive source material supplied directly by the
 New Earth Builders owner on 2026-08-26. Peter approved the final horizontal
 tile and Alli approved the final horizontal presentation on 2026-08-27 after
-courtesy review. Desktop presentation is approved; tablet and mobile manual
-visual checks remain required before deployment.
+courtesy review. Desktop, tablet, and mobile presentation are approved based on
+user-attested manual visual QA completed on 2026-08-27.
 
 The integration is a normal labelled external link. It does not claim that New
 Earth Builders is owned by the New Earth website, and does not claim a legal
