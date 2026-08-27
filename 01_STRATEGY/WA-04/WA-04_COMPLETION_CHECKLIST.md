@@ -1,7 +1,7 @@
 # WA-04 Completion Checklist
 
 **Phase:** Website V2 global shell and homepage offline baseline
-**State:** Approved baseline; desktop tile courtesy review complete; tablet and mobile browser acceptance outstanding before deployment
+**State:** Approved baseline; desktop, tablet, and mobile visual QA passed on 2026-08-27
 
 ## Governance and Scope
 
@@ -42,8 +42,8 @@
 - [x] `NE-HOME-IMG-007` is produced and adopted; the required homepage production-image blocker is resolved.
 - [x] The MicroGrow page hero is not reused as the homepage project-card image; the dedicated card asset is used instead.
 - [x] WA-05 detailed content production is the next phase.
-- [ ] Tablet browser acceptance at approximately 768px.
-- [ ] Mobile browser acceptance at approximately 390px.
+- [x] Tablet browser acceptance at approximately 768px passed on 2026-08-27.
+- [x] Mobile browser acceptance at approximately 390px passed on 2026-08-27.
 
 ## Evidence
 
