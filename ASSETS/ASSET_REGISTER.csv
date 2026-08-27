@@ -1,5 +1,6 @@
 Batch,Section,Folder,Filename,Size,Format,Status,Notes
 0,BRAND,00_BRAND\logos,new_earth_logo_concept_board.png,2000x2000,png,TODO,Main logo concept board
+0,BRAND,00_BRAND\logos,new-earth-logo-primary-v1.png,1254x1254,png,APPROVED,OWNER APPROVED - New Earth Primary Logo V1; first-party New Earth brand asset; authorised for header and footer; favicon candidate later
 0,BRAND,00_BRAND\symbols,new_earth_symbol_mark.png,1024x1024,png,TODO,Symbol mark / icon mark
 0,BRAND,00_BRAND\logos,microgrow_brand_lockup.png,1600x900,png,TODO,MicroGrow lockup under New Earth brand
 0,BRAND,00_BRAND\textures,brand_texture_cosmic_earth.webp,1920x1080,webp,TODO,Brand texture cosmic earth

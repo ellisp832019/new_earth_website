@@ -7,9 +7,9 @@ const missingImages = images.filter((name) => !html.includes(`/local-assets/${na
 const h1 = (html.match(/<h1\b/g) || []).length;
 const nav = ['/vision/', '/blueprint/', '/ecosystem/', '/projects/', '/journal/', '/about/', '/get-involved/'];
 const navMissing = nav.filter((href) => !html.includes(`href="${href}"`));
-const imageCount = (html.match(/<img\b/g) || []).length;
+const imageCount = images.reduce((count, name) => count + (html.match(new RegExp(`/local-assets/${name}`, 'g')) || []).length, 0);
 if (missing.length || navMissing.length || missingImages.length || h1 !== 1 || imageCount !== images.length) {
-  console.error(JSON.stringify({ missing, navMissing, missingImages, h1, imageCount, expectedImages: images.length }));
+  console.error(JSON.stringify({ missing, navMissing, missingImages, h1, homepageImageCount: imageCount, expectedImages: images.length }));
   process.exit(1);
 }
 console.log(`Homepage baseline validated: required sections, one H1, navigation targets and ${imageCount} accepted image uses present.`);

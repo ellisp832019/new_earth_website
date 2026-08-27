@@ -38,3 +38,4 @@ node_modules/
 dist/
 .astro/
 public/local-assets/
+public/assets/

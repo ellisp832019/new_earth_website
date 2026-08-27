@@ -1,6 +1,6 @@
 ---
-import { assetUrl, canRenderLocally } from '../lib/asset-resolver';
+import { assetUrl } from '../lib/asset-resolver';
 const { asset, alt, className = '', loading = 'lazy', fetchpriority } = Astro.props;
-const src = canRenderLocally(asset) ? assetUrl(asset) : undefined;
+const src = assetUrl(asset);
 ---
 {src && <img class={className} src={src} alt={alt} loading={loading} fetchpriority={fetchpriority} />}
