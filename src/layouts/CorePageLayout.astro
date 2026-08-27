@@ -32,14 +32,19 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt } = As
   .core-page--with-hero .core-page__hero {
     display: grid;
     width: min(1120px, calc(100% - 2rem));
+    max-width: 100%;
     min-width: 0;
+    box-sizing: border-box;
     grid-template-columns: minmax(0, .48fr) minmax(0, .52fr);
     gap: clamp(3rem, 4vw, 3.5rem);
     align-items: center;
     padding-block: clamp(4rem, 8vw, 6rem) clamp(3rem, 6vw, 4.5rem);
   }
 
-  .core-page--with-hero .core-page__hero-copy { min-width: 0; }
+  .core-page--with-hero .core-page__hero-copy {
+    min-width: 0;
+    max-width: 100%;
+  }
   .core-page--with-hero h1 {
     max-width: 14ch;
     font-size: clamp(3rem, 4vw, 4.5rem);
@@ -54,12 +59,14 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt } = As
     width: 100%;
     max-width: 540px;
     min-width: 0;
+    box-sizing: border-box;
     justify-self: end;
   }
   .core-page--with-hero .core-page__hero-image {
     display: block;
     width: 100%;
     max-width: 100%;
+    min-width: 0;
     height: auto;
     object-fit: cover;
     border-radius: var(--radius);
