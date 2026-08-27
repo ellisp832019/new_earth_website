@@ -72,6 +72,14 @@ shared-founder wording is added.
 No other question is resolved by assumption. Each resolution must record
 evidence, owner, date, and approval state.
 
+## WA-05F accessibility readiness
+
+The Website V2 accessibility gate is **ACCESSIBILITY READINESS - PASS WITH
+IMPLEMENTATION REQUIREMENTS**. WCAG 2.2 AA is the engineering target; this is
+not a rendered conformance claim. The six drafts retain one H1 each and require
+semantic implementation, text alternatives, keyboard/focus handling, responsive
+reflow and runtime testing before launch.
+
 ## WA-05E legal/privacy readiness
 
 The Website V2 legal/privacy review now records **LEGAL / PRIVACY READINESS -
