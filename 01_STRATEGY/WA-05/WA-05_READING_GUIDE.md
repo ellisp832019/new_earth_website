@@ -50,3 +50,10 @@ app direction; and future intent is not availability.
 The safe next step is specialist review of the six owner-approved core drafts,
 then a separately authorised 12 Pillars content-production batch. This record
 does not authorise publication, WordPress implementation, or live changes.
+
+## WA-05E legal/privacy review
+
+Read `LEGAL_PRIVACY_REVIEW/WA-05E_LEGAL_PRIVACY_READINESS_REVIEW.md` first,
+then the four registers, owner decision pack and future runtime checklist. This
+gate records readiness and action requirements, not solicitor certification. The
+current result is `LEGAL / PRIVACY READINESS - PENDING OWNER INPUT`.

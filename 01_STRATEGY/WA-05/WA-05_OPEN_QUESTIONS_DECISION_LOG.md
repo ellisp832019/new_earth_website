@@ -71,3 +71,15 @@ shared-founder wording is added.
 
 No other question is resolved by assumption. Each resolution must record
 evidence, owner, date, and approval state.
+
+## WA-05E legal/privacy readiness
+
+The Website V2 legal/privacy review records **LEGAL / PRIVACY READINESS -
+PENDING OWNER INPUT**. The current informational drafts require no public-copy
+rewrite, but final publication requires verified operator and controller details,
+company disclosures, privacy-notice inputs and live-runtime verification of
+cookies, storage, scripts, forms, external requests and any analytics.
+
+Future commerce, newsletter, payments, native community, AI, wellbeing, device,
+children, donations, investment and international-selling capabilities remain
+separate activation gates. No legal approval is claimed.
