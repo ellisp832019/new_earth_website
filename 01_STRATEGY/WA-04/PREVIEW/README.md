@@ -8,10 +8,14 @@ assets with explicit dimensions and lazy loading; no untracked reference image
 is used. Missing subject-specific imagery is represented by labelled offline
 placeholders rather than unrelated assets. Image-led cards use a reusable
 one-third media and two-thirds written-content structure. The New Earth
-Builders space is a planning reservation only and has no active external link.
+Builders space now includes the approved New Earth Builders external card. The
+card uses a normal labelled link with no embed, feed, tracker, account
+integration, or external script. The screenshot-derived logo is provisional
+pending an original transparent PNG or SVG.
 
 Review at approximately 390px, 768px, 1024px, and 1440px. Test the skip
 link, mobile menu, keyboard focus, links with JavaScript disabled, ecosystem
 relationship list, image alt text, the remaining MicroGrow project image gap,
 and reduced-motion preference. External connections remain a compact supporting
-treatment with no active external destinations.
+treatment with no active external destinations beyond the approved, normal
+labelled New Earth Builders link.
