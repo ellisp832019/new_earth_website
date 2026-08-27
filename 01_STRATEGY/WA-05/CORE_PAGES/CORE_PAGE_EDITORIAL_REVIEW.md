@@ -20,9 +20,13 @@
 - About: verify origin, stewardship, people, and company wording before publication.
 - Get Involved: preserve Learn, Contribute, Collaborate, and Support; describe New Earth Builders as independent and external.
 
-## WA-05C review outcome
+## WA-05B.1 owner approval
 
-All six pages remain DRAFTED - REVIEW REQUIRED. WA-05C has refined their voice,
-page-specific purpose, internal routes and evidence boundaries. These are
-approval-ready public-facing drafts, not final approvals or WordPress-ready
-publication instructions.
+Peter approved all six current drafts on 2026-08-27 at repository HEAD
+`451cd0865b349a9397e46f386089538d2ee03344`. The approved pages are Vision,
+Manifesto, Blueprint, Ecosystem, About and Get Involved.
+
+Their controlled status is `OWNER APPROVED - SPECIALIST REVIEW PENDING`.
+Owner approval does not complete technical verification, legal/privacy review,
+accessibility review, SEO review, asset rights checks, or any required Hayley
+approval for founder history or attributed voice.
