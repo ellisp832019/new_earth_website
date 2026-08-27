@@ -2,6 +2,7 @@
 
 ## Blocking V2 content decisions
 
+- Reconcile the WA-02 URL register omission of `/manifesto/` with the approved six-page core orientation scope before final route publication.
 - Confirm final public wording and evidence owner for each project and technology page.
 - Consolidate competing source wording before drafting pillar and orientation pages.
 - Confirm whether each proposed V2.0 page has a publishable owner and evidence class.
