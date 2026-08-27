@@ -12,6 +12,7 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 0,GLOBAL_SITE,01_GLOBAL_SITE\utility,global_under_construction_light.webp,1600x900,webp,TODO,Under construction / 404 image
 1,HOME,02_HOME\hero,home_hero_new_earth_main.webp,1920x1080,webp,DONE,Homepage hero
 2,HOME,02_HOME\sections,home_section_vision.webp,1400x900,webp,TODO,Home vision section
+2,VISION,01_GLOBAL_SITE\heroes,vision_hero.png,1536x1024,png,TODO,AST-021 selected Vision hero candidate promoted from ASSETS/_INBOX/home_section_vision.png; local preview only pending rights/provenance and public-build review
 2,HOME,02_HOME\sections,home_section_unity.webp,1400x900,webp,TODO,Home unity section
 2,HOME,02_HOME\sections,home_section_regeneration.webp,1400x900,webp,TODO,Home regeneration section
 2,HOME,02_HOME\sections,home_section_conscious_systems.webp,1400x900,webp,TODO,Home conscious systems section
