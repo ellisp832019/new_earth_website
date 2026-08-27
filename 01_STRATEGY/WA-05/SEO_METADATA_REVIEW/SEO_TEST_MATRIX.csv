@@ -1,0 +1,21 @@
+test_id,test_area,test_method,automated_or_manual,prebuild_or_runtime,routes_or_scope,expected_result,blocking_or_advisory,evidence_required,status,notes
+ST-001,Unique titles,Parse metadata manifest,automated,prebuild,All publishable routes,No duplicate required titles,blocking,Validation report,NOT EXECUTED,Source baseline only
+ST-002,Descriptions,Parse metadata manifest,automated,prebuild,All publishable routes,Descriptions present where required and not duplicated,blocking,Validation report,NOT EXECUTED,No arbitrary character rule
+ST-003,Canonical paths,Route uniqueness check,automated,prebuild,39 routes,Unique canonical paths,blocking,Validation report,NOT EXECUTED,Token host allowed
+ST-004,Canonical host,Rendered URL inspection,manual,runtime,All production routes,One preferred HTTPS host,blocking,URL evidence,NOT EXECUTED,Host unresolved now
+ST-005,Indexability,Inspect robots and meta,automated + manual,runtime,Staging and production,No accidental noindex or indexing,blocking,Rendered evidence,NOT EXECUTED,Do not rely only on robots
+ST-006,Heading alignment,Inspect rendered headings,manual,runtime,Six core pages,Title H1 and content align,advisory,Review notes,NOT EXECUTED,Coordinate accessibility
+ST-007,Sitemap,Generate and validate sitemap,automated,prebuild,Public routes,Canonical public URLs only,blocking,Sitemap artifact,NOT EXECUTED,Do not submit now
+ST-008,Robots,Inspect generated policy,automated + manual,prebuild,Staging/production,Policy matches deployment,blocking,Robots artifact,NOT EXECUTED,Internal files excluded
+ST-009,Structured data,Validate JSON-LD,automated + manual,runtime,Authorised page types,Markup matches visible content,blocking,Validator output,NOT EXECUTED,No Product/Offer deferred
+ST-010,Preferred images,Resolve assets and rights,automated + manual,prebuild,Core/Pillar/system pages,Only verified assets used,advisory,Asset manifest,NOT EXECUTED,WA-05H dependency
+ST-011,Open Graph,Render social cards,manual,runtime,Representative pages,Title image description and URL coherent,advisory,Screenshots,NOT EXECUTED,No handles invented
+ST-012,Redirects,Request legacy URLs,manual,runtime,Redirect map,Correct status and no chains,blocking,HTTP evidence,NOT EXECUTED,Live inventory required
+ST-013,Broken links,Crawl internal routes,automated,runtime,All public routes,No broken required links,blocking,Crawl report,NOT EXECUTED,Do not crawl live now
+ST-014,HTTP status,Request route responses,manual,runtime,Public routes,Expected 200/3xx/404,blocking,HTTP log,NOT EXECUTED,Future staging
+ST-015,404,Open removed route,manual,runtime,404 template,Accessible genuine 404 with recovery,advisory,Screenshot and notes,NOT EXECUTED,No universal Home redirect
+ST-016,Staging protection,Inspect access/noindex,manual,runtime,Staging,Protected and not indexed,blocking,Deployment evidence,NOT EXECUTED,Future only
+ST-017,Public file leakage,Compare build manifest,automated,prebuild,dist output,No internal controls exposed,blocking,File manifest,NOT EXECUTED,Build boundary required
+ST-018,Performance,Measure LCP INP CLS,automated + manual,runtime,Representative pages,Record results without invented thresholds,advisory,Performance report,NOT EXECUTED,Future runtime
+ST-019,Mobile rendering,Inspect narrow layouts,manual,runtime,Core and Pillar templates,No clipping or horizontal overflow,advisory,Screenshots,NOT EXECUTED,Coordinate WA-05F
+ST-020,Search Console,Inspect property and sitemap,manual,runtime,Production,Property verified and sitemap submitted,advisory,Console evidence,NOT EXECUTED,Do not connect now

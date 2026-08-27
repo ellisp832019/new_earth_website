@@ -91,6 +91,15 @@ operator/controller details, company disclosures, privacy-notice inputs and
 live-runtime verification of cookies, storage, scripts, forms, external requests
 and any analytics.
 
+## WA-05G SEO and metadata readiness
+
+The Website V2 SEO gate records **SEO / METADATA READINESS - PASS WITH
+IMPLEMENTATION REQUIREMENTS**. The repository provides 39 unique routes,
+page-specific metadata for the six approved core pages, search-purpose and
+internal-link controls, and a build-system-agnostic automation contract. The
+preferred canonical host remains an implementation/runtime decision and must use
+`{CANONICAL_ORIGIN}` until verified.
+
 Future commerce, newsletter, payments, native community, AI, wellbeing, device,
 children, donations, investment and international-selling capabilities remain
 separate activation gates. No legal approval is claimed.
