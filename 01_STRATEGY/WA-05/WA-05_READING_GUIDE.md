@@ -8,7 +8,8 @@ adds six complete core orientation page drafts, their cross-links, visual needs,
 and editorial review controls. WA-05C refines those drafts, reconciles the
 Manifesto route with WA-02, and adds the approval checklist.
 WA-05B.1 records Peter's owner approval of the six drafts while retaining all
-specialist review gates.
+specialist review gates. WA-05C Omega records a qualified technical review of
+the Ecosystem page without changing the approved copy.
 
 ## Reading order
 
