@@ -14,3 +14,4 @@ FAG-012,Children or youth service,Child-directed or likely-accessed data service
 FAG-013,Donations or fundraising,Donate or fund CTA,Required,Required,Required,Charity and fundraising review,Confirm legal entity and wording; do not imply charity or tax deductibility,Future trigger
 FAG-014,Investment,Investment solicitation or investor CTA,Required,Required,Required,Financial-promotion review,No investment functionality without specialist approval and regulated-activity assessment,Future trigger
 FAG-015,International selling,International checkout or customer targeting,Required,Required,Required,Consumer and transfer review,Confirm territories taxes transfers and customer rights before activation,Future trigger
+FAG-016,Subscriptions,Recurring billing or paid membership,Required,Required,Required,Consumer subscription review,Do not activate recurring billing or memberships before cancellation renewal payment and notice requirements are ready,Future trigger
