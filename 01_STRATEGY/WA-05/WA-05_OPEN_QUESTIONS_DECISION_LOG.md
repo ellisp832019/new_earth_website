@@ -84,6 +84,22 @@ evidence, owner, date, and approval state.
 - No public wording changed in WA-05H. Six core pages remain
   `OWNER APPROVED - SPECIALIST REVIEW PENDING`.
 
+## WA-05H3 owner asset decision ingestion
+
+- Peter's preserved WA-05H2 export contains 42 decisions: 31 KEEP and 11
+  PENDING; no REPLACE, HOLD or DONT_USE outcomes were changed or invented.
+- The 31 KEEP outcomes are recorded separately from rights approval and public
+  build readiness. Fourteen newly selected Website candidates receive stable
+  IDs AST-018 through AST-031; all remain specialist-gated.
+- The 11 PENDING records are reference-only copies in `ASSETS_REFERENCE` and
+  are classified `REFERENCE_ONLY_NO_OWNER_ACTION_REQUIRED` without rewriting
+  the owner outcomes.
+- The Ecosystem visual special decision remains PENDING and may be deferred to
+  implementation only if text-alternative, technical-claim and asset gates stay
+  in force.
+- The New Earth Builders logo remains subject to trademark/brand permission and
+  source evidence; a text-only fallback remains the safe alternative.
+
 ## WA-05F accessibility readiness
 
 The Website V2 accessibility gate is **ACCESSIBILITY READINESS - PASS WITH

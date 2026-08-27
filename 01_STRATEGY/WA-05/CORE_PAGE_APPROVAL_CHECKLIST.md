@@ -49,5 +49,6 @@ public content only and does not authorise WordPress publication.
 - [x] Current website asset candidates are inventoried in `ASSET_REVIEW/WEBSITE_ASSET_MASTER_REGISTER.csv`.
 - [x] Rights, provenance, accessibility usage and future build controls are recorded.
 - [x] Unverified assets are held from public build; no AI-generated or third-party asset was treated as automatically cleared.
-- [ ] Owner asset selections and rights evidence remain outstanding.
+- [x] Owner visual selections were ingested from the preserved WA-05H2 export;
+  rights evidence remains outstanding and is not implied by KEEP.
 - [ ] Runtime image, caption, responsive and public/private checks remain outstanding.
