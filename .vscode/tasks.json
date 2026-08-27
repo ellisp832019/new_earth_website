@@ -1,0 +1,232 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Detect ImageMagick executable path",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "DetectMagick"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Convert current PNG to WebP (ImageMagick)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "Current",
+        "-Source",
+        "${file}",
+        "-ResizeHeight",
+        "${input:webpResizeHeight}",
+        "-ResizeWidth",
+        "${input:webpResizeWidth}"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Convert current PNG to WebP lossless (ImageMagick)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "CurrentLossless",
+        "-Source",
+        "${file}",
+        "-ResizeHeight",
+        "${input:webpResizeHeight}",
+        "-ResizeWidth",
+        "${input:webpResizeWidth}"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Convert all PNGs in ASSETS/_INBOX to WebP (ImageMagick)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "Inbox",
+        "-ResizeHeight",
+        "${input:webpResizeHeight}",
+        "-ResizeWidth",
+        "${input:webpResizeWidth}"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Convert Batch 1 heroes from PNG to WebP",
+      "type": "process",
+      "command": "powershell.exe",
+      "dependsOn": [
+        "Detect ImageMagick executable path"
+      ],
+      "dependsOrder": "sequence",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "Batch1"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Archive leftover PNGs to global image folder",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "ArchiveInboxPNGs"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "Move Batch 1 WebPs from ASSETS/_INBOX to final folders",
+      "type": "process",
+      "command": "powershell.exe",
+      "dependsOn": [
+        "Archive leftover PNGs to global image folder"
+      ],
+      "dependsOrder": "sequence",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\convert_png_to_webp.ps1",
+        "-Mode",
+        "PublishBatch1"
+      ],
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "panel": "dedicated",
+        "reveal": "always",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "reevaluateOnRerun": true
+      }
+    },
+    {
+      "label": "New Earth: Review Website Assets",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\07_CODEX\\TOOLS\\website-asset-review\\launch.ps1"],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "webpResizeHeight",
+      "type": "promptString",
+      "description": "Resize height first, or leave blank to keep the original height",
+      "default": ""
+    },
+    {
+      "id": "webpResizeWidth",
+      "type": "promptString",
+      "description": "Resize width second, or leave blank to keep the original width",
+      "default": ""
+    }
+  ]
+}
