@@ -5,7 +5,8 @@
 WA-05A established the authority hierarchy, public voice, evidence classes,
 controlled terminology, source register, and V2.0 content inventory. WA-05B
 adds six complete core orientation page drafts, their cross-links, visual needs,
-and editorial review controls.
+and editorial review controls. WA-05C refines those drafts, reconciles the
+Manifesto route with WA-02, and adds the approval checklist.
 
 ## Reading order
 

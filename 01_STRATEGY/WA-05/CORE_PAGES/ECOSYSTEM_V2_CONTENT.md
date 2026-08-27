@@ -23,7 +23,7 @@ Blueprint, the 12 Pillars, projects, research and participation relate.
 developing framework, areas of life, practical projects, research and ways for
 people to participate.
 
-## The relationship model
+## A public relationship map
 
 The vision gives New Earth its direction. The [Blueprint](/blueprint/) offers a
 structure for exploring that direction. The [12 Pillars](/blueprint/pillars/)
@@ -43,7 +43,7 @@ authenticated applications remain separate protected systems. This page does
 not claim technical integration or operational capacity that has not been
 independently verified.
 
-## Explore a route
+## Continue from here
 
 Read the [Manifesto](/manifesto/), visit [Projects](/projects/), or explore the
 [Resources](/resources/) area for future learning material.

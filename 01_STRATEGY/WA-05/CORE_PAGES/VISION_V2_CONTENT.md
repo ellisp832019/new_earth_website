@@ -24,7 +24,7 @@ projects.
 around greater awareness, responsibility and connection. It is a direction to
 question and develop together, not a finished answer.
 
-## Why this matters
+## Why a wider view matters
 
 Many of the difficulties we face are connected. The way we learn affects the way
 we make decisions. The way we design technology affects our attention, agency
@@ -35,7 +35,7 @@ New Earth begins with the possibility that these areas should not be treated as
 separate problems. A more conscious civilisation would pay attention to the
 whole pattern while remaining practical about the next step.
 
-## A direction, not a promise
+## A direction, not a finished answer
 
 The New Earth vision is still being explored. It offers principles, questions
 and frameworks that can help people notice what is misaligned and imagine what

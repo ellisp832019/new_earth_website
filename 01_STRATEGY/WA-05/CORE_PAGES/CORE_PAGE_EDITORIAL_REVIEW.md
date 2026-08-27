@@ -20,8 +20,9 @@
 - About: verify origin, stewardship, people, and company wording before publication.
 - Get Involved: preserve Learn, Contribute, Collaborate, and Support; describe New Earth Builders as independent and external.
 
-## Current state
+## WA-05C review outcome
 
-All six pages are DRAFTED - REVIEW REQUIRED. These are public-facing drafts,
-not final approvals or WordPress-ready publication instructions. WA-05B should
-review voice and evidence boundaries before later page-specific production.
+All six pages remain DRAFTED - REVIEW REQUIRED. WA-05C has refined their voice,
+page-specific purpose, internal routes and evidence boundaries. These are
+approval-ready public-facing drafts, not final approvals or WordPress-ready
+publication instructions.

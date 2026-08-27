@@ -17,6 +17,7 @@
 "V20-016","12 Family, Childhood and Eldership","/blueprint/pillars/family-childhood-eldership/","The 12 Pillars","Pillar","V2.0 FOUNDATION","SOURCE","KEEP","Pillar navigation","Pillar","Public","LIVE","New Earth","Display number 12; canonical slug has no numeric prefix."
 "V20-017","Inner Blueprint","/blueprint/inner-blueprint/","Blueprint","Page","V2.0 FOUNDATION","LIVE","KEEP","Blueprint child","Doctrine support","Public","LIVE","New Earth","Retained."
 "V20-018","Transition Path","/blueprint/transition-path/","Blueprint","Page","V2.0 FOUNDATION","LIVE","KEEP","Blueprint child","Doctrine support","Public","LIVE","New Earth","Retained."
+"V20-019","Manifesto","/manifesto/","None","Page","V2.0 FOUNDATION","LIVE","KEEP","Secondary navigation","Doctrine explainer","Public","LIVE","New Earth","Public doctrine page retained from WA-01; not an additional primary-header item."
 "V20-020","Ecosystem","/ecosystem/","None","Hub","V2.0 FOUNDATION","NEW","CREATE","Primary header","Hub","Public","PLANNED","New Earth","Public map and gateway."
 "V20-021","Advanced Technologies","/technology/","Ecosystem","Page","V2.0 FOUNDATION","NEW","CREATE","Ecosystem child","Company explainer","Public","PLANNED","New Earth Advanced Technologies Ltd","Verified public facts only."
 "V20-022","Platform Core","/ecosystem/platform-core/","Ecosystem","System explainer","EXTERNAL/INTERNAL SYSTEM","RESERVED","INVESTIGATE","Ecosystem child","System explainer","Public","IN DEVELOPMENT","Platform owner","Public explanation; private system remains separate."

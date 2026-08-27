@@ -42,7 +42,7 @@ Technology is most useful when it strengthens human agency, supports good work
 and remains accountable to the people affected by it. New Earth approaches
 technology as something to question, test and shape carefully.
 
-## Begin with practice
+## Let principles meet practice
 
 Large change can begin with small, well-considered steps. The [Blueprint](/blueprint/)
 turns these principles into a developing framework. The [Ecosystem](/ecosystem/)

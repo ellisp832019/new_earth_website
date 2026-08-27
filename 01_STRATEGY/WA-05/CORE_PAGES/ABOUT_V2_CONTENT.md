@@ -23,7 +23,7 @@ context before engaging with the Blueprint or projects.
 conscious relationships between people, ideas, systems and the natural world.
 It brings vision, practical questions and developing work into one public space.
 
-## Why New Earth exists
+## What New Earth is for
 
 New Earth exists to make space for careful thinking about how we live together.
 It starts from the observation that many parts of life are connected, and that
@@ -36,7 +36,7 @@ organises the questions. The [12 Pillars](/blueprint/pillars/) offer areas for
 deeper exploration, while [Projects](/projects/) show selected work at its
 current stage.
 
-## Stewardship and openness
+## How the work is held
 
 New Earth aims to communicate with care: clear about what is known, honest about
 what is developing and open to learning. The public website is a place for
