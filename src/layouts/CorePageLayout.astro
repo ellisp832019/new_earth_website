@@ -31,32 +31,37 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt } = As
 <style>
   .core-page--with-hero .core-page__hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+    grid-template-columns: minmax(0, .8fr) minmax(280px, 1.2fr);
     gap: clamp(2.5rem, 7vw, 7rem);
     align-items: center;
     padding-block: clamp(4.5rem, 9vw, 7rem) clamp(3rem, 6vw, 5rem);
   }
 
   .core-page--with-hero .core-page__hero-copy { min-width: 0; }
-  .core-page--with-hero .core-page__hero-copy .lede { max-width: 58ch; }
+  .core-page--with-hero h1 { font-size: clamp(3.5rem, 5.5vw, 5.5rem); }
+  .core-page--with-hero .core-page__hero-copy .lede {
+    max-width: 58ch;
+    font-size: clamp(1.18rem, 1.6vw, 1.4rem);
+    line-height: 1.6;
+  }
   .core-page--with-hero .core-page__hero-media {
     width: 100%;
-    padding: clamp(.7rem, 2vw, 1.25rem);
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: 0 18px 40px rgb(16 53 38 / .12);
+    min-width: 0;
   }
   .core-page--with-hero .core-page__hero-image {
     display: block;
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
-    border-radius: calc(var(--radius) - 5px);
+    border-radius: var(--radius);
   }
-  .core-page--with-hero .core-page__body { max-width: 960px; }
+  .core-page--with-hero .core-page__body { max-width: 840px; }
   .core-page--with-hero .core-page__section { padding-block: clamp(3rem, 6vw, 5rem); }
-  .core-page--with-hero .core-page__section p { max-width: 68ch; }
+  .core-page--with-hero .core-page__section p {
+    max-width: 68ch;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
   .core-page--with-hero .core-page__section h2 { max-width: 18ch; }
 
   @media (max-width: 760px) {
