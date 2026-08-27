@@ -1,36 +1,35 @@
-# New Earth Builders Reservation
+# New Earth Builders Integration
 
-**Status:** PARTNER APPROVAL PENDING
+**Status:** APPROVED FOR OFFLINE PREVIEW
 **Integration type:** External community and collaboration platform
-**Activation horizon:** V2.0 if approved in time; otherwise V2.x
-**Ownership:** External partner
-**Data boundary:** No shared accounts or personal data by default
+**Public URL:** https://new-earth-builders.com/
+**Ownership:** Independent external platform
+**Data boundary:** No shared accounts, personal data, API connection, feed, or tracking by the New Earth website
 
-This is a replaceable planning reservation only. Alli has been contacted, but
-no approval, partnership wording, organisation description, logo, image, URL,
-referral arrangement, member content, events feed, account system, data
-sharing, embedded content, SSO, API integration, or tracking script has been
-approved or activated.
+The homepage presents New Earth Builders as an independent community platform
+using the approved public URL, a screenshot-derived provisional logo, and the
+following sanitised public wording:
 
-The offline homepage reserves a neutral Community & Collaboration tile marked
-Coming Later and a future footer Participate position. Neither reservation is
-a public New Earth Builders link or a claim that the external partner is owned
-or operated by New Earth. The approved seven-item header remains unchanged.
+> An intentional community connecting innovators, healers, inventors and creators who want to collaborate, exchange knowledge and help bring New Earth-aligned projects into being.
 
-## Activation Gates
+**Supporting label:** Independent community platform
+**CTA:** Visit New Earth Builders
 
-- Alli's approval
-- Approved organisation description
-- Approved URL
-- Approved logo or image
-- Written branding and usage permission
-- External-link review
-- Privacy and tracking review
-- Confirmed ownership wording
-- Confirmation of whether future stories, events, or shared initiatives may be displayed
+Public link, logo use and descriptive source material supplied directly by the
+New Earth Builders owner on 2026-08-26; final tile preview remains subject to
+courtesy review before public deployment.
 
-## Future-Compatible Possibilities
+The integration is a normal labelled external link. It does not claim that New
+Earth Builders is owned by the New Earth website, and does not claim a legal
+partnership, formal joint venture, endorsement, technical integration, or shared
+governance arrangement. No iframe, embedded feed, tracker, API connection,
+account integration, or external script is used.
 
-These are not activated: Visit New Earth Builders, featured builder stories
-with permission, community events, shared initiatives, and community calls to
-action.
+The logo is derived non-generatively from the supplied screenshot using crop
+coordinates x=1, y=1, width=1142, height=1142, resized to 800x800 and exported
+as `ASSETS/11_COMMUNITY/partners/new_earth_builders_logo.webp`. It is a
+screenshot-derived provisional production asset awaiting an original
+transparent PNG or SVG. The source screenshot is not stored in the repository.
+
+The existing seven-item header, five footer groups, twelve-pillar destinations,
+homepage section order, and approved design system remain unchanged.
