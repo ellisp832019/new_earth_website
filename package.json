@@ -2,6 +2,6 @@
   "name": "new-earth-website-v2",
   "private": true,
   "type": "module",
-  "scripts": {"dev": "astro dev", "build": "astro build", "build:public": "cross-env PUBLIC_ASSET_MODE=PUBLIC astro build", "check": "node scripts/validate-site.mjs", "check:public": "node scripts/public-build-check.mjs"},
+  "scripts": {"dev": "node scripts/prepare-local-assets.mjs && astro dev", "build": "node scripts/prepare-local-assets.mjs && astro build", "build:public": "cross-env PUBLIC_ASSET_MODE=PUBLIC astro build", "check": "node scripts/validate-site.mjs", "check:public": "node scripts/public-build-check.mjs", "check:homepage": "node scripts/validate-homepage-baseline.mjs"},
   "devDependencies": {"astro": "^5.13.5", "cross-env": "^10.0.0", "typescript": "^5.9.2"}
 }
