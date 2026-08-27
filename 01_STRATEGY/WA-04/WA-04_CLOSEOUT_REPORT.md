@@ -1,7 +1,7 @@
 # WA-04 Closeout Report
 
 **Phase:** Website V2 global shell and homepage offline baseline
-**Closeout state:** Approved V2 homepage baseline; New Earth Builders desktop courtesy review complete; responsive implementation acceptance outstanding
+**Closeout state:** Approved V2 homepage baseline; final responsive visual QA passed on 2026-08-27
 
 ## Approval
 
@@ -62,8 +62,7 @@ embedded content is claimed.
 
 The supplied logo remains a screenshot-derived provisional production asset.
 An original transparent PNG or SVG is a later quality upgrade, not a V2
-deployment blocker. Tablet and mobile manual visual checks remain required
-before deployment.
+deployment blocker.
 
 `NE-HOME-IMG-007` has been produced and adopted as the dedicated homepage
 project-card image. The MicroGrow page hero remains intentionally excluded from
@@ -93,11 +92,12 @@ availability, proven performance, or direct actuator control.
 ## Responsive QA State
 
 Peter's desktop visual approval and Alli's 2026-08-27 courtesy approval of the
-final horizontal tile are recorded. Automated browser screenshots were
-unavailable, so no tablet or mobile screenshot pass is claimed.
-Responsive CSS and structural checks pass locally. Tablet review at
-approximately 768px and mobile review at approximately 390px remain required
-implementation acceptance checks before deployment; see
+final horizontal tile are recorded. User-attested manual browser review on
+2026-08-27 passed at desktop, approximately 768px tablet, and approximately
+390px mobile sizes. The horizontal desktop tile, tablet layout, and mobile
+stacked layout were approved; the logo remained fully visible and undistorted,
+copy and CTA remained readable and usable, and no horizontal overflow,
+problematic cropping, or layout collision was observed. See
 `WA-04_RESPONSIVE_MANUAL_QA_CHECKLIST.md`.
 
 ## Next Phase
