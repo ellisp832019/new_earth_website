@@ -51,4 +51,6 @@ public content only and does not authorise WordPress publication.
 - [x] Unverified assets are held from public build; no AI-generated or third-party asset was treated as automatically cleared.
 - [x] Owner visual selections were ingested from the preserved WA-05H2 export;
   rights evidence remains outstanding and is not implied by KEEP.
+- [x] Peter approved AST-001 through AST-031 for New Earth Website use on
+  2026-08-27; this is owner-use approval, not rights or public-build approval.
 - [ ] Runtime image, caption, responsive and public/private checks remain outstanding.

@@ -100,6 +100,17 @@ evidence, owner, date, and approval state.
 - The New Earth Builders logo remains subject to trademark/brand permission and
   source evidence; a text-only fallback remains the safe alternative.
 
+## WA-05H4 owner-use approval closure
+
+- Peter approved AST-001 through AST-031 for New Earth Website use on
+  2026-08-27. This closes the owner creative/use-selection question only.
+- Repository evidence does not establish creator ownership or licence rights
+  for the 30 non-logo assets. They remain blocked from public output pending
+  evidence or controlled replacement. AST-017 additionally requires external
+  brand permission or a text-only fallback.
+- The Ecosystem visual special decision remains historically PENDING and is an
+  implementation design decision; it is not being forced in this pass.
+
 ## WA-05F accessibility readiness
 
 The Website V2 accessibility gate is **ACCESSIBILITY READINESS - PASS WITH

@@ -90,6 +90,11 @@ WA-05H3 imports exact owner outcomes separately from rights and public-build
 status. KEEP means owner visual selection only; selected assets remain gated
 until provenance, rights, accessibility and implementation checks are complete.
 
+WA-05H4 records Peter's later owner-use approval for AST-001 through AST-031 in
+`ASSET_REVIEW/OWNER_ASSET_USE_APPROVAL.md`. Read `ASSET_REVIEW/PUBLIC_ASSET_BUILD_GATE.md`
+before any future build: owner-use approval does not clear rights, provenance or
+public-build gates.
+
 ## WA-05H2 reusable owner asset review tool
 
 Launch `07_CODEX/TOOLS/website-asset-review/launch.ps1` or use the VS Code task
