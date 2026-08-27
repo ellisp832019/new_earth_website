@@ -5,8 +5,15 @@
 - Resolved: `/manifesto/` was an accidental WA-02 register omission. It is now
   recorded as V2.0 route `V20-019`, with secondary navigation placement and no
   change to the seven-item header.
-- Six core drafts are refined and remain `DRAFTED - REVIEW REQUIRED` pending
-  owner approval; this is an approval-ready baseline, not publication approval.
+- Six core drafts are refined and owner-approved, while specialist review gates
+  remain open; this is not publication approval.
+
+## WA-05B.1 owner approval record
+
+Peter approved Vision, Manifesto, Blueprint, Ecosystem, About and Get Involved
+on 2026-08-27 at HEAD `451cd0865b349a9397e46f386089538d2ee03344`. Their status
+is now `OWNER APPROVED - SPECIALIST REVIEW PENDING`. This approval confirms the
+current wording and public framing only; it does not waive specialist gates.
 
 ## Blocking V2 content decisions
 

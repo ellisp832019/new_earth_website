@@ -7,6 +7,8 @@ controlled terminology, source register, and V2.0 content inventory. WA-05B
 adds six complete core orientation page drafts, their cross-links, visual needs,
 and editorial review controls. WA-05C refines those drafts, reconciles the
 Manifesto route with WA-02, and adds the approval checklist.
+WA-05B.1 records Peter's owner approval of the six drafts while retaining all
+specialist review gates.
 
 ## Reading order
 
@@ -42,6 +44,6 @@ app direction; and future intent is not availability.
 
 ## Safe next step
 
-The safe next step is editorial and owner review of the six core drafts, then
-controlled reconciliation before pillar drafting. This commit does not
-authorise publication, WordPress implementation, or live changes.
+The safe next step is specialist review of the six owner-approved core drafts,
+then a separately authorised 12 Pillars content-production batch. This record
+does not authorise publication, WordPress implementation, or live changes.
