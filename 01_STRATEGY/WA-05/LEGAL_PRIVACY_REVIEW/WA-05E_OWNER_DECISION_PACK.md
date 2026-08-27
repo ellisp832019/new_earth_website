@@ -1,7 +1,17 @@
 # WA-05E Owner Decision Pack
 
-This pack records only decisions that cannot be answered from the current
-repository evidence. It does not approve legal wording or activate any service.
+This pack records the remaining owner inputs after the 2026-08-27 scope direction.
+The initial V2 scope decisions are closed. It does not approve legal wording or
+activate any service.
+
+## Closed Scope Decisions - 2026-08-27
+
+- Initial V2 role: informational public gateway.
+- Commerce, subscriptions, payments, donations and investment: deferred.
+- Native community, accounts and newsletter: deferred.
+- Data-bearing services including AI, wellbeing, BioCalm and device accounts:
+  deferred.
+- Contact: minimal verified business contact route preferred; no invented address.
 
 ## Before Website V2 Publication
 
@@ -19,6 +29,8 @@ registered office or controller contact details.
 **Decision needed**
 
 Confirm the legal operator and the information authorised for public disclosure.
+This remains open because the owner direction identifies an intended operator lead
+but does not provide authoritative formal values.
 
 **Options**
 
@@ -34,7 +46,7 @@ Hold legal/company disclosure publication until verified details are supplied.
 
 NO for a final public launch.
 
-### OD-002 - What contact route should the public site use?
+### OD-002 - What verified business contact route should the public site use?
 
 **Why this matters**
 
@@ -47,7 +59,8 @@ No form implementation or field specification is evidenced.
 
 **Decision needed**
 
-Choose a minimal contact route and whether a form is needed at all.
+Provide or verify the public business contact route. A native form remains a
+separate design/data-flow decision.
 
 **Options**
 
@@ -65,7 +78,7 @@ YES, if no collection is activated and the public copy remains accurate.
 
 ## Before Commerce
 
-### OD-003 - Is commerce in scope for this V2 release?
+### OD-003 - CLOSED - Is commerce in scope for this V2 release?
 
 **Why this matters**
 
@@ -78,7 +91,7 @@ No shop, checkout, prices, payment or download flow is present in the V2 evidenc
 
 **Decision needed**
 
-Confirm whether commerce is deferred from V2.
+Closed by owner direction: commerce is deferred from initial V2.
 
 **Recommended default**
 
@@ -86,11 +99,12 @@ Keep the current release informational and defer commerce.
 
 **Can Website V2 publish before this is decided?**
 
-YES, without commerce mechanisms or sales claims.
+YES, without commerce mechanisms or sales claims. No further owner decision is
+required unless the scope changes.
 
 ## Before Community
 
-### OD-004 - Will New Earth operate a native community service?
+### OD-004 - CLOSED - Will New Earth operate a native community service?
 
 **Why this matters**
 
@@ -104,7 +118,8 @@ is not evidenced.
 
 **Decision needed**
 
-Confirm whether native community functionality is future-only.
+Closed by owner direction: native community functionality is deferred; external
+communities may remain labelled links.
 
 **Recommended default**
 
@@ -112,11 +127,12 @@ Keep native community functionality out of V2 and label external destinations.
 
 **Can Website V2 publish before this is decided?**
 
-YES, with external-link treatment only.
+YES, with external-link treatment only. No further owner decision is required
+unless the scope changes.
 
 ## Before App or Personal-Data Activation
 
-### OD-005 - Which future data-bearing capabilities should proceed first?
+### OD-005 - CLOSED - Which future data-bearing capabilities should proceed first?
 
 **Why this matters**
 
@@ -130,7 +146,8 @@ services in the Website V2 evidence.
 
 **Decision needed**
 
-Select a future capability for a separate activation brief, if any.
+Closed for initial V2 by owner direction: data-bearing capabilities are deferred.
+Selection of a future capability belongs to a separate activation brief.
 
 **Recommended default**
 

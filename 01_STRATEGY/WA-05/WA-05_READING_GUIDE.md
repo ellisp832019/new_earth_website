@@ -56,4 +56,7 @@ does not authorise publication, WordPress implementation, or live changes.
 Read `LEGAL_PRIVACY_REVIEW/WA-05E_LEGAL_PRIVACY_READINESS_REVIEW.md` first,
 then the four registers, owner decision pack and future runtime checklist. This
 gate records readiness and action requirements, not solicitor certification. The
-current result is `LEGAL / PRIVACY READINESS - PENDING OWNER INPUT`.
+current result is `LEGAL / PRIVACY READINESS - OWNER SCOPE CLOSED / PUBLICATION
+INPUTS REMAIN`. WA-05E1 closes initial informational scope, defers commerce,
+native community and data-bearing services, and leaves only verified operator and
+business-contact inputs open before launch.

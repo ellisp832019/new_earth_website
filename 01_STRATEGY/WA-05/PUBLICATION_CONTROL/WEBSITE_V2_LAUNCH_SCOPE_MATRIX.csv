@@ -1,0 +1,22 @@
+scope_id,capability,initial_v2_status,public_content_allowed,interactive_activation_allowed,data_collection_allowed,additional_gate_required,gate_reference,verification_required,notes
+V2S-001,Core informational pages,Included,yes,no,no,Specialist closure,WA-05F/G/H,no,Owner-approved content remains pending specialist gates
+V2S-002,12 Pillars,Controlled production,yes,no,no,Legal/public-trust guardrails,LPR-022,no,Use maturity labels; do not imply operational products
+V2S-003,Journal,Included with status labels,yes,no,no,Editorial and SEO review,WA-05G,no,Canonical publication route
+V2S-004,System descriptions,Bounded explainer,yes,no,no,Technical evidence review,WA-05C,yes,Technical evidence wins
+V2S-005,External community links,Allowed as labelled links,yes,no,no,External-link/privacy review,LPR-007,no,No New Earth control implied
+V2S-006,Business contact,Preferred minimal route,yes,no,no,Owner contact verification,OD-002,yes,Do not invent an address
+V2S-007,Native contact form,Deferred design,yes,no,no,Form/data-flow gate,WDF-003,yes,Fields and recipient not defined
+V2S-008,Newsletter,Deferred,no,no,no,Marketing/privacy gate,FAG-004,yes,No signup or marketing activation
+V2S-009,Peter digital products,Future only,no,no,no,Commerce and creator gate,FAG-002,yes,No availability implied
+V2S-010,Hayley Conscious Living products,Future only,no,no,no,Commerce creator and attribution gate,FAG-003,yes,No creator-specific public claim added
+V2S-011,Payments,Deferred,no,no,no,Payment and commerce gate,FAG-005,yes,No payment account or flow
+V2S-012,User accounts,Deferred,no,no,no,Account security/privacy gate,FAG-006,yes,No registration or login
+V2S-013,Native community,Deferred,no,no,no,Community UGC gate,FAG-007,yes,External links remain distinct
+V2S-014,GAIA interaction,Deferred,no,no,no,AI safety/privacy gate,FAG-008,yes,No public AI service
+V2S-015,New Earth Living data,Deferred,no,no,no,Health and app-data gate,FAG-009,yes,No current collection
+V2S-016,BioCalm data,Deferred,no,no,no,Health/device/data gate,FAG-010,yes,No medical status implied
+V2S-017,MicroGrow sales,Deferred,no,no,no,Product safety/commerce gate,FAG-011,yes,Informational wording remains bounded
+V2S-018,Donations,Deferred,no,no,no,Funding/charity gate,FAG-013,yes,No charity or tax claim
+V2S-019,Investment,Deferred,no,no,no,Financial-promotion gate,FAG-014,yes,No investment solicitation
+V2S-020,Youth services,Deferred,no,no,no,Children's Code gate,FAG-012,yes,No current child-directed data flow
+V2S-021,International commerce,Deferred,no,no,no,Consumer/transfer gate,FAG-015,yes,No international sale flow

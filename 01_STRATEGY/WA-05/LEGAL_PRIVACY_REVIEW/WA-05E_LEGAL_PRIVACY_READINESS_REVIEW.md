@@ -2,11 +2,12 @@
 
 ## Executive Decision
 
-**LEGAL / PRIVACY READINESS - PENDING OWNER INPUT**
+**LEGAL / PRIVACY READINESS - OWNER SCOPE CLOSED / PUBLICATION INPUTS REMAIN**
 
-The current Website V2 content is suitable for continued controlled planning,
-but final publication readiness depends on verified operator disclosures, privacy
-notice inputs and live-runtime verification. No legal approval is claimed.
+The owner has closed the initial V2 scope: informational only, with commerce,
+native community and data-bearing services deferred. Final publication readiness
+still depends on verified operator disclosures, privacy-notice inputs and
+live-runtime verification. No legal approval is claimed.
 
 ## Important Limitation
 
@@ -219,9 +220,10 @@ future provider choices and any intended commerce/community activation.
 
 ## Owner Decisions Required
 
-See `WA-05E_OWNER_DECISION_PACK.md`: operator identity, contact/form model, whether
-commerce is deferred, whether native community is future-only and which data-bearing
-capability, if any, should receive a separate activation brief.
+See `WA-05E_OWNER_DECISION_PACK.md`: exact operator/company disclosure information
+and the verified public business contact route remain open. The initial V2 role,
+deferred commerce, deferred native community and deferred data-bearing capability
+decisions are closed.
 
 ## Runtime Verification Required
 
@@ -246,6 +248,17 @@ health/device, community/UGC, fundraising/investment and asset-rights questions.
 For final public launch: verified operator/company disclosures, accurate privacy and
 cookie inputs, and live-runtime verification remain blockers. No new public wording
 change is required by this review.
+
+### WA-05E blocker reclassification
+
+- Type A - must close before content production continues: none created by WA-05E.
+- Type B - must close before WordPress build: specialist accessibility, SEO and
+  asset-rights preparation; no live feature activation.
+- Type C - must close before public launch: verified company disclosures, accurate
+  privacy inputs and live cookie/script/storage verification.
+- Type D - future activation only: commerce, subscriptions, payments, accounts,
+  newsletter, native community, AI interaction, wellbeing/device data,
+  MicroGrow sales, children/youth, donations and investment.
 
 ## Non-Blocking Future Requirements
 
@@ -278,7 +291,7 @@ professional review before activation.
 
 ## Review Decision
 
-**LEGAL / PRIVACY READINESS - PENDING OWNER INPUT**
+**LEGAL / PRIVACY READINESS - OWNER SCOPE CLOSED / PUBLICATION INPUTS REMAIN**
 
 This is readiness evidence, not legal approval. Informational planning may continue;
 final publication must wait for the identified inputs and runtime checks.
