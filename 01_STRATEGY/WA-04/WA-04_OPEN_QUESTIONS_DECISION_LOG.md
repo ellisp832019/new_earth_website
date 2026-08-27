@@ -15,8 +15,10 @@
   hero must not be reused in that card.
 - Homepage image-led cards use one reusable one-third media/two-thirds writing
   contract with visible status, title, explanation, and action.
-- New Earth Builders is reserved as PARTNER APPROVAL PENDING only; no public
-  partnership or external link is active.
+- New Earth Builders is approved for a normal labelled external link in the
+  offline preview as an independent community platform. Courtesy review remains
+  required before public deployment; no partnership, ownership, embed, feed,
+  tracker, API connection, or account integration is claimed.
 
 ## Non-blocking implementation questions
 
@@ -30,9 +32,9 @@
 - Which project cards have publishable evidence and final status ownership?
 - Which provider, if any, passes the future newsletter and donation review?
 - Which final production assets receive rights, caption, and credit approval?
-- Will Alli approve New Earth Builders, and if so which organisation wording,
-  URL, image, branding permission, ownership language, and future content may
-  be activated?
+- Will the final New Earth Builders tile receive courtesy review, and when can
+  an original transparent PNG or SVG replace the screenshot-derived provisional
+  logo?
 
 These questions do not block the offline prototype. They must be resolved in
 staging or later content/asset work before production implementation.
