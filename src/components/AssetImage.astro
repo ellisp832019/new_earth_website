@@ -1,0 +1,6 @@
+---
+import { assetUrl, canRenderLocally } from '../lib/asset-resolver';
+const { asset, alt, className = '' } = Astro.props;
+const src = canRenderLocally(asset) ? assetUrl(asset) : undefined;
+---
+{src && <img class={className} src={src} alt={alt} loading="lazy" />}

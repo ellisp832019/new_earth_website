@@ -37,3 +37,4 @@ ASSETS_REFERENCE/global_images_log.csv
 node_modules/
 dist/
 .astro/
+public/local-assets/
