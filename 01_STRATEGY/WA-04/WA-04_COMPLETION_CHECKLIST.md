@@ -1,7 +1,7 @@
 # WA-04 Completion Checklist
 
 **Phase:** Website V2 global shell and homepage offline baseline
-**State:** Approved baseline; responsive browser acceptance outstanding before deployment
+**State:** Approved baseline; desktop tile courtesy review complete; tablet and mobile browser acceptance outstanding before deployment
 
 ## Governance and Scope
 
@@ -34,9 +34,11 @@
 
 ## Boundaries and Remaining Work
 
-- [x] External integrations remain compact, labelled, and inactive, with no scripts, feeds, embeds, trackers, or unapproved URLs.
-- [x] New Earth Builders remains a neutral Community & Collaboration reservation marked Coming Later in the preview.
-- [x] No partner name, logo, URL, partnership claim, embed, tracking, SSO, or data sharing is public.
+- [x] External integrations remain compact and labelled, with no scripts, feeds, embeds, trackers, or unapproved URLs.
+- [x] Peter approved the final horizontal New Earth Builders tile and Alli approved the final horizontal presentation on 2026-08-27.
+- [x] New Earth Builders is presented as an independent community platform through a normal external link only.
+- [x] No formal joint venture, ownership relationship, legal partnership, embed, tracking, SSO, or data sharing is claimed.
+- [x] The supplied logo remains a screenshot-derived provisional asset; an original transparent PNG or SVG is a later quality upgrade, not a V2 deployment blocker.
 - [x] `NE-HOME-IMG-007` is produced and adopted; the required homepage production-image blocker is resolved.
 - [x] The MicroGrow page hero is not reused as the homepage project-card image; the dedicated card asset is used instead.
 - [x] WA-05 detailed content production is the next phase.
