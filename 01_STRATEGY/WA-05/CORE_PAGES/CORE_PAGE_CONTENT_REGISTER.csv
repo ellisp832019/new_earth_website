@@ -1,5 +1,5 @@
 page_id,page_title,canonical_url,draft_status,source_basis,evidence_class,owner,required_approvals,outstanding_dependencies,proposed_next_review
-CORE-001,Vision,/vision/,DRAFTED - REVIEW REQUIRED,WA-01 scope; vision and shared content sources,VISION; PRINCIPLE,New Earth,New Earth owner,Final wording and SEO review,Before WA-05B closeout
+CORE-001,Vision,/vision/,DRAFTED - REVIEW REQUIRED,WA-01 scope; vision and shared content sources,VISION; PRINCIPLE,New Earth,New Earth owner,Final wording and SEO review,Before WA-05D approval
 CORE-002,Manifesto,/manifesto/,DRAFTED - REVIEW REQUIRED,Manifesto master and WA-01 scope,PRINCIPLE; VISION,New Earth,New Earth owner; attributed voice owners if used,Final wording and attribution review,Before publication
 CORE-003,Blueprint,/blueprint/,DRAFTED - REVIEW REQUIRED,Blueprint masters; WA-02 architecture,PRINCIPLE; VISION,New Earth,New Earth owner,Framework presentation and accessibility review,Before pillar drafting
 CORE-004,Ecosystem,/ecosystem/,DRAFTED - REVIEW REQUIRED,WA-02 architecture; boundary record; systems summaries,PRINCIPLE; VISION; UNKNOWN / REQUIRES VERIFICATION,New Earth,New Earth owner; technical owner for system detail,Technical evidence and text alternative,Before technical page drafting

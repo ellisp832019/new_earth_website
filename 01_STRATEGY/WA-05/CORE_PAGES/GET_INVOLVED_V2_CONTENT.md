@@ -48,9 +48,12 @@ projects as they develop. No donation or funding offer is implied by this draft.
 
 ## New Earth Builders
 
-New Earth Builders is an independent community platform. Visit [New Earth
-Builders](https://new-earth-builders.com/) to explore its own public space. This
-is a normal external link, not an embedded service or technical integration.
+New Earth Builders is an independent community platform. An intentional
+community connecting innovators, healers, inventors and creators who want to
+collaborate, exchange knowledge and help bring New Earth-aligned projects into
+being. Visit [New Earth Builders](https://new-earth-builders.com/) to explore
+its own public space. This is a normal external link, not an embedded service
+or technical integration.
 
 ## Image brief
 

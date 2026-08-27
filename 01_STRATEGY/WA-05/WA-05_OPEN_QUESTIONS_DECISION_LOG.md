@@ -1,8 +1,15 @@
 # WA-05 Open Questions and Decision Log
 
+## WA-05C review resolutions
+
+- Resolved: `/manifesto/` was an accidental WA-02 register omission. It is now
+  recorded as V2.0 route `V20-019`, with secondary navigation placement and no
+  change to the seven-item header.
+- Six core drafts are refined and remain `DRAFTED - REVIEW REQUIRED` pending
+  owner approval; this is an approval-ready baseline, not publication approval.
+
 ## Blocking V2 content decisions
 
-- Reconcile the WA-02 URL register omission of `/manifesto/` with the approved six-page core orientation scope before final route publication.
 - Confirm final public wording and evidence owner for each project and technology page.
 - Consolidate competing source wording before drafting pillar and orientation pages.
 - Confirm whether each proposed V2.0 page has a publishable owner and evidence class.
@@ -36,5 +43,5 @@
 - Original transparent New Earth Builders logo replacement.
 - Final credits, captions, and rights records for conceptual imagery.
 
-No question is resolved by assumption. Each resolution must record evidence,
-owner, date, and approval state.
+No other question is resolved by assumption. Each resolution must record
+evidence, owner, date, and approval state.

@@ -22,7 +22,7 @@ readers, researchers, builders and people looking for a practical starting point
 of life where questions become practical. It offers a structure for learning,
 conversation and careful development.
 
-## How it is organised
+## How the framework works
 
 The Blueprint begins with principles and questions about the kind of civilisation
 we want to support. It then opens into the [12 Pillars](/blueprint/pillars/),
@@ -36,7 +36,7 @@ see relationships between vision, systems, projects and participation. The
 Blueprint does not prescribe one path for every person or community. It is a
 shared reference point that can be questioned and improved.
 
-## Keep learning
+## Choose a starting point
 
 Start with the [Inner Blueprint](/blueprint/inner-blueprint/) or explore the
 [Transition Path](/blueprint/transition-path/). Visit [Projects](/projects/)
