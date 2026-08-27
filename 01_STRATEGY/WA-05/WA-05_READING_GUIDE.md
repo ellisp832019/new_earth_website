@@ -84,3 +84,11 @@ for review but held from public build pending rights/provenance, owner selection
 accessibility and runtime checks. Read `ASSET_REVIEW/AUTOMATED_ASSET_BUILD_CONTRACT.md`
 for future WB-00 inputs. This gate does not approve assets, alter public copy or
 start automated build/deployment work.
+
+## WA-05H2 reusable owner asset review tool
+
+Launch `07_CODEX/TOOLS/website-asset-review/launch.ps1` or use the VS Code task
+`New Earth: Review Website Assets`. Review decisions are browser-local until
+exported. The tool is internal, offline and non-destructive; it does not approve
+rights or promote assets. Use `ASSET_REVIEW/OWNER_REVIEW/HOW_TO_APPLY_OWNER_ASSET_DECISIONS.md`
+for the controlled handoff.

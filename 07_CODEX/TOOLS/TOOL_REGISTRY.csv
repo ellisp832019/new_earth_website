@@ -1,0 +1,2 @@
+tool_id,name,tool_class,path,entrypoint,launcher,local_only,network_required,destructive,human_decision_required,status,future_command_centre_candidate,notes
+WEBSITE-ASSET-REVIEW,New Earth Website - Owner Asset Review,REVIEW TOOL,07_CODEX/TOOLS/website-asset-review/,index.html,launch.ps1,YES,NO,NO,YES,ACTIVE - INTERNAL,YES,Local-only visual review; not public deployment content

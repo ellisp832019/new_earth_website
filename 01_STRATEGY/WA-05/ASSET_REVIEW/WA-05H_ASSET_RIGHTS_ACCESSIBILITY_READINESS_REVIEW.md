@@ -198,3 +198,11 @@ controlled for review, but not cleared for public build.
 Obtain owner selections and provenance evidence, complete specialist rights,
 accessibility, legal/privacy, SEO and runtime checks, and retain the six core-page
 status as `OWNER APPROVED - SPECIALIST REVIEW PENDING` until all gates close.
+
+## Reusable owner review tool
+
+The local review tool is `07_CODEX/TOOLS/website-asset-review/index.html`. It is
+an internal review aid only. It records browser-local owner choices and exports
+them for Codex validation; it cannot approve rights, edit registers, publish or
+deploy. WA-05H remains open until exported decisions and specialist gates are
+processed.
