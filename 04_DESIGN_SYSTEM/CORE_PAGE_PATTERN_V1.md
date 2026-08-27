@@ -4,8 +4,8 @@
 
 Established by the Vision implementation:
 
-- A concise page hero with eyebrow, one H1 and approved opening summary; when a governed hero image is supplied, the hero uses a balanced text-left/image-right composition.
-- A centred reading column capped at approximately 840px, with paragraph measure kept to a comfortable reading length.
+- A HERO SHELL centred at approximately 1120px maximum; when a governed hero image is supplied, it uses a balanced text-left/image-right composition.
+- An ARTICLE READING SHELL centred independently below the hero and capped at approximately 760px, with paragraph measure kept to a comfortable reading length.
 - Section rhythm built from generous vertical spacing and subtle dividers, with a stronger final CTA handoff.
 - Serif headings with the accepted local/system-safe typography stack.
 - Imagery is optional and only used when a suitable governed asset exists; it remains free of decorative backing panels.
