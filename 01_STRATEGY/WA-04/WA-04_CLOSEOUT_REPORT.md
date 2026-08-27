@@ -1,7 +1,7 @@
 # WA-04 Closeout Report
 
 **Phase:** Website V2 global shell and homepage offline baseline
-**Closeout state:** Approved V2 homepage baseline with responsive implementation acceptance outstanding
+**Closeout state:** Approved V2 homepage baseline; New Earth Builders desktop courtesy review complete; responsive implementation acceptance outstanding
 
 ## Approval
 
@@ -52,13 +52,18 @@ visible focus styles, and no essential text over imagery.
 External integrations are a compact supporting treatment only. No external
 scripts, feeds, embeds, trackers, or unapproved destinations are active.
 
-The New Earth Builders opportunity remains a neutral Community & Collaboration
-reservation marked Coming Later in the offline preview. The internal record
-retains `PARTNER APPROVAL PENDING`, but the public preview does not display the
-partner name, Alli's name, logo, URL, partnership claim, or integration detail.
-Activation requires approval, approved wording and URL, approved image or
-logo, written usage permission, external-link review, privacy and tracking
-review, ownership wording, and confirmation of any future shared content.
+The New Earth Builders feature is approved for the offline preview as an
+independent community platform using a normal labelled external link. Peter
+approved the final horizontal tile and Alli approved the final horizontal
+presentation on 2026-08-27 after courtesy review. No formal joint venture,
+ownership relationship, legal partnership, endorsement, technical integration,
+shared governance, account integration, API connection, feed, tracker, or
+embedded content is claimed.
+
+The supplied logo remains a screenshot-derived provisional production asset.
+An original transparent PNG or SVG is a later quality upgrade, not a V2
+deployment blocker. Tablet and mobile manual visual checks remain required
+before deployment.
 
 `NE-HOME-IMG-007` has been produced and adopted as the dedicated homepage
 project-card image. The MicroGrow page hero remains intentionally excluded from
@@ -87,8 +92,9 @@ availability, proven performance, or direct actuator control.
 
 ## Responsive QA State
 
-Peter's desktop visual approval is recorded. Automated browser screenshots were
-unavailable, so no desktop, tablet, or mobile screenshot pass is claimed.
+Peter's desktop visual approval and Alli's 2026-08-27 courtesy approval of the
+final horizontal tile are recorded. Automated browser screenshots were
+unavailable, so no tablet or mobile screenshot pass is claimed.
 Responsive CSS and structural checks pass locally. Tablet review at
 approximately 768px and mobile review at approximately 390px remain required
 implementation acceptance checks before deployment; see
