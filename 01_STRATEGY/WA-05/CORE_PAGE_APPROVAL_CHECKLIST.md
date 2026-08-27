@@ -36,4 +36,6 @@ public content only and does not authorise WordPress publication.
 - Hayley founder-attribution review for current drafts: [x] NOT REQUIRED; reopen if personal history or attributed voice is added
 - Legal, accessibility and SEO checks: [ ] Pending
 - Asset rights, captions and alternative-text confirmation: [ ] Pending
+- WA-05E legal/privacy readiness: [ ] Pending owner input and runtime verification;
+  no legal approval claimed
 - Final publication status: OWNER APPROVED - SPECIALIST REVIEW PENDING
