@@ -208,6 +208,13 @@
       }
     },
     {
+      "label": "New Earth: Refresh Website Asset Inventory",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\07_CODEX\\TOOLS\\website-asset-review\\scan-repository-images.ps1"],
+      "problemMatcher": []
+    },
+    {
       "label": "New Earth: Review Website Assets",
       "type": "process",
       "command": "powershell.exe",

@@ -27,7 +27,8 @@ is convenience only, not repository authority.
 ## How To Launch
 
 Run `launch.ps1` from this directory or use the VS Code task `New Earth: Review
-Website Assets`. Opening `index.html` directly also works.
+Website Assets`. The launcher first runs local read-only repository discovery and
+then opens the app. Opening `index.html` directly is useful for debugging only.
 
 ## Review Workflow
 
@@ -57,7 +58,14 @@ closing.
 CSV filename: `NEW_EARTH_WA05H2_OWNER_ASSET_DECISIONS.csv`.
 JSON filename: `NEW_EARTH_WA05H2_OWNER_ASSET_DECISIONS.json`.
 Both are generated locally and contain owner decisions plus unresolved rights
-follow-up fields.
+follow-up fields. The complete discovery estate includes internal and evidence
+images that are not public candidates.
+
+## Inventory refresh
+
+Use `scan-repository-images.ps1` or the VS Code task `New Earth: Refresh Website
+Asset Inventory` to regenerate the inventory and browser index. The browser does
+not fake a filesystem rescan; the workflow is scan, regenerate, reopen.
 
 ## How Codex Applies an Export
 
