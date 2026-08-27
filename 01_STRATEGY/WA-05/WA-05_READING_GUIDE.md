@@ -85,6 +85,11 @@ accessibility and runtime checks. Read `ASSET_REVIEW/AUTOMATED_ASSET_BUILD_CONTR
 for future WB-00 inputs. This gate does not approve assets, alter public copy or
 start automated build/deployment work.
 
+The WA-05H2 owner export is preserved in `ASSET_REVIEW/OWNER_REVIEW/INPUT/`.
+WA-05H3 imports exact owner outcomes separately from rights and public-build
+status. KEEP means owner visual selection only; selected assets remain gated
+until provenance, rights, accessibility and implementation checks are complete.
+
 ## WA-05H2 reusable owner asset review tool
 
 Launch `07_CODEX/TOOLS/website-asset-review/launch.ps1` or use the VS Code task

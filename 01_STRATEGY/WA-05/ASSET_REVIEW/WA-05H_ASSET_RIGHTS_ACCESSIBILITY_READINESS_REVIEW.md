@@ -190,19 +190,21 @@ testimonials and customer imagery.
 
 ## Review Decision
 
-**ASSET READINESS - OWNER ASSET DECISIONS REQUIRED.** The current estate is
-controlled for review, but not cleared for public build.
+**ASSET READINESS - TARGETED RIGHTS INPUT REQUIRED.** Peter's owner visual
+decisions are now preserved and imported, but KEEP is not rights approval. The
+current estate remains controlled for review and is not cleared for public build.
 
 ## Remaining WA-05 Work
 
-Obtain owner selections and provenance evidence, complete specialist rights,
-accessibility, legal/privacy, SEO and runtime checks, and retain the six core-page
-status as `OWNER APPROVED - SPECIALIST REVIEW PENDING` until all gates close.
+Use `OWNER_REVIEW/WA-05H3_OWNER_DECISION_INGESTION_REPORT.md` and the governed
+registers as the current asset baseline. Resolve the targeted rights/provenance
+queue, complete specialist accessibility, legal/privacy, SEO and runtime checks,
+and retain all selected assets from public build until those gates close.
 
 ## Reusable owner review tool
 
 The local review tool is `07_CODEX/TOOLS/website-asset-review/index.html`. It is
 an internal review aid only. It records browser-local owner choices and exports
 them for Codex validation; it cannot approve rights, edit registers, publish or
-deploy. WA-05H remains open until exported decisions and specialist gates are
-processed.
+deploy. WA-05H remains open for targeted rights/provenance and specialist gates;
+the owner visual review itself does not need to be repeated.
