@@ -79,5 +79,6 @@ NEW_EARTH_WEBSITE/
 ├── 07_CODEX/                      # Codex rules, tasks, prompts, guardrails
 ├── 08_DEPLOYMENT/                 # IONOS access, SFTP workflow, release process
 ├── 09_LOGS/                       # Changelog, decisions, open items, build history
+├── ASSETS_REFERENCE/               # Local-only review references; never directly deployed
 └── README.md
 ```

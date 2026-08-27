@@ -28,3 +28,7 @@ desktop.ini
 ASSETS/_INBOX/*
 !ASSETS/_INBOX/README.md
 06_THEME/*.zip
+
+# Local-only asset review references
+ASSETS_REFERENCE/global_images/*
+ASSETS_REFERENCE/global_images_log.csv
