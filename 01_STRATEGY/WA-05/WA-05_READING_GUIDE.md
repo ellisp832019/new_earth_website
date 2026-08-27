@@ -67,3 +67,11 @@ Read `ACCESSIBILITY_REVIEW/WA-05F_ACCESSIBILITY_READINESS_REVIEW.md` first,
 then the implementation specification, requirements register, test matrix and
 future gates. The result is `ACCESSIBILITY READINESS - PASS WITH IMPLEMENTATION
 REQUIREMENTS`; no WCAG conformance claim has been made.
+
+## WA-05G SEO and metadata review
+
+Read `SEO_METADATA_REVIEW/WA-05G_SEO_METADATA_READINESS_REVIEW.md` first, then
+the page manifest, purpose map, internal-link map, structured-data, social,
+sitemap, robots, migration and automation controls. The result is `SEO /
+METADATA READINESS - PASS WITH IMPLEMENTATION REQUIREMENTS`; no ranking,
+indexing or rich-result claim has been made.

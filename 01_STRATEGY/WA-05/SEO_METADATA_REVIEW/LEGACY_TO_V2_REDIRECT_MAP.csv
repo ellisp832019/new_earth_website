@@ -1,0 +1,6 @@
+redirect_id,legacy_path,target_v2_path,source_evidence,mapping_status,redirect_type,launch_verification_required,notes
+RED-001,/articles/,/journal/,WA-01 redirect matrix,CONFIRMED,301,yes,Inventory legacy inbound links before cutover
+RED-002,/cookie-policy-uk/,/legal/cookie-policy/,WA-01 redirect matrix,CONFIRMED,301,yes,Legal review and canonical verification required
+RED-003,/systems/,/ecosystem/,WA-02 sitemap and redirect planning,PROPOSED,301,yes,Only after replacement validation
+RED-004,/blueprint/new-earth-test/,/blueprint/inner-blueprint/,WA-02 redirect planning,PROPOSED,301,yes,Only after unique content preservation
+RED-005,/founders-journey/,/founders-journey/,WA-01 route register,REMOVE / GONE DECISION REQUIRED,None,yes,Not a redirect; final content decision required

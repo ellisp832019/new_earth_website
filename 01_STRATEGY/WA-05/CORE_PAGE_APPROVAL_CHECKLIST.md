@@ -40,4 +40,6 @@ public content only and does not authorise WordPress publication.
   no legal approval claimed
 - WA-05F accessibility readiness: [ ] PASS WITH IMPLEMENTATION REQUIREMENTS;
   rendered conformance remains untested
+- WA-05G SEO and metadata readiness: [ ] PASS WITH IMPLEMENTATION REQUIREMENTS;
+  canonical host and runtime SEO remain unverified
 - Final publication status: OWNER APPROVED - SPECIALIST REVIEW PENDING
