@@ -56,3 +56,11 @@ now locked.
 
 The canonical principle is maintained in
 `00_BLUEPRINT/NEW_EARTH_LOCAL_FIRST_COMMUNITY_STEWARDSHIP.md`.
+
+## About
+
+**Status:** IMPLEMENTED - PENDING PETER VISUAL + CONTENT REVIEW
+
+The approved About content is implemented at `/about/` using the locked
+core-page pattern and a text-led hero. An authentic About image remains a
+future requirement pending rights, provenance and owner review.
