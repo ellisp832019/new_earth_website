@@ -23,6 +23,14 @@ and source of truth. Astro is the active implementation and build system.
 - **IONOS webspace:** future deployment target
 - **Current WordPress site:** legacy/current live site retained until controlled cutover
 
+The current operating path is:
+
+`Repository -> Astro implementation -> Local preview/owner review -> Public
+build -> Future staging -> Future IONOS deployment`
+
+WordPress-first phases below are **HISTORICAL / SUPERSEDED FOR WEBSITE V2
+IMPLEMENTATION**. They remain as evidence and do not authorise live changes.
+
 The WordPress-first implementation guidance below is historical and is marked
 **LEGACY / SUPERSEDED FOR WEBSITE V2 IMPLEMENTATION** where it describes the
 active build path. It remains for historical context and does not authorise

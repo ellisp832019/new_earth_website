@@ -13,3 +13,13 @@ TREE-011,ASSETS,directory,Curated Website V2 source assets,CURATED ASSET SOURCE,
 TREE-012,ASSETS_REFERENCE,directory,Local review and selection references,NO,NEVER,YES,NO,Review only,Assets,Never directly deploy
 TREE-013,.vscode,directory,Editor configuration,LOCAL SUPPORT,NO,YES,NO,None,Tooling,Not public output
 TREE-014,root controls,file,Project instructions and entry points,GOVERNANCE,NO,NO,NO,Build guidance,Repository,Keep root deliberately small
+TREE-015,src,directory,Current Astro Website V2 implementation,IMPLEMENTATION SOURCE,INDIRECT,NO,NO,Website V2 application,Astro,Active route components layouts data and styles
+TREE-016,scripts,directory,Build validation and asset preparation automation,OPERATIONAL,NO,NO,NO,Build support,Automation,Preserve local/public build separation
+TREE-017,public,directory,Generated or runtime-facing public-surface material,GENERATED / RUNTIME,BUILD OUTPUT ONLY,NO,NO,Build output,Astro,Not editorial authority
+TREE-018,astro.config.mjs,file,Astro build configuration,IMPLEMENTATION CONFIGURATION,NO,NO,NO,Build configuration,Astro,Current framework configuration
+TREE-019,package.json,file,Project scripts and dependencies,IMPLEMENTATION CONFIGURATION,NO,NO,NO,Build configuration,Astro,Current package control
+TREE-020,package-lock.json,file,Locked dependency resolution,IMPLEMENTATION CONFIGURATION,NO,NO,NO,Build configuration,Astro,Dependency lockfile
+TREE-021,tsconfig.json,file,TypeScript configuration,IMPLEMENTATION CONFIGURATION,NO,NO,NO,Build configuration,Astro,Current type configuration
+TREE-022,node_modules,directory,Installed dependencies,GENERATED,NO,YES,NO,None,Automation,Non-authoritative and excluded from source review
+TREE-023,dist,directory,Generated build output,GENERATED,NO,YES,NO,None,Automation,Non-authoritative and excluded from source review
+TREE-024,.astro,directory,Astro generated metadata/cache,GENERATED,NO,YES,NO,None,Automation,Non-authoritative and excluded from source review

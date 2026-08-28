@@ -18,6 +18,16 @@ Run the VS Code task `New Earth: Run Website V2 Local Preview`, or use
 `npm.cmd run dev` from the repository root. This is a local owner preview only;
 it is not a WordPress or production deployment.
 
+## Current Website V2 authority
+
+- Repository: source of truth
+- Astro: current Website V2 implementation and build system
+- Local preview: owner implementation and review environment
+- Public build: rights-safe generated release artefact
+- Staging: future proof and review environment
+- IONOS: future webspace deployment target
+- Current WordPress: existing legacy live site until controlled cutover
+
 ---
 
 ## WHAT THIS PROJECT IS
@@ -33,14 +43,16 @@ This build is based on:
 - the locked New Earth Blueprint
 - a local file structure
 - Codex-compatible project rules
-- WordPress on IONOS as the publishing layer
+- the historical WordPress-on-IONOS publishing context, retained for reference
 
 ---
 
 ## THE MOST IMPORTANT RULE
 
-**The local workspace is the source of truth.  
-WordPress is the publishing layer.**
+**The repository is the source of truth.**
+
+Astro is the current Website V2 implementation. WordPress remains the existing
+legacy live site until a separately controlled cutover.
 
 Do not let live WordPress edits become the only version of the project.
 
@@ -62,6 +74,18 @@ That includes:
 - system framing
 - MicroGrow positioning
 - future expansion
+
+## Current page baseline
+
+- Home - LOCKED
+- Vision - LOCKED
+- Manifesto - LOCKED
+- Blueprint - LOCKED
+- Ecosystem - LOCKED
+
+Next public core pages: About, then Get Involved. After those are reviewed,
+continue with the Core Local-First Narrative Alignment Pass, Core Content
+Coherence Pass and project/system public rollout.
 
 ---
 

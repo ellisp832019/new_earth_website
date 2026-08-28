@@ -54,6 +54,16 @@ safe automation. `08_DEPLOYMENT` holds future release architecture. `09_LOGS`
 holds historical and execution records. `ASSETS` is the curated Website V2 source
 asset estate. `ASSETS_REFERENCE` is local-only review material.
 
+## Current Website V2 implementation additions
+
+`src` is the current Astro Website V2 implementation. `scripts` contains build,
+asset-preparation and validation automation. `public` contains generated or
+runtime-facing public-surface material where applicable. `astro.config.mjs`,
+`package.json`, `package-lock.json` and `tsconfig.json` are implementation
+configuration and dependency controls.
+
+`node_modules`, `dist` and `.astro` are generated, non-authoritative material.
+
 ## Root File Policy
 
 Keep the root limited to intentional controls and project entry points. Historical
@@ -68,7 +78,7 @@ ignored by Git, remain physically available and are not rights evidence.
 ## Public Build Boundary
 
 The repository is not the public website. Internal areas, logs and local references
-must not be copied to public output automatically. No `dist/` exists yet.
+must not be copied to public output automatically.
 
 ## Historical / Session Archive Policy
 
@@ -77,9 +87,8 @@ current governed controls.
 
 ## Future WB-00 Extension Point
 
-WB-00 may later introduce application source, generated distribution output, build
-configuration and automated staging/deployment artefacts after architecture
-selection. It must not be inferred from this cleanup.
+The historical snapshot below is retained as a HISTORICAL SNAPSHOT. It predates
+the current Astro source tree and generated build outputs.
 
 ## Change Control
 

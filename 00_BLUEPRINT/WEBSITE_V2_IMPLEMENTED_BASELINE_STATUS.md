@@ -42,9 +42,17 @@ preserve its approved structure and wording.
 
 ## Ecosystem
 
-**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 The approved Ecosystem copy is implemented at `/ecosystem/` using a text-led
 core-page treatment and a wide public relationship model with a complete
 visible text equivalent. The local-first, community-first and stewardship-first
-narrative is prominent. It remains pending Peter final visual review.
+narrative is prominent. Peter has accepted the refined Ecosystem page and it is
+now locked.
+
+## Local-first / Community Stewardship Model
+
+**Status:** OWNER ACCEPTED - LOCKED
+
+The canonical principle is maintained in
+`00_BLUEPRINT/NEW_EARTH_LOCAL_FIRST_COMMUNITY_STEWARDSHIP.md`.
