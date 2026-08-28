@@ -59,10 +59,21 @@ The canonical principle is maintained in
 
 ## About
 
-**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 The approved About content is implemented at `/about/` using the locked
 core-page pattern and a text-led hero. The bounded refinement adds a local-first
 pathway panel and a subordinate company-context callout without changing the
 approved wording or adding an image. An authentic About image remains a future
 requirement pending rights, provenance and owner review.
+
+## Get Involved
+
+**Status:** IMPLEMENTED - PENDING PETER VISUAL + CONTENT REVIEW
+
+The Get Involved page is implemented at `/get-involved/` as a practical,
+invitation-led participation route. It preserves the approved Learn,
+Contribute, Collaborate and Support structure, adds a distinct Care -> Learn ->
+Contribute -> Build locally -> Connect action pathway, and keeps local-first
+distinct from isolation. New Earth Builders is represented as an independent
+external community platform without using the screenshot-derived logo.
