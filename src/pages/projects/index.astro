@@ -27,11 +27,11 @@ const visibleProjects = publicProjects.filter((project) => publicBuild ? project
   .projects-placeholder h1 { max-width: 12ch; }
   .projects-placeholder .lede { max-width: 52ch; }
   .project-index-list { display: grid; gap: 1.5rem; margin-block: 2.5rem; }
-  .project-index-card { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: clamp(1.5rem, 3vw, 2.25rem); }
+  .project-index-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 340px); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; min-width: 0; padding: clamp(1.5rem, 3vw, 2.25rem); }
   .project-index-card__content { min-width: 0; }
   .project-index-card h2 { margin-block: .35rem .75rem; }
   .project-index-card p { max-width: 55ch; }
-  .project-index-card__visual { width: 100%; max-width: 360px; margin: 0; justify-self: end; }
+  .project-index-card__visual { width: min(100%, 320px); max-width: 320px; min-width: 0; margin: 0; justify-self: end; }
   .project-index-card__visual img { display: block; width: 100%; height: auto; max-width: 100%; max-height: 270px; object-fit: contain; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); }
-  @media (max-width: 680px) { .project-index-card { grid-template-columns: 1fr; } .project-index-card__visual { justify-self: start; max-width: 360px; } }
+  @media (max-width: 680px) { .project-index-card { grid-template-columns: minmax(0, 1fr); } .project-index-card__visual { width: 100%; justify-self: start; max-width: 360px; margin-inline: auto; } }
 </style>
