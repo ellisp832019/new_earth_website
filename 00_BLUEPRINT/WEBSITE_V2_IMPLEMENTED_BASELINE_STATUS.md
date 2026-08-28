@@ -119,6 +119,12 @@ detail pages or project claims are published by this foundation.
 **MicroGrow public project page:** VISUAL / CONTENT BASELINE ACCEPTED -
 PUBLICATION REVIEW STILL PENDING
 
+**MicroGrow publication readiness:** IN REVIEW - BLOCKED
+
+The owner-supplied evidence captures remain local-preview-only. Publication is
+blocked pending privacy-safe derivatives, rights/provenance confirmation and
+final public asset review. `publicEnabled` remains `false`.
+
 ## MicroGrow Public Project Page
 
 **Status:** IMPLEMENTED - PENDING PETER REVIEW
