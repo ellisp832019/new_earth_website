@@ -10,7 +10,7 @@ The homepage is no longer open for general redesign. Future changes require
 explicit owner instruction and must preserve the accepted composition, copy,
 imagery and shared brand system.
 
-**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+**Local-first copy:** ALIGNED - OWNER ACCEPTED
 
 ## Vision
 
@@ -19,7 +19,7 @@ imagery and shared brand system.
 The Vision uses the approved core-page pattern and remains unchanged by the
 Manifesto rollout.
 
-**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+**Local-first copy:** ALIGNED - OWNER ACCEPTED
 
 ## Core Page Pattern V1
 
@@ -35,7 +35,7 @@ authority for finished core pages.
 The approved Manifesto copy is implemented at `/manifesto/` using the locked
 core-page pattern and a governed local-preview image candidate.
 
-**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+**Local-first copy:** ALIGNED - OWNER ACCEPTED
 
 ## Blueprint
 
@@ -46,7 +46,7 @@ core-page pattern and a governed local-preview image candidate. The Blueprint
 page is owner-accepted and locked; later implementation refinements must
 preserve its approved structure and wording.
 
-**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+**Local-first copy:** ALIGNED - OWNER ACCEPTED
 
 ## Ecosystem
 
@@ -89,4 +89,4 @@ Home, with a complete text fallback for public builds.
 
 ## Core Pages Local-First Narrative Alignment
 
-**Status:** IMPLEMENTED - PENDING PETER CONTENT REVIEW
+**Status:** IMPLEMENTED - PENDING PETER FINAL CORE JOURNEY REVIEW
