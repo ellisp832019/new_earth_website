@@ -48,6 +48,10 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,MICROGROW,06_MICROGROW\app,microgrow_app_mockup.png,1600x900,png,TODO,MicroGrow app mockup
 3,MICROGROW,06_MICROGROW\diagrams,microgrow_how_it_works.png,1600x900,png,TODO,MicroGrow how it works
 3,MICROGROW,06_MICROGROW\icons,microgrow_feature_icons.png,2000x2000,png,TODO,MicroGrow feature icons
+3,MICROGROW,06_MICROGROW\evidence,microgrow_current_hardware_prototype.jpeg,5712x4284,jpeg,IN_PROGRESS,Owner-supplied current hardware capture; local preview only; rights and public-build review pending
+3,MICROGROW,06_MICROGROW\evidence,microgrow_flutter_dashboard_current.png,1600x1110,png,IN_PROGRESS,Owner-supplied current Flutter dashboard capture; local preview only; rights and public-build review pending
+3,MICROGROW,06_MICROGROW\evidence,microgrow_diagnostics_current.png,1600x1111,png,IN_PROGRESS,Owner-supplied current diagnostics capture; local preview only; rights and public-build review pending
+3,MICROGROW,06_MICROGROW\evidence,microgrow_flutter_splash_screen_current.png,641x1390,png,IN_PROGRESS,Owner-supplied current Flutter splash capture; local preview only; rights and public-build review pending
 1,ABOUT,07_ABOUT\hero,about_hero.webp,1920x1080,webp,DONE,About hero
 0,ABOUT,07_ABOUT\sections,about_mission_visual.webp,1400x900,webp,TODO,About mission visual
 1,CONTACT,08_CONTACT\banners,contact_banner.webp,1600x900,webp,DONE,Contact banner

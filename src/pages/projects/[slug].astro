@@ -26,12 +26,17 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
         <div><dt>Operation</dt><dd>Local-first</dd></div>
         <div><dt>Publication</dt><dd>{project.publicStatus}</dd></div>
       </dl>
+      {project.visualEvidence?.[0] && <figure class="project-hero-visual">
+        <img src={`/local-assets/${project.visualEvidence[0].src}`} alt={project.visualEvidence[0].alt} />
+        <figcaption>{project.visualEvidence[0].caption}</figcaption>
+      </figure>}
     </header>
     <div class="project-page__body">
       <section class="project-section project-section--wide"><h2>How it works at a high level</h2><p>The growing purpose comes first. This explanatory flow shows how the current system connects without acting as an electrical schematic or wiring guide.</p><ol class="system-flow">{project.systemFlow.map((step) => <li><strong>{step.label}</strong><span>{step.detail}</span></li>)}</ol></section>
       <section><h2>Why it exists</h2><p>{project.whyItExists}</p></section>
       <section><h2>What it is</h2><p>{project.whatItIs}</p></section>
       <section class="project-section--wide"><h2>What exists today</h2><p>{project.whatExistsToday}</p><div class="evidence-grid">{project.evidenceCards.map((card) => <article class="evidence-card"><p class="eyebrow">{card.label}</p><h3>{card.status}</h3><p>{card.detail}</p></article>)}</div></section>
+      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Application and diagnostics evidence</h2><p>These owner-supplied captures show the current application and diagnostics experience. They are local-preview evidence only and do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).map((visual) => <figure class:list={['visual-evidence', visual.className]}><img src={`/local-assets/${visual.src}`} alt={visual.alt} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
       <section><h2>How it fits into New Earth</h2><p>{project.relationToNewEarth}</p></section>
       <section><h2>Evidence and current progress</h2>{project.evidence.map((item) => <p>{item}</p>)}</section>
       <section class="limitations-panel"><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>
@@ -67,6 +72,17 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
   .evidence-card p:last-child, .related-card p { margin-bottom: 0; }
   .limitations-panel { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding-inline: 1.5rem; }
   .next-step { border-left: 4px solid var(--gold); padding-left: 1.5rem; }
+  .project-hero-visual { margin: 2.5rem 0 0; max-width: 1000px; }
+  .project-hero-visual img { display: block; width: 100%; max-height: 560px; object-fit: cover; object-position: center; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  figure figcaption { display: grid; gap: .25rem; margin-top: .75rem; color: var(--forest); font-size: .9rem; }
+  .visual-evidence-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, .75fr); gap: 1rem; align-items: start; margin-top: 1.5rem; }
+  .visual-evidence { margin: 0; min-width: 0; background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }
+  .visual-evidence img { display: block; width: 100%; height: 320px; object-fit: contain; background: var(--ivory); border-radius: calc(var(--radius) - 2px); }
+  .visual-evidence--splash { grid-column: 2; grid-row: 1; }
+  .visual-evidence--splash img { height: 320px; }
+  .visual-evidence figcaption { gap: .4rem; }
+  .visual-evidence figcaption span { color: var(--ink); }
   @media (max-width: 760px) { .project-facts, .system-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } .system-flow li:not(:last-child)::after { content: none; } }
-  @media (max-width: 480px) { .project-facts, .system-flow, .evidence-grid, .related-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) { .visual-evidence-grid { grid-template-columns: 1fr; } .visual-evidence--splash { grid-column: auto; grid-row: auto; } }
+  @media (max-width: 480px) { .project-facts, .system-flow, .evidence-grid, .related-grid { grid-template-columns: 1fr; } .project-hero-visual img { max-height: 360px; } .visual-evidence img, .visual-evidence--splash img { height: auto; max-height: 360px; } }
 </style>

@@ -21,6 +21,13 @@ export type ProjectRecord = {
   systemFlow: { label: string; detail: string }[];
   evidenceCards: { label: string; detail: string; status: string }[];
   primaryVisual?: { src: string; alt: string; provenance: string };
+  visualEvidence?: {
+    src: string;
+    alt: string;
+    label: string;
+    caption: string;
+    className?: string;
+  }[];
 };
 
 // Catalogue recognition does not publish a page. Add an entry only after the
@@ -64,5 +71,33 @@ export const publicProjects: ProjectRecord[] = [{
     { label: 'Implemented', detail: 'The firmware, local HTTP path and Flutter application are represented in the current source record.', status: 'Source-controlled implementation' },
     { label: 'Validated', detail: 'Firmware host checks, Flutter verification and prior bench records are present.', status: 'Evidence exists, not all gates closed' },
     { label: 'Still open', detail: 'Further physical validation is required before wider publication or readiness claims.', status: 'Owner and evidence review pending' },
+  ],
+  visualEvidence: [
+    {
+      src: 'microgrow_current_hardware_prototype.jpeg',
+      alt: 'Current MicroGrow single-node prototype with ESP32 controller, sensor and relay hardware.',
+      label: 'Current hardware prototype',
+      caption: 'Current MicroGrow single-node prototype',
+      className: 'visual-evidence--hardware',
+    },
+    {
+      src: 'microgrow_flutter_dashboard_current.png',
+      alt: 'Current MicroGrow Flutter dashboard showing growing environment monitoring and controls.',
+      label: 'MicroGrow dashboard',
+      caption: 'Current Flutter interface used for monitoring, control and project status.',
+    },
+    {
+      src: 'microgrow_flutter_splash_screen_current.png',
+      alt: 'MicroGrow application splash screen.',
+      label: 'Application identity',
+      caption: 'MicroGrow application splash screen',
+      className: 'visual-evidence--splash',
+    },
+    {
+      src: 'microgrow_diagnostics_current.png',
+      alt: 'MicroGrow diagnostics interface showing project system and status information.',
+      label: 'MicroGrow diagnostics view',
+      caption: 'A current diagnostics and status view; this does not establish complete fault handling or production readiness.',
+    },
   ],
 }];
