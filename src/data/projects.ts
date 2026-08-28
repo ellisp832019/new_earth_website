@@ -62,7 +62,7 @@ export const publicProjects: ProjectRecord[] = [{
   evidenceCards: [
     { label: 'Documented', detail: 'Current product and architecture records describe the single-node V1 scope.', status: 'Repository evidence' },
     { label: 'Implemented', detail: 'The firmware, local HTTP path and Flutter application are represented in the current source record.', status: 'Source-controlled implementation' },
-    { label: 'Tested / validated', detail: 'Firmware host checks, Flutter verification and prior bench records are present.', status: 'Evidence exists, not all gates closed' },
+    { label: 'Validated', detail: 'Firmware host checks, Flutter verification and prior bench records are present.', status: 'Evidence exists, not all gates closed' },
     { label: 'Still open', detail: 'Further physical validation is required before wider publication or readiness claims.', status: 'Owner and evidence review pending' },
   ],
 }];
