@@ -112,6 +112,13 @@ detail pages or project claims are published by this foundation.
 
 **First project candidate:** MicroGrow
 
+**MicroGrow detail page visual layout:** OWNER ACCEPTED - LOCKED
+
+**Project Page Pattern V1:** OWNER ACCEPTED - LOCKED
+
+**MicroGrow public project page:** VISUAL / CONTENT BASELINE ACCEPTED -
+PUBLICATION REVIEW STILL PENDING
+
 ## MicroGrow Public Project Page
 
 **Status:** IMPLEMENTED - PENDING PETER REVIEW
