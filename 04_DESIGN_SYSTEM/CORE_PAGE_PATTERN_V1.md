@@ -1,6 +1,6 @@
 # Core Page Pattern V1
 
-**Status:** PROVISIONAL CORE PAGE PATTERN - PENDING OWNER REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 Established by the Vision implementation:
 
