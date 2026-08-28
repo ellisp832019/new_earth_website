@@ -89,4 +89,25 @@ Home, with a complete text fallback for public builds.
 
 ## Core Pages Local-First Narrative Alignment
 
-**Status:** IMPLEMENTED - PENDING PETER FINAL CORE JOURNEY REVIEW
+**Status:** OWNER ACCEPTED - COMPLETE
+
+## Core Public Website Baseline V1
+
+**Status:** OWNER ACCEPTED - LOCKED
+
+The accepted core journey is Home, Vision, Manifesto, Blueprint, Ecosystem,
+About and Get Involved. The Core Page Pattern V1, Local-first / Community
+Stewardship Model and Core Content Coherence Pass are also locked. No core-page
+content or design changes are part of the project rollout foundation.
+
+## Project / System Public Rollout
+
+**Status:** IMPLEMENTED - PENDING PETER REVIEW
+
+The public rollout foundation supports `/projects/` and the guarded
+`/projects/[slug]/` route model. The controlled project publication model is
+documented in `WEBSITE_V2_PROJECT_PUBLICATION_MODEL.md`. The catalogue remains
+the authority, maturity and public status remain separate, and no project
+detail pages or project claims are published by this foundation.
+
+**First project candidate:** MicroGrow

@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { publicProjects } from '../../data/projects';
+
+export function getStaticPaths() {
+  return publicProjects.filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED').map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+if (!project) throw new Error('Project route requires an explicitly public-enabled catalogue entry.');
+---
+<BaseLayout title={`${project.name} | New Earth`} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
+  <article class="project-page shell">
+    <header class="project-page__hero">
+      <p class="eyebrow">{project.maturity} · {project.publicStatus}</p>
+      <h1>{project.name}</h1>
+      <p class="lede">{project.shortDescription}</p>
+    </header>
+    <div class="project-page__body">
+      <section><h2>Why it exists</h2><p>{project.whyItExists}</p></section>
+      <section><h2>What it is</h2><p>{project.whatItIs}</p></section>
+      <section><h2>What exists today</h2><p>{project.whatExistsToday}</p></section>
+      <section><h2>How it fits into New Earth</h2><p>{project.relationToNewEarth}</p></section>
+      <section><h2>Evidence and current progress</h2>{project.evidence.map((item) => <p>{item}</p>)}</section>
+      <section><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>
+      <section><h2>What comes next</h2><p>{project.nextDevelopmentDirection}</p></section>
+      <section><h2>Related systems</h2>{project.relatedSystems.map((item) => <p>{item}</p>)}</section>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .project-page { padding-block: clamp(4rem, 9vw, 7rem); }
+  .project-page__hero { max-width: 760px; }
+  .project-page__hero h1 { max-width: 15ch; }
+  .project-page__hero .lede { max-width: 60ch; }
+  .project-page__body { max-width: 820px; }
+  .project-page__body section { border-top: 1px solid var(--line); padding-block: 2.25rem; }
+  .project-page__body p { max-width: 68ch; }
+</style>
