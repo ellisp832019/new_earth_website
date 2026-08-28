@@ -1,61 +1,94 @@
 ---
 import { pillars } from '../data/site';
-const technology = ['New Earth Platform Core', 'NEOS - New Earth Engineering OS', 'GAIA', 'New Earth Command Centre', 'New Earth Dashboard', 'CKCC - Chat & Knowledge Control Centre'];
+
 const lanes = [
-  ['Conscious living', ['New Earth Living', 'BioCalm']],
-  ['Technology and innovation', technology],
-  ['Growing and resilience', ['MicroGrow', 'MicroGrow AI Lab Omega', 'MicroGrow Field Scanner']],
-  ['Knowledge and learning', ['Peter - New Earth Practical Guides', 'Hayley - New Earth Conscious Living']],
-  ['Community and participation', ['People, conversation and collaboration']]
+  ['Conscious Living', ['New Earth Living', 'BioCalm']],
+  ['Technology and Innovation', ['New Earth Platform Core', 'NEOS - New Earth Engineering OS', 'GAIA', 'New Earth Command Centre', 'New Earth Dashboard', 'CKCC - Chat and Knowledge Control Centre']],
+  ['Growing and Resilience', ['MicroGrow', 'MicroGrow AI Lab Omega', 'MicroGrow Field Scanner']],
+  ['Knowledge and Learning', ['Peter - New Earth Practical Guides', 'Hayley - New Earth Conscious Living']],
+  ['Community and Participation', ['People', 'Conversation', 'Collaboration', 'Future community pathways']]
 ];
 ---
-<section class="public-map shell" aria-labelledby="public-map-title">
-  <div class="public-map__intro">
-    <p class="eyebrow">Public ecosystem architecture</p>
+<section class="public-map" aria-labelledby="public-map-title">
+  <div class="public-map__intro shell">
+    <p class="eyebrow">A human-scale relationship model</p>
     <h2 id="public-map-title">How the parts connect</h2>
-    <p>This is a public relationship model, not a technical dashboard or proof of live system integration.</p>
+    <p>New Earth starts where we are: with people, homes and communities building the capacity to care for their own piece of Earth. This public model shows how local stewardship can connect outward through cooperation.</p>
   </div>
-  <div class="public-map__structure" aria-label="New Earth public relationship map">
-    <div class="public-map__node public-map__node--root"><strong>New Earth</strong><span>Umbrella vision, framework and ecosystem</span></div>
-    <div class="public-map__connector" aria-hidden="true">↓</div>
-    <div class="public-map__node"><strong>Vision and Manifesto</strong><span>Direction, principles and responsibility</span></div>
-    <div class="public-map__connector" aria-hidden="true">↓</div>
-    <div class="public-map__node"><strong>Blueprint</strong><span>A developing framework for exploration</span></div>
-    <div class="public-map__connector" aria-hidden="true">↓</div>
-    <div class="public-map__node"><strong>12 Pillars</strong><span>Connected areas for practical questions</span></div>
-    <div class="public-map__connector" aria-hidden="true">↓</div>
-    <div class="public-map__node"><strong>Ecosystem</strong><span>Public relationships between ideas, work and participation</span></div>
+  <div class="public-map__visual shell" aria-label="Public relationship model from New Earth to connected communities">
+    <div class="public-map__path">
+      <div class="public-map__node public-map__node--root"><strong>New Earth</strong><span>Umbrella vision, framework and ecosystem</span></div>
+      <div class="public-map__connector" aria-hidden="true">then</div>
+      <div class="public-map__node"><strong>Vision + Manifesto</strong><span>Direction, principles and responsibility</span></div>
+      <div class="public-map__connector" aria-hidden="true">then</div>
+      <div class="public-map__node"><strong>Blueprint + 12 Pillars</strong><span>A framework for connected areas of life</span></div>
+      <div class="public-map__connector" aria-hidden="true">then</div>
+      <div class="public-map__node public-map__node--accent"><strong>Local stewardship</strong><span>New Earth starts where we are</span></div>
+    </div>
+    <div class="public-map__local-layers">
+      <div class="public-map__layer"><strong>Person</strong><span>Wellbeing, awareness, learning, agency and skills</span></div>
+      <div class="public-map__layer"><strong>Home / Place</strong><span>Food, resources, energy, habitat and environment</span></div>
+      <div class="public-map__layer"><strong>Community</strong><span>Knowledge, cooperation, participation, shared spaces, care and local capability</span></div>
+    </div>
+    <div class="public-map__path public-map__path--lower">
+      <div class="public-map__node"><strong>Local systems and capability</strong><span>Understanding and maintaining more of what people depend on</span></div>
+      <div class="public-map__connector" aria-hidden="true">then</div>
+      <div class="public-map__node public-map__node--accent"><strong>Connected communities</strong><span>Local first does not mean isolated</span></div>
+      <div class="public-map__connector" aria-hidden="true">then</div>
+      <div class="public-map__node public-map__node--root"><strong>Wider New Earth</strong><span>Knowledge, tools, resources and mutual support shared freely</span></div>
+    </div>
   </div>
-  <div class="public-map__lanes">
-    {lanes.map(([heading, items]) => <section class="public-map__lane">
-      <h3>{heading}</h3>
-      <ul>{items.map((item) => <li>{item}</li>)}</ul>
-    </section>)}
+  <div class="public-map__lanes shell">
+    <h3 class="public-map__lanes-title">Recognised work and participation</h3>
+    <div class="public-map__lane-grid">
+      {lanes.map(([heading, items]) => <section class="public-map__lane">
+        <h4>{heading}</h4>
+        <ul>{items.map((item) => <li>{item}</li>)}</ul>
+      </section>)}
+    </div>
+    <p class="public-map__company"><strong>Company context:</strong> New Earth Advanced Technologies Ltd provides a company context for selected New Earth technology, engineering and product development. It does not sit above New Earth or represent ownership of the wider ecosystem.</p>
   </div>
-  <div class="public-map__text-equivalent">
-    <h3>Text equivalent</h3>
-    <p>New Earth holds the public vision, Manifesto, Blueprint, 12 Pillars and Ecosystem together. The Ecosystem provides context for projects, research, people and participation. Its recognised lanes are conscious living, technology and innovation, growing and resilience, knowledge and learning, and community and participation.</p>
+  <div class="public-map__text-equivalent shell">
+    <h3>How to read the ecosystem</h3>
+    <p>New Earth holds a vision and Manifesto, a developing Blueprint and 12 connected Pillars together. The model begins with local stewardship: a person, a home or place, and a community building capability and care. Local first does not mean isolated; communities can connect, share and cooperate while retaining meaningful local agency.</p>
+    <p>Recognised work sits in five lanes: Conscious Living; Technology and Innovation; Growing and Resilience; Knowledge and Learning; and Community and Participation. This includes New Earth Living, BioCalm, New Earth Platform Core, NEOS, GAIA, New Earth Command Centre, New Earth Dashboard, CKCC, MicroGrow, MicroGrow AI Lab Omega, MicroGrow Field Scanner, Peter's New Earth Practical Guides and Hayley's New Earth Conscious Living. These references use controlled maturity language and do not imply that every idea or system is production-ready.</p>
     <p>The 12 Pillars are:</p>
     <ul class="public-map__pillars">{pillars.map(([, name]) => <li>{name}</li>)}</ul>
   </div>
 </section>
 <style>
   .public-map { padding-block: 1rem 4rem; }
-  .public-map__intro { max-width: 48rem; margin-bottom: 2rem; }
-  .public-map__structure { display: grid; justify-items: center; max-width: 42rem; margin-inline: auto; }
-  .public-map__node { width: min(100%, 30rem); padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .72); text-align: center; box-shadow: var(--shadow); }
+  .public-map__intro { max-width: 760px; margin-bottom: 2rem; }
+  .public-map__intro p:last-child { max-width: 62ch; font-size: 1.08rem; }
+  .public-map__visual { max-width: 1180px; padding-block: 2rem; border-block: 1px solid var(--line); }
+  .public-map__path { display: flex; align-items: center; justify-content: center; gap: .75rem; }
+  .public-map__path--lower { margin-top: 1.25rem; }
+  .public-map__node { flex: 1 1 0; min-width: 0; padding: 1.2rem 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .72); box-shadow: var(--shadow); text-align: center; }
   .public-map__node--root { background: var(--sage); border-color: var(--teal); }
-  .public-map__node strong, .public-map__node span { display: block; }
-  .public-map__node span { margin-top: .25rem; font-size: .95rem; }
-  .public-map__connector { padding: .4rem; color: var(--gold); font-size: 1.5rem; line-height: 1; }
-  .public-map__lanes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 2rem; }
-  .public-map__lane { padding: 1rem; border-top: 3px solid var(--teal); background: rgb(255 255 255 / .45); }
-  .public-map__lane h3 { font-size: 1.15rem; }
+  .public-map__node--accent { background: color-mix(in srgb, var(--gold) 18%, white); border-color: var(--gold); }
+  .public-map__node strong, .public-map__node span, .public-map__layer strong, .public-map__layer span { display: block; }
+  .public-map__node span, .public-map__layer span { margin-top: .3rem; font-size: .95rem; }
+  .public-map__connector { flex: 0 0 auto; color: var(--gold); font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; }
+  .public-map__local-layers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.25rem 10% 0; }
+  .public-map__layer { min-width: 0; padding: 1rem; border-top: 3px solid var(--teal); background: rgb(255 255 255 / .52); }
+  .public-map__lanes { max-width: 1180px; padding-block: 3.5rem 1rem; }
+  .public-map__lanes-title { margin-bottom: 1rem; }
+  .public-map__lane-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .public-map__lane { min-width: 0; padding: 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .45); }
+  .public-map__lane:last-child { grid-column: 1 / -1; }
+  .public-map__lane h4 { font-size: 1.15rem; }
   .public-map__lane ul, .public-map__text-equivalent ul { padding-left: 1.2rem; }
   .public-map__lane li, .public-map__text-equivalent li { margin-block: .35rem; }
-  .public-map__text-equivalent { margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
-  .public-map__text-equivalent h3 { font-size: 1.35rem; }
+  .public-map__company { max-width: 70ch; margin: 1.5rem auto 0; padding: 1.2rem 1.4rem; border-left: 3px solid var(--gold); background: var(--sage); }
+  .public-map__text-equivalent { max-width: 760px; padding-block: 2.5rem 1rem; }
+  .public-map__text-equivalent h3 { font-size: 1.5rem; }
   .public-map__pillars { columns: 2; }
-  @media (max-width: 900px) { .public-map__lanes { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 680px) { .public-map__lanes { grid-template-columns: 1fr; } .public-map__pillars { columns: 1; } }
+  @media (max-width: 760px) {
+    .public-map__path, .public-map__path--lower { flex-direction: column; align-items: stretch; }
+    .public-map__node { flex: none; width: 100%; box-sizing: border-box; }
+    .public-map__connector { text-align: center; }
+    .public-map__local-layers, .public-map__lane-grid { grid-template-columns: 1fr; margin-inline: 0; }
+    .public-map__lane:last-child { grid-column: auto; }
+    .public-map__pillars { columns: 1; }
+  }
 </style>

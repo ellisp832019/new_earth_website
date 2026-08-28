@@ -42,8 +42,9 @@ preserve its approved structure and wording.
 
 ## Ecosystem
 
-**Status:** IMPLEMENTED - PENDING PETER VISUAL REVIEW
+**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
 
 The approved Ecosystem copy is implemented at `/ecosystem/` using a text-led
-core-page treatment and a public relationship map with a complete visible text
-equivalent. It remains pending owner visual review.
+core-page treatment and a wide public relationship model with a complete
+visible text equivalent. The local-first, community-first and stewardship-first
+narrative is prominent. It remains pending Peter final visual review.
