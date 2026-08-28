@@ -69,11 +69,12 @@ requirement pending rights, provenance and owner review.
 
 ## Get Involved
 
-**Status:** IMPLEMENTED - PENDING PETER VISUAL + CONTENT REVIEW
+**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
 
 The Get Involved page is implemented at `/get-involved/` as a practical,
 invitation-led participation route. It preserves the approved Learn,
 Contribute, Collaborate and Support structure, adds a distinct Care -> Learn ->
 Contribute -> Build locally -> Connect action pathway, and keeps local-first
 distinct from isolation. New Earth Builders is represented as an independent
-external community platform without using the screenshot-derived logo.
+external community platform using the same governed local-preview-only asset as
+Home, with a complete text fallback for public builds.
