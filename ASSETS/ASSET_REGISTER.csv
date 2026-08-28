@@ -22,6 +22,7 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 0,MANIFESTO,03_MANIFESTO\sections,manifesto_quote_background.webp,1600x900,webp,TODO,Manifesto quote background
 0,MANIFESTO,03_MANIFESTO\print,manifesto_affirmation_poster_a3.png,3508x4961,png,TODO,Manifesto affirmation poster A3
 1,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.webp,1920x1080,webp,DONE,Blueprint hero
+2,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.png,1536x1024,png,TODO,AST-018 selected Blueprint hero candidate promoted from ASSETS/_INBOX/home_section_blueprint.png; local preview only pending rights/provenance and public-build review
 3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_12_pillars_overview.png,2000x2000,png,TODO,12 pillars overview
 3,BLUEPRINT,04_BLUEPRINT\icons,blueprint_12_pillars_icon_sheet.png,2400x2400,png,TODO,12 pillars icon sheet
 3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_ecosystem_map.webp,1600x900,webp,TODO,Blueprint ecosystem map

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AssetImage from '../components/AssetImage.astro';
-const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt } = Astro.props;
+import { pillars } from '../data/site';
+const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pillarOverview } = Astro.props;
 ---
 <BaseLayout title={searchTitle} description={metaDescription} canonical={canonical}>
   <article class:list={['core-page', heroAsset && 'core-page--with-hero']}>
@@ -22,6 +23,13 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt } = As
           {copy.split('\n\n').map((paragraph) => <p>{paragraph}</p>)}
         </section>
       ))}
+      {pillarOverview && <section class="core-page__section core-page__pillar-overview">
+        <h2>The 12 Pillars</h2>
+        <p>A connected set of areas for exploring how principles meet the practical questions of civilisation.</p>
+        <ul>
+          {pillars.map(([, name]) => <li>{name}</li>)}
+        </ul>
+      </section>}
       <nav class="page-actions core-page__actions" aria-label="Continue exploring">
         {page.links.map(([label, href]) => <a class="button" href={href}>{label}</a>)}
       </nav>

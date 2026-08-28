@@ -26,8 +26,15 @@ authority for finished core pages.
 
 ## Manifesto
 
-**Status:** IMPLEMENTED - PENDING PETER VISUAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 The approved Manifesto copy is implemented at `/manifesto/` using the locked
+core-page pattern and a governed local-preview image candidate.
+
+## Blueprint
+
+**Status:** IMPLEMENTED - PENDING PETER VISUAL REVIEW
+
+The approved Blueprint copy is implemented at `/blueprint/` using the locked
 core-page pattern and a governed local-preview image candidate. It is not yet
 owner-accepted as a rendered page.
