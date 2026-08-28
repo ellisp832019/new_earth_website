@@ -59,8 +59,10 @@ The canonical principle is maintained in
 
 ## About
 
-**Status:** IMPLEMENTED - PENDING PETER VISUAL + CONTENT REVIEW
+**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
 
 The approved About content is implemented at `/about/` using the locked
-core-page pattern and a text-led hero. An authentic About image remains a
-future requirement pending rights, provenance and owner review.
+core-page pattern and a text-led hero. The bounded refinement adds a local-first
+pathway panel and a subordinate company-context callout without changing the
+approved wording or adding an image. An authentic About image remains a future
+requirement pending rights, provenance and owner review.
