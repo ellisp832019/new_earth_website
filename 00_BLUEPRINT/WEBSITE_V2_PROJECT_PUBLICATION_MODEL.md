@@ -14,7 +14,9 @@ for publicly recognised project and system records. The public index is
 `/projects/`; the canonical detail route model is `/projects/[slug]/`.
 
 There is no competing `/project/`, `/systems/[slug]/` or technology detail
-route. Existing catalogue rows do not become public pages automatically.
+route. Existing catalogue rows do not become public pages automatically. The
+current MicroGrow preview is generated from the explicit `previewEnabled` gate;
+public generation additionally requires `publicEnabled` and `PUBLIC-ENABLED`.
 
 ## Publication gate
 

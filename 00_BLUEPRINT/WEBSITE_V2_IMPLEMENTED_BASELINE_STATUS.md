@@ -111,3 +111,13 @@ the authority, maturity and public status remain separate, and no project
 detail pages or project claims are published by this foundation.
 
 **First project candidate:** MicroGrow
+
+## MicroGrow Public Project Page
+
+**Status:** IMPLEMENTED - PENDING PETER REVIEW
+
+The first evidence-led project page is available in local preview at
+`/projects/microgrow/`. It uses the controlled catalogue and publication model.
+The page is preview-enabled but remains `publicEnabled: false` and is excluded
+from the public build until owner acceptance and all remaining evidence, asset,
+accessibility and publication gates are closed.

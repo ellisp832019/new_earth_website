@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { publicProjects } from '../../data/projects';
 
 export function getStaticPaths() {
-  return publicProjects.filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED').map((project) => ({
+  const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
+  return publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled).map((project) => ({
     params: { slug: project.slug },
     props: { project },
   }));
@@ -28,6 +29,9 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
       <section><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>
       <section><h2>What comes next</h2><p>{project.nextDevelopmentDirection}</p></section>
       <section><h2>Related systems</h2>{project.relatedSystems.map((item) => <p>{item}</p>)}</section>
+      <nav class="page-actions" aria-label="Project navigation">
+        {project.publicLinks.map((link) => <a class="button" href={link.href}>{link.label}</a>)}
+      </nav>
     </div>
   </article>
 </BaseLayout>
