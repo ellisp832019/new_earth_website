@@ -5,7 +5,6 @@ import { assets, pages } from '../../data/site';
 
 const page = pages['get-involved'];
 const [learn, contribute, collaborate, support] = page.sections;
-const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 ---
 <BaseLayout
   title="Get Involved with New Earth | Learn, Contribute and Collaborate"
@@ -89,15 +88,14 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
         <div>
           <p>Local-first does not mean isolated. People and communities can share learning, cooperate, offer mutual support and connect outward while retaining meaningful local agency.</p>
           <p>Future community pathways may help people connect locally. They would need to remain small, locally shaped, community-led, responsible, transparent and connected outward rather than centrally controlled.</p>
-          <article class="involved-page__builders" aria-labelledby="builders-title">
-            {localPreview && <AssetImage asset={assets.builders} alt="" className="involved-page__builders-logo" />}
-            <div class="involved-page__builders-copy">
-              <p class="eyebrow">Independent community platform</p>
-              <h3 id="builders-title">New Earth Builders</h3>
-              <p>Connect with people exploring practical ideas, local action and a more conscious future.</p>
-              <a class="button" href="https://new-earth-builders.com/" target="_blank" rel="noopener noreferrer">Visit New Earth Builders <span aria-hidden="true">(external)</span></a>
-              <p class="involved-page__builders-note">Independent community platform - opens externally.</p>
+          <article class="image-content-card builders-card">
+            <div>
+              <span class="status">Independent community platform</span>
+              <h3>New Earth Builders</h3>
+              <p>An intentional community connecting innovators, healers, inventors and creators who want to collaborate, exchange knowledge and help bring New Earth-aligned projects into being.</p>
+              <a class="text-link" href="https://new-earth-builders.com/" target="_blank" rel="noopener noreferrer">Visit New Earth Builders <span aria-hidden="true">(external)</span></a>
             </div>
+            <AssetImage asset={assets.builders} alt="New Earth Builders logo" className="builders-logo" />
           </article>
         </div>
       </div>
@@ -135,11 +133,6 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
   .involved-page__card .eyebrow { margin: 0; }
   .involved-page__card .text-link { display: inline-block; margin-top: .75rem; }
   .involved-page__local-inner, .involved-page__community-inner { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 7vw, 6rem); align-items: start; }
-  .involved-page__builders { display: grid; grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr); gap: 1.5rem; align-items: center; margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius); background: rgb(255 255 255 / .58); box-shadow: var(--shadow); }
-  .involved-page__builders-logo { display: block; width: 100%; max-height: 9rem; object-fit: contain; }
-  .involved-page__builders-copy .eyebrow { margin-top: 0; }
-  .involved-page__builders-copy h3 { margin-bottom: .65rem; }
-  .involved-page__builders-note { margin: .9rem 0 0; color: var(--brown); font-size: .85rem; }
   .involved-page__work { padding-bottom: 7rem; }
   @media (max-width: 900px) { .involved-page__path { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 680px) { .involved-page__cards, .involved-page__local-inner, .involved-page__community-inner { grid-template-columns: 1fr; } .involved-page__path { grid-template-columns: 1fr; } .involved-page__builders { grid-template-columns: 1fr; } .involved-page__builders-logo { max-width: 12rem; justify-self: center; } }
