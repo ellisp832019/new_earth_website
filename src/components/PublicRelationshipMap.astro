@@ -1,0 +1,61 @@
+---
+import { pillars } from '../data/site';
+const technology = ['New Earth Platform Core', 'NEOS - New Earth Engineering OS', 'GAIA', 'New Earth Command Centre', 'New Earth Dashboard', 'CKCC - Chat & Knowledge Control Centre'];
+const lanes = [
+  ['Conscious living', ['New Earth Living', 'BioCalm']],
+  ['Technology and innovation', technology],
+  ['Growing and resilience', ['MicroGrow', 'MicroGrow AI Lab Omega', 'MicroGrow Field Scanner']],
+  ['Knowledge and learning', ['Peter - New Earth Practical Guides', 'Hayley - New Earth Conscious Living']],
+  ['Community and participation', ['People, conversation and collaboration']]
+];
+---
+<section class="public-map shell" aria-labelledby="public-map-title">
+  <div class="public-map__intro">
+    <p class="eyebrow">Public ecosystem architecture</p>
+    <h2 id="public-map-title">How the parts connect</h2>
+    <p>This is a public relationship model, not a technical dashboard or proof of live system integration.</p>
+  </div>
+  <div class="public-map__structure" aria-label="New Earth public relationship map">
+    <div class="public-map__node public-map__node--root"><strong>New Earth</strong><span>Umbrella vision, framework and ecosystem</span></div>
+    <div class="public-map__connector" aria-hidden="true">↓</div>
+    <div class="public-map__node"><strong>Vision and Manifesto</strong><span>Direction, principles and responsibility</span></div>
+    <div class="public-map__connector" aria-hidden="true">↓</div>
+    <div class="public-map__node"><strong>Blueprint</strong><span>A developing framework for exploration</span></div>
+    <div class="public-map__connector" aria-hidden="true">↓</div>
+    <div class="public-map__node"><strong>12 Pillars</strong><span>Connected areas for practical questions</span></div>
+    <div class="public-map__connector" aria-hidden="true">↓</div>
+    <div class="public-map__node"><strong>Ecosystem</strong><span>Public relationships between ideas, work and participation</span></div>
+  </div>
+  <div class="public-map__lanes">
+    {lanes.map(([heading, items]) => <section class="public-map__lane">
+      <h3>{heading}</h3>
+      <ul>{items.map((item) => <li>{item}</li>)}</ul>
+    </section>)}
+  </div>
+  <div class="public-map__text-equivalent">
+    <h3>Text equivalent</h3>
+    <p>New Earth holds the public vision, Manifesto, Blueprint, 12 Pillars and Ecosystem together. The Ecosystem provides context for projects, research, people and participation. Its recognised lanes are conscious living, technology and innovation, growing and resilience, knowledge and learning, and community and participation.</p>
+    <p>The 12 Pillars are:</p>
+    <ul class="public-map__pillars">{pillars.map(([, name]) => <li>{name}</li>)}</ul>
+  </div>
+</section>
+<style>
+  .public-map { padding-block: 1rem 4rem; }
+  .public-map__intro { max-width: 48rem; margin-bottom: 2rem; }
+  .public-map__structure { display: grid; justify-items: center; max-width: 42rem; margin-inline: auto; }
+  .public-map__node { width: min(100%, 30rem); padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .72); text-align: center; box-shadow: var(--shadow); }
+  .public-map__node--root { background: var(--sage); border-color: var(--teal); }
+  .public-map__node strong, .public-map__node span { display: block; }
+  .public-map__node span { margin-top: .25rem; font-size: .95rem; }
+  .public-map__connector { padding: .4rem; color: var(--gold); font-size: 1.5rem; line-height: 1; }
+  .public-map__lanes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 2rem; }
+  .public-map__lane { padding: 1rem; border-top: 3px solid var(--teal); background: rgb(255 255 255 / .45); }
+  .public-map__lane h3 { font-size: 1.15rem; }
+  .public-map__lane ul, .public-map__text-equivalent ul { padding-left: 1.2rem; }
+  .public-map__lane li, .public-map__text-equivalent li { margin-block: .35rem; }
+  .public-map__text-equivalent { margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .public-map__text-equivalent h3 { font-size: 1.35rem; }
+  .public-map__pillars { columns: 2; }
+  @media (max-width: 900px) { .public-map__lanes { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 680px) { .public-map__lanes { grid-template-columns: 1fr; } .public-map__pillars { columns: 1; } }
+</style>

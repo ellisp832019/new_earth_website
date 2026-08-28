@@ -1,0 +1,16 @@
+catalogue_id,name,group,public_route,maturity,public_role,public_boundary
+PSC-001,New Earth Platform Core,Technology and innovation,/ecosystem/platform-core/,PUBLIC INFORMATION ONLY,Public system context,No private architecture or endpoints
+PSC-002,NEOS - New Earth Engineering OS,Technology and innovation,/ecosystem/neos/,PUBLIC INFORMATION ONLY,Public system context,No private controls or operational claims
+PSC-003,GAIA,Technology and innovation,/ecosystem/gaia/,PUBLIC INFORMATION ONLY,Public system context,No runtime or administration claims
+PSC-004,New Earth Command Centre,Technology and innovation,/ecosystem/command-centre/,PUBLIC INFORMATION ONLY,Public information context,Authenticated application remains separate
+PSC-005,New Earth Dashboard,Technology and innovation,/ecosystem/dashboard/,PUBLIC INFORMATION ONLY,Developing organisational interface context,Distinct from Command Centre; no private controls
+PSC-006,CKCC - Chat and Knowledge Control Centre,Technology and innovation,/ecosystem/ckcc/,PUBLIC INFORMATION ONLY,Public system context,No private infrastructure or capability claim
+PSC-007,MicroGrow,Growing and resilience,/microgrow/,ACTIVE DEVELOPMENT,Recognised project context,Use evidence-led project status; no readiness claim
+PSC-008,MicroGrow AI Lab Omega,Growing and resilience,/projects/microgrow-ai-lab/,RESEARCH,Research-stage project context,No proven outcome or operational claim
+PSC-009,MicroGrow Field Scanner,Growing and resilience,/projects/field-scanner/,PROTOTYPE,Prototype project context,Handheld node-discovery context; no readiness claim
+PSC-010,New Earth Living,Conscious living,/projects/new-earth-living/,ACTIVE DEVELOPMENT,Conscious living project context,Not a physical settlement or proven outcome
+PSC-011,BioCalm,Conscious living,/projects/biocalm/,RESEARCH,Research-stage wellbeing context,No medical or performance claim
+PSC-012,Peter - New Earth Practical Guides,Knowledge and learning,/creators/peter/,PUBLIC INFORMATION ONLY,Creator knowledge lane,No biography or attribution beyond verified source
+PSC-013,Hayley - New Earth Conscious Living,Knowledge and learning,/creators/hayley/,PUBLIC INFORMATION ONLY,Creator knowledge lane,No biography or attributed voice claim
+PSC-014,Community and participation,Community and participation,/get-involved/,CONCEPT / FUTURE,Public participation context,No partnership membership or service claim
+PSC-015,New Earth Advanced Technologies Ltd,Technology and innovation,/company/,PUBLIC INFORMATION ONLY,Company context for selected work,Verified company facts required before publication

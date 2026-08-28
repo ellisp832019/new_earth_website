@@ -12,6 +12,36 @@ This ensures:
 - logical navigation
 - alignment with the Blueprint
 
+## Website V2 overlay (current working truth)
+
+### Level 0 - Root
+- Home
+
+### Level 1 - Public V2 destinations
+- Vision
+- Manifesto
+- Blueprint
+- Ecosystem
+- Projects
+- Company
+- Creators
+- Journal
+- Resources
+- Progress and Transparency
+- About
+- Get Involved
+- Contact
+- Legal
+
+### Ecosystem relationships
+- Relationship map
+- Public system context
+- Projects, research, people and participation
+
+Projects is a future public index. Company and Creators are future public
+routes whose detailed content requires separate evidence and approval. The
+older hierarchy below remains retained for historical reference.
+
 ---
 
 ## 1. Hierarchy model

@@ -1,8 +1,9 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AssetImage from '../components/AssetImage.astro';
+import PublicRelationshipMap from '../components/PublicRelationshipMap.astro';
 import { pillars } from '../data/site';
-const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pillarOverview } = Astro.props;
+const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pillarOverview, relationshipMap } = Astro.props;
 ---
 <BaseLayout title={searchTitle} description={metaDescription} canonical={canonical}>
   <article class:list={['core-page', heroAsset && 'core-page--with-hero']}>
@@ -16,6 +17,7 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pilla
         <AssetImage asset={heroAsset} alt={heroAlt} className="core-page__hero-image" loading="eager" />
       </div>}
     </header>
+    {relationshipMap && <PublicRelationshipMap />}
     <div class="shell core-page__body">
       {page.sections.map(([heading, copy]) => (
         <section class="core-page__section">

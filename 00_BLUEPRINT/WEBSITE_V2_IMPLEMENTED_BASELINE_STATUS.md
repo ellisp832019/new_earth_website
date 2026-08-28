@@ -33,8 +33,17 @@ core-page pattern and a governed local-preview image candidate.
 
 ## Blueprint
 
-**Status:** IMPLEMENTED - PENDING PETER VISUAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 The approved Blueprint copy is implemented at `/blueprint/` using the locked
-core-page pattern and a governed local-preview image candidate. It is not yet
-owner-accepted as a rendered page.
+core-page pattern and a governed local-preview image candidate. The Blueprint
+page is owner-accepted and locked; later implementation refinements must
+preserve its approved structure and wording.
+
+## Ecosystem
+
+**Status:** IMPLEMENTED - PENDING PETER VISUAL REVIEW
+
+The approved Ecosystem copy is implemented at `/ecosystem/` using a text-led
+core-page treatment and a public relationship map with a complete visible text
+equivalent. It remains pending owner visual review.

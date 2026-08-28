@@ -8,6 +8,17 @@ This document defines the initial page structure for the New Earth website.
 
 It exists to ensure the website is built from a clear hierarchy rather than through random page creation.
 
+## Website V2 overlay (current working truth)
+
+The V2 public hierarchy recognises Home, Vision, Manifesto, Blueprint, the 12
+Pillars, Ecosystem, Projects, Company, Creators, Journal, Resources,
+Progress and Transparency, About, Get Involved, Contact and Legal.
+
+The foundation tree below is retained as historical planning material. Its
+former `Systems` label is superseded as the public V2 organising label by
+`Ecosystem`. Projects, Company and Creators are future public routes requiring
+their own evidence and approval.
+
 ---
 
 ## 1. Top-level structure
