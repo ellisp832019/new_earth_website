@@ -29,6 +29,16 @@ we want to support. It then opens into the [12 Pillars](/blueprint/pillars/),
 which provide twelve connected areas for exploration. Each pillar can be read on
 its own, while remaining part of a wider pattern.
 
+## Start locally, connect outward
+
+The 12 Pillars are not only global questions. They can be explored by a person,
+household, neighbourhood, community or region, according to local conditions.
+Different places do not need to look the same. Useful approaches can be shared,
+compared, adapted and improved between communities, while the framework keeps
+local capability connected to wider cooperation. It can help people ask what can
+be understood, cared for and maintained locally, and what should be shared or
+coordinated more widely.
+
 ## From ideas to practice
 
 The framework also connects to the [Ecosystem](/ecosystem/), where people can

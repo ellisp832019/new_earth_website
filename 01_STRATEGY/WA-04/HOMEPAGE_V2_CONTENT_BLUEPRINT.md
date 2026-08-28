@@ -20,6 +20,10 @@ readiness that has not been approved.
    conscious civilization, with links to `/vision/` and `/manifesto/`. A
    the adopted conceptual introduction image supports the exact copy; the
    Manifesto hero is not reused here and the visual is not documentary proof.
+   New Earth starts where we are: with greater responsibility for ourselves,
+   our homes, our resources, our communities and our environment. Stronger
+   local capability can then connect outward through cooperation, shared
+   knowledge and mutual support.
 3. **Explore the pathway:** Vision -> Blueprint -> The 12 Pillars -> Projects
    -> Get Involved, implemented as ordinary links with a Blueprint visual and
    a restrained cream, teal, clay, and sage progression.

@@ -29,6 +29,16 @@ Human life is shaped by relationships: with one another, with communities, with
 technology and with the living world. A useful response to fragmentation begins
 by seeing these relationships clearly.
 
+## Stewardship begins where we are
+
+Responsibility begins with what is around us. People and communities grow
+stronger when they are better able to care for their own needs, knowledge,
+resources, places and shared systems. Local capability is not isolation:
+communities can remain connected, cooperate freely and share what works while
+retaining meaningful local agency. Technology should support this agency by
+helping people understand, maintain and improve the systems that shape everyday
+life.
+
 ## Inner development and outer design
 
 Better systems depend on more than better structures. They also ask for

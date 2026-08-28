@@ -2,7 +2,7 @@
 
 ## Homepage
 
-**Status:** OWNER ACCEPTED - IMPLEMENTED BASELINE V1
+**Status:** OWNER ACCEPTED DESIGN - LOCKED
 
 **Implementation commit:** `7f1e95408ab2280e595b8f1aef2c3ee192eb4f18`
 
@@ -10,12 +10,16 @@ The homepage is no longer open for general redesign. Future changes require
 explicit owner instruction and must preserve the accepted composition, copy,
 imagery and shared brand system.
 
+**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+
 ## Vision
 
-**Status:** OWNER ACCEPTED - LOCKED
+**Status:** OWNER ACCEPTED DESIGN - LOCKED
 
 The Vision uses the approved core-page pattern and remains unchanged by the
 Manifesto rollout.
+
+**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
 
 ## Core Page Pattern V1
 
@@ -31,6 +35,8 @@ authority for finished core pages.
 The approved Manifesto copy is implemented at `/manifesto/` using the locked
 core-page pattern and a governed local-preview image candidate.
 
+**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
+
 ## Blueprint
 
 **Status:** OWNER ACCEPTED - LOCKED
@@ -39,6 +45,8 @@ The approved Blueprint copy is implemented at `/blueprint/` using the locked
 core-page pattern and a governed local-preview image candidate. The Blueprint
 page is owner-accepted and locked; later implementation refinements must
 preserve its approved structure and wording.
+
+**Local-first copy:** ALIGNED - PENDING OWNER CONTENT REVIEW
 
 ## Ecosystem
 
@@ -69,7 +77,7 @@ requirement pending rights, provenance and owner review.
 
 ## Get Involved
 
-**Status:** REFINED - PENDING PETER FINAL VISUAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED
 
 The Get Involved page is implemented at `/get-involved/` as a practical,
 invitation-led participation route. It preserves the approved Learn,
@@ -78,3 +86,7 @@ Contribute -> Build locally -> Connect action pathway, and keeps local-first
 distinct from isolation. New Earth Builders is represented as an independent
 external community platform using the same governed local-preview-only asset as
 Home, with a complete text fallback for public builds.
+
+## Core Pages Local-First Narrative Alignment
+
+**Status:** IMPLEMENTED - PENDING PETER CONTENT REVIEW

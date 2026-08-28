@@ -35,6 +35,12 @@ New Earth begins with the possibility that these areas should not be treated as
 separate problems. A more conscious civilisation would pay attention to the
 whole pattern while remaining practical about the next step.
 
+A wider view does not require every answer to come from the top down. New Earth
+begins at the human and local scale, where people, homes and communities can
+become more capable of caring for wellbeing, knowledge, food, resources,
+environment and shared life. Strong communities can then connect outward, learn
+from one another and cooperate across wider networks.
+
 ## A direction, not a finished answer
 
 The New Earth vision is still being explored. It offers principles, questions
