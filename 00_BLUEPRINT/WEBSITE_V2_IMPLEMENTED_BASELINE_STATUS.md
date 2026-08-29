@@ -126,6 +126,19 @@ NEXT EVIDENCE-LED PROJECT PAGE REVIEW.
 The local-preview route is `/projects/command-centre/`; publication remains
 disabled and no public asset was adopted.
 
+## New Earth in Practice
+
+**Status:** IMPLEMENTED - PENDING PETER REVIEW
+
+The local-preview narrative bridge at `/new-earth-in-practice/` connects the
+accepted New Earth principles, local-first model, practical Pillar lenses and
+current project direction without introducing a new technical architecture or
+future capability claim.
+
+**Return checkpoint:** After review, return directly to the Command Centre
+public project page review. Command Centre remains IMPLEMENTED - PENDING PETER
+REVIEW and was not modified by this insertion.
+
 **MicroGrow publication readiness:** IN REVIEW - BLOCKED
 
 The owner-supplied evidence captures remain local-preview-only. Publication is

@@ -86,7 +86,7 @@ independently verified.
 
 ## Continue from here
 
-Read the [Blueprint](/blueprint/), visit [Projects](/projects/), or [Get
+Read the [Blueprint](/blueprint/), explore [New Earth in Practice](/new-earth-in-practice/), visit [Projects](/projects/), or [Get
 Involved](/get-involved/) in a way that fits your interest. Company information
 will be added only when the relevant public facts are ready.
 
