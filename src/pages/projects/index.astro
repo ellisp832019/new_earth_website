@@ -16,7 +16,7 @@ const visibleProjects = publicProjects.filter((project) => publicBuild ? project
         <p>{project.shortDescription}</p>
         <a class="text-link" href={`/projects/${project.slug}/`}>Explore {project.name}</a>
         </div>
-        {(project.slug === 'microgrow' || project.slug === 'command-centre') && <figure class="project-index-card__visual"><img src={project.slug === 'microgrow' ? '/local-assets/microgrow_current_hardware_prototype.jpeg' : '/local-assets/CC-VIS-001_command-centre-overview.png'} alt={project.slug === 'microgrow' ? 'Current MicroGrow single-node prototype hardware.' : 'Current New Earth Command Centre overview showing programme control, system discovery and status surfaces.'} /></figure>}
+        {(project.slug === 'microgrow' || project.slug === 'command-centre') && <figure class="project-index-card__visual"><img src={project.slug === 'microgrow' ? '/local-assets/microgrow_current_hardware_prototype.jpeg' : '/local-assets/CC-VIS-001B_command-centre-index-display.png'} alt={project.slug === 'microgrow' ? 'Current MicroGrow single-node prototype hardware.' : 'Current New Earth Command Centre overview display derivative showing programme control, system discovery and status surfaces.'} /></figure>}
       </article>)}
     </div>}
     <p><a class="button" href="/ecosystem/">Return to the Ecosystem</a></p>

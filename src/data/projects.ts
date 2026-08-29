@@ -166,10 +166,10 @@ export const publicProjects: ProjectRecord[] = [{
   ],
   visualEvidence: [
     {
-      src: 'CC-VIS-001_command-centre-overview.png',
+      src: 'CC-VIS-001A_command-centre-hero-display.png',
       alt: 'Current New Earth Command Centre overview showing programme control, system discovery and status surfaces.',
       label: 'Command Centre overview',
-      caption: 'Current Command Centre overview; local-preview evidence only, with service and status availability shown as captured.',
+      caption: 'Current Command Centre overview display derivative; local-preview evidence only, with service and status availability shown as captured.',
       className: 'visual-evidence--overview',
     },
     {
