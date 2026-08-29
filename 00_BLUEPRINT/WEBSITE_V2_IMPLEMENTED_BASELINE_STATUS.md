@@ -119,6 +119,10 @@ detail pages or project claims are published by this foundation.
 **MicroGrow public project page:** VISUAL / CONTENT BASELINE ACCEPTED -
 PUBLICATION REVIEW STILL PENDING
 
+**Next public project selection:** New Earth Command Centre - SELECTED FOR
+NEXT EVIDENCE-LED PROJECT PAGE REVIEW. This is a selection decision only; no
+Command Centre implementation or publication is authorised by this record.
+
 **MicroGrow publication readiness:** IN REVIEW - BLOCKED
 
 The owner-supplied evidence captures remain local-preview-only. Publication is
