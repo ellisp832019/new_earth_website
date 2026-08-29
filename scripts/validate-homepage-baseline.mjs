@@ -5,7 +5,7 @@ const images = ['home_hero_new_earth_main.webp', 'home_introduction_new_earth.we
 const missing = ids.filter((id) => !html.includes(`id="${id}"`));
 const missingImages = images.filter((name) => !html.includes(`/local-assets/${name}`));
 const h1 = (html.match(/<h1\b/g) || []).length;
-const nav = ['/vision/', '/blueprint/', '/ecosystem/', '/projects/', '/journal/', '/about/', '/get-involved/'];
+const nav = ['/vision/', '/blueprint/', '/ecosystem/', '/new-earth-in-practice/', '/projects/', '/journal/', '/about/', '/get-involved/'];
 const navMissing = nav.filter((href) => !html.includes(`href="${href}"`));
 const imageCount = images.reduce((count, name) => count + (html.match(new RegExp(`/local-assets/${name}`, 'g')) || []).length, 0);
 if (missing.length || navMissing.length || missingImages.length || h1 !== 1 || imageCount !== images.length) {

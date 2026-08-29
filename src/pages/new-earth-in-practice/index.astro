@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 ---
 <BaseLayout
   title="New Earth in Practice"
@@ -17,14 +18,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="eyebrow">Start where we are</p>
       <h2 id="start-where-we-are">Local capability can connect outward</h2>
       <p>New Earth begins with people and the places they care for. Local-first does not mean isolation. It means building understanding and capability close to the people and places affected, then connecting through cooperation, shared learning, mutual support and useful interoperability.</p>
-      <ol class="practice-pathway" aria-label="A local-first pathway">
-        <li><strong>Person</strong><span>Notice needs, values and responsibilities.</span></li>
-        <li><strong>Home / place</strong><span>Care for the immediate environment and resources.</span></li>
-        <li><strong>Community</strong><span>Share skills, attention and practical support.</span></li>
-        <li><strong>Local capability</strong><span>Understand and maintain more close to home.</span></li>
-        <li><strong>Connected communities</strong><span>Learn from one another without forced uniformity.</span></li>
-        <li><strong>Wider New Earth</strong><span>Cooperate around knowledge, care and shared questions.</span></li>
-      </ol>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-001_local-capability-pathway.png" alt="Six-stage local-first pathway from person and home to connected communities and wider New Earth." /><figcaption>An illustrative local-first pathway.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="daily-life">
@@ -37,6 +31,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <article class="practice-card"><p class="eyebrow">For builders and makers</p><h3>Tools that remain understandable</h3><p>AI assistance, engineering tools, documentation and open knowledge could help people build and maintain useful local systems.</p></article>
         <article class="practice-card"><p class="eyebrow">Between communities</p><h3>Cooperation without uniformity</h3><p>Communities could share designs and lessons, adapt what works and remain responsive to their own conditions.</p></article>
       </div>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-002_daily-life-cards.png" alt="Four illustrative daily-life contexts: at home, in a community, for builders and makers, and between communities." /><figcaption>Possible expressions of New Earth principles, not current deployment.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="pillars-practice">
@@ -52,14 +47,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="practice-section" aria-labelledby="principles-practice">
       <p class="eyebrow">From principles to practice</p>
       <h2 id="principles-practice">A developing bridge</h2>
-      <ol class="practice-flow" aria-label="The path from principles to practical systems">
-        <li><strong>Principles</strong><span>What should guide the work?</span></li>
-        <li><strong>Blueprint / 12 Pillars</strong><span>Where do the questions become visible?</span></li>
-        <li><strong>Local stewardship</strong><span>What can people understand and care for?</span></li>
-        <li><strong>Projects and tools</strong><span>What can be explored carefully?</span></li>
-        <li><strong>Real-world learning</strong><span>What does experience teach?</span></li>
-        <li><strong>Sharing what works</strong><span>What can others adapt?</span></li>
-      </ol>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-004_principles-to-practice-bridge.png" alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="technology-role">
@@ -71,13 +59,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="practice-section" aria-labelledby="technical-direction">
       <p class="eyebrow">A developmental technical direction</p>
       <h2 id="technical-direction">Human-visible, bounded and distinct</h2>
-      <ol class="practice-flow technical-flow" aria-label="The emerging relationship between New Earth technical systems and human governance">
-        <li><strong>Projects and systems</strong><span>Specialist work remains with its originating system.</span></li>
-        <li><strong>NEOS</strong><span>Engineering and project intelligence remains NEOS-owned.</span></li>
-        <li><strong>GAIA</strong><span>Reasoning, summaries and recommendations remain bounded.</span></li>
-        <li><strong>Command Centre</strong><span>A human-visible control and navigation surface.</span></li>
-        <li><strong>Human governance</strong><span>People retain decision authority and approval.</span></li>
-      </ol>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-005_systems-relationship-map.png" alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
       <p class="small-note">This is an emerging direction, not a claim that the full chain is production-integrated. The systems remain distinct.</p>
     </section>
 
@@ -85,9 +67,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="eyebrow">Human authority</p>
       <h2 id="human-authority">More automation should not mean less control</h2>
       <p>The intended governing model keeps increasing automation subject to clear boundaries and human judgement. Not every project currently implements the full ladder.</p>
-      <ol class="authority-ladder" aria-label="Intended human authority model">
-        <li>Observe</li><li>Recommend</li><li>Prepare</li><li>Execute with approval</li><li>Autonomous execution only when explicitly pre-authorised</li>
-      </ol>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-006_authority-ladder.png" alt="Five-stage authority ladder from observation to explicitly pre-authorised autonomous execution, with human authority at each stage." /><figcaption>An intended authority ladder for bounded automation; it does not claim every current project implements all five levels.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="one-person">
@@ -95,6 +75,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h2 id="one-person">One person’s experience</h2>
       <p>This is an illustrative model, not an implemented product workflow.</p>
       <ol class="person-journey"><li>A person understands local resources and needs.</li><li>They use practical tools and learning.</li><li>They contribute knowledge or skill.</li><li>They connect with local people.</li><li>The community learns and builds.</li><li>Useful learning connects outward.</li></ol>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-007_one-person-experience.png" alt="Six-step illustrative journey from understanding local needs to sharing useful learning outward." /><figcaption>An illustrative journey, not a fixed product workflow.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="what-exists-now">
@@ -159,6 +140,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .person-journey { display: grid; gap: .65rem; max-width: 680px; }
   .person-journey li { padding: .9rem 1rem; border-left: 3px solid var(--forest); background: var(--sage); }
   .practice-section--closing { padding-bottom: 0; }
+  .practice-visual { width: min(100%, 1080px); margin: 2rem auto 0; }
+  .practice-visual img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
+  .practice-visual figcaption { margin-top: .75rem; color: var(--forest); font-size: .92rem; }
   @media (max-width: 900px) { .practice-pathway, .technical-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); } .technical-flow li:not(:last-child)::after { content: none; } .authority-ladder { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 680px) { .practice-pathway, .practice-flow, .technical-flow, .practice-card-grid, .current-work-grid, .horizon-grid, .split-copy, .authority-ladder { grid-template-columns: 1fr; } .practice-flow li:not(:last-child)::after { content: none; } }
 </style>

@@ -128,7 +128,7 @@ disabled and no public asset was adopted.
 
 ## New Earth in Practice
 
-**Status:** IMPLEMENTED - PENDING PETER REVIEW
+**Status:** IMPLEMENTED - PENDING PETER FINAL REVIEW
 
 The local-preview narrative bridge at `/new-earth-in-practice/` connects the
 accepted New Earth principles, local-first model, practical Pillar lenses and

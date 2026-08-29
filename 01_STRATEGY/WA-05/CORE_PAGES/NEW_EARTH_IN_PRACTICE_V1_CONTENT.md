@@ -169,4 +169,20 @@ The page links to `/projects/`, `/get-involved/` and `/ecosystem/`.
 Current reality, building-toward direction and future possibility must remain
 visibly separated. Avoid claims that the whole technical chain is integrated,
 that New Earth is a central system, or that future outcomes are guaranteed.
-No new image asset is required for this page.
+The local preview uses six generated explanatory graphics from the governed
+visual pack. They are illustrative support, not evidence of current
+deployment, completed systems, proven outcomes or a fully integrated technical
+chain.
+
+- `NEIP-VIS-001`: local capability can connect outward.
+- `NEIP-VIS-002`: possible expressions in daily life.
+- `NEIP-VIS-004`: the developing principles-to-practice bridge.
+- `NEIP-VIS-005`: a developmental relationship model for distinct systems.
+- `NEIP-VIS-006`: the intended authority ladder, not a claim that every
+  project implements every level.
+- `NEIP-VIS-007`: an illustrative journey, not a fixed product workflow.
+
+`NEIP-VIS-003` is held because its embedded Pillar labels do not match the
+canonical Blueprint. `NEIP-VIS-008` is held because it is a synthetic composite
+and must not be presented as current project evidence. None of these visuals
+is public-ready by default.
