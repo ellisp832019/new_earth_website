@@ -145,6 +145,13 @@ The owner-supplied evidence captures remain local-preview-only. Publication is
 blocked pending privacy-safe derivatives, rights/provenance confirmation and
 final public asset review. `publicEnabled` remains `false`.
 
+## WB-04C5 Micro-coherence
+
+The shared .eyebrow pattern now uses the approved gold token with stronger
+editorial sizing while remaining subordinate to headings. The public journey
+includes the header, Home and Ecosystem routes into New Earth in Practice.
+New Earth in Practice remains PENDING PETER FINAL APPROVAL, and the Command
+Centre return checkpoint is preserved.
 ## MicroGrow Public Project Page
 
 **Status:** IMPLEMENTED - PENDING PETER REVIEW
