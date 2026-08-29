@@ -125,7 +125,7 @@ export const publicProjects: ProjectRecord[] = [{
   whatExistsToday: 'The current implementation includes a registry-driven desktop shell, repository and application discovery, launch-target resolution, navigation actions, health and status surfaces, a command palette, audit support and read-only presentation of selected NEOS and GAIA-related information.',
   evidence: [
     'Repository documentation, source implementation and focused tests provide the current evidence for the shell, discovery, navigation, command palette and bounded integrations.',
-    'The conceptual How Command Centre Works diagram uses broader aspirational language, so it is held and not used as current evidence for this page.',
+    'The conceptual How Command Centre Works diagram is held because its visible language exceeds current evidence; it is not used as current evidence for this page.',
   ],
   limitations: [
     'Command Centre does not own engineering intelligence, AI reasoning, project-domain behaviour or arbitrary shell execution.',
