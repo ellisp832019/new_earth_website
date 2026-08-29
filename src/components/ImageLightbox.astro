@@ -1,0 +1,49 @@
+<dialog class="lightbox" data-image-lightbox role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+  <div class="lightbox__panel">
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close image viewer">X</button>
+    <h2 class="visually-hidden" id="lightbox-title">Expanded image view</h2>
+    <img class="lightbox__image" data-lightbox-image alt="" />
+    <p class="lightbox__caption" data-lightbox-caption></p>
+  </div>
+</dialog>
+<script>
+  const lightbox = document.querySelector('[data-image-lightbox]');
+  const image = lightbox?.querySelector('[data-lightbox-image]');
+  const caption = lightbox?.querySelector('[data-lightbox-caption]');
+  const close = lightbox?.querySelector('[data-lightbox-close]');
+  let trigger = null;
+
+  const closeLightbox = () => {
+    if (!lightbox?.open) return;
+    lightbox.close();
+    document.body.classList.remove('lightbox-open');
+    trigger?.focus();
+    trigger = null;
+  };
+
+  document.querySelectorAll('[data-lightbox]').forEach((item) => item.addEventListener('click', () => {
+    trigger = item;
+    image.src = item.querySelector('img').currentSrc || item.querySelector('img').src;
+    image.alt = item.dataset.lightboxAlt || '';
+    caption.textContent = item.dataset.lightboxCaption || '';
+    caption.hidden = !caption.textContent;
+    lightbox.showModal();
+    document.body.classList.add('lightbox-open');
+    close.focus();
+  }));
+
+  close?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeLightbox();
+  });
+  lightbox?.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  lightbox?.addEventListener('keydown', (event) => {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      close.focus();
+    }
+  });
+</script>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import LightboxImage from '../../components/LightboxImage.astro';
 const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 ---
 <BaseLayout
@@ -18,14 +19,14 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
       <p class="eyebrow">Start where we are</p>
       <h2 class="sr-only" id="start-where-we-are">Local capability can connect outward</h2>
       <p>New Earth begins with people and the places they care for. Local-first does not mean isolation. It means building understanding and capability close to the people and places affected, then connecting through cooperation, shared learning, mutual support and useful interoperability.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-001_local-capability-pathway.png" alt="Six-stage local-first pathway from person and home to connected communities and wider New Earth." /><figcaption>An illustrative local-first pathway.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-001_local-capability-pathway.png" alt="Six-stage local-first pathway from person and home to connected communities and wider New Earth." caption="An illustrative local-first pathway." /><figcaption>An illustrative local-first pathway.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="daily-life">
       <p class="eyebrow">Possible expressions</p>
       <h2 class="sr-only" id="daily-life">What this could mean in daily life</h2>
       <p>These are future-direction examples, not claims of current deployment. They show the kinds of practical questions the wider direction could hold.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-002_daily-life-cards.png" alt="Four illustrative daily-life contexts: at home, in a community, for builders and makers, and between communities." /><figcaption>Possible expressions of New Earth principles, not current deployment.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-002_daily-life-cards.png" alt="Four illustrative daily-life contexts: at home, in a community, for builders and makers, and between communities." caption="Possible expressions of New Earth principles, not current deployment." /><figcaption>Possible expressions of New Earth principles, not current deployment.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="pillars-practice">
@@ -33,14 +34,14 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
       <h2 class="sr-only" id="pillars-practice">A set of lenses for real life</h2>
       <p>The 12 Pillars are not twelve finished products or centrally imposed programmes. They are connected lenses through which people and communities can ask what is working, what needs care, what can be understood locally, what can be maintained locally and what needs wider cooperation.</p>
       <p>Different places do not need to look the same. The framework can help connect local questions with wider learning while leaving room for context, responsibility and human judgement.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-003_twelve-pillars-lenses.png" alt="The 12 Pillars used as practical lenses across person, household, neighbourhood, community and region, with questions about care, local capability and wider cooperation." /><figcaption>Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-003_twelve-pillars-lenses.png" alt="The 12 Pillars used as practical lenses across person, household, neighbourhood, community and region, with questions about care, local capability and wider cooperation." caption="Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented." /><figcaption>Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="principles-practice">
       <p class="eyebrow">From principles to practice</p>
       <h2 class="sr-only" id="principles-practice">A developing bridge</h2>
       <p>The framework becomes useful when principles move into stewardship, practical action, real-world learning and sharing what works.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-004_principles-to-practice-bridge.png" alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-004_principles-to-practice-bridge.png" alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." caption="A developing bridge from principles to practice, not completed integration evidence." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="technology-role">
@@ -53,7 +54,7 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
       <p class="eyebrow">A developmental technical direction</p>
       <h2 class="sr-only" id="technical-direction">Human-visible, bounded and distinct</h2>
       <p>The emerging technical systems have distinct responsibilities. Not every connection is complete, and human governance remains the authority.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-005_systems-relationship-map.png" alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-005_systems-relationship-map.png" alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." caption="A developmental relationship model; systems are distinct and not every connection is complete today." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
       <p class="small-note">This is an emerging direction, not a claim that the full chain is production-integrated. The systems remain distinct.</p>
     </section>
 
@@ -61,14 +62,14 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
       <p class="eyebrow">Human authority</p>
       <h2 class="sr-only" id="human-authority">More automation should not mean less control</h2>
       <p>The intended governing model keeps increasing automation subject to clear boundaries and human judgement. Not every project currently implements the full ladder.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-006_authority-ladder.png" alt="Five-stage authority ladder from observation to explicitly pre-authorised autonomous execution, with human authority at each stage." /><figcaption>An intended authority ladder for bounded automation; it does not claim every current project implements all five levels.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-006_authority-ladder.png" alt="Five-stage authority ladder from observation to explicitly pre-authorised autonomous execution, with human authority at each stage." caption="An intended authority ladder for bounded automation; it does not claim every current project implements all five levels." /><figcaption>An intended authority ladder for bounded automation; it does not claim every current project implements all five levels.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="one-person">
       <p class="eyebrow">Example model</p>
       <h2 id="one-person">One person’s experience</h2>
       <p>This is an illustrative model, not an implemented product workflow.</p>
-      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-007_one-person-experience.png" alt="Six-step illustrative journey from understanding local needs to sharing useful learning outward." /><figcaption>An illustrative journey, not a fixed product workflow.</figcaption></figure>}
+      {localPreview && <figure class="practice-visual"><LightboxImage src="/local-assets/NEIP-VIS-007_one-person-experience.png" alt="Six-step illustrative journey from understanding local needs to sharing useful learning outward." caption="An illustrative journey, not a fixed product workflow." /><figcaption>An illustrative journey, not a fixed product workflow.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="what-exists-now">
