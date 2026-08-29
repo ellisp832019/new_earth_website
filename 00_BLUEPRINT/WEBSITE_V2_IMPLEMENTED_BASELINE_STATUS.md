@@ -126,6 +126,12 @@ NEXT EVIDENCE-LED PROJECT PAGE REVIEW.
 The local-preview route is `/projects/command-centre/`; publication remains
 disabled and no public asset was adopted.
 
+**Command Centre visual evidence V1:** INTEGRATED - PENDING PETER REVIEW.
+Four owner-supplied UI captures are available in local preview only: the
+Command Centre overview, Command Palette, bounded Continue Work view and
+clearly labelled related NEOS context. The conceptual architecture visual is
+held because its raster claims exceed current evidence.
+
 ## New Earth in Practice
 
 **Status:** PENDING PETER FINAL APPROVAL

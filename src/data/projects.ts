@@ -125,7 +125,7 @@ export const publicProjects: ProjectRecord[] = [{
   whatExistsToday: 'The current implementation includes a registry-driven desktop shell, repository and application discovery, launch-target resolution, navigation actions, health and status surfaces, a command palette, audit support and read-only presentation of selected NEOS and GAIA-related information.',
   evidence: [
     'Repository documentation, source implementation and focused tests provide the current evidence for the shell, discovery, navigation, command palette and bounded integrations.',
-    'The available ecosystem roadmap visual is conceptual and uses broader aspirational language, so it is not used as public evidence for this page.',
+    'The conceptual How Command Centre Works diagram uses broader aspirational language, so it is held and not used as current evidence for this page.',
   ],
   limitations: [
     'Command Centre does not own engineering intelligence, AI reasoning, project-domain behaviour or arbitrary shell execution.',
@@ -157,5 +157,33 @@ export const publicProjects: ProjectRecord[] = [{
     { label: 'Platform', value: 'Windows desktop' },
     { label: 'Role', value: 'Control / navigation surface' },
     { label: 'Publication', value: 'PENDING OWNER REVIEW' },
+  ],
+  visualEvidence: [
+    {
+      src: 'CC-VIS-001_command-centre-overview.png',
+      alt: 'Current New Earth Command Centre overview showing programme control, system discovery and status surfaces.',
+      label: 'Command Centre overview',
+      caption: 'Current Command Centre overview; local-preview evidence only, with service and status availability shown as captured.',
+      className: 'visual-evidence--overview',
+    },
+    {
+      src: 'CC-VIS-002_command-palette.png',
+      alt: 'Command Centre command palette showing search and open navigation actions.',
+      label: 'Command and navigation',
+      caption: 'Command Palette evidence for discovery and navigation actions; it does not imply unrestricted execution.',
+    },
+    {
+      src: 'CC-VIS-003_continue-work-authority.png',
+      alt: 'Command Centre Continue Work view showing READY eligibility and NOT_DISPATCHED dispatch state.',
+      label: 'Bounded work preparation',
+      caption: 'Continue Work evidence showing READY / NOT_DISPATCHED; preparation is not dispatch or execution.',
+    },
+    {
+      src: 'CC-VIS-004_neos-connected-context.png',
+      alt: 'NEOS Windows Desktop related engineering and project intelligence surface.',
+      label: 'NEOS Windows Desktop - related engineering/project intelligence surface',
+      caption: 'Related NEOS context, not Command Centre UI; NEOS remains the engineering and project intelligence owner.',
+      className: 'visual-evidence--neos',
+    },
   ],
 }];
