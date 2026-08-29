@@ -29,6 +29,12 @@ export type ProjectRecord = {
     caption: string;
     className?: string;
   }[];
+  developmentalVisual?: {
+    src: string;
+    alt: string;
+    label: string;
+    caption: string;
+  };
 };
 
 // Catalogue recognition does not publish a page. Add an entry only after the
@@ -125,7 +131,7 @@ export const publicProjects: ProjectRecord[] = [{
   whatExistsToday: 'The current implementation includes a registry-driven desktop shell, repository and application discovery, launch-target resolution, navigation actions, health and status surfaces, a command palette, audit support and read-only presentation of selected NEOS and GAIA-related information.',
   evidence: [
     'Repository documentation, source implementation and focused tests provide the current evidence for the shell, discovery, navigation, command palette and bounded integrations.',
-    'The conceptual How Command Centre Works diagram is held because its visible language exceeds current evidence; it is not used as current evidence for this page.',
+    'The How Command Centre Works visual is a developmental operating model, not current implementation evidence; its framing makes clear that not every connection or authority stage shown is implemented today.',
   ],
   limitations: [
     'Command Centre does not own engineering intelligence, AI reasoning, project-domain behaviour or arbitrary shell execution.',
@@ -186,4 +192,10 @@ export const publicProjects: ProjectRecord[] = [{
       className: 'visual-evidence--neos',
     },
   ],
+  developmentalVisual: {
+    src: 'CC-VIS-005_how-command-centre-works.png',
+    alt: 'Developmental operating model showing intended Command Centre responsibilities, related system roles and human approval boundaries.',
+    label: 'Developmental operating model',
+    caption: 'Developmental operating model - not a claim that every connection, integration or authority stage is live today.',
+  },
 }];

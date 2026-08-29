@@ -132,10 +132,12 @@ Command Centre overview, Command Palette, bounded Continue Work view and
 clearly labelled related NEOS context. The conceptual architecture visual is
 held because its raster claims exceed current evidence.
 
-**Command Centre visual evidence V1:** REFINED - PENDING PETER REVIEW.
+**Command Centre visual evidence V1:** FINAL ALIGNMENT COMPLETE - PENDING PETER APPROVAL.
 CC-001 is used as the larger detail hero and the bounded Projects index
 representative image. CC-002 and CC-003 remain real UI evidence, CC-004 is
-clearly separated as related NEOS context, and CC-005 remains held.
+clearly separated as related NEOS context, and CC-005 is rendered as a clearly
+labelled developmental operating model rather than current implementation
+evidence.
 
 **Projects index Command Centre feature:** IMPLEMENTED - PENDING PETER REVIEW.
 Project Page Pattern V1 remains preserved.
