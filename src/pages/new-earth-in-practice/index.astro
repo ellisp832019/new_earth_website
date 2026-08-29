@@ -39,6 +39,7 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
     <section class="practice-section" aria-labelledby="principles-practice">
       <p class="eyebrow">From principles to practice</p>
       <h2 class="sr-only" id="principles-practice">A developing bridge</h2>
+      <p>The framework becomes useful when principles move into stewardship, practical action, real-world learning and sharing what works.</p>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-004_principles-to-practice-bridge.png" alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
     </section>
 
@@ -51,6 +52,7 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
     <section class="practice-section" aria-labelledby="technical-direction">
       <p class="eyebrow">A developmental technical direction</p>
       <h2 class="sr-only" id="technical-direction">Human-visible, bounded and distinct</h2>
+      <p>The emerging technical systems have distinct responsibilities. Not every connection is complete, and human governance remains the authority.</p>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-005_systems-relationship-map.png" alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
       <p class="small-note">This is an emerging direction, not a claim that the full chain is production-integrated. The systems remain distinct.</p>
     </section>
@@ -116,7 +118,7 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
   .split-copy { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
   .boundary-note { border-left: 4px solid var(--gold); }
   .practice-section--closing { padding-bottom: 0; }
-  .practice-visual { width: min(100%, 1080px); margin: 2rem auto 0; }
+  .practice-visual { width: min(100%, 1040px); margin: 2rem auto 0; }
   .practice-visual img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
   .practice-visual figcaption { margin-top: .75rem; color: var(--forest); font-size: .92rem; }
   @media (max-width: 680px) { .current-work-grid, .horizon-grid, .split-copy { grid-template-columns: 1fr; } }

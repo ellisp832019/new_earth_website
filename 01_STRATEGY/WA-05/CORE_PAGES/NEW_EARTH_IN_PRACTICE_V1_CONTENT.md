@@ -183,6 +183,8 @@ chain.
   project implements every level.
 - `NEIP-VIS-007`: an illustrative journey, not a fixed product workflow.
 
+`NEIP-VIS-003` is approved for local preview after regeneration; it presents
+the Pillars as practical lenses without redefining the canonical names.
 `NEIP-VIS-008` is held because it is a synthetic composite and must not be
 presented as current project evidence. None of these visuals is public-ready by
 default.

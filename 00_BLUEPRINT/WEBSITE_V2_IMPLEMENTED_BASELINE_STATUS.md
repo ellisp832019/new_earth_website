@@ -102,7 +102,7 @@ content or design changes are part of the project rollout foundation.
 
 ## Project / System Public Rollout
 
-**Status:** IMPLEMENTED - PENDING PETER REVIEW
+**Status:** IMPLEMENTED - PENDING PETER FINAL REVIEW
 
 The public rollout foundation supports `/projects/` and the guarded
 `/projects/[slug]/` route model. The controlled project publication model is
@@ -128,7 +128,7 @@ disabled and no public asset was adopted.
 
 ## New Earth in Practice
 
-**Status:** IMPLEMENTED - PENDING PETER FINAL REVIEW
+**Status:** PENDING PETER FINAL APPROVAL
 
 The local-preview narrative bridge at `/new-earth-in-practice/` connects the
 accepted New Earth principles, local-first model, practical Pillar lenses and
