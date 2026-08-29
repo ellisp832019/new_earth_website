@@ -16,37 +16,29 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 
     <section class="practice-section practice-section--wide" aria-labelledby="start-where-we-are">
       <p class="eyebrow">Start where we are</p>
-      <h2 id="start-where-we-are">Local capability can connect outward</h2>
+      <h2 class="sr-only" id="start-where-we-are">Local capability can connect outward</h2>
       <p>New Earth begins with people and the places they care for. Local-first does not mean isolation. It means building understanding and capability close to the people and places affected, then connecting through cooperation, shared learning, mutual support and useful interoperability.</p>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-001_local-capability-pathway.png" alt="Six-stage local-first pathway from person and home to connected communities and wider New Earth." /><figcaption>An illustrative local-first pathway.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="daily-life">
       <p class="eyebrow">Possible expressions</p>
-      <h2 id="daily-life">What this could mean in daily life</h2>
+      <h2 class="sr-only" id="daily-life">What this could mean in daily life</h2>
       <p>These are future-direction examples, not claims of current deployment. They show the kinds of practical questions the wider direction could hold.</p>
-      <div class="practice-card-grid">
-        <article class="practice-card"><p class="eyebrow">At home</p><h3>Care that is easier to understand</h3><p>Wellbeing, food growing, resource awareness, learning and maintainable tools could become more connected to everyday life.</p></article>
-        <article class="practice-card"><p class="eyebrow">In a community</p><h3>Shared capability</h3><p>People could exchange skills, repair knowledge, food knowledge, local project experience and mutual support.</p></article>
-        <article class="practice-card"><p class="eyebrow">For builders and makers</p><h3>Tools that remain understandable</h3><p>AI assistance, engineering tools, documentation and open knowledge could help people build and maintain useful local systems.</p></article>
-        <article class="practice-card"><p class="eyebrow">Between communities</p><h3>Cooperation without uniformity</h3><p>Communities could share designs and lessons, adapt what works and remain responsive to their own conditions.</p></article>
-      </div>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-002_daily-life-cards.png" alt="Four illustrative daily-life contexts: at home, in a community, for builders and makers, and between communities." /><figcaption>Possible expressions of New Earth principles, not current deployment.</figcaption></figure>}
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="pillars-practice">
       <p class="eyebrow">The 12 Pillars in practice</p>
-      <h2 id="pillars-practice">A set of lenses for real life</h2>
+      <h2 class="sr-only" id="pillars-practice">A set of lenses for real life</h2>
       <p>The 12 Pillars are not twelve finished products or centrally imposed programmes. They are connected lenses through which people and communities can ask what is working, what needs care, what can be understood locally, what can be maintained locally and what needs wider cooperation.</p>
-      <div class="scale-list" aria-label="Scales for exploring the 12 Pillars">
-        <span>Person</span><span>Household</span><span>Neighbourhood</span><span>Community</span><span>Region</span>
-      </div>
       <p>Different places do not need to look the same. The framework can help connect local questions with wider learning while leaving room for context, responsibility and human judgement.</p>
+      {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-003_twelve-pillars-lenses.png" alt="The 12 Pillars used as practical lenses across person, household, neighbourhood, community and region, with questions about care, local capability and wider cooperation." /><figcaption>Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented.</figcaption></figure>}
     </section>
 
     <section class="practice-section" aria-labelledby="principles-practice">
       <p class="eyebrow">From principles to practice</p>
-      <h2 id="principles-practice">A developing bridge</h2>
+      <h2 class="sr-only" id="principles-practice">A developing bridge</h2>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-004_principles-to-practice-bridge.png" alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
     </section>
 
@@ -58,14 +50,14 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 
     <section class="practice-section" aria-labelledby="technical-direction">
       <p class="eyebrow">A developmental technical direction</p>
-      <h2 id="technical-direction">Human-visible, bounded and distinct</h2>
+      <h2 class="sr-only" id="technical-direction">Human-visible, bounded and distinct</h2>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-005_systems-relationship-map.png" alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
       <p class="small-note">This is an emerging direction, not a claim that the full chain is production-integrated. The systems remain distinct.</p>
     </section>
 
     <section class="practice-section practice-section--wide" aria-labelledby="human-authority">
       <p class="eyebrow">Human authority</p>
-      <h2 id="human-authority">More automation should not mean less control</h2>
+      <h2 class="sr-only" id="human-authority">More automation should not mean less control</h2>
       <p>The intended governing model keeps increasing automation subject to clear boundaries and human judgement. Not every project currently implements the full ladder.</p>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-006_authority-ladder.png" alt="Five-stage authority ladder from observation to explicitly pre-authorised autonomous execution, with human authority at each stage." /><figcaption>An intended authority ladder for bounded automation; it does not claim every current project implements all five levels.</figcaption></figure>}
     </section>
@@ -74,7 +66,6 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
       <p class="eyebrow">Example model</p>
       <h2 id="one-person">One person’s experience</h2>
       <p>This is an illustrative model, not an implemented product workflow.</p>
-      <ol class="person-journey"><li>A person understands local resources and needs.</li><li>They use practical tools and learning.</li><li>They contribute knowledge or skill.</li><li>They connect with local people.</li><li>The community learns and builds.</li><li>Useful learning connects outward.</li></ol>
       {localPreview && <figure class="practice-visual"><img src="/local-assets/NEIP-VIS-007_one-person-experience.png" alt="Six-step illustrative journey from understanding local needs to sharing useful learning outward." /><figcaption>An illustrative journey, not a fixed product workflow.</figcaption></figure>}
     </section>
 
@@ -116,33 +107,17 @@ const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
   .practice-section { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 5rem); }
   .practice-section--wide { max-width: 1120px; }
   .practice-section h2 { max-width: 18ch; }
+  .sr-only, #one-person { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
   .practice-section > p:not(.eyebrow), .small-note { max-width: 70ch; }
-  .practice-pathway, .practice-flow, .authority-ladder, .person-journey { list-style: none; margin: 2rem 0 0; padding: 0; }
-  .practice-pathway { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; }
-  .practice-pathway li, .practice-flow li { min-width: 0; padding: 1.1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
-  .practice-pathway strong, .practice-pathway span, .practice-flow strong, .practice-flow span { display: block; }
-  .practice-pathway span, .practice-flow span { margin-top: .45rem; font-size: .9rem; }
-  .practice-card-grid, .current-work-grid, .horizon-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .current-work-grid, .horizon-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
   .practice-card, .horizon-card, .boundary-note { min-width: 0; padding: 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
   .practice-card h3, .horizon-card h3 { margin-block: .35rem .65rem; }
   .practice-card p:last-child, .horizon-card p:last-child, .boundary-note p:last-child { margin-bottom: 0; }
-  .scale-list { display: flex; flex-wrap: wrap; gap: .6rem; margin-block: 1.75rem; }
-  .scale-list span { padding: .65rem .9rem; border: 1px solid var(--line); border-radius: 999px; background: var(--sand); }
-  .practice-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
-  .practice-flow li { position: relative; }
-  .practice-flow li:not(:last-child)::after { content: '>'; position: absolute; right: -.55rem; top: 50%; color: var(--gold); font-weight: 700; z-index: 1; }
   .split-copy { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
   .boundary-note { border-left: 4px solid var(--gold); }
-  .technical-flow { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .authority-ladder { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; counter-reset: authority; }
-  .authority-ladder li { counter-increment: authority; min-width: 0; padding: 1rem; border-left: 3px solid var(--gold); background: var(--sand); }
-  .authority-ladder li::before { content: counter(authority, decimal-leading-zero); display: block; margin-bottom: .45rem; color: var(--forest); font-size: .75rem; font-weight: 700; letter-spacing: .08em; }
-  .person-journey { display: grid; gap: .65rem; max-width: 680px; }
-  .person-journey li { padding: .9rem 1rem; border-left: 3px solid var(--forest); background: var(--sage); }
   .practice-section--closing { padding-bottom: 0; }
   .practice-visual { width: min(100%, 1080px); margin: 2rem auto 0; }
   .practice-visual img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
   .practice-visual figcaption { margin-top: .75rem; color: var(--forest); font-size: .92rem; }
-  @media (max-width: 900px) { .practice-pathway, .technical-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); } .technical-flow li:not(:last-child)::after { content: none; } .authority-ladder { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 680px) { .practice-pathway, .practice-flow, .technical-flow, .practice-card-grid, .current-work-grid, .horizon-grid, .split-copy, .authority-ladder { grid-template-columns: 1fr; } .practice-flow li:not(:last-child)::after { content: none; } }
+  @media (max-width: 680px) { .current-work-grid, .horizon-grid, .split-copy { grid-template-columns: 1fr; } }
 </style>
