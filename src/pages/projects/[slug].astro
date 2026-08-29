@@ -21,11 +21,7 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
       <h1>{project.name}</h1>
       <p class="lede">{project.shortDescription}</p>
       <dl class="project-facts">
-        <div><dt>Project</dt><dd>{project.name}</dd></div>
-        <div><dt>State</dt><dd>{project.maturity}</dd></div>
-        <div><dt>Scope</dt><dd>Single-node V1</dd></div>
-        <div><dt>Operation</dt><dd>Local-first</dd></div>
-        <div><dt>Publication</dt><dd>{project.publicStatus}</dd></div>
+        {project.facts.map((fact) => <div><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}
       </dl>
     </header>
     {project.visualEvidence?.[0] && <figure class="project-hero-visual">
@@ -34,11 +30,11 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
     </figure>}
     </div>
     <div class="project-page__body">
-      <section class="project-section project-section--wide"><h2>How it works at a high level</h2><p>The growing purpose comes first. This explanatory flow shows how the current system connects without acting as an electrical schematic or wiring guide.</p><ol class="system-flow">{project.systemFlow.map((step) => <li><strong>{step.label}</strong><span>{step.detail}</span></li>)}</ol></section>
+      <section class="project-section project-section--wide"><h2>How it works at a high level</h2><p>This explanatory flow shows the project’s role without presenting an internal architecture diagram or claiming capabilities beyond the current evidence.</p><ol class="system-flow">{project.systemFlow.map((step) => <li><strong>{step.label}</strong><span>{step.detail}</span></li>)}</ol></section>
       <section><h2>Why it exists</h2><p>{project.whyItExists}</p></section>
-      <section><h2>What it is</h2><p>{project.whatItIs}</p></section>
+      <section><h2>What it is</h2><p>{project.whatItIs}</p><p><strong>Current state:</strong> {project.currentState}</p></section>
       <section class="project-section--wide"><h2>What exists today</h2><p>{project.whatExistsToday}</p><div class="evidence-grid">{project.evidenceCards.map((card) => <article class="evidence-card"><p class="eyebrow">{card.label}</p><h3>{card.status}</h3><p>{card.detail}</p></article>)}</div></section>
-      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Application and diagnostics evidence</h2><p>These owner-supplied captures show the current application and diagnostics experience. They are local-preview evidence only and do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).map((visual) => <figure class:list={['visual-evidence', visual.className]}><img src={`/local-assets/${visual.src}`} alt={visual.alt} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
+      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Visual evidence</h2><p>These captures show selected current project surfaces. They are local-preview evidence only and do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).map((visual) => <figure class:list={['visual-evidence', visual.className]}><img src={`/local-assets/${visual.src}`} alt={visual.alt} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
       <section><h2>How it fits into New Earth</h2><p>{project.relationToNewEarth}</p></section>
       <section><h2>Evidence and current progress</h2>{project.evidence.map((item) => <p>{item}</p>)}</section>
       <section class="limitations-panel"><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>

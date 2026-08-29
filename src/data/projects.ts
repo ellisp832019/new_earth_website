@@ -20,6 +20,7 @@ export type ProjectRecord = {
   publicLinks: { label: string; href: string }[];
   systemFlow: { label: string; detail: string }[];
   evidenceCards: { label: string; detail: string; status: string }[];
+  facts: { label: string; value: string }[];
   primaryVisual?: { src: string; alt: string; provenance: string };
   visualEvidence?: {
     src: string;
@@ -72,6 +73,13 @@ export const publicProjects: ProjectRecord[] = [{
     { label: 'Validated', detail: 'Firmware host checks, Flutter verification and prior bench records are present.', status: 'Evidence exists, not all gates closed' },
     { label: 'Still open', detail: 'Further physical validation is required before wider publication or readiness claims.', status: 'Owner and evidence review pending' },
   ],
+  facts: [
+    { label: 'Project', value: 'MicroGrow' },
+    { label: 'State', value: 'PROTOTYPE' },
+    { label: 'Scope', value: 'Single-node V1' },
+    { label: 'Operation', value: 'Local-first' },
+    { label: 'Publication', value: 'PENDING OWNER REVIEW' },
+  ],
   visualEvidence: [
     {
       src: 'microgrow_current_hardware_prototype.jpeg',
@@ -99,5 +107,55 @@ export const publicProjects: ProjectRecord[] = [{
       label: 'MicroGrow diagnostics view',
       caption: 'A current diagnostics and status view; this does not establish complete fault handling or production readiness.',
     },
+  ],
+}, {
+  name: 'New Earth Command Centre',
+  shortDescription: 'A developing Windows desktop control and navigation surface for discovering, opening and observing parts of the New Earth technical ecosystem.',
+  slug: 'command-centre',
+  category: 'Technology and innovation',
+  maturity: 'ACTIVE DEVELOPMENT',
+  publicStatus: 'PENDING OWNER REVIEW',
+  previewEnabled: true,
+  publicEnabled: false,
+  purpose: 'Make a growing collection of projects, repositories, tools and status surfaces easier for people to find and understand from one human-facing place.',
+  whyItExists: 'As the New Earth ecosystem grows, navigating each project and repository separately becomes increasingly difficult. Command Centre is being developed to reduce that friction while keeping people in control of the systems they open and use.',
+  whatItIs: 'Command Centre is a thin Windows desktop shell for discovery, launch, navigation, observation, summarisation, notification and bounded orchestration. It presents access to other systems rather than replacing the capabilities they own.',
+  relationToNewEarth: 'Command Centre is a visible coordination surface within the wider New Earth ecosystem. It helps people find and understand related projects while each specialist system remains responsible for its own work and boundaries.',
+  currentState: 'The current repository records a working desktop shell and controlled development baseline. The local preview describes the implementation evidence available now; it is not a claim of public deployment or finished ecosystem integration.',
+  whatExistsToday: 'The current implementation includes a registry-driven desktop shell, repository and application discovery, launch-target resolution, navigation actions, health and status surfaces, a command palette, audit support and read-only presentation of selected NEOS and GAIA-related information.',
+  evidence: [
+    'Repository documentation, source implementation and focused tests provide the current evidence for the shell, discovery, navigation, command palette and bounded integrations.',
+    'The available ecosystem roadmap visual is conceptual and uses broader aspirational language, so it is not used as public evidence for this page.',
+  ],
+  limitations: [
+    'Command Centre does not own engineering intelligence, AI reasoning, project-domain behaviour or arbitrary shell execution.',
+    'Not every New Earth project is integrated, and local configuration or service availability can affect what is discoverable or usable.',
+    'Packaging, runtime hardening and broader integration remain controlled development work; publication and operational readiness are not implied.',
+  ],
+  nextDevelopmentDirection: 'Continue controlled runtime, packaging and integration validation, with deeper NEOS and GAIA presentation added only where the underlying evidence and boundaries remain clear.',
+  relatedSystems: [
+    'NEOS remains the owner of engineering intelligence; Command Centre presents selected routed results rather than recomputing them.',
+    'GAIA remains the reasoning and summary provider; Command Centre remains the human-visible control and navigation surface.',
+    'New Earth Dashboard is a separate organisational working interface and is not embedded or represented as a Command Centre capability.',
+  ],
+  publicLinks: [{ label: 'Return to Projects', href: '/projects/' }],
+  systemFlow: [
+    { label: 'Projects and systems', detail: 'Distinct New Earth work remains owned by its originating project or application.' },
+    { label: 'Discovery', detail: 'The shell searches configured local sources and presents available entries.' },
+    { label: 'Command Centre', detail: 'A human-facing surface for navigation, status and bounded orchestration.' },
+    { label: 'Open and observe', detail: 'People can follow safe actions and inspect the status available for each system.' },
+  ],
+  evidenceCards: [
+    { label: 'Implemented', detail: 'The source includes a Windows desktop shell, registry, discovery services, launch routing and status handling.', status: 'Current repository implementation' },
+    { label: 'Demonstrated', detail: 'Focused tests cover discovery resolution, command construction, safe action boundaries and governance presentation.', status: 'Test-backed surfaces' },
+    { label: 'Connected', detail: 'Read-only NEOS and GAIA adapters are represented with unavailable states when configuration or services are absent.', status: 'Bounded integrations' },
+    { label: 'Still open', detail: 'Packaging, runtime hardening, broader integration and owner review remain before any public publication decision.', status: 'Development work continues' },
+  ],
+  facts: [
+    { label: 'Project', value: 'Command Centre' },
+    { label: 'State', value: 'ACTIVE DEVELOPMENT' },
+    { label: 'Platform', value: 'Windows desktop' },
+    { label: 'Role', value: 'Control / navigation surface' },
+    { label: 'Publication', value: 'PENDING OWNER REVIEW' },
   ],
 }];

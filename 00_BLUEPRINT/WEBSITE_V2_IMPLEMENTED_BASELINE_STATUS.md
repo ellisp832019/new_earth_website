@@ -120,8 +120,11 @@ detail pages or project claims are published by this foundation.
 PUBLICATION REVIEW STILL PENDING
 
 **Next public project selection:** New Earth Command Centre - SELECTED FOR
-NEXT EVIDENCE-LED PROJECT PAGE REVIEW. This is a selection decision only; no
-Command Centre implementation or publication is authorised by this record.
+NEXT EVIDENCE-LED PROJECT PAGE REVIEW.
+
+**Command Centre public project page:** IMPLEMENTED - PENDING PETER REVIEW.
+The local-preview route is `/projects/command-centre/`; publication remains
+disabled and no public asset was adopted.
 
 **MicroGrow publication readiness:** IN REVIEW - BLOCKED
 

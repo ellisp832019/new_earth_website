@@ -2,7 +2,7 @@ catalogue_id,name,group,public_route,maturity,public_role,public_boundary
 PSC-001,New Earth Platform Core,Technology and innovation,/ecosystem/platform-core/,PUBLIC INFORMATION ONLY,Public system context,No private architecture or endpoints
 PSC-002,NEOS - New Earth Engineering OS,Technology and innovation,/ecosystem/neos/,PUBLIC INFORMATION ONLY,Public system context,No private controls or operational claims
 PSC-003,GAIA,Technology and innovation,/ecosystem/gaia/,PUBLIC INFORMATION ONLY,Public system context,No runtime or administration claims
-PSC-004,New Earth Command Centre,Technology and innovation,/ecosystem/command-centre/,PUBLIC INFORMATION ONLY,Public information context,Authenticated application remains separate
+PSC-004,New Earth Command Centre,Technology and innovation,/projects/command-centre/,ACTIVE DEVELOPMENT,Public project context,Authenticated application remains separate
 PSC-005,New Earth Dashboard,Technology and innovation,/ecosystem/dashboard/,PUBLIC INFORMATION ONLY,Developing organisational interface context,Distinct from Command Centre; no private controls
 PSC-006,CKCC - Chat and Knowledge Control Centre,Technology and innovation,/ecosystem/ckcc/,PUBLIC INFORMATION ONLY,Public system context,No private infrastructure or capability claim
 PSC-007,MicroGrow,Growing and resilience,/microgrow/,ACTIVE DEVELOPMENT,Recognised project context,Use evidence-led project status; no readiness claim
