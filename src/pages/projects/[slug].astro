@@ -15,7 +15,7 @@ const { project } = Astro.props;
 if (!project) throw new Error('Project route requires an explicitly public-enabled catalogue entry.');
 ---
 <BaseLayout title={`${project.name} | New Earth`} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
-  <article class="project-page shell">
+  <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
     <div class="project-hero-layout">
     <header class="project-page__hero">
       <p class="eyebrow">{project.maturity} · {project.publicStatus}</p>
@@ -73,6 +73,7 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
   .limitations-panel { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding-inline: 1.5rem; }
   .next-step { border-left: 4px solid var(--gold); padding-left: 1.5rem; }
   .project-hero-visual { width: 100%; max-width: 680px; margin: 0; min-width: 0; justify-self: end; }
+  .project-page--command-centre .project-hero-visual { align-self: start; }
   .project-hero-visual img { display: block; width: 100%; height: auto; max-width: 100%; max-height: 400px; object-fit: contain; object-position: center; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
   .developmental-visual { max-width: 1080px; margin: 1.5rem auto 0; }
   .developmental-visual .eyebrow { margin-bottom: .75rem; }
