@@ -104,12 +104,20 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pilla
       gap: 2rem;
       padding-block: 4rem 3rem;
     }
-    .core-page--with-hero .core-page__hero-media { max-width: 620px; }
+    .core-page--with-hero .core-page__hero-media {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      min-height: 0;
+      aspect-ratio: auto;
+      overflow: visible;
+    }
     .core-page--with-hero .core-page__hero-image {
       aspect-ratio: auto;
       height: auto;
       min-height: 0;
       object-fit: contain;
+      position: static;
     }
     .core-page--with-hero .core-page__section { padding-block: 2.5rem; }
   }
