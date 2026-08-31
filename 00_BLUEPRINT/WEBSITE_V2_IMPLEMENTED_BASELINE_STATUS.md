@@ -102,7 +102,7 @@ content or design changes are part of the project rollout foundation.
 
 ## Project / System Public Rollout
 
-**Status:** IMPLEMENTED - PENDING PETER FINAL REVIEW
+**Status:** OWNER ACCEPTED - LOCKED; PUBLIC REPLACEMENT PRIORITY
 
 The public rollout foundation supports `/projects/` and the guarded
 `/projects/[slug]/` route model. The controlled project publication model is
@@ -122,38 +122,42 @@ PUBLICATION REVIEW STILL PENDING
 **Next public project selection:** New Earth Command Centre - SELECTED FOR
 NEXT EVIDENCE-LED PROJECT PAGE REVIEW.
 
-**Command Centre public project page:** IMPLEMENTED - PENDING PETER REVIEW.
-The local-preview route is `/projects/command-centre/`; publication remains
-disabled and no public asset was adopted.
+**Command Centre public project page:** OWNER ACCEPTED - LOCKED for the
+current local-preview implementation. The route is
+`/projects/command-centre/`; publication remains disabled and no public asset
+has been adopted.
 
-**Command Centre visual evidence V1:** INTEGRATED - PENDING PETER REVIEW.
+**Command Centre visual evidence V1:** OWNER ACCEPTED - LOCKED for local
+preview only.
 Four owner-supplied UI captures are available in local preview only: the
 Command Centre overview, Command Palette, bounded Continue Work view and
 clearly labelled related NEOS context. The conceptual architecture visual is
 held because its raster claims exceed current evidence.
 
-**Command Centre visual evidence V1:** FINAL ALIGNMENT COMPLETE - PENDING PETER APPROVAL.
+**Command Centre visual evidence V1:** FINAL ALIGNMENT COMPLETE - OWNER
+ACCEPTED - LOCKED for local preview only.
 CC-001 is used as the larger detail hero and the bounded Projects index
 representative image. CC-002 and CC-003 remain real UI evidence, CC-004 is
 clearly separated as related NEOS context, and CC-005 is rendered as a clearly
 labelled developmental operating model rather than current implementation
 evidence.
 
-**Projects index Command Centre feature:** IMPLEMENTED - PENDING PETER REVIEW.
+**Projects index Command Centre feature:** OWNER ACCEPTED - LOCKED for local
+preview only.
 Project Page Pattern V1 remains preserved.
 
 ## New Earth in Practice
 
-**Status:** PENDING PETER FINAL APPROVAL
+**Status:** OWNER ACCEPTED - LOCKED
 
 The local-preview narrative bridge at `/new-earth-in-practice/` connects the
 accepted New Earth principles, local-first model, practical Pillar lenses and
 current project direction without introducing a new technical architecture or
 future capability claim.
 
-**Return checkpoint:** After review, return directly to the Command Centre
-public project page review. Command Centre remains IMPLEMENTED - PENDING PETER
-REVIEW and was not modified by this insertion.
+**Return checkpoint:** New Earth in Practice is owner accepted and locked. No
+further project page is to be opened before the public replacement baseline is
+achieved unless Peter explicitly reopens project rollout.
 
 **MicroGrow publication readiness:** IN REVIEW - BLOCKED
 
@@ -170,10 +174,31 @@ New Earth in Practice remains PENDING PETER FINAL APPROVAL, and the Command
 Centre return checkpoint is preserved.
 ## MicroGrow Public Project Page
 
-**Status:** IMPLEMENTED - PENDING PETER REVIEW
+**Status:** OWNER ACCEPTED - LOCKED for the current local-preview layout
 
 The first evidence-led project page is available in local preview at
 `/projects/microgrow/`. It uses the controlled catalogue and publication model.
 The page is preview-enabled but remains `publicEnabled: false` and is excluded
-from the public build until owner acceptance and all remaining evidence, asset,
+from the public build until all remaining evidence, asset,
 accessibility and publication gates are closed.
+
+## Owner locks and current working lane
+
+The following Website V2 decisions are owner accepted and locked: responsive
+and mobile baseline V1; supporting image lightbox V1; Project Page Pattern V1;
+MicroGrow detail page layout; Command Centre detail page layout; Command
+Centre hero parity with MicroGrow; and New Earth in Practice.
+
+The current working lane is:
+
+> GET WEBSITE V2 SAFELY LIVE AS THE REPLACEMENT FOR THE CURRENT NEW-EARTH.UK
+> WORDPRESS SITE.
+
+No additional project page is to be started before the minimum public
+replacement baseline is achieved, unless Peter explicitly reopens project
+rollout. The controlled sequence is: public asset release pass; MicroGrow
+publication closure; Contact V1; legal, privacy and company-information
+closure; Journal and legacy-content route coverage; legacy URL and redirect
+map; SEO, sitemap, robots, canonical, social metadata and 404 closure;
+whole-site public release acceptance; IONOS staging; then controlled live
+cutover.
