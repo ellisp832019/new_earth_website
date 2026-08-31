@@ -2,7 +2,7 @@
 
 ## Result
 
-**Status:** MICROGROW PUBLICATION READY - PENDING OWNER DERIVATIVE VISUAL ACCEPTANCE
+**Status:** MICROGROW PUBLICATION APPROVED
 
 Review date: 2026-08-28. This is a repository and public-build readiness
 record only. No deployment or live-site change was performed.
@@ -13,15 +13,14 @@ record only. No deployment or live-site change was performed.
 - Project Page Pattern V1: owner accepted and locked.
 - Projects-index MicroGrow feature: owner accepted and locked.
 - Maturity remains `PROTOTYPE`.
-- `publicEnabled` remains `false` pending visual acceptance of the three
-  public-safe derivatives.
+- `publicEnabled` is `true` through the existing project publication model.
 
 ## Gate summary
 
 | Gate | Result | Reason |
 | --- | --- | --- |
 | Owner content acceptance | PASS | Existing owner acceptance is recorded. |
-| Owner visual acceptance | PASS | Existing detail and index acceptance is recorded. |
+| Owner visual acceptance | PASS | Peter accepted the exact hardware, dashboard and diagnostics derivatives. |
 | Technical claim accuracy | PASS WITH LIMITATIONS | Current copy remains conservative and bounded. |
 | Evidence boundary | PASS WITH LIMITATIONS | Captures support existence of interfaces and hardware only. |
 | Asset provenance | PASS | Peter has confirmed that the captures were created by him for New Earth/MicroGrow. |
@@ -30,22 +29,21 @@ record only. No deployment or live-site change was performed.
 | Accessibility | PASS WITH LIMITATIONS | Text and captions exist; final public images require review. |
 | Public-build safety | PASS | MicroGrow remains excluded while disabled. |
 | Route and link safety | PASS | Local preview route and return link resolve. |
-| Public asset readiness | PASS WITH OWNER REVIEW REQUIRED | Three public-safe derivatives are prepared; owner visual acceptance remains open. |
+| Public asset readiness | PASS | Three owner-accepted public-safe derivatives are prepared and registered. |
 
 ## Asset decisions
 
 | Asset | Decision | Controlled reason |
 | --- | --- | --- |
-| MG-VIS-001 hardware | PENDING OWNER DERIVATIVE VISUAL ACCEPTANCE | Web-sized derivative created without content edits. |
-| MG-VIS-002 dashboard | PENDING OWNER DERIVATIVE VISUAL ACCEPTANCE | Desktop/sidebar chrome cropped and device/network context masked. |
-| MG-VIS-003 diagnostics | PENDING OWNER DERIVATIVE VISUAL ACCEPTANCE | Desktop/sidebar chrome cropped and node identifier context masked. |
+| MG-VIS-001 hardware | OWNER ACCEPTED - PUBLIC DERIVATIVE | Web-sized derivative created without content edits. |
+| MG-VIS-002 dashboard | OWNER ACCEPTED - PUBLIC DERIVATIVE | Desktop/sidebar chrome cropped and device/network context masked. |
+| MG-VIS-003 diagnostics | OWNER ACCEPTED - PUBLIC DERIVATIVE | Desktop/sidebar chrome cropped and node identifier context masked. |
 | MG-VIS-004 splash | OMIT FROM FIRST PUBLIC RELEASE | Development/readiness language is retained in the local evidence source; no derivative is required. |
 
 Three public-safe derivatives were created in the governed evidence folder;
 the original evidence files remain unchanged. Peter's owner declaration
 confirms first-party provenance and publication authorisation. The derivatives
-remain disabled until Peter accepts their exact visual presentation in the
-existing local MicroGrow preview.
+are approved for publication on `new-earth.uk`.
 
 ## Owner declaration
 
@@ -80,6 +78,5 @@ be used to imply those claims.
 
 ## Required next gate
 
-Obtain Peter's visual acceptance of the three exact derivatives in the local
-preview at `/projects/microgrow/`. Then re-run the publication gate before
-changing `publicEnabled` to `true`.
+The first public evidence baseline is now closed. The later legacy redirect
+remains the only deferred implementation item for this route.

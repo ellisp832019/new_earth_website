@@ -13,6 +13,8 @@ export function getStaticPaths() {
 
 const { project } = Astro.props;
 if (!project) throw new Error('Project route requires an explicitly public-enabled catalogue entry.');
+const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
+const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/local-assets'}/${filename}`;
 ---
 <BaseLayout title={`${project.name} | New Earth`} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
   <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
@@ -26,7 +28,7 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
       </dl>
     </header>
     {project.visualEvidence?.[0] && <figure class="project-hero-visual">
-      <img src={`/local-assets/${project.visualEvidence[0].src}`} alt={project.visualEvidence[0].alt} />
+      <img src={projectAssetUrl(project.visualEvidence[0].src)} alt={project.visualEvidence[0].alt} />
       <figcaption>{project.visualEvidence[0].caption}</figcaption>
     </figure>}
     </div>
@@ -35,7 +37,7 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
       <section><h2>Why it exists</h2><p>{project.whyItExists}</p></section>
       <section><h2>What it is</h2><p>{project.whatItIs}</p><p><strong>Current state:</strong> {project.currentState}</p></section>
       <section class="project-section--wide"><h2>What exists today</h2><p>{project.whatExistsToday}</p><div class="evidence-grid">{project.evidenceCards.map((card) => <article class="evidence-card"><p class="eyebrow">{card.label}</p><h3>{card.status}</h3><p>{card.detail}</p></article>)}</div></section>
-      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Visual evidence</h2><p>These captures show selected current project surfaces. They are local-preview evidence only and do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).map((visual) => <figure class:list={['visual-evidence', visual.className]}><LightboxImage src={`/local-assets/${visual.src}`} alt={visual.alt} caption={visual.caption} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
+      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Visual evidence</h2><p>These captures show selected current project surfaces. They do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).map((visual) => <figure class:list={['visual-evidence', visual.className]}><LightboxImage src={projectAssetUrl(visual.src)} alt={visual.alt} caption={visual.caption} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
       <section><h2>How it fits into New Earth</h2><p>{project.relationToNewEarth}</p></section>
       <section><h2>Evidence and current progress</h2>{project.evidence.map((item) => <p>{item}</p>)}</section>
       <section class="limitations-panel"><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>
