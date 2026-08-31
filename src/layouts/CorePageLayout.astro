@@ -105,7 +105,12 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pilla
       padding-block: 4rem 3rem;
     }
     .core-page--with-hero .core-page__hero-media { max-width: 620px; }
-    .core-page--with-hero .core-page__hero-image { aspect-ratio: 4 / 3; }
+    .core-page--with-hero .core-page__hero-image {
+      aspect-ratio: auto;
+      height: auto;
+      min-height: 0;
+      object-fit: contain;
+    }
     .core-page--with-hero .core-page__section { padding-block: 2.5rem; }
   }
 </style>
