@@ -1,0 +1,12 @@
+---
+import LegalPage from '../../../components/LegalPage.astro';
+const sections = [
+  { heading: 'Informational material', paragraphs: ['The website is for general information, orientation, learning and project communication. It is not a substitute for advice from a suitably qualified professional.'] },
+  { heading: 'Projects and technical work', paragraphs: ['Projects may be prototypes, research, concepts or development work. Technical descriptions and current evidence are bounded by what has actually been recorded. They do not establish certification, production readiness, suitability for a particular installation or guaranteed results. Safety-critical decisions require qualified assessment and appropriate testing.'] },
+  { heading: 'Wellbeing and Conscious Living', paragraphs: ['Conscious Living and wellbeing material is informational and reflective. It is not medical, psychological, therapeutic, clinical or other regulated professional advice, and it does not diagnose, treat or guarantee a wellbeing outcome.'] },
+  { heading: 'Future direction', paragraphs: ['Future-looking frameworks, diagrams and descriptions express possibilities or development direction. They are not promises that a particular system, feature, community or outcome will be delivered.'] },
+  { heading: 'External platforms', paragraphs: ['External websites and platforms are independent of New Earth. Their content, services, security and privacy practices are outside New Earth\'s control. Links do not automatically constitute endorsement.'] },
+  { heading: 'Contact', paragraphs: ['If you identify a material factual concern, please use the Contact page and describe it clearly.'] },
+];
+---
+<LegalPage title="Disclaimer" description="Limits around New Earth project, technical, wellbeing and future-direction information." updated="31 August 2026" intro="A short explanation of what the current New Earth information and project material does not promise." sections={sections} links={[{ label: 'Contact New Earth', href: '/contact/' }, { label: 'Terms of Use', href: '/legal/terms/' }]} />

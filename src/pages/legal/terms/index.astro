@@ -1,0 +1,12 @@
+---
+import LegalPage from '../../../components/LegalPage.astro';
+const sections = [
+  { heading: 'Using this website', paragraphs: ['You may use this website for lawful, personal and informational purposes. Please use the Contact form honestly and do not submit passwords, malicious code, unlawful material or information you do not have permission to share.'] },
+  { heading: 'Information and project material', paragraphs: ['The website contains information about a developing framework, research, projects and community routes. Some material is conceptual, illustrative or under development. It is not a promise that a future idea, product, feature or service will be delivered.'] },
+  { heading: 'Intellectual property', paragraphs: ['New Earth-created writing, design and branding should not be copied or presented as someone else\'s work without permission. Project material may have its own provenance and conditions. Third-party names, marks, software and linked material remain owned by their respective owners.'] },
+  { heading: 'External links', paragraphs: ['Links to external websites are provided as routes for further information or participation. External sites operate independently, and their availability, content and privacy practices are outside New Earth\'s control. A link is not automatically an endorsement.'] },
+  { heading: 'Availability and changes', paragraphs: ['The website may change, be temporarily unavailable or contain links and information that become out of date. We do not guarantee uninterrupted availability or that every page will always be complete or current.'] },
+  { heading: 'Contact', paragraphs: ['Questions about these terms can be sent through the Contact page. The public legal operator and any governing-law wording require owner confirmation before final launch.'] },
+];
+---
+<LegalPage title="Terms of Use" description="Plain-language terms for using the New Earth informational website and its developing project material." updated="31 August 2026" intro="These terms set proportionate boundaries for using a public website about information, projects, research and participation." sections={sections} links={[{ label: 'Privacy Policy', href: '/legal/privacy-policy/' }, { label: 'Disclaimer', href: '/legal/disclaimer/' }]} />
