@@ -72,7 +72,7 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pilla
     box-sizing: border-box;
     justify-self: end;
   }
-  .core-page--with-hero .core-page__hero-image {
+  :global(.core-page--with-hero .core-page__hero-image) {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -112,7 +112,7 @@ const { page, canonical, searchTitle, metaDescription, heroAsset, heroAlt, pilla
       aspect-ratio: auto;
       overflow: visible;
     }
-    .core-page--with-hero .core-page__hero-image {
+    :global(.core-page--with-hero .core-page__hero-image) {
       aspect-ratio: auto;
       height: auto;
       min-height: 0;
