@@ -25,5 +25,6 @@ The route mapping is maintained centrally in `src/data/experience.ts`. Colour al
 ## Sprint decisions
 
 - The local-first pathway belongs primarily on `/new-earth-in-practice/`.
+- The pathway is implemented as six native disclosure stages: Person, Home / Place, Community, Local capability, Connected communities and Wider New Earth. It adds no client JavaScript and remains operable with scripts disabled.
 - Ecosystem exploration must expose only approved public information and must preserve maturity boundaries.
 - Project filtering is deferred: only two projects are currently public, so filters would add interface weight without improving discovery. Reconsider when at least four public projects exist.

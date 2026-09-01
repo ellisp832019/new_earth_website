@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LightboxImage from '../../components/LightboxImage.astro';
+import LocalFirstPathway from '../../components/LocalFirstPathway.astro';
 import { assetUrl } from '../../lib/asset-resolver';
 import { assets } from '../../data/site';
 const neipVisuals = [assets.neip1, assets.neip2, assets.neip3, assets.neip4, assets.neip5, assets.neip6, assets.neip7].map(assetUrl);
@@ -16,6 +17,8 @@ const neipVisuals = [assets.neip1, assets.neip2, assets.neip3, assets.neip4, ass
       <h1>How New Earth could work in everyday life</h1>
       <p class="lede">New Earth is not intended to be one organisation, one application or one central system. It is a developing framework for helping people and communities build greater understanding, capability, stewardship and cooperation from where they are.</p>
     </header>
+
+    <LocalFirstPathway />
 
     <section class="practice-section practice-section--wide" aria-labelledby="start-where-we-are">
       <p class="eyebrow">Start where we are</p>
