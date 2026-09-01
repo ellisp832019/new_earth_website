@@ -22,23 +22,38 @@ The footer links directly to each route. Contact V1 links to the Privacy Policy.
 - Hosting logs and final deployment behaviour remain subject to staging verification. No numerical retention period is claimed.
 - MicroGrow remains publicly enabled. Command Centre remains private.
 
-## Company disclosure
+## Verified owner inputs
 
-**OWNER INPUT REQUIRED.** The repository does not provide a verified current legal operator or complete company disclosure data for public publication. The legal pages therefore distinguish the New Earth public initiative from an as-yet-unconfirmed legal operator and publish `/contact/` as the public contact route.
+- **WEBSITE OPERATOR:** New Earth Advanced Technologies Ltd
+- **COMPANY NUMBER:** 17286202
+- **REGISTERED:** England and Wales
+- **GOVERNING LAW:** England and Wales
+- **PUBLIC LEGAL/PRIVACY CONTACT:** `/contact/`
+- **REGISTERED OFFICE:** VERIFIED EXTERNALLY / NOT AUTHORISED BY OWNER FOR WEBSITE PUBLICATION
+- **COMPANY DISCLOSURE:** BLOCKED PENDING REGISTERED-OFFICE RESOLUTION
 
-Peter must confirm:
+New Earth remains the wider public vision, framework and ecosystem. New Earth Advanced Technologies Ltd is the verified legal company operating and supporting the website and relevant technology and engineering activity; it does not replace New Earth as the public umbrella.
 
-1. Website operator/publisher name.
-2. Whether New Earth Advanced Technologies Ltd operates or supports this website.
-3. Exact current registered company name, if applicable.
-4. Company registration number, if applicable.
-5. Registered office and jurisdiction of registration, if publication is required.
-6. Governing-law wording, if it is to be published.
-7. Dedicated public legal/privacy contact details, if required instead of `/contact/`.
+The current registered-office address must not be published unless Peter later authorises publication. The bounded resolution paths are:
+
+1. Peter authorises publication of the verified current registered office; or
+2. New Earth Advanced Technologies Ltd changes its registered office through Companies House to an appropriate address, after which Website V2 publishes the newly registered address.
+
+## Legal owner review state
+
+- **LEGAL PAGE IMPLEMENTATION:** PASS
+- **PRIVACY BASELINE:** PASS
+- **COOKIE BASELINE:** PASS
+- **TERMS:** PASS
+- **DISCLAIMER:** PASS
+- **COMPANY IDENTITY:** PASS
+- **COMPANY DISCLOSURE:** BLOCKED — REGISTERED OFFICE
+- **OWNER LEGAL CONTENT REVIEW:** REQUIRED
 
 ## Remaining gates
 
-- Peter owner review of public legal wording and company inputs.
+- Registered-office disclosure resolution.
+- Peter owner review of public legal wording.
 - Proportionate legal/privacy review.
 - Staging verification of hosting logs, mail handling, retention and deployment configuration.
 - Accessibility and SEO review of the generated routes.
