@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { publicProjects } from '../../data/projects';
 const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
-const visibleProjects = publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled);
+const visibleProjects = publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled || project.publicEnabled);
 const microgrowImage = publicBuild ? '/assets/microgrow_hardware_public.webp' : '/local-assets/microgrow_hardware_public.webp';
 ---
 <BaseLayout title="Projects | New Earth" description="The public New Earth project index is being prepared with clear status and evidence." canonical="/projects/">

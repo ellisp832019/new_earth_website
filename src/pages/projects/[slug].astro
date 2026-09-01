@@ -5,7 +5,7 @@ import { publicProjects } from '../../data/projects';
 
 export function getStaticPaths() {
   const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
-  return publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled).map((project) => ({
+  return publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled || project.publicEnabled).map((project) => ({
     params: { slug: project.slug },
     props: { project },
   }));
