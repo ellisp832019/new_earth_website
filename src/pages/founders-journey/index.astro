@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const journey = [
+  ['Experience', 'What was lived, described only where Peter chooses to make it public.'],
+  ['Consequence', 'The impact and consequences of experience, without blame or theatre.'],
+  ['Learning', 'What those experiences began to change in understanding.'],
+  ['Change', 'The choices and practices that followed.'],
+  ['Responsibility', 'An honest account of agency, accountability and effects.'],
+  ['Rebuilding', 'The continuing work of beginning again and building differently.'],
+  ['Why New Earth', 'How lived learning connects with the principles and work now being developed.'],
+];
+---
+<BaseLayout
+  title="Founder's Journey"
+  description="The purpose and developing shape of Peter's personal journey into the principles and practical work behind New Earth."
+  canonical="/founders-journey/"
+>
+  <article class="founder-page">
+    <header class="page-hero shell founder-page__hero">
+      <p class="eyebrow">Founder's Journey</p>
+      <h1>The path behind New Earth</h1>
+      <p class="lede">New Earth has a public vision and a developing framework. The Founder's Journey has a different role: to connect that work with the lived experience, learning, change and responsibility that helped shape why it exists.</p>
+    </header>
+
+    <section class="section section-sand" aria-labelledby="human-account-title">
+      <div class="shell founder-page__split">
+        <div>
+          <p class="eyebrow">A human account</p>
+          <h2 id="human-account-title">Not a founder myth</h2>
+        </div>
+        <div>
+          <p>This page is intended to carry Peter's own account of the path into New Earth. Its purpose is not to present a perfect life, a heroic identity or a universal answer. It is a place to explain how experience can lead to reflection, responsibility and a decision to build differently.</p>
+          <p>The detailed personal account is still being prepared. Until Peter is ready to share it, this page does not publish specific events, dates or other people's private stories.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="journey-shape-title">
+      <div class="shell">
+        <p class="eyebrow">The shape of the story</p>
+        <h2 id="journey-shape-title">From experience to responsibility</h2>
+        <ol class="founder-page__journey">
+          {journey.map(([title, description]) => <li><strong>{title}</strong><span>{description}</span></li>)}
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-sand" aria-labelledby="meaning-title">
+      <div class="shell founder-page__meaning">
+        <p class="eyebrow">Where the story leads</p>
+        <h2 id="meaning-title">Why lived experience matters here</h2>
+        <p>The journey will connect personal learning with themes that matter across New Earth: dignity, community, responsibility, second chances, local resilience, human agency, stewardship, technology serving life, and rebuilding rather than discarding people.</p>
+        <p>One person's experience does not prove a universal answer. Its useful public role is to show why these questions are personal as well as structural, and why New Earth is concerned with both human development and the systems people live within.</p>
+      </div>
+    </section>
+
+    <section class="section founder-page__continue" aria-labelledby="continue-title">
+      <div class="shell">
+        <p class="eyebrow">Continue exploring</p>
+        <h2 id="continue-title">Meet the work in its current form</h2>
+        <p>The About page explains what New Earth is today. The Blueprint sets out the developing framework, while the Journal will hold deeper reflections and individual subjects when they are ready to be shared.</p>
+        <nav class="page-actions" aria-label="Continue from the Founder's Journey">
+          <a class="button" href="/about/">About New Earth</a>
+          <a class="button" href="/blueprint/">Explore the Blueprint</a>
+          <a class="text-link" href="/journal/">Open the Journal</a>
+        </nav>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .founder-page__hero { padding-block: clamp(5rem, 11vw, 8rem) clamp(3.5rem, 7vw, 5rem); }
+  .founder-page__hero h1 { max-width: 12ch; }
+  .founder-page__hero .lede { max-width: 52rem; }
+  .founder-page__split { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 7vw, 6rem); }
+  .founder-page__split h2, .founder-page__meaning h2, .founder-page__continue h2 { max-width: 19ch; }
+  .founder-page__split p, .founder-page__meaning p, .founder-page__continue p { max-width: 68ch; }
+  .founder-page__journey { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 2.5rem 0 0; padding: 0; list-style: none; }
+  .founder-page__journey li { min-width: 0; padding: 1.25rem; border-top: 3px solid var(--teal); background: rgb(255 255 255 / .72); box-shadow: var(--shadow); }
+  .founder-page__journey strong, .founder-page__journey span { display: block; }
+  .founder-page__journey strong { color: var(--deep); font-family: var(--serif); font-size: 1.2rem; }
+  .founder-page__journey span { margin-top: .6rem; font-size: .92rem; line-height: 1.55; }
+  .founder-page__meaning { max-width: 880px; }
+  .founder-page__continue { padding-bottom: 7rem; }
+  .founder-page__continue .text-link { align-self: center; }
+  @media (max-width: 900px) { .founder-page__journey { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 680px) { .founder-page__split, .founder-page__journey { grid-template-columns: 1fr; } }
+</style>

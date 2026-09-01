@@ -29,6 +29,7 @@ Public status describes the generated public build. Navigation status records th
 | `/projects/command-centre/` | `src/pages/projects/[slug].astro` | Preview only | No valid public navigation route | Owner-review project preview |
 | `/journal/` | `src/pages/journal/index.astro` | Public | Primary navigation and footer | Static-first publishing hub |
 | `/about/` | `src/pages/about/index.astro` | Public | Primary navigation and footer | Public purpose and context |
+| `/founders-journey/` | `src/pages/founders-journey/index.astro` | Public | Direct and legacy continuity route | Peter's bounded founder journey |
 | `/get-involved/` | `src/pages/get-involved/index.astro` | Public | Primary navigation and footer | Participation routes |
 | `/contact/` | `src/pages/contact/index.astro` | Public | Footer and contextual links | Public enquiry route |
 | `/legal/` | `src/pages/legal/index.astro` | Public | Footer | Legal hub |
@@ -73,7 +74,7 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 | `/microgrow/blueprint-alignment/` | Project Blueprint alignment | Undecided | OWNER REVIEW | Unique project source exists and must be preserved or integrated before routing is decided |
 | `/articles/` | Duplicate publication hub | `/journal/` | 301 REDIRECT | Journal is authoritative and the captured baseline contains no published posts |
 | `/team/` | People and responsibilities | Undecided | OWNER REVIEW | About does not currently cover people or responsibilities; earlier owner-approved planning keeps this purpose distinct |
-| `/founders-journey/` | Shared Peter and Hayley story | Undecided | OWNER REVIEW | About does not contain the shared founder story; publication requires shared factual input and approval |
+| `/founders-journey/` | Peter's lived path into New Earth | `/founders-journey/` | DIRECT | Owner-approved as a distinct route; bounded V1 is public while specific personal detail awaits Peter's approved input |
 | `/cookie-policy-uk/` | Duplicate cookie policy | `/legal/cookie-policy/` | 301 REDIRECT | Canonical legal route is already implemented |
 
 ## Required mapping summary
@@ -81,7 +82,7 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 - `/systems/` → `/ecosystem/` — **301 REDIRECT**
 - `/microgrow/` → `/projects/microgrow/` — **301 REDIRECT**
 - `/team/` — **OWNER REVIEW**; do not redirect to About until the previously distinct people/responsibility purpose is explicitly retired
-- `/founders-journey/` — **OWNER REVIEW**; do not redirect until Peter and Hayley’s shared-story decision is closed
+- `/founders-journey/` → `/founders-journey/` — **DIRECT**; preserve as a distinct V2 public route
 
 ## V2-only canonical routes
 
