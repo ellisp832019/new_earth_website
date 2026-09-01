@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Exact legacy continuity mappings. Keep targets canonical and one hop.
+RewriteRule ^systems/?$ /ecosystem/ [R=301,L,NE]
+RewriteRule ^microgrow/?$ /projects/microgrow/ [R=301,L,NE]
+RewriteRule ^articles/?$ /journal/ [R=301,L,NE]
+RewriteRule ^cookie-policy-uk/?$ /legal/cookie-policy/ [R=301,L,NE]

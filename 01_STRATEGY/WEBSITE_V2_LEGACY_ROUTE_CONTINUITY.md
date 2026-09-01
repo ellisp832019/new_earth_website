@@ -2,15 +2,19 @@
 
 ## Control state
 
-**Package:** WB-08A — Journal + Legacy Content Route Coverage
+**Package:** Release Preparation Sprint 01 — Stage B
 
-**Redirect implementation:** NOT INCLUDED
+**Redirect configuration:** IMPLEMENTED — repository-controlled Apache `.htaccess`
+
+**IONOS execution:** PENDING STAGING
 
 **Company disclosure:** BLOCKED — REGISTERED OFFICE
 
 **Live-cutover readiness:** NOT PASSED
 
-This record is the canonical Website V2 input for the later legacy URL and redirect package. It records continuity decisions without activating redirects, changing WordPress or changing the live website.
+This record is the canonical Website V2 legacy-route authority. It records the
+implemented repository redirect configuration and the remaining owner holds.
+No WordPress, IONOS or live website change is made here.
 
 ## Current Astro route inventory
 
@@ -26,7 +30,7 @@ Public status describes the generated public build. Navigation status records th
 | `/new-earth-in-practice/` | `src/pages/new-earth-in-practice/index.astro` | Public | Primary navigation | Practical interpretation |
 | `/projects/` | `src/pages/projects/index.astro` | Public | Primary navigation | Public project directory |
 | `/projects/microgrow/` | `src/pages/projects/[slug].astro` | Public | Projects route | MicroGrow project record |
-| `/projects/command-centre/` | `src/pages/projects/[slug].astro` | Preview only | No valid public navigation route | Owner-review project preview |
+| `/projects/command-centre/` | `src/pages/projects/[slug].astro` | Public | Projects route | ACTIVE DEVELOPMENT project record |
 | `/journal/` | `src/pages/journal/index.astro` | Public | Primary navigation and footer | Static-first publishing hub |
 | `/about/` | `src/pages/about/index.astro` | Public | Primary navigation and footer | Public purpose and context |
 | `/founders-journey/` | `src/pages/founders-journey/index.astro` | Public | Direct and legacy continuity route | Peter's owner-approved factual narrative with V2 human-voice editorial pass |
@@ -52,35 +56,37 @@ The captured legacy baseline records **22 published WordPress pages and 0 publis
 
 The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTER.csv`, supported by the WA-01 and WA-02 route records. `OWNER REVIEW` prevents unique or previously owner-separated material from being discarded before its content decision is closed.
 
-| Legacy route | Legacy purpose | V2 destination | Action | Rationale |
-| --- | --- | --- | --- | --- |
-| `/` | Public gateway | `/` | DIRECT | Same canonical route |
-| `/manifesto/` | Doctrine introduction | `/manifesto/` | DIRECT | Same canonical route |
-| `/blueprint/` | Framework hub | `/blueprint/` | DIRECT | Same canonical route |
-| `/systems/` | Systems overview | `/ecosystem/` | 301 REDIRECT | Ecosystem is the implemented V2 canonical replacement |
-| `/microgrow/` | MicroGrow project | `/projects/microgrow/` | 301 REDIRECT | Project now belongs under the V2 Projects architecture |
-| `/journal/` | Publishing hub | `/journal/` | DIRECT | Same canonical route; Journal V1 is implemented |
-| `/about/` | Mission and organisation | `/about/` | DIRECT | Same canonical route |
-| `/contact/` | Public contact | `/contact/` | DIRECT | Same canonical route |
-| `/legal/` | Legal hub | `/legal/` | DIRECT | Same canonical route |
-| `/legal/privacy-policy/` | Privacy policy | `/legal/privacy-policy/` | DIRECT | Same canonical route |
-| `/legal/terms/` | Terms of Use | `/legal/terms/` | DIRECT | Same canonical route |
-| `/legal/cookie-policy/` | Cookie policy | `/legal/cookie-policy/` | DIRECT | Same canonical route |
-| `/legal/disclaimer/` | Disclaimer | `/legal/disclaimer/` | DIRECT | Same canonical route |
-| `/blueprint/pillars/` | Twelve Pillars index | Undecided | OWNER REVIEW | Unique tracked source exists, but no current V2 route is implemented |
-| `/blueprint/inner-blueprint/` | Inner Blueprint | Undecided | OWNER REVIEW | Unique tracked source exists, but no current V2 route is implemented |
-| `/blueprint/transition-path/` | Transition Path | Undecided | OWNER REVIEW | Unique tracked source exists, but no current V2 route is implemented |
-| `/blueprint/new-earth-test/` | New Earth Test | `/blueprint/inner-blueprint/` | 301 REDIRECT | Existing planning proposes consolidation only after unique content is preserved and the destination exists |
-| `/microgrow/blueprint-alignment/` | Project Blueprint alignment | Undecided | OWNER REVIEW | Unique project source exists and must be preserved or integrated before routing is decided |
-| `/articles/` | Duplicate publication hub | `/journal/` | 301 REDIRECT | Journal is authoritative and the captured baseline contains no published posts |
-| `/team/` | People and responsibilities | Undecided | OWNER REVIEW | About does not currently cover people or responsibilities; earlier owner-approved planning keeps this purpose distinct |
-| `/founders-journey/` | Peter's lived path into New Earth | `/founders-journey/` | DIRECT | Route implemented; factual content owner approved; V2 human-voice editorial pass integrated; redirect none; final rendered presentation pending Peter review |
-| `/cookie-policy-uk/` | Duplicate cookie policy | `/legal/cookie-policy/` | 301 REDIRECT | Canonical legal route is already implemented |
+| Legacy route | Final action | Canonical destination | Implementation status | Rationale | Owner decision |
+| --- | --- | --- | --- | --- | --- |
+| `/` | DIRECT V2 ROUTE | `/` | IMPLEMENTED | Same canonical public gateway | CLOSED |
+| `/manifesto/` | DIRECT V2 ROUTE | `/manifesto/` | IMPLEMENTED | Same canonical doctrine route | CLOSED |
+| `/blueprint/` | DIRECT V2 ROUTE | `/blueprint/` | IMPLEMENTED | Same canonical framework hub | CLOSED |
+| `/journal/` | DIRECT V2 ROUTE | `/journal/` | IMPLEMENTED | Same canonical publishing hub | CLOSED |
+| `/about/` | DIRECT V2 ROUTE | `/about/` | IMPLEMENTED | Same canonical mission/context route | CLOSED |
+| `/contact/` | DIRECT V2 ROUTE | `/contact/` | IMPLEMENTED | Same canonical contact route | CLOSED |
+| `/founders-journey/` | DIRECT V2 ROUTE | `/founders-journey/` | IMPLEMENTED | Distinct owner-approved factual narrative | CLOSED |
+| `/legal/` | DIRECT V2 ROUTE | `/legal/` | IMPLEMENTED | Same canonical legal hub | CLOSED |
+| `/legal/privacy-policy/` | DIRECT V2 ROUTE | `/legal/privacy-policy/` | IMPLEMENTED | Same canonical privacy route | CLOSED |
+| `/legal/terms/` | DIRECT V2 ROUTE | `/legal/terms/` | IMPLEMENTED | Same canonical terms route | CLOSED |
+| `/legal/cookie-policy/` | DIRECT V2 ROUTE | `/legal/cookie-policy/` | IMPLEMENTED | Same canonical cookie route | CLOSED |
+| `/legal/disclaimer/` | DIRECT V2 ROUTE | `/legal/disclaimer/` | IMPLEMENTED | Same canonical disclaimer route | CLOSED |
+| `/systems/` | 301 REDIRECT | `/ecosystem/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Ecosystem is the validated V2 canonical replacement | CLOSED |
+| `/microgrow/` | 301 REDIRECT | `/projects/microgrow/` | CONFIGURATION IMPLEMENTED; HOST PENDING | MicroGrow belongs under the V2 Projects architecture | CLOSED |
+| `/articles/` | 301 REDIRECT | `/journal/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Journal is authoritative; captured baseline has no published posts | CLOSED |
+| `/cookie-policy-uk/` | 301 REDIRECT | `/legal/cookie-policy/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Duplicate legal route; canonical destination exists | CLOSED |
+| `/team/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Team was previously distinct; no approved current people/role content exists and About does not prove equivalence | OPEN |
+| `/blueprint/pillars/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
+| `/blueprint/inner-blueprint/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
+| `/blueprint/transition-path/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
+| `/blueprint/new-earth-test/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Proposed target `/blueprint/inner-blueprint/` does not exist; unique content is not yet preserved in V2 | OPEN |
+| `/microgrow/blueprint-alignment/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique project-specific source exists and is not proven fully represented by current pages | OPEN |
 
 ## Required mapping summary
 
 - `/systems/` → `/ecosystem/` — **301 REDIRECT**
 - `/microgrow/` → `/projects/microgrow/` — **301 REDIRECT**
+- `/articles/` → `/journal/` — **301 REDIRECT**
+- `/cookie-policy-uk/` → `/legal/cookie-policy/` — **301 REDIRECT**
 - `/team/` — **OWNER REVIEW**; do not redirect to About until the previously distinct people/responsibility purpose is explicitly retired
 - `/founders-journey/` → `/founders-journey/` — **DIRECT**; preserve as a distinct V2 public route
 
@@ -93,16 +99,15 @@ These implemented routes are additions to the captured legacy page set and requi
 - `/new-earth-in-practice/`
 - `/projects/`
 - `/projects/microgrow/`
+- `/projects/command-centre/`
 - `/get-involved/`
 
-## Redirect-package gates
+## Redirect implementation boundary
 
-Before any later redirect implementation:
-
-1. Confirm every `OWNER REVIEW` destination or retirement decision.
-2. Preserve unique Blueprint and MicroGrow alignment content before consolidating a route.
-3. Verify redirect targets exist in the public build and prevent loops.
-4. Inventory inbound links and apply canonical metadata checks.
-5. Keep the registered-office disclosure blocker visible as a final cutover gate.
-
-No legacy route is retired by WB-08A. No redirect is active.
+- Repository configuration: **PASS** (`public/.htaccess` copied to public build).
+- Redirect type: **301** for all four confirmed mappings.
+- Generated targets: **PASS**.
+- Redirect loops: **0**.
+- Redirect chains: **0**.
+- IONOS/Apache execution: **PENDING IONOS STAGING**.
+- Registered-office disclosure: remains an explicit final cutover blocker.
