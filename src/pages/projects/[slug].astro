@@ -20,7 +20,7 @@ const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/loc
   <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
     <div class="project-hero-layout">
     <header class="project-page__hero">
-      <p class="eyebrow">{project.maturity} · {project.publicStatus}</p>
+      <p class="project-context"><span class="context-label">System</span><span>{project.maturity} · {project.publicStatus}</span></p>
       <h1>{project.name}</h1>
       <p class="lede">{project.shortDescription}</p>
       <dl class="project-facts">
@@ -55,6 +55,7 @@ const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/loc
   .project-page__hero { max-width: none; min-width: 0; }
   .project-page__hero h1 { max-width: 15ch; }
   .project-page__hero .lede { max-width: 60ch; }
+  .project-context { display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; margin: 0 0 .65rem; color: var(--ink); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   .project-facts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 0; max-width: 1000px; }
   .project-facts div { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }
   .project-facts dt { color: var(--forest); font-size: .75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }

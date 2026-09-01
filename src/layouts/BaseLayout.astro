@@ -3,12 +3,14 @@ import '../styles/global.css';
 import AssetImage from '../components/AssetImage.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
 import { assets, nav } from '../data/site';
+import { getExperienceContext } from '../data/experience';
 const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false } = Astro.props;
 const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 const siteOrigin = Astro.site ?? new URL('https://new-earth.uk');
 const canonicalUrl = canonical ? new URL(canonical, siteOrigin).href : undefined;
 const fullTitle = title === 'New Earth' || title.endsWith('| New Earth') ? title : `${title} | New Earth`;
 const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin).href;
+const experienceContext = getExperienceContext(Astro.url.pathname);
 ---
 <!doctype html>
 <html lang="en-GB">
@@ -31,7 +33,7 @@ const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin)
     <meta name="twitter:image" content={socialImage}>
     <title>{fullTitle}</title>
   </head>
-  <body class={localPreview ? 'local-preview' : 'public-mode'}>
+  <body class={localPreview ? 'local-preview' : 'public-mode'} data-experience-context={experienceContext.id}>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="shell header-inner">
@@ -46,7 +48,13 @@ const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin)
       </div>
     </header>
     {localPreview && <p class="dev-indicator" aria-label="Development mode">LOCAL PREVIEW</p>}
-    <main id="main"><slot /></main>
+    <main id="main">
+      {experienceContext.id !== 'neutral' && <div class="route-context shell" aria-label={`Page context: ${experienceContext.label}. ${experienceContext.meaning}.`}>
+        <span class="route-context__label">{experienceContext.label}</span>
+        <span class="route-context__meaning">{experienceContext.meaning}</span>
+      </div>}
+      <slot />
+    </main>
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div>
