@@ -1,33 +1,284 @@
-﻿# Founder Story
+# Founder's Journey V1
 
-## Route decision
+## Control state
 
-**ROUTE DECISION:** OWNER APPROVED — PRESERVE
+- **Route:** `/founders-journey/`
+- **Route decision:** DIRECT V2 ROUTE — PRESERVE
+- **Route status:** IMPLEMENTED
+- **Content:** OWNER APPROVED V1 INTEGRATED
+- **Content approval:** OWNER APPROVED FOR WEBSITE INTEGRATION
+- **Redirect:** NONE
+- **Final rendered-page visual status:** PENDING PETER REVIEW
 
-**ROUTE TYPE:** DIRECT V2 ROUTE — PRESERVE
+This file is the canonical owner-approved Founder's Journey V1 content source.
 
-**V2 ROUTE:** `/founders-journey/`
+## Sensitive-content boundary
 
-**CONTENT DEPTH:** PENDING PETER OWNER INPUT
+The public narrative includes difficult lived experience in Peter's own voice. It excludes unnecessary identifying third-party details, accusations against private people, specific offence or case details, private Hayley information, medical or treatment advice, and objective claims about spiritual experience.
 
-The Founder's Journey is distinct from About. About explains New Earth's public purpose and current context. The Founder's Journey explains the lived path, personal change, lessons, responsibility and rebuilding that influenced why New Earth exists and the work now being developed.
+# Founder's Journey
 
-## Current content state
+I didn't arrive here through a straight line.
 
-**FOUNDER JOURNEY — PERSONAL DETAIL OWNER CONTENT INPUT REQUIRED**
+New Earth didn't begin as a business plan.
 
-The repository does not yet contain enough owner-approved factual detail to publish specific personal events, chronology, criminal or legal history, addiction or recovery experience, trauma, relationships or third-party information. These details must not be inferred from general New Earth doctrine or added for narrative effect.
+It didn't come from sitting in an office trying to think of the next clever idea.
 
-The bounded V1 public page may establish the approved arc:
+For me, it grew out of a life that has been complicated, painful, destructive at times, beautiful at others, and full of lessons I probably wouldn't have chosen to learn the way I did.
 
-1. Experience
-2. Consequence
-3. Learning
-4. Change
-5. Responsibility
-6. Rebuilding
-7. Why New Earth
+For a long time, I didn't know that any of it was leading anywhere.
 
-Specific personal detail may be added only from Peter's approved first-person account. It must avoid unnecessary third-party identification, accusation, diagnosis, private information, sensationalism, medical advice, unsupported legal claims and founder mythology.
+I certainly didn't imagine I would one day be building technology, experimenting with local-first systems, designing grow technology, working with AI, thinking about communities and trying to bring all of it together under something called New Earth.
 
-Deeper approved subjects may later become Journal entries. No such articles are currently authorised.
+But looking backwards, I can see the thread.
+
+## A sensitive kid trying to understand the world
+
+I was quiet when I was young.
+
+Loud people and loud environments frightened me, and I was very sensitive to what was happening around me. I seemed to absorb the atmosphere in a room and carry other people's emotions with me.
+
+My parents had both grown up within the care system, and mental-health difficulties existed throughout the wider family.
+
+At the same time, I was always thinking.
+
+I was drawn to stories about good overcoming bad, people saving others, music with meaning and the story of Jesus.
+
+Even when I was young, something in me looked at the world and thought that people were struggling and that things could somehow be better.
+
+Peace mattered to me before I had any idea what I could actually do about it.
+
+That sensitivity became both a gift and a burden.
+
+## Carrying things I didn't know how to carry
+
+I experienced abuse as a child.
+
+For a long time, I felt that I had largely been left to deal with what happened inside myself.
+
+I didn't have the language, understanding or tools to process it.
+
+Drink and drugs became a way of medicating things I couldn't explain.
+
+Underneath that was something even simpler: I wanted to be understood.
+
+I often felt as though I didn't belong anywhere.
+
+I wanted conversations that went deeper than the surface, but instead I increasingly felt alone.
+
+Substances can quiet things for a while. They don't resolve what is underneath them. Eventually they stopped working.
+
+## When everything being held in came out
+
+Years of anger, pain, confusion, drink and drugs eventually caught up with me.
+
+My anger came out. There were consequences, including prison.
+
+I don't want to romanticise that part of my life or avoid responsibility for it. My choices were mine, and I take responsibility for them.
+
+But prison also forced something I had avoided for years. I had to be present with myself.
+
+And once I started looking properly, I began seeing other people differently too.
+
+I saw people who were angry. People addicted. People frightened. People putting a hard face over pain. People who had made bad choices.
+
+And underneath some of that, I saw people who were also lost and misunderstood.
+
+That experience didn't teach me that consequences don't matter. It taught me that consequences and rebuilding both matter. That distinction would become important much later.
+
+> Consequences and rebuilding both matter.
+
+## Relationships, friendships and losing myself
+
+For a long time I also lived inside unhealthy relationships, friendships and environments connected to drink, drugs and unresolved trauma.
+
+I became very good at carrying everybody else's problems.
+
+I people-pleased. I took responsibility for things that weren't mine. I confused helping people with losing myself inside their lives.
+
+Eventually I had to recognise that love, loyalty or friendship should not require destroying yourself to prove that you care.
+
+I began learning something I had never been particularly good at: boundaries.
+
+Not everyone gets unlimited access to you simply because you have known them for a long time. Not every relationship is meant to continue.
+
+And you cannot rebuild your own life while continually handing pieces of it away.
+
+## The point where there was almost nothing left
+
+One of the major turning points came after my shoulder accident.
+
+By then I felt as though I had very little left.
+
+Around that period, Hayley came back into my life after seven years. That became part of a much bigger change.
+
+I don't think rebuilding happens in one dramatic moment. It happens through hundreds of smaller choices.
+
+How you speak to yourself. What you eat. Whether you move your body. Who you allow around you. What you consume mentally. What you decide you are no longer willing to tolerate. Whether you keep learning. Whether you believe there might still be another version of your life available.
+
+## Hayley and rebuilding a different kind of life
+
+My relationship with Hayley became part of creating something very different from the environments I had known before.
+
+Our home became calmer. Life became more peaceful.
+
+I started looking after myself properly: training, eating better, working on my self-talk, reading, listening, learning, and becoming much stricter about my boundaries.
+
+I began choosing relationships based on whether there was mutual growth rather than simply history or obligation.
+
+That's a very different way of living from taking everybody else's problems onto your shoulders.
+
+Hayley also became part of what New Earth itself was becoming. Not because we are identical people doing identical things. We aren't.
+
+There is a practical engineering and technology side to what I build, and there is a more human, reflective and Conscious Living side that Hayley brings into the wider picture.
+
+That matters to me. Because New Earth was never meant to become another technology project that forgets the people the technology is supposedly for.
+
+## Something else started changing
+
+There was also a spiritual side to this period of my life.
+
+I began noticing synchronicities and becoming much more conscious of intuition, tarot and experiences that I interpreted as part of an awakening.
+
+I started questioning things I had previously accepted without thinking very deeply about them: society, success, work, money, technology, community, health, relationships, what we're actually doing here, and what kind of world we're leaving behind.
+
+I don't expect everybody reading this to interpret those experiences the way I do. They are simply part of my journey.
+
+What mattered was what they caused me to do next. I started changing my life.
+
+## From rebuilding myself to building things
+
+Technology and engineering had always interested me, but gradually they stopped being things I merely kept up with.
+
+I started building. Learning software. Working with electronics. Developing systems. Working with local AI. Experimenting. Breaking things. Fixing them. Breaking the fixes.
+
+Wondering why something that worked perfectly yesterday had apparently developed a personal vendetta against me overnight.
+
+And somewhere in the middle of all that came MicroGrow.
+
+MicroGrow began as a practical problem: how could technology help manage a growing environment locally, intelligently and in a way the person using it could still understand and control?
+
+That project led into software, hardware, ESP32 systems, sensor testing, diagnostics, interfaces, local networking, automation and eventually AI-assisted development.
+
+But it also exposed a bigger question: what if technology was designed around helping people become more capable, rather than making them more dependent?
+
+That question started escaping the grow tent.
+
+## New Earth became bigger than one project
+
+As I kept building, the pieces started connecting.
+
+MicroGrow wasn't just about growing plants. Local AI wasn't just about having an AI model running on a computer. A Command Centre wasn't just another dashboard. The website wasn't just somewhere to advertise things.
+
+I was starting to think about a system where technology could strengthen the person, the home, the workshop, the grow, the small business and eventually the community.
+
+A system that could retain knowledge locally. Help people understand what was happening around them. Support decisions. Help organise work. Connect useful systems without requiring everything to be controlled from somewhere far away.
+
+The direction became:
+
+1. Person
+2. Home / Place
+3. Community
+4. Local capability
+5. Connected communities
+6. Wider New Earth
+
+And the principle underneath it became: local first, community first, stewardship first.
+
+The technology I'm building today — MicroGrow, engineering systems, local AI, NEOS, GAIA, Command Centre and the wider New Earth architecture — is still development work.
+
+I'm not claiming we've built some finished alternative civilisation. Far from it.
+
+We're building pieces, testing them, learning what works and gradually making them coherent.
+
+But the direction is clear: technology should serve life. Not the other way around.
+
+> Technology should serve life. Not the other way around.
+
+## What my past actually taught me
+
+When you've seen people at their worst — including yourself — it changes how you think about systems.
+
+I believe in responsibility because I've had to take responsibility for my own choices.
+
+I believe in second chances because I know a person's worst period does not necessarily define the rest of their life.
+
+I believe in dignity because removing someone's dignity rarely teaches them how to rebuild it.
+
+I believe in community because isolation can quietly destroy people.
+
+I believe in boundaries because helping without boundaries can destroy the helper as well.
+
+I believe addiction needs understanding as well as consequences because I know what it is to try to numb something you don't know how to face.
+
+I believe rebuilding matters because simply identifying what is broken doesn't show somebody how to build something better.
+
+And I believe technology matters — but only when it leaves human beings with more agency, understanding and capability rather than less.
+
+That's part of why New Earth is deliberately being designed around human authority rather than handing unlimited control to machines.
+
+## People are more than their worst chapter
+
+One belief has become particularly important to me: we write people off too easily.
+
+People can behave terribly. People can hurt other people. People can make decisions they deeply regret.
+
+Responsibility still matters. Protection still matters. Consequences still matter.
+
+But if our systems are capable only of identifying who failed and not helping anyone rebuild, then we shouldn't be surprised when the same cycles continue through families and communities.
+
+I don't think everybody can be rescued. And I don't think one system can solve every human problem.
+
+But I do believe people should have a genuine opportunity to become something different.
+
+I needed that opportunity myself.
+
+## Where I am now
+
+I'm still rebuilding. That's important for me to say.
+
+There isn't a neat ending where everything suddenly became perfect and I transformed into some flawless enlightened bloke who now has all the answers. I don't.
+
+I am learning constantly.
+
+Some days I'm designing software architecture. Some days I'm working on electronics. Some days I'm trying to work out how a local AI system should operate.
+
+Some days I'm thinking about governance, food, health, communities or what technology might look like ten or twenty years from now.
+
+And some days I'm staring at a computer wondering why I've somehow created seventeen programmes, several operating systems and enough documentation to frighten a small government department.
+
+But there is now a direction underneath it.
+
+I'm building New Earth as a practical, local-first and human-centred ecosystem. MicroGrow is one working expression of it. Other systems are taking shape around it.
+
+Hayley is developing her own complementary Conscious Living path within the wider New Earth picture.
+
+And we're trying to build our own lives according to the principles we talk about rather than simply publishing those principles for everybody else.
+
+## Why New Earth exists
+
+I cannot separate New Earth entirely from my past.
+
+The childhood that made me sensitive to other people's pain. The trauma I didn't know how to deal with. The substances I used to escape. The choices I made. The consequences. Prison.
+
+The people I tried to save while losing myself. The relationships I had to leave behind. The moment there seemed to be very little left.
+
+Meeting Hayley again. Learning boundaries. Looking after myself. Learning. Building. Questioning. Starting again.
+
+They are all somewhere underneath this project.
+
+That's why words like dignity, responsibility, community, stewardship, peace, resilience and second chances aren't there simply because they sound nice on a manifesto. They mean something to me.
+
+New Earth isn't an attempt to pretend the old world never happened.
+
+For me, it is about asking a much more useful question: knowing what we know now, what could we build differently?
+
+I don't know where all of this ultimately leads. But I know what I'm trying to do now.
+
+Build something that helps rather than harms. Create rather than escape. Take responsibility rather than hide from it. Use technology to strengthen life rather than dominate it.
+
+And leave behind something better than the world I once thought I didn't belong in.
+
+That is my Founder's Journey. And, in many ways, it is where New Earth began.
+
+> Knowing what we know now, what could we build differently?
