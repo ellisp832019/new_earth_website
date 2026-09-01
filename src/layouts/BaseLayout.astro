@@ -3,8 +3,12 @@ import '../styles/global.css';
 import AssetImage from '../components/AssetImage.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
 import { assets, nav } from '../data/site';
-const { title, description='A living framework for conscious civilisation.', canonical='/' } = Astro.props;
+const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false } = Astro.props;
 const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
+const siteOrigin = Astro.site ?? new URL('https://new-earth.uk');
+const canonicalUrl = canonical ? new URL(canonical, siteOrigin).href : undefined;
+const fullTitle = title === 'New Earth' || title.endsWith('| New Earth') ? title : `${title} | New Earth`;
+const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin).href;
 ---
 <!doctype html>
 <html lang="en-GB">
@@ -12,8 +16,20 @@ const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content={description}>
-    <link rel="canonical" href={`https://new-earth.uk${canonical}`}>
-    <title>{title} | New Earth</title>
+    {noindex && <meta name="robots" content="noindex, nofollow">}
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl}>}
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta property="og:title" content={fullTitle}>
+    <meta property="og:description" content={description}>
+    <meta property="og:type" content="website">
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl}>}
+    <meta property="og:site_name" content="New Earth">
+    <meta property="og:image" content={socialImage}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={fullTitle}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={socialImage}>
+    <title>{fullTitle}</title>
   </head>
   <body class={localPreview ? 'local-preview' : 'public-mode'}>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -54,7 +70,6 @@ const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
         <div>
           <h2>Learn</h2>
           <a href="/journal/">Journal</a>
-          <a href="/resources/">Resources</a>
         </div>
         <div>
           <h2>Legal</h2>

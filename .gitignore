@@ -39,3 +39,4 @@ dist/
 .astro/
 public/local-assets/
 public/assets/
+public/favicon.png

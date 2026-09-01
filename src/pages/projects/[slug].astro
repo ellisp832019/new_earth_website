@@ -16,7 +16,7 @@ if (!project) throw new Error('Project route requires an explicitly public-enabl
 const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
 const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/local-assets'}/${filename}`;
 ---
-<BaseLayout title={`${project.name} | New Earth`} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
+<BaseLayout title={project.name} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
   <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
     <div class="project-hero-layout">
     <header class="project-page__hero">

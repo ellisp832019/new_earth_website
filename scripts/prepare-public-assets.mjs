@@ -39,4 +39,9 @@ for (const [relativeSource, publicName] of files) {
   await copyFile(source, destination);
 }
 
-console.log(`Prepared ${files.length} governed public assets.`);
+await copyFile(
+  new URL('../ASSETS/00_BRAND/logos/new-earth-emblem-v1.png', import.meta.url),
+  new URL('../public/favicon.png', import.meta.url),
+);
+
+console.log(`Prepared ${files.length} governed public assets and the site icon.`);
