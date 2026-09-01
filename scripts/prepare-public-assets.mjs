@@ -25,6 +25,11 @@ const files = [
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-005_systems-relationship-map.png', 'NEIP-VIS-005_systems-relationship-map.png'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-006_authority-ladder.png', 'NEIP-VIS-006_authority-ladder.png'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-007_one-person-experience.png', 'NEIP-VIS-007_one-person-experience.png'],
+  ['08_COMMAND_CENTRE/evidence/CC-VIS-001A_command-centre-hero-display.png', 'CC-VIS-001A_command-centre-hero-display.png'],
+  ['08_COMMAND_CENTRE/evidence/CC-VIS-001B_command-centre-index-display.png', 'CC-VIS-001B_command-centre-index-display.png'],
+  ['08_COMMAND_CENTRE/evidence/CC-VIS-002_command-palette.png', 'CC-VIS-002_command-palette.png'],
+  ['08_COMMAND_CENTRE/evidence/CC-VIS-003_continue-work-authority.png', 'CC-VIS-003_continue-work-authority.png'],
+  ['08_COMMAND_CENTRE/evidence/CC-VIS-005_how-command-centre-works.png', 'CC-VIS-005_how-command-centre-works.png'],
 ];
 
 for (const [relativeSource, publicName] of files) {

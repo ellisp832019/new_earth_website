@@ -6,7 +6,7 @@
 - Route: `/projects/command-centre/`
 - Category: Technology and innovation
 - Maturity: `ACTIVE DEVELOPMENT`
-- Publication: `NOT YET PUBLIC / PENDING OWNER REVIEW`
+- Publication: `PUBLIC-ENABLED`
 
 ## Verified purpose
 
@@ -31,8 +31,8 @@ capabilities they own.
 The project is in active development. Its current source includes a registry,
 discovery services, launch-target resolution, status surfaces, command-palette
 presentation and read-only adapters for selected NEOS and GAIA-related views.
-This page is a local preview and does not claim public deployment or finished
-ecosystem integration.
+This public project record does not claim finished ecosystem integration or
+production readiness.
 
 ## What exists today
 
@@ -86,9 +86,12 @@ remain clear.
 
 ## Public-safe visuals
 
-No public visual asset is adopted in WB-04B. The available roadmap artwork is
-classified as conceptual and rejected for public evidence because its labels
-overstate integration and combine distinct systems.
+The bounded public evidence set is CC-VIS-001A/001B, CC-VIS-002, CC-VIS-003
+and CC-VIS-005. These existing owner-accepted files require no new visual
+derivative. CC-VIS-005 remains explicitly developmental and preserves human
+approval boundaries. CC-VIS-004 remains local-preview-only because it is NEOS
+context and includes a loopback endpoint; CC-VIS-001 remains the preserved
+source evidence behind the display derivative.
 
 ## Internal / not for publication
 

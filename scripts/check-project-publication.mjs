@@ -1,4 +1,4 @@
-import { access, readFile, readdir } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -6,15 +6,6 @@ const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const modeArg = process.argv.find((arg) => arg.startsWith('--mode='));
 const mode = modeArg?.split('=')[1] ?? (process.env.PUBLIC_ASSET_MODE === 'PUBLIC' ? 'public' : 'preview');
 const exists = (relativePath) => access(join(root, relativePath)).then(() => true, () => false);
-
-async function walk(dir) {
-  let out = [];
-  for (const entry of await readdir(dir, { withFileTypes: true })) {
-    const path = join(dir, entry.name);
-    out = entry.isDirectory() ? out.concat(await walk(path)) : out.concat(path);
-  }
-  return out;
-}
 
 const failures = [];
 const projectsHtml = await readFile(join(root, 'projects/index.html'), 'utf8').catch(() => '');
@@ -35,16 +26,17 @@ if (mode === 'preview') {
 
 if (mode === 'public') {
   if (!microgrowRoute) failures.push('public MicroGrow detail route missing');
-  if (commandCentreRoute) failures.push('public Command Centre detail route generated');
-  if (commandCentreCard) failures.push('public Command Centre card exposed');
-  const files = await walk(root);
-  const leaks = [];
-  for (const file of files) {
-    if (file.includes('CC-VIS-')) leaks.push(file);
-    const text = await readFile(file, 'utf8').catch(() => '');
-    if (text.includes('CC-VIS-') && !leaks.includes(file)) leaks.push(file);
+  if (!commandCentreRoute) failures.push('public Command Centre detail route missing');
+  if (!commandCentreCard) failures.push('public Command Centre card missing');
+  const detailHtml = await readFile(join(root, 'projects/command-centre/index.html'), 'utf8').catch(() => '');
+  if (!detailHtml.includes('ACTIVE DEVELOPMENT')) failures.push('public Command Centre maturity missing');
+  for (const asset of ['CC-VIS-001A_command-centre-hero-display.png', 'CC-VIS-001B_command-centre-index-display.png', 'CC-VIS-002_command-palette.png', 'CC-VIS-003_continue-work-authority.png', 'CC-VIS-005_how-command-centre-works.png']) {
+    if (!await exists(`assets/${asset}`)) failures.push(`public Command Centre asset missing: ${asset}`);
   }
-  if (leaks.length) failures.push(`public Command Centre asset leakage: ${leaks.length}`);
+  for (const blockedAsset of ['CC-VIS-001_command-centre-overview.png', 'CC-VIS-004_neos-connected-context.png']) {
+    if (await exists(`assets/${blockedAsset}`)) failures.push(`blocked Command Centre asset generated: ${blockedAsset}`);
+    if (detailHtml.includes(blockedAsset)) failures.push(`blocked Command Centre asset referenced: ${blockedAsset}`);
+  }
 }
 
 if (!['preview', 'public'].includes(mode)) failures.push(`unsupported mode: ${mode}`);

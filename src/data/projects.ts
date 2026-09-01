@@ -28,6 +28,7 @@ export type ProjectRecord = {
     label: string;
     caption: string;
     className?: string;
+    publicEnabled?: boolean;
   }[];
   developmentalVisual?: {
     src: string;
@@ -113,14 +114,14 @@ export const publicProjects: ProjectRecord[] = [{
   slug: 'command-centre',
   category: 'Technology and innovation',
   maturity: 'ACTIVE DEVELOPMENT',
-  publicStatus: 'PENDING OWNER REVIEW',
+  publicStatus: 'PUBLIC-ENABLED',
   previewEnabled: true,
-  publicEnabled: false,
+  publicEnabled: true,
   purpose: 'Make a growing collection of projects, repositories, tools and status surfaces easier for people to find and understand from one human-facing place.',
   whyItExists: 'As the New Earth ecosystem grows, navigating each project and repository separately becomes increasingly difficult. Command Centre is being developed to reduce that friction while keeping people in control of the systems they open and use.',
   whatItIs: 'Command Centre is a thin Windows desktop shell for discovery, launch, navigation, observation, summarisation, notification and bounded orchestration. It presents access to other systems rather than replacing the capabilities they own.',
   relationToNewEarth: 'Command Centre is a visible coordination surface within the wider New Earth ecosystem. It helps people find and understand related projects while each specialist system remains responsible for its own work and boundaries.',
-  currentState: 'The current repository records a working desktop shell and controlled development baseline. The local preview describes the implementation evidence available now; it is not a claim of public deployment or finished ecosystem integration.',
+  currentState: 'The current repository records a working desktop shell and controlled development baseline. This public project record describes the implementation evidence available now; it is not a claim of finished ecosystem integration or production readiness.',
   whatExistsToday: 'The current implementation includes a registry-driven desktop shell, repository and application discovery, launch-target resolution, navigation actions, health and status surfaces, a command palette, audit support and read-only presentation of selected NEOS and GAIA-related information.',
   evidence: [
     'Repository documentation, source implementation and focused tests provide the current evidence for the shell, discovery, navigation, command palette and bounded integrations.',
@@ -155,14 +156,14 @@ export const publicProjects: ProjectRecord[] = [{
     { label: 'State', value: 'ACTIVE DEVELOPMENT' },
     { label: 'Platform', value: 'Windows desktop' },
     { label: 'Role', value: 'Control / navigation surface' },
-    { label: 'Publication', value: 'PENDING OWNER REVIEW' },
+    { label: 'Publication', value: 'PUBLIC-ENABLED' },
   ],
   visualEvidence: [
     {
       src: 'CC-VIS-001A_command-centre-hero-display.png',
       alt: 'Current New Earth Command Centre overview showing programme control, system discovery and status surfaces.',
       label: 'Command Centre overview',
-      caption: 'Current Command Centre overview display derivative; local-preview evidence only, with service and status availability shown as captured.',
+      caption: 'Current Command Centre overview display derivative, with service and status availability shown as captured.',
       className: 'visual-evidence--overview',
     },
     {
@@ -183,6 +184,7 @@ export const publicProjects: ProjectRecord[] = [{
       label: 'NEOS Windows Desktop - related engineering/project intelligence surface',
       caption: 'Related NEOS context, not Command Centre UI; NEOS remains the engineering and project intelligence owner.',
       className: 'visual-evidence--neos',
+      publicEnabled: false,
     },
   ],
   developmentalVisual: {

@@ -4,6 +4,7 @@ import { publicProjects } from '../../data/projects';
 const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
 const visibleProjects = publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled || project.publicEnabled);
 const microgrowImage = publicBuild ? '/assets/microgrow_hardware_public.webp' : '/local-assets/microgrow_hardware_public.webp';
+const commandCentreImage = publicBuild ? '/assets/CC-VIS-001B_command-centre-index-display.png' : '/local-assets/CC-VIS-001B_command-centre-index-display.png';
 ---
 <BaseLayout title="Projects | New Earth" description="The public New Earth project index is being prepared with clear status and evidence." canonical="/projects/">
   <main class="projects-placeholder shell">
@@ -17,7 +18,7 @@ const microgrowImage = publicBuild ? '/assets/microgrow_hardware_public.webp' : 
         <p>{project.shortDescription}</p>
         <a class="text-link" href={`/projects/${project.slug}/`}>Explore {project.name}</a>
         </div>
-        {(project.slug === 'microgrow' || project.slug === 'command-centre') && <figure class="project-index-card__visual"><img src={project.slug === 'microgrow' ? microgrowImage : '/local-assets/CC-VIS-001B_command-centre-index-display.png'} alt={project.slug === 'microgrow' ? 'Current physical MicroGrow development hardware.' : 'Current New Earth Command Centre overview display derivative showing programme control, system discovery and status surfaces.'} /></figure>}
+        {(project.slug === 'microgrow' || project.slug === 'command-centre') && <figure class="project-index-card__visual"><img src={project.slug === 'microgrow' ? microgrowImage : commandCentreImage} alt={project.slug === 'microgrow' ? 'Current physical MicroGrow development hardware.' : 'Current New Earth Command Centre overview display derivative showing programme control, system discovery and status surfaces.'} /></figure>}
       </article>)}
     </div>}
     <p><a class="button" href="/ecosystem/">Return to the Ecosystem</a></p>
