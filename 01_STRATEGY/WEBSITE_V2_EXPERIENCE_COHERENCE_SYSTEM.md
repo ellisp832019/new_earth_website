@@ -37,7 +37,8 @@ The route mapping is maintained centrally in `src/data/experience.ts`. Colour al
 ## Sprint decisions
 
 - The local-first pathway belongs primarily on `/new-earth-in-practice/`.
-- The pathway is implemented as six native disclosure stages: Person, Home / Place, Community, Local capability, Connected communities and Wider New Earth. It adds no client JavaScript and remains operable with scripts disabled.
+- On desktop, the pathway uses a compact six-stage rail and one shared explanation panel. At tablet/mobile widths it uses the native vertical disclosure journey. With JavaScript disabled, all six native disclosures remain available and readable.
 - Ecosystem exploration must expose only approved public information and must preserve maturity boundaries.
-- The ecosystem explorer now groups five approved public nodes across direction, practice, projects, engineering and participation. Selection highlights related nodes and announces them in text; each card keeps its explanation, maturity and canonical link when JavaScript is unavailable. The enhancement is small vanilla JavaScript with no dependency.
+- The ecosystem explorer arranges five approved public nodes as a restrained relationship map across direction, practice, projects, engineering and participation. Visible connectors express only supported relationships; mobile simplifies to vertical cards. Selection highlights related nodes and announces them in text, while every card retains its explanation, maturity and canonical link without JavaScript.
+- Public UI keeps visitor-facing category and maturity labels, but does not expose `PUBLIC-ENABLED`; that publication state remains unchanged in the governed project data and validators.
 - Project filtering is deferred: only two projects are currently public, so filters would add interface weight without improving discovery. Reconsider when at least four public projects exist.
