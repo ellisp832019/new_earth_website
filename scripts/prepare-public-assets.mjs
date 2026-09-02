@@ -31,6 +31,7 @@ const files = [
   ['08_COMMAND_CENTRE/evidence/CC-VIS-003_continue-work-authority.png', 'CC-VIS-003_continue-work-authority.png'],
   ['08_COMMAND_CENTRE/evidence/CC-VIS-005_how-command-centre-works.png', 'CC-VIS-005_how-command-centre-works.png'],
   ['07_ABOUT/TEAM/02_DERIVATIVES/peter_hayley_team_public.webp', 'peter_hayley_team.webp'],
+  ['07_ABOUT/FOUNDER_JOURNEY/02_DERIVATIVES/peter_founders_journey_public.webp', 'peter_founders_journey.webp'],
 ];
 
 for (const [relativeSource, publicName] of files) {

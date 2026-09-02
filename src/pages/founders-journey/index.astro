@@ -75,6 +75,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p>What mattered was what they made me do next. I started changing my life.</p>
       </section>
 
+      <figure class="founder-story__portrait">
+        <img src="/assets/peter_founders_journey.webp" width="1080" height="1346" alt="Portrait of Peter seated indoors" loading="lazy" />
+        <figcaption>Peter — rebuilding, learning and eventually building.</figcaption>
+      </figure>
+
       <section class="founder-story__chapter founder-story__chapter--building" aria-labelledby="started-building">
         <div class="founder-story__building-copy">
           <p class="eyebrow">I started building instead of escaping</p>
@@ -170,6 +175,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .founder-story__chapter--stark h2 { max-width: 14ch; }
   .founder-story__chapter--breathing { padding-block: clamp(5rem, 10vw, 8rem); }
   .founder-story__chapter--reflective { max-width: 760px; margin-left: auto; padding-block: clamp(4rem, 8vw, 7rem); }
+  .founder-story__portrait { width: min(100%, 620px); margin: 0 auto clamp(4rem, 8vw, 7rem); }
+  .founder-story__portrait img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .founder-story__portrait figcaption { margin-top: .75rem; color: var(--forest); font-size: .9rem; }
   .founder-story__chapter blockquote { max-width: 48rem; margin: 2.75rem 0 0; padding: 1.5rem 1.75rem; border-left: 4px solid var(--gold); background: var(--sage); }
   .founder-story__chapter blockquote p { margin: 0; color: var(--deep); font: 700 clamp(1.25rem, 2.3vw, 1.75rem)/1.4 var(--serif); }
   .founder-story__chapter--building { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); gap: 2rem clamp(2rem, 6vw, 4rem); align-items: start; max-width: 1080px; width: min(1080px, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); }
