@@ -33,6 +33,7 @@ Public status describes the generated public build. Navigation status records th
 | `/projects/command-centre/` | `src/pages/projects/[slug].astro` | Public | Projects route | ACTIVE DEVELOPMENT project record |
 | `/journal/` | `src/pages/journal/index.astro` | Public | Primary navigation and footer | Static-first publishing hub |
 | `/about/` | `src/pages/about/index.astro` | Public | Primary navigation and footer | Public purpose and context |
+| `/team/` | `src/pages/team/index.astro` | Public | About context and footer | Small founding team behind current New Earth work |
 | `/founders-journey/` | `src/pages/founders-journey/index.astro` | Public | Direct and legacy continuity route | Peter's owner-approved factual narrative with V2 human-voice editorial pass |
 | `/get-involved/` | `src/pages/get-involved/index.astro` | Public | Primary navigation and footer | Participation routes |
 | `/contact/` | `src/pages/contact/index.astro` | Public | Footer and contextual links | Public enquiry route |
@@ -74,7 +75,7 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 | `/microgrow/` | 301 REDIRECT | `/projects/microgrow/` | CONFIGURATION IMPLEMENTED; HOST PENDING | MicroGrow belongs under the V2 Projects architecture | CLOSED |
 | `/articles/` | 301 REDIRECT | `/journal/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Journal is authoritative; captured baseline has no published posts | CLOSED |
 | `/cookie-policy-uk/` | 301 REDIRECT | `/legal/cookie-policy/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Duplicate legal route; canonical destination exists | CLOSED |
-| `/team/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Team was previously distinct; no approved current people/role content exists and About does not prove equivalence | OPEN |
+| `/team/` | DIRECT V2 ROUTE | `/team/` | IMPLEMENTED | Team retains a distinct public purpose from About by identifying the small founding team behind current New Earth work | CLOSED |
 | `/blueprint/pillars/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
 | `/blueprint/inner-blueprint/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
 | `/blueprint/transition-path/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
@@ -87,7 +88,7 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 - `/microgrow/` → `/projects/microgrow/` — **301 REDIRECT**
 - `/articles/` → `/journal/` — **301 REDIRECT**
 - `/cookie-policy-uk/` → `/legal/cookie-policy/` — **301 REDIRECT**
-- `/team/` — **OWNER REVIEW**; do not redirect to About until the previously distinct people/responsibility purpose is explicitly retired
+- `/team/` → `/team/` — **DIRECT**; preserve its distinct purpose of identifying the small founding team behind current New Earth work
 - `/founders-journey/` → `/founders-journey/` — **DIRECT**; preserve as a distinct V2 public route
 
 ## V2-only canonical routes

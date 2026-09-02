@@ -28,7 +28,7 @@ const routeContextRules: Array<[RegExp, ExperienceContextId]> = [
   [/^\/(ecosystem|projects)(\/|$)/, 'systems'],
   [/^\/new-earth-in-practice(\/|$)/, 'practice'],
   [/^\/(get-involved|contact)(\/|$)/, 'community'],
-  [/^\/(about|founders-journey|journal)(\/|$)/, 'editorial'],
+  [/^\/(about|team|founders-journey|journal)(\/|$)/, 'editorial'],
   [/^\/legal(\/|$)/, 'legal'],
 ];
 
