@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const phases = ['Remember', 'Reveal', 'Reimagine', 'Prototype', 'Network', 'Replace', 'Protect'];
+---
+<BaseLayout
+  title="The Transition Path"
+  description="Explore the seven-phase Transition Path within the developing New Earth Blueprint."
+  canonical="/blueprint/transition-path/"
+>
+  <article class="content-page">
+    <header class="page-hero shell">
+      <p class="eyebrow">From reflection towards practical change</p>
+      <h1>The Transition Path</h1>
+      <p class="lede">The Transition Path is a seven-phase framework for moving from awareness towards careful, practical change. It is a direction for inquiry, not a claim that one fixed sequence fits every person or community.</p>
+    </header>
+    <div class="shell content-flow">
+      <section>
+        <h2>Seven phases</h2>
+        <ol class="phase-list">{phases.map((phase) => <li><strong>{phase}</strong></li>)}</ol>
+      </section>
+      <section>
+        <h2>Start locally, connect outward</h2>
+        <p>Transitions can begin at the scale of a person, household, neighbourhood or community. Learning can then be shared, compared and adapted through wider cooperation while meaningful local agency is retained.</p>
+        <p>The path does not imply that established systems should be replaced without evidence, participation, safeguards or a workable alternative.</p>
+      </section>
+      <nav class="page-actions" aria-label="Continue exploring">
+        <a class="button" href="/new-earth-in-practice/">See New Earth in Practice</a>
+        <a class="button" href="/blueprint/pillars/">Explore the 12 Pillars</a>
+        <a class="button" href="/blueprint/">Back to the Blueprint</a>
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .phase-list { display: grid; gap: .75rem; margin: 2rem 0 0; padding: 0; list-style: none; counter-reset: phase; }
+  .phase-list li { counter-increment: phase; display: grid; grid-template-columns: 2.5rem 1fr; gap: .75rem; align-items: center; padding: 1rem; border-left: 3px solid var(--gold); background: var(--sage); }
+  .phase-list li::before { content: counter(phase, decimal-leading-zero); color: var(--forest); font-weight: 700; }
+</style>

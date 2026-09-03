@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { pillars } from '../../../data/site';
+---
+<BaseLayout
+  title="The 12 Pillars"
+  description="Explore the 12 Pillars as connected research and design lenses within the developing New Earth Blueprint."
+  canonical="/blueprint/pillars/"
+>
+  <article class="content-page">
+    <header class="page-hero shell">
+      <p class="eyebrow">Connected areas for exploration</p>
+      <h1>The 12 Pillars</h1>
+      <p class="lede">The 12 Pillars are strategic design and research lenses. They help organise questions across major areas of life; they are not twelve completed products or centrally imposed programmes.</p>
+    </header>
+    <div class="shell content-flow">
+      <section>
+        <h2>A framework for inquiry</h2>
+        <p>Each pillar can be explored on its own while remaining connected to the wider Blueprint. Together they provide a practical way to notice relationships, identify what needs care and ask what can be understood or maintained locally and what benefits from wider cooperation.</p>
+      </section>
+      <section>
+        <h2>The twelve areas</h2>
+        <ol class="pillar-list">
+          {pillars.map(([number, name]) => <li><span>{number}</span><strong>{name}</strong></li>)}
+        </ol>
+      </section>
+      <nav class="page-actions" aria-label="Continue exploring">
+        <a class="button" href="/blueprint/inner-blueprint/">Explore the Inner Blueprint</a>
+        <a class="button" href="/blueprint/transition-path/">Explore the Transition Path</a>
+        <a class="button" href="/blueprint/">Back to the Blueprint</a>
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .pillar-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+  .pillar-list li { display: grid; grid-template-columns: 2.5rem 1fr; gap: .75rem; align-items: start; padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .pillar-list span { color: var(--gold); font-weight: 700; }
+  @media (max-width: 560px) { .pillar-list { grid-template-columns: 1fr; } }
+</style>

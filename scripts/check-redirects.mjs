@@ -10,6 +10,8 @@ const expected = new Map([
   ['/microgrow/', '/projects/microgrow/'],
   ['/articles/', '/journal/'],
   ['/cookie-policy-uk/', '/legal/cookie-policy/'],
+  ['/blueprint/new-earth-test/', '/blueprint/inner-blueprint/'],
+  ['/microgrow/blueprint-alignment/', '/projects/microgrow/'],
 ]);
 const failures = [];
 const sourceText = await readFile(publicConfig, 'utf8').catch(() => '');

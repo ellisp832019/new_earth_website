@@ -26,6 +26,9 @@ Public status describes the generated public build. Navigation status records th
 | `/vision/` | `src/pages/vision/index.astro` | Public | Primary navigation | Vision and direction |
 | `/manifesto/` | `src/pages/manifesto/index.astro` | Public | Contextual links | Principles and direction |
 | `/blueprint/` | `src/pages/blueprint/index.astro` | Public | Primary navigation | Framework hub |
+| `/blueprint/pillars/` | `src/pages/blueprint/pillars/index.astro` | Public | Blueprint contextual links | Twelve research and design lenses |
+| `/blueprint/inner-blueprint/` | `src/pages/blueprint/inner-blueprint/index.astro` | Public | Blueprint contextual links | Reflective foundation and preserved alignment questions |
+| `/blueprint/transition-path/` | `src/pages/blueprint/transition-path/index.astro` | Public | Blueprint contextual links | Seven-phase transition framework |
 | `/ecosystem/` | `src/pages/ecosystem/index.astro` | Public | Primary navigation | Ecosystem relationships |
 | `/new-earth-in-practice/` | `src/pages/new-earth-in-practice/index.astro` | Public | Primary navigation | Practical interpretation |
 | `/projects/` | `src/pages/projects/index.astro` | Public | Primary navigation | Public project directory |
@@ -76,11 +79,11 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 | `/articles/` | 301 REDIRECT | `/journal/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Journal is authoritative; captured baseline has no published posts | CLOSED |
 | `/cookie-policy-uk/` | 301 REDIRECT | `/legal/cookie-policy/` | CONFIGURATION IMPLEMENTED; HOST PENDING | Duplicate legal route; canonical destination exists | CLOSED |
 | `/team/` | DIRECT V2 ROUTE | `/team/` | IMPLEMENTED | Team retains a distinct public purpose from About by identifying the small founding team behind current New Earth work | CLOSED |
-| `/blueprint/pillars/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
-| `/blueprint/inner-blueprint/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
-| `/blueprint/transition-path/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique tracked source exists; no current V2 page or proven equivalent destination | OPEN |
-| `/blueprint/new-earth-test/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Proposed target `/blueprint/inner-blueprint/` does not exist; unique content is not yet preserved in V2 | OPEN |
-| `/microgrow/blueprint-alignment/` | OWNER DECISION REQUIRED | — | NOT IMPLEMENTED | Unique project-specific source exists and is not proven fully represented by current pages | OPEN |
+| `/blueprint/pillars/` | DIRECT V2 ROUTE | `/blueprint/pillars/` | IMPLEMENTED | Approved names and order support a restrained overview; the page describes research and design lenses, not completed products | CLOSED |
+| `/blueprint/inner-blueprint/` | DIRECT V2 ROUTE | `/blueprint/inner-blueprint/` | IMPLEMENTED | Distinct repository-approved foundation content supports a bounded reflective page without prescribing a belief system | CLOSED |
+| `/blueprint/transition-path/` | DIRECT V2 ROUTE | `/blueprint/transition-path/` | IMPLEMENTED | The approved seven-phase path has a distinct role and is presented without unsupported outcome claims | CLOSED |
+| `/blueprint/new-earth-test/` | 301 REDIRECT | `/blueprint/inner-blueprint/` | CONFIGURATION IMPLEMENTED; HOST PENDING | WA-02 directs this route to Inner Blueprint once its unique questions are preserved there; the destination now does so | CLOSED |
+| `/microgrow/blueprint-alignment/` | 301 REDIRECT | `/projects/microgrow/` | CONFIGURATION IMPLEMENTED; HOST PENDING | The source identifies four relevant pillars; the current MicroGrow record is the bounded canonical context and already explains its New Earth relationship | CLOSED |
 
 ## Required mapping summary
 
@@ -90,6 +93,11 @@ The legacy authority is `01_STRATEGY/WA-01/LIVE_REPOSITORY_PAGE_DECISION_REGISTE
 - `/cookie-policy-uk/` → `/legal/cookie-policy/` — **301 REDIRECT**
 - `/team/` → `/team/` — **DIRECT**; preserve its distinct purpose of identifying the small founding team behind current New Earth work
 - `/founders-journey/` → `/founders-journey/` — **DIRECT**; preserve as a distinct V2 public route
+- `/blueprint/pillars/` → `/blueprint/pillars/` — **DIRECT**; restrained overview of the twelve research and design lenses
+- `/blueprint/inner-blueprint/` → `/blueprint/inner-blueprint/` — **DIRECT**; bounded reflective foundation and preserved New Earth Test questions
+- `/blueprint/transition-path/` → `/blueprint/transition-path/` — **DIRECT**; approved seven-phase transition framework
+- `/blueprint/new-earth-test/` → `/blueprint/inner-blueprint/` — **301 REDIRECT**; unique questions preserved at destination
+- `/microgrow/blueprint-alignment/` → `/projects/microgrow/` — **301 REDIRECT**; one-hop project context
 
 ## V2-only canonical routes
 
@@ -106,7 +114,7 @@ These implemented routes are additions to the captured legacy page set and requi
 ## Redirect implementation boundary
 
 - Repository configuration: **PASS** (`public/.htaccess` copied to public build).
-- Redirect type: **301** for all four confirmed mappings.
+- Redirect type: **301** for all six confirmed mappings.
 - Generated targets: **PASS**.
 - Redirect loops: **0**.
 - Redirect chains: **0**.

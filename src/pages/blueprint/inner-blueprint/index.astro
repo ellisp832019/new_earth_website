@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const habits = [
+  'Self-awareness', 'Emotional responsibility', 'Truthful speech', 'Compassion',
+  'Nonviolence', 'Reverence for life', 'Disciplined imagination',
+  'Willingness to heal inherited pain', 'Commitment to serve more than the ego',
+];
+const questions = [
+  'Does it reduce suffering?', 'Does it increase dignity?', 'Does it strengthen peace?',
+  'Does it deepen truth and transparency?', 'Does it serve the many, not just the few?',
+  'Does it protect nature?', 'Does it build trust, healing and belonging?',
+  'Does it help future generations?', 'Does it align with unity rather than separation?',
+  'Would we be proud to let children inherit it?',
+];
+---
+<BaseLayout
+  title="The Inner Blueprint"
+  description="Explore the Inner Blueprint: reflective habits and questions that connect inner responsibility with practical system design."
+  canonical="/blueprint/inner-blueprint/"
+>
+  <article class="content-page">
+    <header class="page-hero shell">
+      <p class="eyebrow">Inner responsibility and outer design</p>
+      <h1>The Inner Blueprint</h1>
+      <p class="lede">The Inner Blueprint explores the relationship between consciousness, responsibility and the systems people create. It is a reflective foundation, not a prescribed belief system.</p>
+    </header>
+    <div class="shell content-flow">
+      <section>
+        <h2>Habits that support the work</h2>
+        <p>The repository foundation identifies the following habits as useful starting points:</p>
+        <ul>{habits.map((habit) => <li>{habit}</li>)}</ul>
+      </section>
+      <section>
+        <h2>Questions for alignment</h2>
+        <p>Before treating a system as aligned with New Earth, the existing New Earth Test asks:</p>
+        <ol>{questions.map((question) => <li>{question}</li>)}</ol>
+        <p>These questions are prompts for scrutiny and conversation. They do not certify a project or replace evidence, specialist review or accountable decision-making.</p>
+      </section>
+      <nav class="page-actions" aria-label="Continue exploring">
+        <a class="button" href="/blueprint/transition-path/">Explore the Transition Path</a>
+        <a class="button" href="/blueprint/pillars/">Explore the 12 Pillars</a>
+        <a class="button" href="/blueprint/">Back to the Blueprint</a>
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
