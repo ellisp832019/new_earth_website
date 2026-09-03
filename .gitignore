@@ -40,3 +40,6 @@ dist/
 public/local-assets/
 public/assets/
 public/favicon.png
+
+# Generated release-candidate packages
+RELEASE_OUTPUT/
