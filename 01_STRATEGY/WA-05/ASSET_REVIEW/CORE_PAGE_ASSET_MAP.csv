@@ -6,4 +6,4 @@ CPAAM-004,/ecosystem/,Relationship model,NEW REQUIRED,None,Complex diagram,no,no
 CPAAM-005,/ecosystem/,Hero,OPTIONAL,None,NO ASSET NEEDED,no,yes,no,no,no,DEFER,Text works without image
 CPAAM-006,/about/,Hero,EXISTING REVIEW REQUIRED,AST-014,Informative context,no,no,no,yes,no,HOLD,People/likeness review
 CPAAM-007,/get-involved/,Participation,EXISTING REVIEW REQUIRED,AST-016,Informative context,no,no,no,optional,no,HOLD,Do not imply programme outcome
-CPAAM-008,/get-involved/,New Earth Builders card,EXISTING APPROVED,AST-017,Logo/brand,no,no,no,yes,no,HOLD,Approved copy and external URL exist; rights/brand evidence required
+CPAAM-008,/get-involved/,New Earth Builders card,EXISTING APPROVED,AST-017,Logo/brand,yes,yes,no,yes,no,PUBLIC USE APPROVED,Approved copy and external URL preserved; Peter confirms New Earth Builders authorised public display on new-earth.uk

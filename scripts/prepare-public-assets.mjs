@@ -17,6 +17,7 @@ const files = [
   ['10_RESOURCES/featured/resources_featured_home.webp', 'resources_featured_home.webp'],
   ['10_RESOURCES/featured/faq_glossary_featured.webp', 'faq_glossary_featured.webp'],
   ['11_COMMUNITY/hero/community_hero.webp', 'community_hero.webp'],
+  ['11_COMMUNITY/partners/new_earth_builders_logo.webp', 'new_earth_builders_logo.webp'],
   ['10_RESOURCES/hero/new_earth_living_app.webp', 'new_earth_living_app.webp'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-001_local-capability-pathway.png', 'NEIP-VIS-001_local-capability-pathway.png'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-002_daily-life-cards.png', 'NEIP-VIS-002_daily-life-cards.png'],
