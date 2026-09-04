@@ -1,4 +1,4 @@
-import { copyFile, mkdir } from 'node:fs/promises';
+import { copyFile, mkdir, rm } from 'node:fs/promises';
 
 const files = [
   ['00_BRAND/logos/new-earth-logo-primary-v1.png', '00_BRAND/logos/new-earth-logo-primary-v1.png'],
@@ -17,7 +17,6 @@ const files = [
   ['10_RESOURCES/featured/resources_featured_home.webp', 'resources_featured_home.webp'],
   ['10_RESOURCES/featured/faq_glossary_featured.webp', 'faq_glossary_featured.webp'],
   ['11_COMMUNITY/hero/community_hero.webp', 'community_hero.webp'],
-  ['11_COMMUNITY/partners/new_earth_builders_logo.webp', 'new_earth_builders_logo.webp'],
   ['10_RESOURCES/hero/new_earth_living_app.webp', 'new_earth_living_app.webp'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-001_local-capability-pathway.png', 'NEIP-VIS-001_local-capability-pathway.png'],
   ['07_NEW_EARTH_IN_PRACTICE/visuals/NEIP-VIS-002_daily-life-cards.png', 'NEIP-VIS-002_daily-life-cards.png'],
@@ -34,6 +33,8 @@ const files = [
   ['07_ABOUT/TEAM/02_DERIVATIVES/peter_hayley_team_public.webp', 'peter_hayley_team.webp'],
   ['07_ABOUT/FOUNDER_JOURNEY/02_DERIVATIVES/peter_founders_journey_public.webp', 'peter_founders_journey.webp'],
 ];
+
+await rm(new URL('../public/assets/new_earth_builders_logo.webp', import.meta.url), { force: true });
 
 for (const [relativeSource, publicName] of files) {
   const source = new URL(`../ASSETS/${relativeSource}`, import.meta.url);

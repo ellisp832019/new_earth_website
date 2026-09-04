@@ -15,7 +15,6 @@ const images = [
   ['resources', '10_RESOURCES/featured/resources_featured_home.webp'],
   ['faqGlossary', '10_RESOURCES/featured/faq_glossary_featured.webp'],
   ['community', '11_COMMUNITY/hero/community_hero.webp'],
-  ['builders', '11_COMMUNITY/partners/new_earth_builders_logo.webp'],
 ];
 const missing = ids.filter((id) => !html.includes(`id="${id}"`));
 const missingImages = [];
