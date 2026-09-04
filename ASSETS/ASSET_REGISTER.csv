@@ -48,10 +48,10 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,MICROGROW,06_MICROGROW\app,microgrow_app_mockup.png,1600x900,png,TODO,MicroGrow app mockup
 3,MICROGROW,06_MICROGROW\diagrams,microgrow_how_it_works.png,1600x900,png,TODO,MicroGrow how it works
 3,MICROGROW,06_MICROGROW\icons,microgrow_feature_icons.png,2000x2000,png,TODO,MicroGrow feature icons
-3,MICROGROW,06_MICROGROW\evidence,microgrow_current_hardware_prototype.jpeg,5712x4284,jpeg,IN_PROGRESS,Owner-supplied current hardware capture; local preview only; wiring and safety review plus rights and public-build review pending
-3,MICROGROW,06_MICROGROW\evidence,microgrow_flutter_dashboard_current.png,1600x1110,png,IN_PROGRESS,Owner-supplied current Flutter dashboard capture; local preview only; privacy derivative plus rights and public-build review pending
-3,MICROGROW,06_MICROGROW\evidence,microgrow_diagnostics_current.png,1600x1111,png,IN_PROGRESS,Owner-supplied current diagnostics capture; local preview only; privacy derivative plus rights and public-build review pending
-3,MICROGROW,06_MICROGROW\evidence,microgrow_flutter_splash_screen_current.png,641x1390,png,IN_PROGRESS,Owner-supplied current Flutter splash capture; local preview only; capability-language and rights review pending
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-001,,external,APPROVED,Owner-supplied hardware source retained outside the public repository; approved public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-002,,external,APPROVED,Owner-supplied dashboard source retained outside the public repository; privacy-bounded public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-003,,external,APPROVED,Owner-supplied diagnostics source retained outside the public repository; sanitized public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-004,,external,NEEDS_EDIT,Owner-supplied splash source retained outside the public repository; no public derivative approved
 1,ABOUT,07_ABOUT\hero,about_hero.webp,1920x1080,webp,DONE,About hero
 0,ABOUT,07_ABOUT\sections,about_mission_visual.webp,1400x900,webp,TODO,About mission visual
 1,CONTACT,08_CONTACT\banners,contact_banner.webp,1600x900,webp,DONE,Contact banner
@@ -86,6 +86,6 @@ WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-002_command-palette.png
 WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-003_continue-work-authority.png,1448x1086,png,APPROVED,"Owner-supplied real current UI evidence; public-ready YES; READY / NOT_DISPATCHED bounded preparation evidence; no transformation; SHA-256 3DA0614D1EBBA140F474C3B332E9BA4783B0A0F4326BB208ECDFB616E9C8EB87"
 WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-004_neos-connected-context.png,1266x713,png,APPROVED,"Owner-supplied related-system evidence; local-preview eligible; public-ready NO; NEOS Windows Desktop context, not Command Centre UI; SHA-256 0197F2B602F88CEE2BE663ECC4454D5BC39844A81C0F2B6525DE65EC07C9F992"
 WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-005_how-command-centre-works.png,1536x1024,png,APPROVED,"Public-ready developmental operating model; title and captions explicitly state incomplete implementation; no transformation; SHA-256 274750CA69DAEA53092186EDECAFABE6CD93137D34024DFA43C6A728C4EF8C6C"
-WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_hardware_public.webp,1600x1200,webp,IN_PROGRESS,"PUBLIC DERIVATIVE of microgrow_current_hardware_prototype.jpeg; resized only; original preserved; rights and final owner/public review pending; public-ready NO"
-WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_dashboard_public.webp,1310x1080,webp,IN_PROGRESS,"PUBLIC DERIVATIVE of microgrow_flutter_dashboard_current.png; cropped and masked to remove device/network context; original preserved; rights and final owner/public review pending; public-ready NO"
-WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_diagnostics_public.webp,1310x1080,webp,IN_PROGRESS,"PUBLIC DERIVATIVE of microgrow_diagnostics_current.png; cropped and masked to remove node identifier context; original preserved; rights and final owner/public review pending; public-ready NO"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_hardware_public.webp,1600x1200,webp,APPROVED,"PUBLIC DERIVATIVE of owner-held MG-VIS-001 source; resized only; source is not in the public repository"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_dashboard_public.webp,1310x1080,webp,APPROVED,"PUBLIC DERIVATIVE of owner-held MG-VIS-002 source; cropped and masked to remove device/network context; source is not in the public repository"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_diagnostics_public.webp,1310x1080,webp,APPROVED,"SANITIZED PUBLIC DERIVATIVE of owner-held MG-VIS-003 source; operational summary, identifiers and counts are masked; source is not in the public repository"

@@ -5,8 +5,8 @@ Asset ID: FJ-VIS-002
 Source:
 Owner-supplied first-party personal photograph.
 
-Canonical source:
-ASSETS/07_ABOUT/FOUNDER_JOURNEY/01_SOURCE/peter_founders_journey_original.jpg
+Source custody:
+OWNER-HELD EXTERNAL SOURCE (not in repository).
 
 SHA-256:
 3BEF03B9EE0B0359FF8A48566CB9107AACD24942102C7160975411046BCCDAA0
