@@ -1,12 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const status = Astro.url.searchParams.get('status');
-const message = status === 'success'
-  ? 'Thanks - your message has been sent. We\'ll read it and respond if a reply is needed.'
-  : status === 'error'
-    ? "We couldn't send your message just now. Please try again."
-    : '';
 ---
 <BaseLayout title="Contact New Earth | Get in Touch" description="Contact New Earth for aligned inquiry, collaboration, systems discussion, or interest in MicroGrow and the wider New Earth vision." canonical="/contact/">
   <article class="contact-page">
@@ -30,7 +23,18 @@ const message = status === 'success'
 
       <section class="contact-page__form-panel" aria-labelledby="contact-form-title">
         <h2 id="contact-form-title">Send an enquiry</h2>
-        {message && <p class:list={['form-feedback', status === 'success' ? 'form-feedback--success' : 'form-feedback--error']} role="status" aria-live="polite">{message}</p>}
+        <div id="contact-success" class="form-feedback form-feedback--success" role="status" aria-live="polite" tabindex="-1" hidden>
+          <h3>Message sent</h3>
+          <p>Thanks for getting in touch with New Earth. Your message has been sent successfully and we'll get back to you as soon as we can.</p>
+        </div>
+        <div id="contact-server-error" class="form-feedback form-feedback--error" role="alert" tabindex="-1" hidden>
+          <h3>Something went wrong sending your message.</h3>
+          <p>Please try again. If the problem continues, you can come back and try later.</p>
+        </div>
+        <div id="contact-validation-error" class="form-feedback form-feedback--error" role="alert" tabindex="-1" hidden>
+          <h3>Please check your message.</h3>
+          <p>Please complete the required fields and make sure your email address is valid.</p>
+        </div>
         <div id="contact-errors" class="form-feedback form-feedback--error" role="alert" tabindex="-1" hidden></div>
         <form id="contact-form" action="/contact-submit.php" method="post">
           <input type="hidden" name="form_started" id="form-started" value="0" />
@@ -47,12 +51,27 @@ const message = status === 'success'
       </section>
     </div>
   </article>
-</BaseLayout>
-
 <script>
   const form = document.querySelector('#contact-form');
   const started = document.querySelector('#form-started');
   const errors = document.querySelector('#contact-errors');
+  const statusPanels = {
+    success: document.querySelector('#contact-success'),
+    error: document.querySelector('#contact-server-error'),
+    invalid: document.querySelector('#contact-validation-error')
+  };
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get('status');
+  const panel = status && Object.prototype.hasOwnProperty.call(statusPanels, status) ? statusPanels[status] : null;
+  if (panel instanceof HTMLElement) {
+    panel.hidden = false;
+    const panelTop = panel.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: Math.max(0, panelTop - 110) });
+    panel.focus({ preventScroll: true });
+    params.delete('status');
+    const cleaned = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}${window.location.hash}`;
+    window.history.replaceState({}, '', cleaned);
+  }
   if (form instanceof HTMLFormElement && started instanceof HTMLInputElement && errors instanceof HTMLDivElement) {
     started.value = String(Date.now());
     form.addEventListener('submit', (event) => {
@@ -92,8 +111,11 @@ const message = status === 'success'
   .optional, .form-note { font-size: .9rem; font-weight: 400; }
   .form-note { margin: -.2rem 0 0; color: var(--forest); }
   .form-feedback { margin: 0 0 1.25rem; padding: 1rem; border: 1px solid var(--line); border-radius: .35rem; }
+  .form-feedback h3 { margin-bottom: .35rem; font-size: 1.2rem; }
+  .form-feedback p { margin: 0; }
   .form-feedback--success { background: #e5f0e6; color: var(--deep); }
   .form-feedback--error { background: #fae9e4; color: #6e241c; }
   .contact-page__trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
   @media (max-width: 760px) { .contact-page__layout { grid-template-columns: 1fr; } }
 </style>
+</BaseLayout>
