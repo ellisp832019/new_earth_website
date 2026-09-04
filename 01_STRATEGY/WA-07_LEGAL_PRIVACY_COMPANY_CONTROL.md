@@ -29,15 +29,12 @@ The footer links directly to each route. Contact V1 links to the Privacy Policy.
 - **REGISTERED:** England and Wales
 - **GOVERNING LAW:** England and Wales
 - **PUBLIC LEGAL/PRIVACY CONTACT:** `/contact/`
-- **REGISTERED OFFICE:** VERIFIED EXTERNALLY / NOT AUTHORISED BY OWNER FOR WEBSITE PUBLICATION
-- **COMPANY DISCLOSURE:** BLOCKED PENDING REGISTERED-OFFICE RESOLUTION
+- **REGISTERED OFFICE:** 7 Pateley Close, Liverpool, United Kingdom, L32 4UT
+- **COMPANY DISCLOSURE:** CLOSED — REGISTERED OFFICE PUBLISHED
 
 New Earth remains the wider public vision, framework and ecosystem. New Earth Advanced Technologies Ltd is the verified legal company operating and supporting the website and relevant technology and engineering activity; it does not replace New Earth as the public umbrella.
 
-The current registered-office address must not be published unless Peter later authorises publication. The bounded resolution paths are:
-
-1. Peter authorises publication of the verified current registered office; or
-2. New Earth Advanced Technologies Ltd changes its registered office through Companies House to an appropriate address, after which Website V2 publishes the newly registered address.
+The registered-office disclosure blocker is closed on the basis of confirmed owner-provided public company details.
 
 ## Legal owner review state
 
@@ -47,12 +44,11 @@ The current registered-office address must not be published unless Peter later a
 - **TERMS:** PASS
 - **DISCLAIMER:** PASS
 - **COMPANY IDENTITY:** PASS
-- **COMPANY DISCLOSURE:** BLOCKED — REGISTERED OFFICE
+- **COMPANY DISCLOSURE:** CLOSED — REGISTERED OFFICE PUBLISHED
 - **OWNER LEGAL CONTENT REVIEW:** REQUIRED
 
 ## Remaining gates
 
-- Registered-office disclosure resolution.
 - Peter owner review of public legal wording.
 - Proportionate legal/privacy review.
 - Staging verification of hosting logs, mail handling, retention and deployment configuration.

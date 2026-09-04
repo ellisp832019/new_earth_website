@@ -8,7 +8,7 @@
 
 **IONOS execution:** PENDING STAGING
 
-**Company disclosure:** BLOCKED — REGISTERED OFFICE
+**Company disclosure:** CLOSED — REGISTERED OFFICE PUBLISHED
 
 **Live-cutover readiness:** NOT PASSED
 
@@ -119,4 +119,4 @@ These implemented routes are additions to the captured legacy page set and requi
 - Redirect loops: **0**.
 - Redirect chains: **0**.
 - IONOS/Apache execution: **PENDING IONOS STAGING**.
-- Registered-office disclosure: remains an explicit final cutover blocker.
+- Registered-office disclosure: CLOSED — published on `/legal/`.
