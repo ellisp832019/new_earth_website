@@ -28,3 +28,25 @@ desktop.ini
 ASSETS/_INBOX/*
 !ASSETS/_INBOX/README.md
 06_THEME/*.zip
+
+# Local-only asset review references
+ASSETS_REFERENCE/global_images/*
+ASSETS_REFERENCE/global_images_log.csv
+
+# Owner-only source material must never enter public Git history.
+ASSETS/**/01_SOURCE/*
+
+# Raw MicroGrow captures are owner-held engineering evidence, not repository assets.
+ASSETS/06_MICROGROW/evidence/microgrow_*_current.*
+ASSETS/06_MICROGROW/evidence/microgrow_current_*
+
+# Astro local build output
+node_modules/
+dist/
+.astro/
+public/local-assets/
+public/assets/
+public/favicon.png
+
+# Generated release-candidate packages
+RELEASE_OUTPUT/

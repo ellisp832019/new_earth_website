@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { publicProjects } from '../../data/projects';
+const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
+const visibleProjects = publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled || project.publicEnabled);
+const microgrowImage = publicBuild ? '/assets/microgrow_hardware_public.webp' : '/local-assets/microgrow_hardware_public.webp';
+const commandCentreImage = publicBuild ? '/assets/CC-VIS-001B_command-centre-index-display.png' : '/local-assets/CC-VIS-001B_command-centre-index-display.png';
+---
+<BaseLayout title="Projects" description="Explore public New Earth projects with clear maturity, evidence and development boundaries." canonical="/projects/">
+  <section class="projects-placeholder shell">
+    <p class="eyebrow">Developing work</p>
+    <h1>Projects</h1>
+    <p class="lede">Projects are introduced one at a time with clear status, evidence and audience information as the work develops.</p>
+    {visibleProjects.length > 0 && <div class="project-index-list">
+      {visibleProjects.map((project) => <article class="card project-index-card"><div class="project-index-card__content">
+        <p class="project-context"><span class="context-label">System</span><span>{project.maturity}</span></p>
+        <h2>{project.name}</h2>
+        <p>{project.shortDescription}</p>
+        <a class="text-link" href={`/projects/${project.slug}/`}>Explore {project.name}</a>
+        </div>
+        {(project.slug === 'microgrow' || project.slug === 'command-centre') && <figure class="project-index-card__visual"><img src={project.slug === 'microgrow' ? microgrowImage : commandCentreImage} alt={project.slug === 'microgrow' ? 'Current physical MicroGrow development hardware.' : 'Current New Earth Command Centre overview display derivative showing programme control, system discovery and status surfaces.'} /></figure>}
+      </article>)}
+    </div>}
+    <p><a class="button" href="/ecosystem/">Return to the Ecosystem</a></p>
+  </section>
+</BaseLayout>
+<style>
+  .projects-placeholder { max-width: 1120px; padding-block: clamp(5rem, 12vw, 9rem); }
+  .projects-placeholder h1 { max-width: 12ch; }
+  .projects-placeholder .lede { max-width: 52ch; }
+  .project-index-list { display: grid; gap: 1.5rem; margin-block: 2.5rem; }
+  .project-index-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 340px); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; min-width: 0; padding: clamp(1.5rem, 3vw, 2.25rem); }
+  .project-index-card__content { min-width: 0; }
+  .project-context { display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; margin: 0 0 .55rem; color: var(--ink); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .project-index-card h2 { margin-block: .35rem .75rem; }
+  .project-index-card p { max-width: 55ch; }
+  .project-index-card__visual { width: min(100%, 320px); max-width: 320px; min-width: 0; margin: 0; justify-self: end; }
+  .project-index-card__visual img { display: block; width: 100%; height: auto; max-width: 100%; max-height: 270px; object-fit: contain; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); }
+  @media (max-width: 680px) { .project-index-card { grid-template-columns: minmax(0, 1fr); } .project-index-card__visual { width: 100%; justify-self: start; max-width: 360px; margin-inline: auto; } }
+</style>

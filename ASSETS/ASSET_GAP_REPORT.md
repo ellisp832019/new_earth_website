@@ -31,5 +31,5 @@ Updated: 2026-08-25
 - Eight heroes use `1920x1080`; `contact_banner.webp` uses `1600x900`.
 - The remaining 45 registered assets are not yet produced.
 - Raw files under `ASSETS/_INBOX/` are excluded from source control and remain available for review.
-- Reference PNGs under `ASSETS/_REFERENCE/global_images/` await an archival-policy decision.
+- Reference PNGs under `ASSETS_REFERENCE/global_images/` await an archival-policy decision.
 - `06_THEME/new-earth-child.zip` is generated release material and is excluded from source control.

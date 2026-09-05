@@ -11,6 +11,31 @@ It shows the full build sequence from:
 
 Use this as the top-level guide when you want to see the whole project at a glance.
 
+## Website V2 current working truth
+
+For the current Website V2 implementation, the repository is the authority
+and source of truth. Astro is the active implementation and build system.
+
+- **Repository:** canonical source of truth
+- **Astro:** current Website V2 implementation/build system
+- **Local build:** implementation and verification environment
+- **Staging:** future proof/review environment
+- **IONOS webspace:** future deployment target
+- **Current WordPress site:** legacy/current live site retained until controlled cutover
+
+The current operating path is:
+
+`Repository -> Astro implementation -> Local preview/owner review -> Public
+build -> Future staging -> Future IONOS deployment`
+
+WordPress-first phases below are **HISTORICAL / SUPERSEDED FOR WEBSITE V2
+IMPLEMENTATION**. They remain as evidence and do not authorise live changes.
+
+The WordPress-first implementation guidance below is historical and is marked
+**LEGACY / SUPERSEDED FOR WEBSITE V2 IMPLEMENTATION** where it describes the
+active build path. It remains for historical context and does not authorise
+live-site changes.
+
 ---
 
 # NEW EARTH WEBSITE MASTER BUILD MAP
@@ -131,7 +156,7 @@ The site has a calm, grounded, reusable visual system.
 
 ---
 
-## PHASE 4 — WORDPRESS FOUNDATION
+## PHASE 4 — WORDPRESS FOUNDATION (LEGACY / SUPERSEDED FOR WEBSITE V2 IMPLEMENTATION)
 
 ### Goal
 Prepare the live publishing layer properly on IONOS.
@@ -159,7 +184,7 @@ WordPress is clean, accessible, and ready to receive the actual build.
 
 ---
 
-## PHASE 5 — THEME FOUNDATION
+## PHASE 5 — THEME FOUNDATION (LEGACY / SUPERSEDED FOR WEBSITE V2 IMPLEMENTATION)
 
 ### Goal
 Deploy and activate the New Earth child theme.

@@ -1,0 +1,144 @@
+# WA-05 Open Questions and Decision Log
+
+## WA-05C review resolutions
+
+- Resolved: `/manifesto/` was an accidental WA-02 register omission. It is now
+  recorded as V2.0 route `V20-019`, with secondary navigation placement and no
+  change to the seven-item header.
+- Six core drafts are refined and owner-approved, while specialist review gates
+  remain open; this is not publication approval.
+
+## WA-05B.1 owner approval record
+
+Peter approved Vision, Manifesto, Blueprint, Ecosystem, About and Get Involved
+on 2026-08-27 at HEAD `451cd0865b349a9397e46f386089538d2ee03344`. Their status
+is now `OWNER APPROVED - SPECIALIST REVIEW PENDING`. This approval confirms the
+current wording and public framing only; it does not waive specialist gates.
+
+## WA-05C Omega technical verification
+
+The Ecosystem technical review passed with qualifications on 2026-08-27. The
+current wording remains unchanged and keeps public relationship language
+separate from technical integration, operational capacity, protected systems
+and production readiness. Technical, legal/privacy, accessibility, SEO and
+asset gates remain open for the page as a whole.
+
+## WA-05D founder-attribution review
+
+The six current drafts were reviewed on 2026-08-27. No passage represents
+Hayley's personal history, beliefs, intentions, experience, voice or position,
+and no substantive shared-founder statement was found. The organisational
+first-person wording in the Manifesto does not require Hayley approval.
+
+**FOUNDER ATTRIBUTION REVIEW - PASS / NOT REQUIRED** for the current drafts.
+Reopen this gate if personal history, biography, quotation, attributed voice or
+shared-founder wording is added.
+
+## Blocking V2 content decisions
+
+- Confirm final public wording and evidence owner for each project and technology page.
+- Consolidate competing source wording before drafting pillar and orientation pages.
+- Confirm whether each proposed V2.0 page has a publishable owner and evidence class.
+- Resolve legal review and company-disclosure requirements before Wave 6 publication.
+
+## Technical evidence dependencies
+
+- Verify public-safe descriptions for Platform Core, NEOS, GAIA, and Local AI Runtime from their owning sources.
+- Confirm the public Command Centre explanation without exposing the protected Dashboard or operational controls.
+- Confirm technical status and availability for any public technology explanation.
+
+## Legal review dependencies
+
+- Review privacy, cookies, terms, disclaimer, accessibility, and company disclosures.
+- Review health, safety, financial, corporate, ownership, and partnership wording before publication.
+
+## Partner approval dependencies
+
+- Retain New Earth Builders as an independent external platform with its approved URL and description.
+- Confirm any future partner logo, attribution, shared content, or relationship wording in writing.
+
+## Founder decisions
+
+- Peter to approve his creator lane and attributed practical-guide content.
+- Hayley to approve her New Earth - Conscious Living lane and attributed content.
+- Peter and Hayley to approve shared Founder Journey wording and public biographical detail.
+
+## Non-blocking later decisions
+
+- Future newsletter, donation, event, member, audio, video, and public-status capabilities.
+- Original transparent New Earth Builders logo replacement.
+- Final credits, captions, and rights records for conceptual imagery.
+
+No other question is resolved by assumption. Each resolution must record
+evidence, owner, date, and approval state.
+
+## WA-05H asset rights and accessibility review
+
+- Current candidates are inventoried, but no file has sufficient repository evidence
+  to be treated as rights-cleared for public build.
+- Owner decisions are required for hero selection, About/participation imagery,
+  the New Earth Builders logo, and any future Ecosystem relationship diagram.
+- The registered `systems_governance_community.webp` source is missing locally and
+  remains blocked; no replacement was invented.
+- Complex diagrams require concise alt text and a visible structured text equivalent.
+- No public wording changed in WA-05H. Six core pages remain
+  `OWNER APPROVED - SPECIALIST REVIEW PENDING`.
+
+## WA-05H3 owner asset decision ingestion
+
+- Peter's preserved WA-05H2 export contains 42 decisions: 31 KEEP and 11
+  PENDING; no REPLACE, HOLD or DONT_USE outcomes were changed or invented.
+- The 31 KEEP outcomes are recorded separately from rights approval and public
+  build readiness. Fourteen newly selected Website candidates receive stable
+  IDs AST-018 through AST-031; all remain specialist-gated.
+- The 11 PENDING records are reference-only copies in `ASSETS_REFERENCE` and
+  are classified `REFERENCE_ONLY_NO_OWNER_ACTION_REQUIRED` without rewriting
+  the owner outcomes.
+- The Ecosystem visual special decision remains PENDING and may be deferred to
+  implementation only if text-alternative, technical-claim and asset gates stay
+  in force.
+- The New Earth Builders logo remains subject to trademark/brand permission and
+  source evidence; a text-only fallback remains the safe alternative.
+
+## WA-05H4 owner-use approval closure
+
+- Peter approved AST-001 through AST-031 for New Earth Website use on
+  2026-08-27. This closes the owner creative/use-selection question only.
+- Repository evidence does not establish creator ownership or licence rights
+  for the 30 non-logo assets. They remain blocked from public output pending
+  evidence or controlled replacement. AST-017 additionally requires external
+  brand permission or a text-only fallback.
+- The Ecosystem visual special decision remains historically PENDING and is an
+  implementation design decision; it is not being forced in this pass.
+
+## WA-05F accessibility readiness
+
+The Website V2 accessibility gate is **ACCESSIBILITY READINESS - PASS WITH
+IMPLEMENTATION REQUIREMENTS**. WCAG 2.2 AA is the engineering target; this is
+not a rendered conformance claim. The six drafts retain one H1 each and require
+semantic implementation, text alternatives, keyboard/focus handling, responsive
+reflow and runtime testing before launch.
+
+## WA-05E legal/privacy readiness
+
+The Website V2 legal/privacy review now records **LEGAL / PRIVACY READINESS -
+OWNER SCOPE CLOSED / PUBLICATION INPUTS REMAIN**. The owner has closed the
+initial informational scope, deferred commerce/native community/data-bearing
+services, and selected a minimal verified business contact model. The current
+drafts require no public-copy rewrite, but final publication requires verified
+operator/controller details, company disclosures, privacy-notice inputs and
+live-runtime verification of cookies, storage, scripts, forms, external requests
+and any analytics.
+
+## WA-05G SEO and metadata readiness
+
+The Website V2 SEO gate records **SEO / METADATA READINESS - PASS WITH
+IMPLEMENTATION REQUIREMENTS**. The repository provides 39 unique routes,
+page-specific metadata for the six approved core pages, search-purpose and
+internal-link controls, and a build-system-agnostic automation contract. The
+preferred canonical host remains an implementation/runtime decision and must use
+`{CANONICAL_ORIGIN}` until verified.
+
+Future commerce, newsletter, payments, native community, AI, wellbeing, device,
+children, donations, investment and international-selling capabilities remain
+separate activation gates. No legal approval is claimed.

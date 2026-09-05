@@ -1,0 +1,13 @@
+---
+import CorePageLayout from '../../layouts/CorePageLayout.astro';
+import { assets, pages } from '../../data/site';
+const page = pages.manifesto;
+---
+<CorePageLayout
+  page={page}
+  canonical="/manifesto/"
+  searchTitle="The New Earth Manifesto | Principles for Conscious Civilisation"
+  metaDescription="Read the New Earth Manifesto: grounded principles for reconnecting inner development, shared systems and practical action."
+  heroAsset={assets.manifestoHero}
+  heroAlt="People standing together in an earth-centred landscape"
+/>

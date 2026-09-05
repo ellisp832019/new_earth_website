@@ -12,6 +12,14 @@ URL Structure v1
 ## Purpose
 Defines clean, readable, scalable URLs for the New Earth website.
 
+## Website V2 overlay (current working truth)
+
+The V2 route set recognises `/`, `/vision/`, `/manifesto/`, `/blueprint/`,
+`/blueprint/pillars/`, `/ecosystem/`, `/projects/`, `/company/`, `/creators/`,
+`/journal/`, `/resources/`, `/progress/`, `/about/`, `/get-involved/`,
+`/contact/` and `/legal/`. Projects, Company and Creators are future routes;
+the legacy routes below remain historical planning material.
+
 ---
 
 ## 1. Root URLs

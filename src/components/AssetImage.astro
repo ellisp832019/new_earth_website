@@ -1,0 +1,9 @@
+---
+import { assetUrl } from '../lib/asset-resolver';
+const { asset, alt, className = '', loading = 'lazy', fetchpriority } = Astro.props;
+const src = assetUrl(asset);
+const lightbox = className === 'story-image' || className === 'wide-image';
+---
+{src && (lightbox ? <button class="lightbox-trigger" type="button" data-lightbox data-lightbox-alt={alt} aria-label={`Open larger view: ${alt}`}>
+  <img class={className} src={src} alt={alt} loading={loading} fetchpriority={fetchpriority} />
+</button> : <img class={className} src={src} alt={alt} loading={loading} fetchpriority={fetchpriority} />)}

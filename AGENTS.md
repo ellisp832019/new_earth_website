@@ -9,6 +9,19 @@ Follow the current task files and existing repo structure.
 Make small, safe, reviewable changes.
 Do not drift into redesign unless explicitly asked.
 
+## Current Website V2 programme
+
+This repository is no longer only an asset-production repository. It contains
+the active Astro Website V2 implementation under `src/` and its build and
+validation automation under `scripts/`.
+
+When instructions conflict, prefer:
+1. direct owner instruction
+2. current explicit Website V2 control
+3. approved work-package authority
+4. current implementation
+5. historical/reference material
+
 ## Primary source of truth
 For website asset workflow, treat these as the locked source of truth:
 

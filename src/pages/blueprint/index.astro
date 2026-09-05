@@ -1,0 +1,14 @@
+---
+import CorePageLayout from '../../layouts/CorePageLayout.astro';
+import { assets, pages } from '../../data/site';
+const page = pages.blueprint;
+---
+<CorePageLayout
+  page={page}
+  canonical="/blueprint/"
+  searchTitle="The New Earth Blueprint | A Framework for Conscious Civilisation"
+  metaDescription="Explore the New Earth Blueprint, a developing framework connecting principles, the 12 Pillars and practical areas of life."
+  heroAsset={assets.blueprintPageHero}
+  heroAlt="A conceptual model of a connected regenerative settlement being developed from plans and ideas"
+  pillarOverview={true}
+/>

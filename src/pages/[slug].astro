@@ -1,0 +1,5 @@
+---
+import ContentPage from '../components/ContentPage.astro'; import { pages } from '../data/site';
+export function getStaticPaths(){return Object.keys(pages).filter((slug)=>!['vision','manifesto','blueprint','ecosystem','about','get-involved'].includes(slug)).map(slug=>({params:{slug},props:{slug}}));} const {slug}=Astro.props;
+---
+<ContentPage slug={slug}/>

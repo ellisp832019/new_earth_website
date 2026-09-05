@@ -1,0 +1,13 @@
+gate_id,capability,asset_types,rights_review_required,accessibility_review_required,claim_review_required,privacy_review_required,creator_review_required,runtime_check_required,activation_condition,notes
+AAGH-001,Peter digital products,Covers diagrams PDFs,yes,yes,yes,no,yes,yes,Creator rights and document QA passed,Future only
+AAGH-002,Hayley Conscious Living,Covers creator imagery PDFs,yes,yes,yes,yes,yes,yes,Hayley attribution health and rights review passed,Future only
+AAGH-003,Newsletter,Social cards email imagery,yes,yes,yes,yes,no,yes,Marketing and asset review passed,Future only
+AAGH-004,Native community,Profiles uploads user imagery,yes,yes,yes,yes,yes,yes,UGC privacy moderation and rights review passed,Future only
+AAGH-005,GAIA interface,UI screenshots diagrams,yes,yes,yes,yes,no,yes,AI technical privacy and accessibility review passed,Future only
+AAGH-006,MicroGrow commercial pages,Product photos renders diagrams,yes,yes,yes,yes,no,yes,Product safety commerce and asset review passed,Future only
+AAGH-007,Living/BioCalm,App UI device imagery,yes,yes,yes,yes,no,yes,Health/device/privacy review passed,Future only
+AAGH-008,Youth services,Illustrations photography,yes,yes,yes,yes,no,yes,Children's Code and accessibility review passed,Future only
+AAGH-009,Video/audio,Media files captions thumbnails,yes,yes,yes,yes,no,yes,Captions transcripts consent and rights passed,Future only
+AAGH-010,Partner logos,Logos marks,yes,yes,yes,yes,yes,yes,Brand permission and relationship wording approved,Future only
+AAGH-011,Testimonials,Portraits quotes case studies,yes,yes,yes,yes,yes,yes,Consent rights and claim review passed,Future only
+AAGH-012,Customer imagery,Photographs screenshots,yes,yes,yes,yes,yes,yes,Consent privacy and rights review passed,Future only

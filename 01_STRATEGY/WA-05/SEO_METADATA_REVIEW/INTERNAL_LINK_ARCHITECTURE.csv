@@ -1,0 +1,13 @@
+link_id,source_route,target_route,link_context,required_or_recommended,accessible_anchor_guidance,relationship_reason,implementation_status,notes
+ILA-001,/,/vision/,Gateway introduction,required,Use Read the Vision,Primary orientation,PLANNED,Home source not yet produced
+ILA-002,/vision/,/manifesto/,Begin exploring,required,Use Read the Manifesto,Direction to principles,DEFINED,Approved draft
+ILA-003,/vision/,/blueprint/,Begin exploring,required,Use Explore the Blueprint,Direction to framework,DEFINED,Approved draft
+ILA-004,/blueprint/,/blueprint/pillars/,Framework section,required,Use Explore the 12 Pillars,Framework to domains,DEFINED,Future content
+ILA-005,/blueprint/,/ecosystem/,From ideas to practice,recommended,Use Explore the Ecosystem,Framework relationships,DEFINED,Approved draft
+ILA-006,/ecosystem/,/projects/,Continue from here,recommended,Use Visit Projects,Relationships to work,DEFINED,Approved draft
+ILA-007,/ecosystem/,/journal/,Public relationship map,recommended,Use Read the Journal,Learning and progress,DEFINED,Approved draft
+ILA-008,/about/,/get-involved/,Find your starting point,recommended,Use Get Involved,Context to participation,DEFINED,Approved draft
+ILA-009,/get-involved/,/contact/,Contribute,required,Use Contact,Minimal contact route,DEFINED,Form deferred
+ILA-010,/get-involved/,https://new-earth-builders.com/,New Earth Builders,required,Name external destination,Independent external platform,DEFINED,External link only
+ILA-011,/journal/,/vision/,Related evergreen content,recommended,Use descriptive destination,Journal to authority,PLANNED,Future editorial workflow
+ILA-012,/blueprint/pillars/{pillar}/,/blueprint/pillars/{related-pillar}/,Related Pillars,recommended,Name each Pillar,Connected domains,PLANNED,Template only

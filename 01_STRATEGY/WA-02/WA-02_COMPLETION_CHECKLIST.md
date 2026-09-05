@@ -37,6 +37,8 @@
 - [x] All twelve pillars are represented in approved order.
 - [x] Every redirect has one destination and an activation condition.
 - [x] No blocking V2.0 questions remain.
+- [x] The previously omitted public `/manifesto/` route is reconciled at
+  `V20-019` without changing the seven-item header.
 - [x] Relative Markdown links resolve.
 - [x] `git diff --check` and staged diff checks pass.
 - [x] Reference files remain unchanged.

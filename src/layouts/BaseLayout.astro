@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+import AssetImage from '../components/AssetImage.astro';
+import ImageLightbox from '../components/ImageLightbox.astro';
+import { assets, nav } from '../data/site';
+import { getExperienceContext } from '../data/experience';
+const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false } = Astro.props;
+const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
+const siteOrigin = Astro.site ?? new URL('https://new-earth.uk');
+const canonicalUrl = canonical ? new URL(canonical, siteOrigin).href : undefined;
+const fullTitle = title === 'New Earth' || title.endsWith('| New Earth') ? title : `${title} | New Earth`;
+const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin).href;
+const experienceContext = getExperienceContext(Astro.url.pathname);
+---
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content={description}>
+    {noindex && <meta name="robots" content="noindex, nofollow">}
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl}>}
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta property="og:title" content={fullTitle}>
+    <meta property="og:description" content={description}>
+    <meta property="og:type" content="website">
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl}>}
+    <meta property="og:site_name" content="New Earth">
+    <meta property="og:image" content={socialImage}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={fullTitle}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={socialImage}>
+    <title>{fullTitle}</title>
+  </head>
+  <body class={localPreview ? 'local-preview' : 'public-mode'} data-experience-context={experienceContext.id}>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="site-brand" href="/" aria-label="New Earth home">
+          <AssetImage asset={assets.emblem} alt="" className="site-brand__emblem" loading="eager" />
+          <span class="site-brand__text"><strong>NEW EARTH</strong><span>CONSCIOUS CIVILISATION</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+          {nav.map(([label, href]) => <a href={href} aria-current={Astro.url.pathname === href ? 'page' : undefined}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    {localPreview && <p class="dev-indicator" aria-label="Development mode">LOCAL PREVIEW</p>}
+    <main id="main">
+      {experienceContext.id !== 'neutral' && <div class="route-context shell" aria-label={`Page context: ${experienceContext.label}. ${experienceContext.meaning}.`}>
+        <span class="route-context__label">{experienceContext.label}</span>
+        <span class="route-context__meaning">{experienceContext.meaning}</span>
+      </div>}
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="site-brand footer-brand" href="/" aria-label="New Earth home">
+            <AssetImage asset={assets.emblem} alt="" className="site-brand__emblem" />
+            <span class="site-brand__text"><strong>NEW EARTH</strong><span>CONSCIOUS CIVILISATION</span></span>
+          </a>
+          <p>A living framework for conscious civilisation.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="/vision/">Vision</a>
+          <a href="/blueprint/">Blueprint</a>
+          <a href="/ecosystem/">Ecosystem</a>
+        </div>
+        <div>
+          <h2>Contribute</h2>
+          <a href="/get-involved/">Contribute</a>
+          <a href="/contact/">Contact</a>
+        </div>
+        <div>
+          <h2>Learn</h2>
+          <a href="/journal/">Journal</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="/legal/">Legal information</a>
+          <a href="/legal/privacy-policy/">Privacy Policy</a>
+          <a href="/legal/cookie-policy/">Cookie Policy</a>
+          <a href="/legal/terms/">Terms of Use</a>
+          <a href="/legal/disclaimer/">Disclaimer</a>
+        </div>
+        <div>
+          <h2>Trust</h2>
+          <a href="/about/">About New Earth</a>
+          <a href="/team/">Team</a>
+          <a href="/founders-journey/">Founder's Journey</a>
+          <a href="/projects/command-centre/">Command Centre information</a>
+        </div>
+      </div>
+    </footer>
+    <ImageLightbox />
+    <script is:inline>
+      const b = document.querySelector('.menu-toggle'), n = document.querySelector('.primary-nav');
+      b?.addEventListener('click', () => {
+        const o = b.getAttribute('aria-expanded') === 'true';
+        b.setAttribute('aria-expanded', String(!o));
+        n?.classList.toggle('is-open', !o);
+      });
+    </script>
+  </body>
+</html>

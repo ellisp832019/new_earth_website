@@ -25,6 +25,8 @@ design, or deployment changes.
   - Concise preview and route to Vision.
   - Journal preview and clear next actions.
 - **Vision** `/vision/` - new, dedicated civilizational vision page.
+- **Manifesto** `/manifesto/` - retained public statement of principles; a
+  secondary route, not an additional primary-header item.
 - **Blueprint** `/blueprint/` - current live, retained.
   - **The 12 Pillars** `/blueprint/pillars/` - current live index, retained.
     - **01 Governance** `/blueprint/pillars/governance/`

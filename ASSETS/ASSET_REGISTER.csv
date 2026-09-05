@@ -1,5 +1,7 @@
 Batch,Section,Folder,Filename,Size,Format,Status,Notes
 0,BRAND,00_BRAND\logos,new_earth_logo_concept_board.png,2000x2000,png,TODO,Main logo concept board
+0,BRAND,00_BRAND\logos,new-earth-logo-primary-v1.png,1254x1254,png,APPROVED,OWNER APPROVED - New Earth Primary Logo V1; first-party New Earth brand asset; authorised for header and footer; favicon candidate later
+0,BRAND,00_BRAND\logos,new-earth-emblem-v1.png,612x612,png,APPROVED,DERIVATIVE OF New Earth Primary Logo V1; first-party emblem crop for website header/footer; source pixels unchanged; no independent redesign
 0,BRAND,00_BRAND\symbols,new_earth_symbol_mark.png,1024x1024,png,TODO,Symbol mark / icon mark
 0,BRAND,00_BRAND\logos,microgrow_brand_lockup.png,1600x900,png,TODO,MicroGrow lockup under New Earth brand
 0,BRAND,00_BRAND\textures,brand_texture_cosmic_earth.webp,1920x1080,webp,TODO,Brand texture cosmic earth
@@ -10,14 +12,17 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 0,GLOBAL_SITE,01_GLOBAL_SITE\utility,global_under_construction_light.webp,1600x900,webp,TODO,Under construction / 404 image
 1,HOME,02_HOME\hero,home_hero_new_earth_main.webp,1920x1080,webp,DONE,Homepage hero
 2,HOME,02_HOME\sections,home_section_vision.webp,1400x900,webp,TODO,Home vision section
+2,VISION,01_GLOBAL_SITE\heroes,vision_hero.png,1536x1024,png,TODO,AST-021 selected Vision hero candidate promoted from ASSETS/_INBOX/home_section_vision.png; local preview only pending rights/provenance and public-build review
 2,HOME,02_HOME\sections,home_section_unity.webp,1400x900,webp,TODO,Home unity section
 2,HOME,02_HOME\sections,home_section_regeneration.webp,1400x900,webp,TODO,Home regeneration section
 2,HOME,02_HOME\sections,home_section_conscious_systems.webp,1400x900,webp,TODO,Home conscious systems section
 2,HOME,02_HOME\sections,home_section_microgrow.webp,1400x900,webp,TODO,Home MicroGrow section
 1,MANIFESTO,03_MANIFESTO\hero,manifesto_hero.webp,1920x1080,webp,DONE,Manifesto hero
+2,MANIFESTO,03_MANIFESTO\heroes,manifesto_hero.png,1536x1024,png,TODO,AST-019 selected Manifesto hero candidate promoted from ASSETS/_INBOX/home_section_manifesto.png; local preview only pending rights/provenance and public-build review
 0,MANIFESTO,03_MANIFESTO\sections,manifesto_quote_background.webp,1600x900,webp,TODO,Manifesto quote background
 0,MANIFESTO,03_MANIFESTO\print,manifesto_affirmation_poster_a3.png,3508x4961,png,TODO,Manifesto affirmation poster A3
 1,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.webp,1920x1080,webp,DONE,Blueprint hero
+2,BLUEPRINT,04_BLUEPRINT\hero,blueprint_hero.png,1536x1024,png,TODO,AST-018 selected Blueprint hero candidate promoted from ASSETS/_INBOX/home_section_blueprint.png; local preview only pending rights/provenance and public-build review
 3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_12_pillars_overview.png,2000x2000,png,TODO,12 pillars overview
 3,BLUEPRINT,04_BLUEPRINT\icons,blueprint_12_pillars_icon_sheet.png,2400x2400,png,TODO,12 pillars icon sheet
 3,BLUEPRINT,04_BLUEPRINT\diagrams,blueprint_ecosystem_map.webp,1600x900,webp,TODO,Blueprint ecosystem map
@@ -33,7 +38,7 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 1,MICROGROW,06_MICROGROW\hero,microgrow_hero.webp,1920x1080,webp,APPROVED,WA-04A.3 conceptual MicroGrow page hero; not homepage project-card image; not operational proof; not live
 2,MICROGROW,06_MICROGROW\product,microgrow_ai_lab_project_card.webp,1600x900,webp,APPROVED,WA-04B.1 conceptual MicroGrow AI Lab homepage project-card visual; not documentary evidence, commercial availability or proven performance; not live
 2,SYSTEMS,05_SYSTEMS\projects,field_scanner_project.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual handheld Field Scanner for discovering and inspecting MicroGrow nodes; not operational proof; not live
-2,RESOURCES,10_RESOURCES\hero,new_earth_living_app.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual New Earth Living app visual connected to Conscious Living; not a physical place or operational proof; not live
+2,RESOURCES,10_RESOURCES\hero,new_earth_living_app.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual New Earth Living app visual connected to Conscious Living; not a physical place or operational proof; public-ready for homepage context only; no project publication implied
 2,HOME,02_HOME\sections,home_introduction_new_earth.webp,1600x1000,webp,APPROVED,WA-04A.3 conceptual New Earth introduction visual; not documentary evidence; not live
 2,BLOG,09_BLOG\featured,journal_featured_home.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual Journal editorial visual; no specific publication claim; not live
 2,RESOURCES,10_RESOURCES\featured,resources_featured_home.webp,1600x900,webp,APPROVED,WA-04A.3 conceptual resources and practical learning visual; no specific resource claim; not live
@@ -43,6 +48,10 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 2,MICROGROW,06_MICROGROW\app,microgrow_app_mockup.png,1600x900,png,TODO,MicroGrow app mockup
 3,MICROGROW,06_MICROGROW\diagrams,microgrow_how_it_works.png,1600x900,png,TODO,MicroGrow how it works
 3,MICROGROW,06_MICROGROW\icons,microgrow_feature_icons.png,2000x2000,png,TODO,MicroGrow feature icons
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-001,,external,APPROVED,Owner-supplied hardware source retained outside the public repository; approved public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-002,,external,APPROVED,Owner-supplied dashboard source retained outside the public repository; privacy-bounded public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-003,,external,APPROVED,Owner-supplied diagnostics source retained outside the public repository; sanitized public derivative only
+3,MICROGROW,OWNER-HELD EXTERNAL SOURCE,MG-VIS-004,,external,NEEDS_EDIT,Owner-supplied splash source retained outside the public repository; no public derivative approved
 1,ABOUT,07_ABOUT\hero,about_hero.webp,1920x1080,webp,DONE,About hero
 0,ABOUT,07_ABOUT\sections,about_mission_visual.webp,1400x900,webp,TODO,About mission visual
 1,CONTACT,08_CONTACT\banners,contact_banner.webp,1600x900,webp,DONE,Contact banner
@@ -61,4 +70,22 @@ Batch,Section,Folder,Filename,Size,Format,Status,Notes
 3,PRINT,13_PRINT\posters,print_new_earth_wall_poster_a2.png,4961x7016,png,TODO,New Earth wall poster A2
 3,PRINT,13_PRINT\posters,print_blueprint_poster_a2.png,4961x7016,png,TODO,Blueprint poster A2
 3,PRINT,13_PRINT\posters,print_microgrow_product_poster_a2.png,4961x7016,png,TODO,MicroGrow product poster A2
-2,COMMUNITY,11_COMMUNITY\partners,new_earth_builders_logo.webp,800x800,webp,APPROVED,Screenshot-derived provisional New Earth Builders logo for approved offline external-community card; original transparent PNG or SVG still requested; not live
+2,COMMUNITY,11_COMMUNITY\partners,new_earth_builders_logo.webp,800x800,webp,APPROVED,Screenshot-derived New Earth Builders logo; public display permission confirmed for existing new-earth.uk external-community card; not yet live
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-001_local-capability-pathway.png,1672x941,png,APPROVED,"Generated explanatory graphic; local-preview eligible; public-ready NO; illustrative local-first pathway, not implementation evidence; SHA-256 BE38BD650F584555E4F182680FFF931F8905A038885BA320D3E63F504D9E144"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-002_daily-life-cards.png,1536x1024,png,APPROVED,"Generated future-direction illustration; local-preview eligible; public-ready NO; possible expressions, not current deployment; SHA-256 E7E5B75E86A6D30E9856A728020852014CA0EA7B639EAAF7D8FCFEAA6502E396"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-003_twelve-pillars-lenses.png,1448x1086,png,APPROVED,"REGENERATED: practical lenses across person, household, neighbourhood, community and region; doctrine-safe for local preview; does not redefine canonical 12 Pillars; public-ready NO; SHA-256 91C89214129BC987810405A97A23AE56E4BD40E9D824EF61F0D7B43B8A815657"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-004_principles-to-practice-bridge.png,1536x1024,png,APPROVED,"Generated explanatory graphic; local-preview eligible; public-ready NO; developing bridge, not completed integration evidence; SHA-256 106FD340F8ED6B10E897382DAA5617EA9AA15493A3508C01D1BC67B8C8766231"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-005_systems-relationship-map.png,1536x1024,png,APPROVED,"Generated developmental systems diagram; local-preview eligible; public-ready NO; distinct systems, incomplete connections, bounded NEOS/GAIA/Command Centre roles and human authority; SHA-256 9793B3AF506268022D81EACABF7666E1DFA3C8D4437304DA1031BA46DF4017CE"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-006_authority-ladder.png,1536x1024,png,APPROVED,"Generated governance model; local-preview eligible; public-ready NO; intended authority ladder, not a claim that every project implements all levels; SHA-256 A9C8F916EC25095259395D82F49E9B7755A3FC71A5C8443E5974AAC0D5D594B6"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-007_one-person-experience.png,1536x1024,png,APPROVED,"Generated illustrative journey; local-preview eligible; public-ready NO; not a fixed product workflow; SHA-256 D01D6F2BBFD9B166F48C5C605320C0CC8C573413C8E95D1A8F43698EC9F45FC1"
+WB-04C2,NEW_EARTH_IN_PRACTICE,07_NEW_EARTH_IN_PRACTICE\visuals,NEIP-VIS-008_what-exists-now-strip.png,1774x887,png,NEEDS_EDIT,"HOLD: synthetic composite with generated MicroGrow and Command Centre depictions; do not render as current evidence; public-ready NO; SHA-256 42D7B431CEF9C0233A72E93194C7BF301A7E3812F03411B72878C530F8C05C02"
+WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-001_command-centre-overview.png,1672x941,png,APPROVED,"Owner-supplied real current UI evidence; local-preview eligible; public-ready NO; restrained Command Centre overview evidence; SHA-256 69868FB1AB2C0D25C6AFD2871EC2A936A384DA9343680322699D68AD87D77480"
+WB-04B5,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-001A_command-centre-hero-display.png,1672x1254,png,APPROVED,"DISPLAY DERIVATIVE from CC-VIS-001; full source preserved with neutral display canvas; public-ready YES; no transformation in publication closure; SHA-256 D3E7C146D3482D71EA0ECAEA11D67EDA2D033EDF123DA002F1DC11A55E2EFF9E"
+WB-04B5,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-001B_command-centre-index-display.png,1672x1254,png,APPROVED,"DISPLAY DERIVATIVE from CC-VIS-001; full source preserved with neutral display canvas; public-ready YES; no transformation in publication closure; SHA-256 D3E7C146D3482D71EA0ECAEA11D67EDA2D033EDF123DA002F1DC11A55E2EFF9E"
+WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-002_command-palette.png,822x652,png,APPROVED,"Owner-supplied real current UI evidence; public-ready YES; command and navigation evidence only; no transformation; SHA-256 C5E28ECC2A25DE0BE2AE79F66207C17E284F26B1E73C8A740F259964DFF184C6"
+WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-003_continue-work-authority.png,1448x1086,png,APPROVED,"Owner-supplied real current UI evidence; public-ready YES; READY / NOT_DISPATCHED bounded preparation evidence; no transformation; SHA-256 3DA0614D1EBBA140F474C3B332E9BA4783B0A0F4326BB208ECDFB616E9C8EB87"
+WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-004_neos-connected-context.png,1266x713,png,APPROVED,"Owner-supplied related-system evidence; local-preview eligible; public-ready NO; NEOS Windows Desktop context, not Command Centre UI; SHA-256 0197F2B602F88CEE2BE663ECC4454D5BC39844A81C0F2B6525DE65EC07C9F992"
+WB-04B2,COMMAND_CENTRE,08_COMMAND_CENTRE\evidence,CC-VIS-005_how-command-centre-works.png,1536x1024,png,APPROVED,"Public-ready developmental operating model; title and captions explicitly state incomplete implementation; no transformation; SHA-256 274750CA69DAEA53092186EDECAFABE6CD93137D34024DFA43C6A728C4EF8C6C"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_hardware_public.webp,1600x1200,webp,APPROVED,"PUBLIC DERIVATIVE of owner-held MG-VIS-001 source; resized only; source is not in the public repository"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_dashboard_public.webp,1310x1080,webp,APPROVED,"PUBLIC DERIVATIVE of owner-held MG-VIS-002 source; cropped and masked to remove device/network context; source is not in the public repository"
+WB-05B,MICROGROW,06_MICROGROW\evidence,microgrow_diagnostics_sanitized_public.webp,1310x1080,webp,APPROVED,"SANITIZED PUBLIC DERIVATIVE of owner-held MG-VIS-003 source; operational summary, identifiers and counts are masked; source is not in the public repository"

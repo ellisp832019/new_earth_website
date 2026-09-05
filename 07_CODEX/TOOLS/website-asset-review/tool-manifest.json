@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "tool_id": "WEBSITE-ASSET-REVIEW",
+  "name": "New Earth Website - Owner Asset Review",
+  "description": "Local visual owner-review tool for Website V2 asset candidates.",
+  "version": "1.0.0",
+  "tool_class": "REVIEW_TOOL",
+  "repository": "NEW_EARTH_WEBSITE",
+  "entrypoint": "index.html",
+  "launcher": "launch.ps1",
+  "scanner": "scan-repository-images.ps1",
+  "generated_inputs": ["data/asset-index.js", "data/FULL_REPOSITORY_IMAGE_INVENTORY.csv"],
+  "discovery_mode": "LOCAL READ-ONLY REPOSITORY DISCOVERY",
+  "local_only": true,
+  "network_required": false,
+  "destructive": false,
+  "human_decision_required": true,
+  "inputs": ["ASSETS_REFERENCE/global_images/*.png", "WA-05H asset governance records"],
+  "outputs": ["Browser-local review state", "CSV export", "JSON export", "print summary"],
+  "safety_boundaries": ["No network requests", "No file writes from the browser", "No rights approval control", "No publication or deployment"],
+  "future_integration_candidates": {
+    "VS Code task": "FUTURE / NOT IMPLEMENTED",
+    "Command Centre discovery": "FUTURE / NOT IMPLEMENTED",
+    "Platform Core task contract": "FUTURE / NOT IMPLEMENTED",
+    "NEOS awareness": "FUTURE / NOT IMPLEMENTED",
+    "GAIA task preparation": "FUTURE / NOT IMPLEMENTED"
+  }
+}

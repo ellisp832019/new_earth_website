@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LightboxImage from '../../components/LightboxImage.astro';
+import LocalFirstPathway from '../../components/LocalFirstPathway.astro';
+import { assetUrl } from '../../lib/asset-resolver';
+import { assets } from '../../data/site';
+const neipVisuals = [assets.neip1, assets.neip2, assets.neip3, assets.neip4, assets.neip5, assets.neip6, assets.neip7].map(assetUrl);
+---
+<BaseLayout
+  title="New Earth in Practice"
+  description="Explore how New Earth's principles, local-first model and developing projects could translate into practical everyday life."
+  canonical="/new-earth-in-practice/"
+>
+  <article class="practice-page shell">
+    <header class="practice-hero">
+      <p class="eyebrow">New Earth in Practice</p>
+      <h1>How New Earth could work in everyday life</h1>
+      <p class="lede">New Earth is not intended to be one organisation, one application or one central system. It is a developing framework for helping people and communities build greater understanding, capability, stewardship and cooperation from where they are.</p>
+    </header>
+
+    <LocalFirstPathway />
+
+    <section class="practice-section practice-section--wide" aria-labelledby="start-where-we-are">
+      <p class="eyebrow">Start where we are</p>
+      <h2 class="sr-only" id="start-where-we-are">Local capability can connect outward</h2>
+      <p>New Earth begins with people and the places they care for. Local-first does not mean isolation. It means building understanding and capability close to the people and places affected, then connecting through cooperation, shared learning, mutual support and useful interoperability.</p>
+      {neipVisuals[0] && <figure class="practice-visual"><LightboxImage src={neipVisuals[0]} alt="Six-stage local-first pathway from person and home to connected communities and wider New Earth." caption="An illustrative local-first pathway." /><figcaption>An illustrative local-first pathway.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section" aria-labelledby="daily-life">
+      <p class="eyebrow">Possible expressions</p>
+      <h2 class="sr-only" id="daily-life">What this could mean in daily life</h2>
+      <p>These are future-direction examples, not claims of current deployment. They show the kinds of practical questions the wider direction could hold.</p>
+      {neipVisuals[1] && <figure class="practice-visual"><LightboxImage src={neipVisuals[1]} alt="Four illustrative daily-life contexts: at home, in a community, for builders and makers, and between communities." caption="Possible expressions of New Earth principles, not current deployment." /><figcaption>Possible expressions of New Earth principles, not current deployment.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section practice-section--wide" aria-labelledby="pillars-practice">
+      <p class="eyebrow">The 12 Pillars in practice</p>
+      <h2 class="sr-only" id="pillars-practice">A set of lenses for real life</h2>
+      <p>The 12 Pillars are not twelve finished products or centrally imposed programmes. They are connected lenses through which people and communities can ask what is working, what needs care, what can be understood locally, what can be maintained locally and what needs wider cooperation.</p>
+      <p>Different places do not need to look the same. The framework can help connect local questions with wider learning while leaving room for context, responsibility and human judgement.</p>
+      {neipVisuals[2] && <figure class="practice-visual"><LightboxImage src={neipVisuals[2]} alt="The 12 Pillars used as practical lenses across person, household, neighbourhood, community and region, with questions about care, local capability and wider cooperation." caption="Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented." /><figcaption>Practical lenses for exploring the 12 Pillars; not a claim that the framework is fully implemented.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section" aria-labelledby="principles-practice">
+      <p class="eyebrow">From principles to practice</p>
+      <h2 class="sr-only" id="principles-practice">A developing bridge</h2>
+      <p>The framework becomes useful when principles move into stewardship, practical action, real-world learning and sharing what works.</p>
+      {neipVisuals[3] && <figure class="practice-visual"><LightboxImage src={neipVisuals[3]} alt="Six-stage developing bridge from principles and the Blueprint to local stewardship, projects, learning and sharing." caption="A developing bridge from principles to practice, not completed integration evidence." /><figcaption>A developing bridge from principles to practice, not completed integration evidence.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section practice-section--wide" aria-labelledby="technology-role">
+      <p class="eyebrow">Technology in service of life</p>
+      <h2 id="technology-role">Tools should support people, not replace them</h2>
+      <div class="split-copy"><div><p>Technology is not the purpose of New Earth. It is one tool that can help people understand systems, learn, monitor, coordinate, maintain, build, share knowledge and make informed decisions.</p><p>Useful technology should strengthen human agency, local capability, maintainability, transparency and stewardship. It should not unnecessarily centralise control away from the people who depend on it.</p></div><div class="boundary-note"><strong>The emerging direction</strong><p>Projects and systems are being developed toward clearer relationships between engineering understanding, bounded assistance, visible navigation and human governance. Not all of these connections are complete today.</p></div></div>
+    </section>
+
+    <section class="practice-section" aria-labelledby="technical-direction">
+      <p class="eyebrow">A developmental technical direction</p>
+      <h2 class="sr-only" id="technical-direction">Human-visible, bounded and distinct</h2>
+      <p>The emerging technical systems have distinct responsibilities. Not every connection is complete, and human governance remains the authority.</p>
+      {neipVisuals[4] && <figure class="practice-visual"><LightboxImage src={neipVisuals[4]} alt="Developmental relationship model showing distinct projects, NEOS, GAIA, Command Centre and human governance." caption="A developmental relationship model; systems are distinct and not every connection is complete today." /><figcaption>A developmental relationship model; systems are distinct and not every connection is complete today.</figcaption></figure>}
+      <p class="small-note">This is an emerging direction, not a claim that the full chain is production-integrated. The systems remain distinct.</p>
+    </section>
+
+    <section class="practice-section practice-section--wide" aria-labelledby="human-authority">
+      <p class="eyebrow">Human authority</p>
+      <h2 class="sr-only" id="human-authority">More automation should not mean less control</h2>
+      <p>The intended governing model keeps increasing automation subject to clear boundaries and human judgement. Not every project currently implements the full ladder.</p>
+      {neipVisuals[5] && <figure class="practice-visual"><LightboxImage src={neipVisuals[5]} alt="Five-stage authority ladder from observation to explicitly pre-authorised autonomous execution, with human authority at each stage." caption="An intended authority ladder for bounded automation; it does not claim every current project implements all five levels." /><figcaption>An intended authority ladder for bounded automation; it does not claim every current project implements all five levels.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section" aria-labelledby="one-person">
+      <p class="eyebrow">Example model</p>
+      <h2 id="one-person">One person’s experience</h2>
+      <p>This is an illustrative model, not an implemented product workflow.</p>
+      {neipVisuals[6] && <figure class="practice-visual"><LightboxImage src={neipVisuals[6]} alt="Six-step illustrative journey from understanding local needs to sharing useful learning outward." caption="An illustrative journey, not a fixed product workflow." /><figcaption>An illustrative journey, not a fixed product workflow.</figcaption></figure>}
+    </section>
+
+    <section class="practice-section practice-section--wide" aria-labelledby="what-exists-now">
+      <p class="eyebrow">Current reality</p>
+      <h2 id="what-exists-now">What exists now</h2>
+      <p>New Earth is already producing real projects, prototypes, documentation and local-first foundations, but the wider system is still developing. The Projects area provides the clearest place to explore selected work at its current stage.</p>
+      <div class="current-work-grid">
+        <article class="practice-card"><p class="eyebrow">Prototype</p><h3>MicroGrow</h3><p>A single-node growing-environment project exploring local monitoring, control and diagnostics.</p></article>
+        <article class="practice-card"><p class="eyebrow">Active development</p><h3>New Earth Command Centre</h3><p>A developing Windows desktop control and navigation surface for discovering and observing parts of the technical ecosystem.</p></article>
+        <article class="practice-card"><p class="eyebrow">Public information context</p><h3>NEOS, GAIA and Platform Core</h3><p>Recognised specialist systems and foundations with distinct responsibilities. Their public descriptions and runtime boundaries require separate review.</p></article>
+      </div>
+      <p><a class="button" href="/projects/">Explore the Projects</a></p>
+    </section>
+
+    <section class="practice-section" aria-labelledby="horizons">
+      <p class="eyebrow">Keep the horizons distinct</p>
+      <h2 id="horizons">Today, building toward, future possibility</h2>
+      <div class="horizon-grid">
+        <article class="horizon-card"><p class="eyebrow">Today</p><h3>Real work in development</h3><p>Projects, prototypes, documentation and local-first foundations exist now, each with its own evidence and limitations.</p></article>
+        <article class="horizon-card"><p class="eyebrow">Building toward</p><h3>Clearer connections</h3><p>Work is being developed toward stronger interoperability, visible human control, connected tools and bounded assistance.</p></article>
+        <article class="horizon-card"><p class="eyebrow">Future possibility</p><h3>Greater local capability</h3><p>Communities could become more capable while continuing to cooperate and learn across wider networks.</p></article>
+      </div>
+    </section>
+
+    <section class="practice-section practice-section--closing" aria-labelledby="continue-practice">
+      <p class="eyebrow">Continue from here</p>
+      <h2 id="continue-practice">A practical next step</h2>
+      <p>New Earth begins with practical participation, learning, contribution and local action. Explore the work being developed, then choose a route that fits your interest and capacity.</p>
+      <nav class="page-actions" aria-label="New Earth in Practice next steps"><a class="button" href="/projects/">Explore the Projects</a><a class="button button-quiet" href="/get-involved/">Contribute</a><a class="text-link" href="/ecosystem/">See the Ecosystem</a></nav>
+    </section>
+  </article>
+</BaseLayout>
+<style>
+  .practice-page { padding-block: clamp(4rem, 9vw, 7rem); }
+  .practice-hero { max-width: 760px; padding-bottom: clamp(3rem, 7vw, 6rem); }
+  .practice-hero h1 { max-width: 14ch; }
+  .practice-hero .lede { max-width: 68ch; }
+  .practice-section { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 5rem); }
+  .practice-section--wide { max-width: 1120px; }
+  .practice-section h2 { max-width: 18ch; }
+  .sr-only, #one-person { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .practice-section > p:not(.eyebrow), .small-note { max-width: 70ch; }
+  .current-work-grid, .horizon-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .practice-card, .horizon-card, .boundary-note { min-width: 0; padding: 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .practice-card h3, .horizon-card h3 { margin-block: .35rem .65rem; }
+  .practice-card p:last-child, .horizon-card p:last-child, .boundary-note p:last-child { margin-bottom: 0; }
+  .split-copy { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
+  .boundary-note { border-left: 4px solid var(--gold); }
+  .practice-section--closing { padding-bottom: 0; }
+  .practice-visual { width: min(100%, 1040px); margin: 2rem auto 0; }
+  .practice-visual img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
+  .practice-visual figcaption { margin-top: .75rem; color: var(--forest); font-size: .92rem; }
+  @media (max-width: 680px) { .current-work-grid, .horizon-grid, .split-copy { grid-template-columns: 1fr; } }
+</style>

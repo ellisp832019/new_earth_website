@@ -1,0 +1,32 @@
+from_page,to_page,to_url,link_purpose,public_link_text,evidence_class,status
+Vision,Manifesto,/manifesto/,Read the principles behind the direction,Read the Manifesto,PRINCIPLE,DRAFTED
+Vision,Blueprint,/blueprint/,Explore the developing framework,Explore the Blueprint,VISION,DRAFTED
+Vision,The 12 Pillars,/blueprint/pillars/,Move from direction to areas of life,Explore the 12 Pillars,PRINCIPLE,DRAFTED
+Vision,Projects,/projects/,See developing practical work,Explore Projects,IN DEVELOPMENT,DRAFTED
+Vision,Home,/,Return to the starting point,Start at Home,ESTABLISHED FACT,DRAFTED
+Manifesto,Vision,/vision/,Understand the wider direction,Explore the Vision,VISION,DRAFTED
+Manifesto,Blueprint,/blueprint/,See how principles are organised,Explore the Blueprint,PRINCIPLE,DRAFTED
+Manifesto,Ecosystem,/ecosystem/,See relationships between ideas and work,Explore the Ecosystem,PRINCIPLE,DRAFTED
+Manifesto,Journal,/journal/,Follow questions and learning,Read the Journal,COMING LATER,DRAFTED
+Blueprint,Vision,/vision/,Return to the wider direction,Read the Vision,VISION,DRAFTED
+Blueprint,The 12 Pillars,/blueprint/pillars/,Explore the twelve areas,Explore the 12 Pillars,PRINCIPLE,DRAFTED
+Blueprint,Ecosystem,/ecosystem/,See how the parts relate,Explore the Ecosystem,PRINCIPLE,DRAFTED
+Blueprint,Projects,/projects/,See practical exploration,Explore Projects,IN DEVELOPMENT,DRAFTED
+Ecosystem,Vision,/vision/,Understand the direction,Read the Vision,VISION,DRAFTED
+Ecosystem,Blueprint,/blueprint/,Understand the framework,Explore the Blueprint,PRINCIPLE,DRAFTED
+Ecosystem,The 12 Pillars,/blueprint/pillars/,Explore connected areas,Explore the 12 Pillars,PRINCIPLE,DRAFTED
+Ecosystem,Projects,/projects/,See developing work,Explore Projects,IN DEVELOPMENT,DRAFTED
+Ecosystem,Journal,/journal/,Follow public learning,Read the Journal,COMING LATER,DRAFTED
+About,Vision,/vision/,Understand the purpose,Read the Vision,VISION,DRAFTED
+About,Manifesto,/manifesto/,Read the principles,Read the Manifesto,PRINCIPLE,DRAFTED
+About,Ecosystem,/ecosystem/,See how the work connects,Explore the Ecosystem,PRINCIPLE,DRAFTED
+About,Get Involved,/get-involved/,Find a suitable route,Get Involved,PRINCIPLE,DRAFTED
+Get Involved,Vision,/vision/,Start with context,Read the Vision,VISION,DRAFTED
+Get Involved,Journal,/journal/,Learn through public writing,Read the Journal,COMING LATER,DRAFTED
+Get Involved,Projects,/projects/,Follow developing work,Explore Projects,IN DEVELOPMENT,DRAFTED
+Get Involved,New Earth Builders,https://new-earth-builders.com/,Visit an independent external community platform,Visit New Earth Builders,PARTNER-PROVIDED,DRAFTED
+The 12 Pillars,Blueprint,/blueprint/,Return to the framework,Back to the Blueprint,PRINCIPLE,DRAFTED
+The 12 Pillars,Vision,/vision/,Return to the wider direction,Read the Vision,VISION,DRAFTED
+Projects,Ecosystem,/ecosystem/,Understand project context,Explore the Ecosystem,PRINCIPLE,DRAFTED
+Projects,Journal,/journal/,Follow project learning,Read the Journal,COMING LATER,DRAFTED
+Journal,Projects,/projects/,Find related developing work,Explore Projects,IN DEVELOPMENT,DRAFTED
