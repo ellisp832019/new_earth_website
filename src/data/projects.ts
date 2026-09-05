@@ -102,7 +102,7 @@ export const publicProjects: ProjectRecord[] = [{
       caption: 'Current Flutter interface used for monitoring, control and project status; public-safe derivative for owner review.',
     },
     {
-      src: 'microgrow_diagnostics_public.webp',
+      src: 'microgrow_diagnostics_sanitized_public.webp',
       alt: 'Current MicroGrow diagnostic interface showing development and system status.',
       label: 'MicroGrow diagnostics view',
       caption: 'A current diagnostics and status view; this public-safe derivative does not establish complete fault handling or production readiness.',

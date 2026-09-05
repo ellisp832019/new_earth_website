@@ -5,7 +5,7 @@ const files = [
   ['00_BRAND/logos/new-earth-emblem-v1.png', '00_BRAND/logos/new-earth-emblem-v1.png'],
   ['06_MICROGROW/evidence/microgrow_hardware_public.webp', 'microgrow_hardware_public.webp'],
   ['06_MICROGROW/evidence/microgrow_dashboard_public.webp', 'microgrow_dashboard_public.webp'],
-  ['06_MICROGROW/evidence/microgrow_diagnostics_public.webp', 'microgrow_diagnostics_public.webp'],
+  ['06_MICROGROW/evidence/microgrow_diagnostics_sanitized_public.webp', 'microgrow_diagnostics_sanitized_public.webp'],
   ['02_HOME/hero/home_hero_new_earth_main.webp', 'home_hero_new_earth_main.webp'],
   ['02_HOME/sections/home_introduction_new_earth.webp', 'home_introduction_new_earth.webp'],
   ['04_BLUEPRINT/hero/blueprint_hero.webp', 'blueprint_hero.webp'],
