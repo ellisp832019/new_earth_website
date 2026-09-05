@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LightboxImage from '../../components/LightboxImage.astro';
+import { publicProjects } from '../../data/projects';
+
+export function getStaticPaths() {
+  const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
+  return publicProjects.filter((project) => publicBuild ? project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED' : project.previewEnabled || project.publicEnabled).map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+if (!project) throw new Error('Project route requires an explicitly public-enabled catalogue entry.');
+const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
+const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/local-assets'}/${filename}`;
+---
+<BaseLayout title={project.name} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
+  <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
+    <div class="project-hero-layout">
+    <header class="project-page__hero">
+      <p class="project-context"><span class="context-label">System</span><span>{project.maturity}</span></p>
+      <h1>{project.name}</h1>
+      <p class="lede">{project.shortDescription}</p>
+      <dl class="project-facts">
+        {project.facts.filter((fact) => fact.label !== 'Publication').map((fact) => <div><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}
+      </dl>
+    </header>
+    {project.visualEvidence?.[0] && <figure class="project-hero-visual">
+      <img src={projectAssetUrl(project.visualEvidence[0].src)} alt={project.visualEvidence[0].alt} />
+      <figcaption>{project.visualEvidence[0].caption}</figcaption>
+    </figure>}
+    </div>
+    <div class="project-page__body">
+      <section class="project-section project-section--wide"><h2>How it works at a high level</h2>{project.developmentalVisual ? <><p>The diagram below shows the operating direction being developed around Command Centre. It separates system responsibilities and human authority; not every connection or authority stage shown is implemented today.</p><figure class="developmental-visual"><p class="eyebrow">{project.developmentalVisual.label}</p><LightboxImage src={projectAssetUrl(project.developmentalVisual.src)} alt={project.developmentalVisual.alt} caption={project.developmentalVisual.caption} /><figcaption>{project.developmentalVisual.caption}</figcaption></figure></> : <><p>This explanatory flow shows the project’s role without presenting an internal architecture diagram or claiming capabilities beyond the current evidence.</p><ol class="system-flow">{project.systemFlow.map((step) => <li><strong>{step.label}</strong><span>{step.detail}</span></li>)}</ol></>}</section>
+      <section><h2>Why it exists</h2><p>{project.whyItExists}</p></section>
+      <section><h2>What it is</h2><p>{project.whatItIs}</p><p><strong>Current state:</strong> {project.currentState}</p></section>
+      <section class="project-section--wide"><h2>What exists today</h2><p>{project.whatExistsToday}</p><div class="evidence-grid">{project.evidenceCards.map((card) => <article class="evidence-card"><p class="eyebrow">{card.label}</p><h3>{card.status}</h3><p>{card.detail}</p></article>)}</div></section>
+      {project.visualEvidence && <section class="project-section--wide project-visual-section"><h2>Visual evidence</h2><p>These captures show selected current project surfaces. They do not establish production readiness.</p><div class="visual-evidence-grid">{project.visualEvidence.slice(1).filter((visual) => !publicBuild || visual.publicEnabled !== false).map((visual) => <figure class:list={['visual-evidence', visual.className]}><LightboxImage src={projectAssetUrl(visual.src)} alt={visual.alt} caption={visual.caption} /><figcaption><strong>{visual.label}</strong><span>{visual.caption}</span></figcaption></figure>)}</div></section>}
+      <section><h2>How it fits into New Earth</h2><p>{project.relationToNewEarth}</p></section>
+      <section><h2>Evidence and current progress</h2>{project.evidence.map((item) => <p>{item}</p>)}</section>
+      <section class="limitations-panel"><h2>Current limitations</h2>{project.limitations.map((item) => <p>{item}</p>)}</section>
+      <section class="next-step"><p class="eyebrow">Next controlled step</p><h2>What comes next</h2><p>{project.nextDevelopmentDirection}</p></section>
+      <section class="project-section--wide"><h2>Related systems</h2><div class="related-grid">{project.relatedSystems.map((item) => <article class="related-card"><h3>{item.split(' are separate')[0]}</h3><p>{item}</p></article>)}</div></section>
+      <nav class="page-actions" aria-label="Project navigation">
+        {project.publicLinks.map((link) => <a class="button" href={link.href}>{link.label}</a>)}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .project-page { padding-block: clamp(4rem, 9vw, 7rem); }
+  .project-hero-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; max-width: 1120px; }
+  .project-page__hero { max-width: none; min-width: 0; }
+  .project-page__hero h1 { max-width: 15ch; }
+  .project-page__hero .lede { max-width: 60ch; }
+  .project-context { display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; margin: 0 0 .65rem; color: var(--ink); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .project-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 0; max-width: 1000px; }
+  .project-facts div { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }
+  .project-facts dt { color: var(--forest); font-size: .75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+  .project-facts dd { margin: .35rem 0 0; }
+  .project-page__body { max-width: 1000px; }
+  .project-page__body section { border-top: 1px solid var(--line); padding-block: 2.25rem; }
+  .project-page__body section:not(.project-section--wide):not(.limitations-panel):not(.next-step) > p { max-width: 68ch; }
+  .system-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; list-style: none; margin: 2rem 0 0; padding: 0; }
+  .system-flow li { position: relative; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.25rem; }
+  .system-flow li:not(:last-child)::after { content: '>'; position: absolute; right: -.65rem; top: 50%; color: var(--gold); font-weight: 700; }
+  .system-flow strong, .system-flow span { display: block; }
+  .system-flow span { margin-top: .45rem; font-size: .92rem; }
+  .evidence-grid, .related-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .evidence-card, .related-card { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; }
+  .evidence-card .eyebrow { margin-bottom: .4rem; }
+  .evidence-card h3, .related-card h3 { margin: 0; font-size: 1.2rem; }
+  .evidence-card p:last-child, .related-card p { margin-bottom: 0; }
+  .limitations-panel { background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding-inline: 1.5rem; }
+  .next-step { border-left: 4px solid var(--gold); padding-left: 1.5rem; }
+  .project-hero-visual { width: 100%; max-width: 680px; margin: 0; min-width: 0; justify-self: end; }
+  .project-page--command-centre .project-hero-visual { align-self: start; }
+  .project-hero-visual img { display: block; width: 100%; height: auto; max-width: 100%; max-height: 400px; object-fit: contain; object-position: center; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .developmental-visual { max-width: 1080px; margin: 1.5rem auto 0; }
+  .developmental-visual .eyebrow { margin-bottom: .75rem; }
+  .developmental-visual img { display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  figure figcaption { display: grid; gap: .25rem; margin-top: .75rem; color: var(--forest); font-size: .9rem; }
+  .visual-evidence-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr); gap: 1rem; align-items: start; width: 100%; max-width: 920px; margin: 1.5rem auto 0; }
+  .visual-evidence { margin: 0; min-width: 0; background: var(--sage); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }
+  .visual-evidence img { display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain; background: var(--ivory); border-radius: calc(var(--radius) - 2px); }
+  .visual-evidence--splash { grid-column: 2; grid-row: 1; }
+  .visual-evidence--splash { max-width: 320px; justify-self: center; }
+  .visual-evidence figcaption { gap: .4rem; }
+  .visual-evidence figcaption span { color: var(--ink); }
+  @media (max-width: 760px) { .project-hero-layout { grid-template-columns: 1fr; } .project-hero-visual { justify-self: start; max-width: 680px; } .project-facts, .system-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } .system-flow li:not(:last-child)::after { content: none; } }
+  @media (max-width: 760px) { .visual-evidence-grid { grid-template-columns: 1fr; } .visual-evidence--splash { grid-column: auto; grid-row: auto; } }
+  @media (max-width: 480px) { .project-facts, .system-flow, .evidence-grid, .related-grid, .visual-evidence-grid { grid-template-columns: 1fr; } .project-hero-visual img { max-height: 360px; } .visual-evidence, .visual-evidence--splash { max-width: none; justify-self: stretch; } .visual-evidence img, .visual-evidence--splash img { max-height: 360px; } }
+</style>

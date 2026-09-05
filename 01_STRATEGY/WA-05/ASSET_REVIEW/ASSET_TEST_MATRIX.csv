@@ -1,0 +1,17 @@
+test_id,test_area,automated_or_manual,prebuild_or_runtime,scope,expected_result,blocking_or_advisory,evidence_required,status,notes
+ASTEST-001,Missing files,automated,prebuild,Master and usage registers,Required sources exist,blocking,File report,NOT EXECUTED,Known missing registered systems category asset to resolve
+ASTEST-002,Duplicate hashes,automated,prebuild,Curated assets,Duplicates identified and not silently removed,advisory,Hash report,NOT EXECUTED,No content changes
+ASTEST-003,Rights evidence,manual,prebuild,Public candidates,No unresolved rights asset promoted,blocking,Rights records,NOT EXECUTED,Status is not rights proof
+ASTEST-004,Required alt,automated + manual,prebuild,All informative uses,Alt is present and purposeful,blocking,Usage register,NOT EXECUTED,No keyword stuffing
+ASTEST-005,Decorative alt,manual,runtime,Decorative uses,Empty alt implemented,blocking,DOM and screen reader evidence,NOT EXECUTED,Context-specific
+ASTEST-006,Complex equivalent,manual,runtime,Diagrams,Adjacent equivalent conveys meaning,blocking,Rendered evidence,NOT EXECUTED,Colour not sole meaning
+ASTEST-007,Dimensions,automated,prebuild,Approved assets,Dimensions and aspect data valid,advisory,Manifest,NOT EXECUTED,Do not overwrite masters
+ASTEST-008,Responsive variants,automated + manual,runtime,Heroes/cards/social,Variants crop without losing meaning,advisory,Screenshots,NOT EXECUTED,Mobile and social safe areas
+ASTEST-009,Broken references,automated,prebuild,Public content,Asset paths resolve,blocking,Build report,NOT EXECUTED,Internal paths prohibited
+ASTEST-010,Privacy metadata,manual,prebuild,Images/screenshots,No sensitive data or unnecessary EXIF,blocking,Redacted review,NOT EXECUTED,Do not preserve screenshots publicly
+ASTEST-011,Open Graph images,manual,runtime,Representative routes,Social image and alt are coherent,advisory,Rendered cards,NOT EXECUTED,Coordinate WA-05G
+ASTEST-012,Mobile crops,manual,runtime,Core pages and cards,Focal subject remains usable,advisory,Device screenshots,NOT EXECUTED,Test narrow viewport
+ASTEST-013,Page rendering,manual,runtime,All templates,No broken or misleading media,blocking,Screenshots and defects,NOT EXECUTED,Staging only
+ASTEST-014,Performance,automated + manual,runtime,Representative routes,Record loading and CLS evidence,advisory,Performance report,NOT EXECUTED,No current claims
+ASTEST-015,Captions,manual,runtime,Video/audio,Captions/transcripts/controls work,blocking,Media QA,NOT EXECUTED,Future only
+ASTEST-016,Third-party attribution,manual,prebuild,Logos and external assets,Permission and credit rules satisfied,blocking,Permission record,NOT EXECUTED,Prefer text links where possible

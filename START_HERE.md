@@ -12,6 +12,22 @@ It tells you:
 - what order to work in
 - how not to lose the structure
 
+## Current local Website V2 path
+
+Run the VS Code task `New Earth: Run Website V2 Local Preview`, or use
+`npm.cmd run dev` from the repository root. This is a local owner preview only;
+it is not a WordPress or production deployment.
+
+## Current Website V2 authority
+
+- Repository: source of truth
+- Astro: current Website V2 implementation and build system
+- Local preview: owner implementation and review environment
+- Public build: rights-safe generated release artefact
+- Staging: future proof and review environment
+- IONOS: future webspace deployment target
+- Current WordPress: existing legacy live site until controlled cutover
+
 ---
 
 ## WHAT THIS PROJECT IS
@@ -27,14 +43,16 @@ This build is based on:
 - the locked New Earth Blueprint
 - a local file structure
 - Codex-compatible project rules
-- WordPress on IONOS as the publishing layer
+- the historical WordPress-on-IONOS publishing context, retained for reference
 
 ---
 
 ## THE MOST IMPORTANT RULE
 
-**The local workspace is the source of truth.  
-WordPress is the publishing layer.**
+**The repository is the source of truth.**
+
+Astro is the current Website V2 implementation. WordPress remains the existing
+legacy live site until a separately controlled cutover.
 
 Do not let live WordPress edits become the only version of the project.
 
@@ -57,6 +75,18 @@ That includes:
 - MicroGrow positioning
 - future expansion
 
+## Current page baseline
+
+- Home - LOCKED
+- Vision - LOCKED
+- Manifesto - LOCKED
+- Blueprint - LOCKED
+- Ecosystem - LOCKED
+
+Next public core pages: About, then Get Involved. After those are reviewed,
+continue with the Core Local-First Narrative Alignment Pass, Core Content
+Coherence Pass and project/system public rollout.
+
 ---
 
 ## THE FIVE MAIN ROOT FILES TO USE
@@ -65,10 +95,10 @@ These are the main root-level guide files:
 
 1. `START_HERE.md`
 2. `MASTER_BUILD_MAP.md`
-3. `TODAY_BUILD_ACTION_SHEET.md`
-4. `SECOND_SESSION_ACTION_SHEET.md`
-5. `THIRD_SESSION_ACTION_SHEET.md`
-6. `FOURTH_SESSION_ACTION_SHEET.md`
+3. `09_LOGS/SESSIONS/TODAY_BUILD_ACTION_SHEET.md`
+4. `09_LOGS/SESSIONS/SECOND_SESSION_ACTION_SHEET.md`
+5. `09_LOGS/SESSIONS/THIRD_SESSION_ACTION_SHEET.md`
+6. `09_LOGS/SESSIONS/FOURTH_SESSION_ACTION_SHEET.md`
 
 ---
 
@@ -76,19 +106,19 @@ These are the main root-level guide files:
 
 ### If you are starting the project for the first time
 Open:
-`TODAY_BUILD_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/TODAY_BUILD_ACTION_SHEET.md`
 
 ### If Session 1 is complete and you are building the first real pages
 Open:
-`SECOND_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/SECOND_SESSION_ACTION_SHEET.md`
 
 ### If Home, Manifesto, and Blueprint are already built
 Open:
-`THIRD_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/THIRD_SESSION_ACTION_SHEET.md`
 
 ### If the main public site shell is complete and you are preparing for launch
 Open:
-`FOURTH_SESSION_ACTION_SHEET.md`
+`09_LOGS/SESSIONS/FOURTH_SESSION_ACTION_SHEET.md`
 
 ### If you are unsure where you are
 Open:
@@ -280,4 +310,4 @@ That is how the New Earth website stays coherent.
 
 If you are starting now:
 
-**Open `TODAY_BUILD_ACTION_SHEET.md` and begin at Step 1.**
+**Open `MASTER_BUILD_MAP.md` and follow the latest governed phase record.**

@@ -1,0 +1,32 @@
+New Earth Website repository tree snapshot
+
+Canonical areas:
+  .vscode/
+  00_BLUEPRINT/
+  01_STRATEGY/
+  02_INFORMATION_ARCHITECTURE/
+  03_CONTENT/
+  04_DESIGN_SYSTEM/
+  05_WORDPRESS/
+  06_THEME/
+  07_CODEX/
+  08_DEPLOYMENT/
+  09_LOGS/
+    SESSIONS/
+  ASSETS/
+  ASSETS_REFERENCE/
+    README.md
+    global_images/
+
+Root controls:
+  .gitignore
+  AGENTS.md
+  MASTER_BUILD_MAP.md
+  NEW_EARTH_WEBSITE.code-workspace
+  README.md
+  START_HERE.md
+  TASK.md
+
+Historical session sheets are under 09_LOGS/SESSIONS/.
+12 local ignored reference assets exist under ASSETS_REFERENCE/global_images/.
+No public dist/ or framework source tree is created by this baseline.

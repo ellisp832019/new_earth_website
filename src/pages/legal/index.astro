@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Legal & privacy" description="Legal, privacy, cookie, terms and disclaimer information for the New Earth website." canonical="/legal/">
+  <article class="legal-index">
+    <header class="page-hero shell"><p class="eyebrow">Legal information</p><h1>Legal &amp; privacy</h1><p class="lede">This section explains how the New Earth website is operated, how information is handled, and the limits of the information published here.</p></header>
+    <section class="shell legal-index__operator" aria-labelledby="website-operator">
+      <h2 id="website-operator">Website operator</h2>
+      <p><strong>New Earth Advanced Technologies Ltd</strong><br />Company number: 17286202<br />Registered in England and Wales</p>
+      <p>Registered office:<br />7 Pateley Close<br />Liverpool<br />United Kingdom<br />L32 4UT</p>
+    </section>
+    <div class="shell legal-index__grid">
+      <a class="card" href="/legal/privacy-policy/"><h2>Privacy Policy</h2><p>How enquiry information and ordinary website activity are handled.</p></a>
+      <a class="card" href="/legal/cookie-policy/"><h2>Cookie Policy</h2><p>What cookies and similar technologies the current site uses.</p></a>
+      <a class="card" href="/legal/terms/"><h2>Terms of Use</h2><p>The terms and boundaries for using this informational website.</p></a>
+      <a class="card" href="/legal/disclaimer/"><h2>Disclaimer</h2><p>Important limits around projects, technical material and wellbeing content.</p></a>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .legal-index .page-hero { padding-bottom: 3rem; }
+  .legal-index__operator { padding-bottom: 3rem; }
+  .legal-index__operator p { max-width: 48rem; }
+  .legal-index__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding-bottom: 7rem; }
+  .legal-index__grid h2 { font-size: 1.7rem; }
+  .legal-index__grid p { margin-bottom: 0; }
+  @media (max-width: 680px) { .legal-index__grid { grid-template-columns: 1fr; } }
+</style>

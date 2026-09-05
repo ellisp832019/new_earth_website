@@ -1,0 +1,17 @@
+gate_id,capability,trigger,accessibility_review_required,key_accessibility_domains,runtime_test_required,document_accessibility_required,owner_review_required,activation_condition,notes
+AAG-001,Peter Practical Guides,Guide download or sale,yes,Headings links contrast reading order,yes,yes,yes,Accessible document and commerce review passed,Future only
+AAG-002,Hayley Conscious Living,Guide download or sale,yes,Headings links wellbeing language contrast,yes,yes,yes,Accessible document creator and legal review passed,Future only
+AAG-003,Newsletter,Signup and preference centre,yes,Labels errors focus privacy,yes,no,yes,Accessible signup and unsubscribe tested,Future only
+AAG-004,Native forms,Contact or submission form,yes,Labels instructions errors CAPTCHA alternatives,yes,no,yes,Form accessibility and privacy review passed,Future only
+AAG-005,Checkout,Payment flow,yes,Keyboard labels errors review before purchase,yes,no,yes,Accessible checkout and consumer review passed,Future only
+AAG-006,Subscriptions,Recurring billing,yes,Status cancellation authentication errors,yes,no,yes,Accessible subscription controls tested,Future only
+AAG-007,Accounts,Registration or login,yes,Authentication errors recovery focus,yes,no,yes,Accessible authentication and security review passed,Future only
+AAG-008,Native community,Profiles posts comments messaging uploads,yes,Editor status moderation media alternatives,yes,no,yes,UGC and accessibility review passed,Future only
+AAG-009,GAIA,Public AI interface,yes,Keyboard status transcript voice alternatives cognitive load,yes,no,yes,AI transparency and accessibility review passed,Future only
+AAG-010,Voice interfaces,Speech input/output,yes,Non-voice alternatives captions transcripts controls,yes,no,yes,Equivalent non-voice interaction tested,Future only
+AAG-011,New Earth Living,Wellbeing app or data,yes,Charts notifications cognitive load non-colour status,yes,yes,yes,Health/privacy and accessibility review passed,Future only
+AAG-012,BioCalm,Device or physiological data,yes,Charts alerts device status alternatives,yes,yes,yes,Device health and accessibility review passed,Future only
+AAG-013,MicroGrow sales/support,Product support or control UI,yes,Warnings state non-colour values touch keyboard,yes,yes,yes,Product safety and accessibility review passed,Future only
+AAG-014,Youth services,Child-facing route or data service,yes,Age-appropriate design privacy readable content,yes,yes,yes,Children's Code and accessibility review passed,Future only
+AAG-015,Video/audio,Media publication or embed,yes,Captions transcripts controls reduced motion,yes,yes,yes,Media alternatives and consent tested,Future only
+AAG-016,Downloads,Reports proposals technical guides,yes,Reading order headings links tables alt text,yes,yes,yes,Document QA passed,Future only

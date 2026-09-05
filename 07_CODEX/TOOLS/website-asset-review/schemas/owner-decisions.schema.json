@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://new-earth.uk/schemas/owner-decisions.schema.json",
+  "title": "Website Asset Owner Decisions",
+  "type": "object",
+  "required": ["schema_version", "tool_id", "review_id", "exported_at", "decisions", "special_decisions"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "tool_id": {"const": "WEBSITE-ASSET-REVIEW"},
+    "tool_version": {"type": "string"},
+    "review_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string", "format": "date-time"},
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["decision_id", "asset_id", "owner_decision", "owner_priority", "review_timestamp"],
+        "properties": {
+          "decision_id": {"type": "string"},
+          "asset_id": {"type": "string"},
+          "filename": {"type": "string"},
+          "original_candidate_route": {"type": "string"},
+          "owner_selected_route": {"type": "string"},
+          "original_usage": {"type": "string"},
+          "owner_selected_role": {"type": "string"},
+          "owner_decision": {"enum": ["KEEP", "REPLACE", "HOLD", "DONT_USE", "PENDING"]},
+          "owner_priority": {"enum": ["HIGH", "MEDIUM", "LOW", "UNSET"]},
+          "owner_note": {"type": "string"},
+          "replacement_direction": {"type": "string"},
+          "rights_status": {"type": "string"},
+          "provenance_status": {"type": "string"},
+          "rights_followup_required": {"type": "boolean"},
+          "replacement_required": {"type": "boolean"},
+          "review_timestamp": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "special_decisions": {"type": "object"}
+  }
+}

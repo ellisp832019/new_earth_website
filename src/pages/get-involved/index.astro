@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pages } from '../../data/site';
+
+const page = pages['get-involved'];
+const [learn, contribute, collaborate, follow] = page.sections;
+---
+<BaseLayout
+  title="Contribute to New Earth | Learn, Contribute and Collaborate"
+  description="Explore New Earth, share useful knowledge or begin a conversation about clearly defined collaboration."
+  canonical="/get-involved/"
+>
+  <article class="involved-page">
+    <header class="page-hero shell involved-page__hero">
+      <p class="eyebrow">Begin where you are</p>
+      <h1>{page.title}</h1>
+      <p class="lede">{page.intro}</p>
+    </header>
+
+    <section class="involved-page__start" aria-labelledby="start-where-title">
+      <div class="shell">
+        <p class="eyebrow">A practical invitation</p>
+        <h2 id="start-where-title">Start where you are</h2>
+        <p class="involved-page__lead">Care for what is close, learn what is useful, and let action grow through cooperation.</p>
+        <ol class="involved-page__path" aria-label="Contribution pathway">
+          <li><strong>Care</strong><span>Notice what is around you and look after your wellbeing, home, resources and place.</span></li>
+          <li><strong>Learn</strong><span>Build useful knowledge and understand the systems you depend on.</span></li>
+          <li><strong>Contribute</strong><span>Share skills, experience, ideas or practical help.</span></li>
+          <li><strong>Build locally</strong><span>Strengthen useful capacity in your home or community.</span></li>
+          <li><strong>Connect</strong><span>Share what works, exchange useful learning and connect with others where it makes sense.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section involved-page__ways" aria-labelledby="ways-title">
+      <div class="shell">
+        <p class="eyebrow">Choose a route</p>
+        <h2 id="ways-title">Ways to contribute</h2>
+        <div class="involved-page__cards">
+          <article class="involved-page__card">
+            <p class="eyebrow">Learn</p>
+            <h3>{learn[0]}</h3>
+            <p>{learn[1]}</p>
+            <a class="text-link" href="/vision/">Start with the Vision</a>
+          </article>
+          <article class="involved-page__card">
+            <p class="eyebrow">Contribute</p>
+            <h3>{contribute[0]}</h3>
+            <p>{contribute[1]}</p>
+            <a class="text-link" href="/projects/">Explore practical work</a>
+          </article>
+          <article class="involved-page__card">
+            <p class="eyebrow">Collaborate</p>
+            <h3>{collaborate[0]}</h3>
+            <p>{collaborate[1]}</p>
+            <a class="text-link" href="/ecosystem/">See how the parts connect</a>
+          </article>
+          <article class="involved-page__card">
+            <p class="eyebrow">Follow</p>
+            <h3>{follow[0]}</h3>
+            <p>{follow[1]}</p>
+            <a class="text-link" href="/projects/">Follow developing work</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sand involved-page__local" aria-labelledby="build-locally-title">
+      <div class="shell involved-page__local-inner">
+        <div>
+          <p class="eyebrow">Local capability</p>
+          <h2 id="build-locally-title">Build where you are</h2>
+        </div>
+        <div>
+          <p>New Earth starts with people taking thoughtful responsibility for their own place: their wellbeing, skills, food, resources, environment and community.</p>
+          <p>That might mean growing some food, learning a useful skill, helping a neighbour, improving a shared space, documenting local knowledge or starting a useful conversation. These are invitations, not requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section involved-page__community" aria-labelledby="connect-title">
+      <div class="shell involved-page__community-inner">
+        <div>
+          <p class="eyebrow">Open cooperation</p>
+          <h2 id="connect-title">Connect with others</h2>
+        </div>
+        <div>
+          <p>New Earth is independent, but independence does not mean isolation. Useful ideas grow through conversation, shared learning and cooperation.</p>
+          <p>We may work with individuals, communities, researchers, organisations and projects where there is genuine alignment and a clearly understood purpose. Any external relationship remains independent unless a formal collaboration is explicitly stated.</p>
+          <p>We also encourage people to find and participate in communities that suit their own interests, values and local circumstances.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section involved-page__work" aria-labelledby="work-title">
+      <div class="shell">
+        <p class="eyebrow">Keep exploring</p>
+        <h2 id="work-title">Explore practical work</h2>
+        <p class="involved-page__lead">See where selected projects currently stand, and follow questions and learning as the work develops.</p>
+        <nav class="page-actions" aria-label="Explore practical work">
+          <a class="button" href="/projects/">Explore Projects</a>
+          <a class="button" href="/blueprint/">Read the Blueprint</a>
+          <a class="button" href="/ecosystem/">Visit the Ecosystem</a>
+          <a class="button" href="/contact/">Start a conversation</a>
+        </nav>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .involved-page__hero { padding-block: clamp(5rem, 11vw, 8rem) clamp(3.5rem, 7vw, 5rem); }
+  .involved-page__hero .lede { max-width: 48rem; }
+  .involved-page__start { padding-block: clamp(3.5rem, 7vw, 6rem); background: linear-gradient(135deg, var(--sage), var(--ivory)); border-block: 1px solid var(--line); }
+  .involved-page__start h2, .involved-page__ways h2, .involved-page__local h2, .involved-page__community h2, .involved-page__work h2 { max-width: 18ch; }
+  .involved-page__lead { max-width: 58ch; font: 700 clamp(1.2rem, 2vw, 1.5rem)/1.4 var(--serif); color: var(--deep); }
+  .involved-page__path { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin: 2.5rem 0 0; padding: 0; list-style: none; }
+  .involved-page__path li { min-width: 0; padding: 1.1rem; border-top: 3px solid var(--teal); background: rgb(255 255 255 / .72); }
+  .involved-page__path strong { display: block; margin-bottom: .45rem; color: var(--deep); }
+  .involved-page__path span { display: block; font-size: .9rem; line-height: 1.5; }
+  .involved-page__ways { background: var(--ivory); }
+  .involved-page__cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .involved-page__card { padding: 1.75rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .72); box-shadow: var(--shadow); }
+  .involved-page__card h3 { margin-bottom: .75rem; }
+  .involved-page__card .eyebrow { margin: 0; }
+  .involved-page__card .text-link { display: inline-block; margin-top: .75rem; }
+  .involved-page__local-inner, .involved-page__community-inner { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 7vw, 6rem); align-items: start; }
+  .involved-page__work { padding-bottom: 7rem; }
+  @media (max-width: 900px) { .involved-page__path { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 680px) { .involved-page__cards, .involved-page__local-inner, .involved-page__community-inner { grid-template-columns: 1fr; } .involved-page__path { grid-template-columns: 1fr; } }
+</style>

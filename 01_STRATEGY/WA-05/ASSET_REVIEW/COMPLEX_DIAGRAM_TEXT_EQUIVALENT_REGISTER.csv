@@ -1,0 +1,3 @@
+diagram_id,asset_id,route,diagram_purpose,systems_or_concepts_shown,concise_alt,visible_text_equivalent_required,text_equivalent_status,technical_claim_review_required,sensitive_detail_review,owner_review_required,status,notes
+CDT-001,NO CURRENT TRACKED ASSET,/ecosystem/,Explain public relationships,Vision Blueprint Pillars Projects Journal Participation,Public ecosystem relationship diagram,yes,REQUIRED BEFORE USE,yes,yes,yes,PLANNED,Do not infer relationships from unverified diagrams
+CDT-002,NO CURRENT TRACKED ASSET,/blueprint/pillars/,Orient to twelve domains,12 Pillars and relationships,Overview of the twelve Blueprint domains,yes,REQUIRED BEFORE USE,yes,no,yes,PLANNED,Use accessible text list alongside visual

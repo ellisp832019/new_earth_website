@@ -8,8 +8,9 @@ repository planning closeout only. No website implementation has started.
 
 ## Final architecture
 
-- Public V2.0 canonical destinations: 38.
-- Unique public V2.0 canonical URLs: 38.
+- Public V2.0 canonical destinations: 39, including the reconciled Manifesto
+  route `/manifesto/`.
+- Unique public V2.0 canonical URLs: 39.
 - Redirect matrix entries: 15 total, including 4 planned redirects:
   - `/articles/` -> `/journal/`
   - `/cookie-policy-uk/` -> `/legal/cookie-policy/`
@@ -24,6 +25,8 @@ repository planning closeout only. No website implementation has started.
 - Research and Development is `/research-development/` beneath Ecosystem.
 - Get Involved is a lightweight hub for Collaboration, Community / Start a
   Circle, Support or funding, and Contact.
+- Manifesto is retained as a public secondary route and does not add a primary
+  header item.
 
 ## Resolved decisions
 

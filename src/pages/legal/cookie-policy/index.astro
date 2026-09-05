@@ -1,0 +1,11 @@
+---
+import LegalPage from '../../../components/LegalPage.astro';
+const sections = [
+  { heading: 'What cookies are', paragraphs: ['Cookies are small files stored on a device by a website. Similar technologies can include browser storage and scripts that remember or measure activity.'] },
+  { heading: 'Current Website V2 use', paragraphs: ['The current implementation does not intentionally set non-essential cookies and does not use localStorage or sessionStorage. The shared lightbox and mobile navigation work in the page without persistent browser storage.'] },
+  { heading: 'Tracking and marketing', paragraphs: ['No analytics, advertising trackers, social tracking, marketing tags, newsletter storage or automatic mailing-list subscription is included in this baseline. No third-party consent service is loaded.'] },
+  { heading: 'Hosting and future changes', paragraphs: ['Ordinary hosting and security systems may process technical request information such as request time, IP address and browser or device information as part of operating and protecting the website. This policy will be updated if cookies, analytics, embedded services or other non-essential storage are introduced.'] },
+  { heading: 'Managing cookies', paragraphs: ['You can manage or remove cookies through your browser settings. Because the current site does not depend on non-essential browser storage, no cookie-consent banner is required by the current implementation baseline.'] },
+];
+---
+<LegalPage title="Cookie Policy" description="The current New Earth Website V2 cookie, browser-storage and tracking position." updated="4 September 2026" intro="This policy records what the current Website V2 implementation does and does not use." sections={sections} links={[{ label: 'Privacy Policy', href: '/legal/privacy-policy/' }]} />

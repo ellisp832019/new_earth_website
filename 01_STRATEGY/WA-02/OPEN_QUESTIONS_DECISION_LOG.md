@@ -15,6 +15,7 @@ non-blocking V2.x activation or implementation gates.
 | A03 | Research and Development | Include public `/research-development/` beneath Ecosystem with plain-language, conservative, evidence-based status. Private research and unpublished material remain excluded. |
 | A04 | Pillar URL convention | Use `/blueprint/pillars/{pillar-name}/` without numeric slug prefixes. Display approved numbers in titles, labels, and ordered navigation. |
 | A05 | New Earth Test | Do not promote as an independent V2.0 destination. Preserve unique content, then conditionally redirect `/blueprint/new-earth-test/` to `/blueprint/inner-blueprint/`. Reserve an interactive assessment for V2.x. |
+| A06 | Manifesto route reconciliation | The `/manifesto/` page was an accidental omission from the URL register. Restore it as public V2.0 canonical route `V20-019` with secondary navigation placement; do not add a primary-header item. |
 
 ## Locked navigation and boundary
 
