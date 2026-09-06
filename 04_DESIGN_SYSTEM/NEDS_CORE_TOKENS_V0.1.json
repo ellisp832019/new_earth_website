@@ -1,0 +1,113 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "New Earth Design System Core Tokens",
+    "version": "0.1.0",
+    "status": "draft-canonical-pilot",
+    "milestone": "NEDS-M01B",
+    "source": "New Earth Brand Foundation V0.1",
+    "notes": "Vendor-neutral semantic foundation. Framework adapters must derive from this source and must not redefine semantic meaning."
+  },
+  "color": {
+    "surface": {
+      "base": { "$type": "color", "$value": "#FCFAF5", "$description": "Primary warm surface" },
+      "alternate": { "$type": "color", "$value": "#EEF2EE", "$description": "Secondary living-neutral surface" }
+    },
+    "text": {
+      "primary": { "$type": "color", "$value": "#202522", "$description": "Primary readable text" },
+      "onBrand": { "$type": "color", "$value": "#FFFFFF", "$description": "Text on approved dark/brand surfaces when contrast is validated" }
+    },
+    "brand": {
+      "primary": { "$type": "color", "$value": "#234F43", "$description": "Main New Earth forest-teal anchor" },
+      "deep": { "$type": "color", "$value": "#17372F", "$description": "Deep surfaces and strong hierarchy" }
+    },
+    "accent": {
+      "systems": { "$type": "color", "$value": "#3F746B", "$description": "Systems/evidence/technical emphasis; never sole status cue" },
+      "gold": { "$type": "color", "$value": "#8A6F32", "$description": "Restrained ceremonial/highlight emphasis; not general body text" }
+    },
+    "border": {
+      "subtle": { "$type": "color", "$value": "#D4DAD4", "$description": "Quiet structural boundary" }
+    },
+    "focus": {
+      "primary": { "$type": "color", "$value": "#1A665B", "$description": "Primary focus indicator colour" }
+    }
+  },
+  "font": {
+    "family": {
+      "display": { "$type": "fontFamily", "$value": ["ui-serif", "Georgia", "Cambria", "Times New Roman", "serif"] },
+      "body": { "$type": "fontFamily", "$value": ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Arial", "sans-serif"] },
+      "mono": { "$type": "fontFamily", "$value": ["ui-monospace", "Consolas", "monospace"] }
+    },
+    "weight": {
+      "regular": { "$type": "fontWeight", "$value": 400 },
+      "medium": { "$type": "fontWeight", "$value": 500 },
+      "bold": { "$type": "fontWeight", "$value": 700 }
+    },
+    "size": {
+      "xs": { "$type": "dimension", "$value": "0.8125rem" },
+      "sm": { "$type": "dimension", "$value": "0.9375rem" },
+      "base": { "$type": "dimension", "$value": "1rem" },
+      "lg": { "$type": "dimension", "$value": "1.25rem" },
+      "xl": { "$type": "dimension", "$value": "1.75rem" },
+      "2xl": { "$type": "dimension", "$value": "2.25rem" },
+      "3xl": { "$type": "dimension", "$value": "3.5rem" }
+    },
+    "lineHeight": {
+      "body": { "$type": "number", "$value": 1.65 },
+      "heading": { "$type": "number", "$value": 1.15 }
+    }
+  },
+  "space": {
+    "xs": { "$type": "dimension", "$value": "4px" },
+    "sm": { "$type": "dimension", "$value": "8px" },
+    "md": { "$type": "dimension", "$value": "12px" },
+    "base": { "$type": "dimension", "$value": "16px" },
+    "lg": { "$type": "dimension", "$value": "24px" },
+    "xl": { "$type": "dimension", "$value": "32px" },
+    "2xl": { "$type": "dimension", "$value": "48px" },
+    "3xl": { "$type": "dimension", "$value": "64px" },
+    "4xl": { "$type": "dimension", "$value": "96px" }
+  },
+  "radius": {
+    "card": { "$type": "dimension", "$value": "14px" },
+    "control": { "$type": "dimension", "$value": "10px" },
+    "pill": { "$type": "dimension", "$value": "999px", "$description": "Badges/chips and explicitly pill-shaped compact controls only" }
+  },
+  "border": {
+    "width": {
+      "subtle": { "$type": "dimension", "$value": "1px" },
+      "focus": { "$type": "dimension", "$value": "3px" }
+    }
+  },
+  "focus": {
+    "ringWidth": { "$type": "dimension", "$value": "3px" },
+    "ringOffset": { "$type": "dimension", "$value": "3px" }
+  },
+  "motion": {
+    "duration": {
+      "standard": { "$type": "duration", "$value": "180ms" }
+    }
+  },
+  "shadow": {
+    "soft": {
+      "$type": "shadow",
+      "$value": {
+        "color": "#18342C12",
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "30px",
+        "spread": "0px"
+      },
+      "$description": "Reference level-1/soft elevation; platform adapters may translate while preserving restraint"
+    }
+  },
+  "elevation": {
+    "level0": { "$type": "number", "$value": 0 },
+    "level1": { "$type": "number", "$value": 1 },
+    "level2": { "$type": "number", "$value": 2 }
+  },
+  "layout": {
+    "readableMeasure": { "$type": "dimension", "$value": "760px", "$description": "Editorial readability reference; not an application-shell limit" },
+    "websiteWideReference": { "$type": "dimension", "$value": "1200px", "$description": "Website reference only; not a universal app maximum" }
+  }
+}
