@@ -1,0 +1,34 @@
+category,semantic_token,candidate_value,source,status,m01a_decision,notes
+colour,surface.base,#FCFAF5,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Warm primary surface
+colour,surface.alternate,#EEF2EE,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Living neutral section/card surface
+colour,text.ink,#202522,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Primary readable ink
+colour,brand.primary,#234F43,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Forest-teal New Earth anchor
+colour,brand.deep,#17372F,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Dark surfaces and depth
+colour,accent.systems,#3F746B,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Systems/evidence accent with text labels
+colour,accent.gold,#8A6F32,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Restrained highlight only
+colour,border.subtle,#D4DAD4,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Quiet structural boundary
+colour,focus.primary,#1A665B,WA-03 Direction C,APPROVED,PROMOTE_CANDIDATE,Visible keyboard focus
+font,font.display,"ui-serif, Georgia, Cambria, 'Times New Roman', serif",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,No remote font dependency
+font,font.body,"ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Body navigation and UI
+font,font.mono,"ui-monospace, Consolas, monospace",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Technical labels only
+line_height,line.body,1.65,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Long-form comfort
+line_height,line.heading,1.15,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Heading rhythm
+spacing,space.scale,"4|8|12|16|24|32|48|64|96px",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Shared rhythm; semantic aliases required in M01B
+layout,measure.readable,760px,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_AS_PRINCIPLE,Do not force onto application shells
+layout,layout.wide,1200px,WA-03 Direction C,APPROVED_PRINCIPLE,ADAPT_FOR_NEDS,Website reference; apps may require shell-specific max
+responsive,review.breakpoints,"480|768|1024|1280px",WA-03 Direction C,APPROVED_PRINCIPLE,WEBSITE_REFERENCE,Prefer content-driven behavior across frameworks
+shape,radius.card,14px,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Within approved 12-16px range
+shape,radius.control,"8-12px",WA-03 approved baseline,APPROVED,PROMOTE_CANDIDATE,Use role-specific alias in M01B
+shape,radius.badge,pill,WA-03 approved baseline,APPROVED,PROMOTE_BY_ROLE,Do not apply to all buttons
+border,border.subtle,"1px solid #D4DAD4",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Boundary cannot rely on shadow only
+shadow,shadow.soft,"0 10px 30px rgba(24,52,44,.07)",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Validate cross-platform representation
+motion,motion.standard,180ms,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Respect reduced motion
+focus,focus.ring,"3px solid #1A665B",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_CANDIDATE,Offset to be standardized in M01B
+elevation,elevation.levels,"0|1|2",WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_PRINCIPLE,Low-density hierarchy only
+image,image.hero,cover-with-focal-point-metadata,WA-03 Direction C,APPROVED_PRINCIPLE,PROMOTE_PRINCIPLE,Never stretch; alt/decorative treatment required
+legacy,legacy.brand.green,#2F4F3B,WordPress Direction A,NOT_SELECTED,HISTORICAL,Do not promote over Direction C
+legacy,legacy.surface.sand,#F4EFE4,WordPress Direction A,NOT_SELECTED,HISTORICAL,May remain a product accent only after explicit approval
+legacy,legacy.font.display,Playfair Display,Earlier website typography,OLDER_DIRECTION,HISTORICAL,Not mandatory NEDS font
+legacy,legacy.font.body,Inter,Earlier website typography,OLDER_DIRECTION,HISTORICAL,Not mandatory NEDS font
+implementation_drift,astro.green,#174D36,src/styles/global.css,ACTIVE_LEGACY_ALIAS,REFINE_LATER,Still referenced by some rules including original button background
+implementation_drift,astro.max,1180px,src/styles/global.css,ACTIVE_LEGACY_ALIAS,REFINE_LATER,Later shell explicitly uses 1200px
