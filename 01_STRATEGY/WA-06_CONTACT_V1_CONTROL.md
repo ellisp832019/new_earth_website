@@ -59,9 +59,11 @@ or payment flow.
 ## Deployment contract
 
 The deployment environment must provide `NE_CONTACT_GENERAL`,
-`NE_CONTACT_PETER`, `NE_CONTACT_HAYLEY` and `NE_CONTACT_SENDER` as valid email
-configuration outside the repository. No recipient address or credential is
-committed or exposed to the browser.
+`NE_CONTACT_PETER` and `NE_CONTACT_SENDER` as valid email configuration outside
+the repository. General, product/customer, collaboration, trainee/intern,
+funding/investment and event/speaking enquiries use the General route; technical
+partnership and research use the Peter technical route. No recipient address or
+credential is committed or exposed to the browser.
 
 ## Proof boundary
 
