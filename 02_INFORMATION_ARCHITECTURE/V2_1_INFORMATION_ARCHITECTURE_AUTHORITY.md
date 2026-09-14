@@ -131,6 +131,53 @@ generic product imagery is used pending an approved product cover or social
 asset. The Phase D experience is text-first to preserve public asset and
 publication boundaries.
 
+## Phase E first-product readiness and commerce activation gate
+
+Tracked authority confirms only two future creator families: Peter-approved New
+Earth Practical Guides and Hayley-approved New Earth Conscious Living. It does
+not identify a specific approved offer with its title, creator approval,
+ownership, rights, version, format, source and delivery files, cover,
+description, price, currency, territory, seller, tax treatment, cancellation
+position, support, provider, accessibility, SEO/social metadata or privacy
+data flows. The first-product readiness control is therefore deliberately
+unassigned. It is not a public product record and must not appear as one.
+
+Product readiness states are controlled as follows: `DRAFT` maps to the public
+`FUTURE_VISION` model; `COMING_SOON` maps to `COMING_SOON`; and the internal
+`READY_FOR_COMMERCE_ACTIVATION` state remains publicly `COMING_SOON` with the
+message “Purchase pathway being prepared”. `AVAILABLE` maps to `AVAILABLE`
+only when every activation gate is approved and a valid purchase URL exists.
+The product-detail template must not render a live purchase CTA otherwise.
+
+The seller of record is an owner/business decision. New Earth Advanced
+Technologies Ltd may be considered but is not assumed or presented as the
+seller without explicit authority. Initial territory, currency, VAT/tax,
+digital-content cancellation/refund terms and a customer-support process also
+remain owner/legal decisions. The existing Contact route is only a temporary
+enquiry boundary, not a product-support system.
+
+No payment provider is selected in Phase E. A later provider decision must
+cover seller identity, product/price mapping, hosted checkout or payment link,
+success/redirect route, receipts, tax/VAT capability, refunds, data processing
+and security/privacy review. No credentials, webhook design or client-side
+payment code belongs in this repository before that decision.
+
+Master/source files remain private and controlled. A future delivery artefact
+must be versioned, reviewed and held outside `public/`; it may be delivered
+only through an approved provider-hosted flow, secure controlled link or
+explicitly approved manual fulfilment. It must not expose a sellable source
+file. Product cover, preview, social card, accessible description, creator
+attribution and public rights approval remain asset gaps until an identified
+product is approved.
+
+Commerce activation is blocked until the product, seller, price/currency,
+territory/tax, cancellation/refund position, support route, delivery method,
+provider, accessibility, rights, legal terms, privacy/data flows and tested
+purchase journey are approved. Product structured data is also deferred until
+the product, price, availability and seller are accurate. No checkout,
+payments, downloads, fulfilment, accounts, mailing or analytics are activated
+by Phase E.
+
 ## Deferred items
 
 - What We're Building route/page content.
