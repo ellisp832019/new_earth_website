@@ -15,8 +15,10 @@ const { project } = Astro.props;
 if (!project) throw new Error('Project route requires an explicitly public-enabled catalogue entry.');
 const publicBuild = process.env.PUBLIC_ASSET_MODE === 'PUBLIC';
 const projectAssetUrl = (filename: string) => `${publicBuild ? '/assets' : '/local-assets'}/${filename}`;
+const socialImagePath = project.slug === 'microgrow' ? '/assets/microgrow_hardware_public.webp' : undefined;
+const socialImageAlt = project.slug === 'microgrow' ? 'Current physical MicroGrow prototype hardware and connected development components.' : undefined;
 ---
-<BaseLayout title={project.name} description={project.shortDescription} canonical={`/projects/${project.slug}/`}>
+<BaseLayout title={project.name} description={project.shortDescription} canonical={`/projects/${project.slug}/`} socialImagePath={socialImagePath} socialImageAlt={socialImageAlt}>
   <article class:list={['project-page', 'shell', `project-page--${project.slug}`]}>
     <div class="project-hero-layout">
     <header class="project-page__hero">
