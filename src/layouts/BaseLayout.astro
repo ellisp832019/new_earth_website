@@ -82,18 +82,22 @@ const experienceContext = getExperienceContext(Astro.url.pathname);
           <a href="/projects/">Projects</a>
           <a href="/projects/microgrow/">MicroGrow</a>
         </div>
-        <div>
+        <div class="footer-company-legal">
           <h2>Company / Legal</h2>
-          <a href="/about/">About New Earth</a>
-          <a href="/team/">Team</a>
-          <a href="/founders-journey/">Founder's Journey</a>
-          <a href="/contact/">Contact</a>
-          <a href="/legal/">Legal information</a>
-          <a href="/legal/privacy-policy/">Privacy Policy</a>
-          <a href="/legal/cookie-policy/">Cookie Policy</a>
-          <a href="/legal/terms/">Terms of Use</a>
-          <a href="/legal/disclaimer/">Disclaimer</a>
-          <p><strong>New Earth Advanced Technologies Ltd</strong><br />Company number: 17286202</p>
+          <nav class="footer-company-links" aria-label="Company links">
+            <a href="/about/">About New Earth</a>
+            <a href="/team/">Team</a>
+            <a href="/founders-journey/">Founder's Journey</a>
+            <a href="/contact/">Contact</a>
+          </nav>
+          <nav class="footer-legal-links" aria-label="Legal links">
+            <a href="/legal/">Legal information</a>
+            <a href="/legal/privacy-policy/">Privacy Policy</a>
+            <a href="/legal/cookie-policy/">Cookie Policy</a>
+            <a href="/legal/terms/">Terms of Use</a>
+            <a href="/legal/disclaimer/">Disclaimer</a>
+          </nav>
+          <p class="footer-registration"><strong>New Earth Advanced Technologies Ltd</strong><span>Registered company no. 17286202</span></p>
         </div>
       </div>
     </footer>
