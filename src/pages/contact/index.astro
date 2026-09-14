@@ -1,29 +1,29 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Contact New Earth | Get in Touch" description="Contact New Earth for aligned inquiry, collaboration, systems discussion, or interest in MicroGrow and the wider New Earth vision." canonical="/contact/">
+<BaseLayout title="Contact / Work With Us | New Earth" description="Contact New Earth about products, collaboration, technical partnerships, research, events or other clearly scoped work." canonical="/contact/">
   <article class="contact-page">
     <header class="page-hero shell contact-page__hero">
-      <p class="eyebrow">Contact New Earth</p>
-      <h1>Start a conversation</h1>
-      <p class="lede">Contact New Earth, Peter and Hayley about the wider vision, practical work or a clearly scoped conversation.</p>
+      <p class="eyebrow">Contact / Work With Us</p>
+      <h1>Start a clear conversation.</h1>
+      <p class="lede">Contact New Earth about the wider vision, practical work or a clearly scoped opportunity to work together.</p>
     </header>
 
     <div class="shell contact-page__layout">
       <section class="contact-page__context" aria-labelledby="contact-context-title">
         <p class="eyebrow">Choose a clear route</p>
-        <h2 id="contact-context-title">Who this is for</h2>
+        <h2 id="contact-context-title">How can we help?</h2>
         <div class="contact-page__routes">
-          <article><h3>General / New Earth</h3><p>New Earth, community, wider collaboration or anything that does not fit elsewhere.</p></article>
-          <article><h3>Peter</h3><p>Technology, MicroGrow, engineering, systems and related collaboration.</p></article>
-          <article><h3>Hayley</h3><p>Conscious Living and aligned creator or community enquiries.</p></article>
+          <article><h3>Products, collaboration and practical work</h3><p>Ask about future products, customer enquiries, collaboration, technical partnerships or research.</p></article>
+          <article><h3>People and invitations</h3><p>Share an expression of interest for a trainee or intern opportunity, invite us to a talk or event, or raise funding or investment interest.</p></article>
+          <article><h3>General enquiries</h3><p>Start here for New Earth, the wider body of work, or anything that does not fit another route.</p></article>
         </div>
         <aside class="contact-page__company" aria-labelledby="contact-company-title">
           <p class="eyebrow">Company context</p>
-          <h3 id="contact-company-title">Selected practical work</h3>
+          <h3 id="contact-company-title">A clear company context</h3>
           <p>New Earth is the wider vision and body of work. New Earth Advanced Technologies Ltd operates selected technology, research, systems and future product work aligned with that vision.</p>
         </aside>
-        <p class="contact-page__privacy">Your details will be used only to read and respond to your enquiry. This form does not subscribe you to a newsletter or mailing list. Read the <a href="/legal/privacy-policy/">Privacy Policy</a> for the current handling baseline.</p>
+        <p class="contact-page__privacy">Your details will be used only to read, route and respond to this enquiry. This form does not subscribe you to a newsletter or mailing list. Read the <a href="/legal/privacy-policy/">Privacy Policy</a> for the current handling baseline.</p>
       </section>
 
       <section class="contact-page__form-panel" aria-labelledby="contact-form-title">
@@ -46,10 +46,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="contact-page__trap" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
           <div class="form-field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" maxlength="100" autocomplete="name" required /></div>
           <div class="form-field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" maxlength="254" autocomplete="email" required /></div>
-          <div class="form-field"><label for="audience">Who is this for? <span aria-hidden="true">*</span></label><select id="audience" name="audience" required><option value="">Choose a route</option><option>General / New Earth</option><option>Peter</option><option>Hayley</option></select></div>
-          <div class="form-field"><label for="subject">Subject <span aria-hidden="true">*</span></label><select id="subject" name="subject" required><option value="">Choose a subject</option><option>General enquiry</option><option>Collaboration</option><option>MicroGrow</option><option>Technology &amp; systems</option><option>New Earth / community</option><option>Conscious Living</option><option>Media / interview</option><option>Other</option></select></div>
+          <div class="form-field"><label for="enquiry-type">Enquiry type <span aria-hidden="true">*</span></label><select id="enquiry-type" name="enquiry_type" required><option value="">Choose an enquiry type</option><option>General enquiry</option><option>Product / customer enquiry</option><option>Collaboration</option><option>Technical partnership</option><option>Trainee / intern expression of interest</option><option>Funding / investment interest</option><option>Event / speaking</option><option>Research</option></select></div>
+          <div class="form-field"><label for="subject">Subject <span aria-hidden="true">*</span></label><input id="subject" name="subject" type="text" maxlength="160" required /></div>
           <div class="form-field"><label for="organisation">Organisation <span class="optional">(optional)</span></label><input id="organisation" name="organisation" type="text" maxlength="150" autocomplete="organization" /></div>
           <div class="form-field"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="8" maxlength="5000" required></textarea></div>
+          <div class="form-field form-field--check"><input id="privacy-ack" name="privacy_ack" type="checkbox" value="yes" required /><label for="privacy-ack">I understand that New Earth will use these details to read, route and respond to this enquiry, as described in the <a href="/legal/privacy-policy/">Privacy Policy</a>. <span aria-hidden="true">*</span></label></div>
           <p class="form-note"><span aria-hidden="true">*</span> Required fields. Please do not include passwords or other sensitive information.</p>
           <button class="button" type="submit">Send enquiry</button>
         </form>
@@ -115,6 +116,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .form-field { display: grid; gap: .45rem; }
   .form-field label { color: var(--deep); font-weight: 700; }
   .form-field input, .form-field select, .form-field textarea { width: 100%; min-width: 0; box-sizing: border-box; padding: .8rem .9rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--ivory); color: var(--ink); font: inherit; }
+  .form-field--check { grid-template-columns: auto 1fr; align-items: start; gap: .65rem; }
+  .form-field--check input { width: 1.15rem; height: 1.15rem; margin-top: .28rem; padding: 0; accent-color: var(--forest); }
+  .form-field--check label { font-weight: 400; line-height: 1.5; }
   .form-field textarea { resize: vertical; }
   .form-field input:focus-visible, .form-field select:focus-visible, .form-field textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
   .optional, .form-note { font-size: .9rem; font-weight: 400; }
