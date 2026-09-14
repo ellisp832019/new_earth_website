@@ -10,7 +10,11 @@ const expectedRoutes = [
   '/new-earth-in-practice/', '/what-were-building/', '/digital-products/',
   '/digital-products/practical-guides/', '/digital-products/conscious-living/',
   '/projects/', '/projects/microgrow/',
-  '/projects/command-centre/', '/journal/', '/about/', '/team/', '/founders-journey/',
+  '/projects/command-centre/', '/journal/', '/journal/category/new-earth/',
+  '/journal/category/technology/', '/journal/category/microgrow/',
+  '/journal/category/digital-products/', '/journal/category/research/',
+  '/journal/category/founder-journey/', '/journal/category/conscious-living/',
+  '/about/', '/team/', '/founders-journey/',
   '/get-involved/', '/contact/', '/legal/', '/legal/privacy-policy/',
   '/legal/terms/', '/legal/cookie-policy/', '/legal/disclaimer/',
 ];
@@ -39,6 +43,7 @@ const routeFor = (file) => {
 };
 const exists = (path) => access(join(root, path)).then(() => true, () => false);
 const attr = (html, pattern) => html.match(pattern)?.[1] ?? '';
+const publicRoutes = htmlFiles.map(routeFor).filter((route) => route !== '/404.html');
 
 for (const file of htmlFiles) {
   const route = routeFor(file);
@@ -92,8 +97,8 @@ for (const route of expectedRoutes) {
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8').catch(() => '');
 const sitemapRoutes = [...sitemap.matchAll(/<loc>(https:\/\/new-earth\.uk[^<]+)<\/loc>/g)].map((match) => match[1].slice(origin.length));
-if (sitemapRoutes.length !== expectedRoutes.length) failures.push(`sitemap: expected ${expectedRoutes.length} routes, found ${sitemapRoutes.length}`);
-for (const route of expectedRoutes) if (!sitemapRoutes.includes(route)) failures.push(`sitemap: missing ${route}`);
+if (sitemapRoutes.length !== publicRoutes.length) failures.push(`sitemap: expected ${publicRoutes.length} routes, found ${sitemapRoutes.length}`);
+for (const route of publicRoutes) if (!sitemapRoutes.includes(route)) failures.push(`sitemap: missing ${route}`);
 for (const route of redirectSources) if (sitemapRoutes.includes(route)) failures.push(`sitemap: redirect source included ${route}`);
 
 const robots = await readFile(join(root, 'robots.txt'), 'utf8').catch(() => '');

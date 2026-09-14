@@ -178,13 +178,47 @@ the product, price, availability and seller are accurate. No checkout,
 payments, downloads, fulfilment, accounts, mailing or analytics are activated
 by Phase E.
 
+## Phase F Journal and Building in Public foundation
+
+The Journal is the canonical public publication area for evidence-led progress,
+history and learning. Building in Public means documenting what is being built,
+what changed, what is being learned, what remains in development, what is
+research and what is future work. It does not require a publishing schedule or
+turn unverified work into a public claim.
+
+The controlled Journal source is `src/data/journal.ts`. Only records deliberately
+added there with both `status: PUBLISHED` and `published: true` may be rendered,
+routed or indexed. Repository Markdown, strategy files, project notes and other
+tracked documents are not Journal articles by default. Publication states are
+`DRAFT`, `READY`, `PUBLISHED` and `ARCHIVED`; only `PUBLISHED` is public.
+
+The initial controlled categories are New Earth, Technology, MicroGrow, Digital
+Products, Research, Founder Journey and Conscious Living. Supported author
+identities are Peter, Hayley and New Earth; names alone do not authorise a
+biography, attributed voice or an article. Every future article requires its
+own approved author, source, title, summary, status, public wording and review.
+
+Journal entries may link to What We're Building for the current overview,
+Projects for deeper evidence and limitations, MicroGrow for project context,
+and Digital Products for approved product-development context. They must not
+duplicate those areas, create sales pages or imply product availability. Future
+MicroGrow entries are limited to evidence-bound milestones, testing, design
+changes and lessons learned.
+
+The Journal model supports optional approved hero and social assets. In their
+absence it uses the existing safe social fallback. Article-specific images,
+social cards and accessibility descriptions remain asset gaps until a real
+article is approved. Article structured data is deferred until individual
+author, dates, publisher and other required facts are accurate.
+
 ## Deferred items
 
 - What We're Building route/page content.
 - Individual Digital Products records, product covers, bundle offers, checkout,
   payment, downloads, fulfilment, seller/VAT/refund information and support operations.
 - Mailing provider and analytics.
-- Journal article publication.
+- Journal article publication beyond intentionally approved `PUBLISHED` records,
+  article-specific assets and Article structured data.
 - Dependency or Astro upgrades.
 
 ## Navigation and footer implementation rule

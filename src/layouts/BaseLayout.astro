@@ -4,12 +4,12 @@ import AssetImage from '../components/AssetImage.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
 import { assets, nav } from '../data/site';
 import { getExperienceContext } from '../data/experience';
-const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false } = Astro.props;
+const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false, socialImagePath } = Astro.props;
 const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 const siteOrigin = Astro.site ?? new URL('https://new-earth.uk');
 const canonicalUrl = canonical ? new URL(canonical, siteOrigin).href : undefined;
 const fullTitle = title === 'New Earth' || title.endsWith('| New Earth') ? title : `${title} | New Earth`;
-const socialImage = new URL('/assets/home_hero_new_earth_main.webp', siteOrigin).href;
+const socialImage = new URL(socialImagePath ?? '/assets/home_hero_new_earth_main.webp', siteOrigin).href;
 const experienceContext = getExperienceContext(Astro.url.pathname);
 ---
 <!doctype html>

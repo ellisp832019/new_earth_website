@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { journalCategories, publishedJournalArticles } from '../data/journal';
 import { publicProjects } from '../data/projects';
 
 const routes = [
@@ -20,6 +21,8 @@ const routes = [
     .filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED')
     .map((project) => `/projects/${project.slug}/`),
   '/journal/',
+  ...journalCategories.map((category) => `/journal/category/${category.id}/`),
+  ...publishedJournalArticles.map((article) => `/journal/${article.slug}/`),
   '/about/',
   '/team/',
   '/founders-journey/',
