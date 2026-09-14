@@ -11,6 +11,7 @@ const commandCentreImage = publicBuild ? '/assets/CC-VIS-001B_command-centre-ind
     <p class="eyebrow">Developing work</p>
     <h1>Projects</h1>
     <p class="lede">Projects are introduced one at a time with clear status, evidence and audience information as the work develops.</p>
+    <p class="projects-overview-cue">Looking for the wider visitor-friendly overview? <a class="text-link" href="/what-were-building/">See What We’re Building <span aria-hidden="true">→</span></a></p>
     {visibleProjects.length > 0 && <div class="project-index-list">
       {visibleProjects.map((project) => <article class="card project-index-card"><div class="project-index-card__content">
         <p class="project-context"><span class="context-label">System</span><span>{project.maturity}</span></p>
@@ -28,6 +29,7 @@ const commandCentreImage = publicBuild ? '/assets/CC-VIS-001B_command-centre-ind
   .projects-placeholder { max-width: 1120px; padding-block: clamp(5rem, 12vw, 9rem); }
   .projects-placeholder h1 { max-width: 12ch; }
   .projects-placeholder .lede { max-width: 52ch; }
+  .projects-overview-cue { max-width: 58ch; margin-top: 1.25rem; padding-left: 1rem; border-left: 3px solid var(--teal); }
   .project-index-list { display: grid; gap: 1.5rem; margin-block: 2.5rem; }
   .project-index-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 340px); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; min-width: 0; padding: clamp(1.5rem, 3vw, 2.25rem); }
   .project-index-card__content { min-width: 0; }

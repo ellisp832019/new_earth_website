@@ -11,6 +11,7 @@ const routes = [
   '/blueprint/transition-path/',
   '/ecosystem/',
   '/new-earth-in-practice/',
+  '/what-were-building/',
   '/projects/',
   ...publicProjects
     .filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED')

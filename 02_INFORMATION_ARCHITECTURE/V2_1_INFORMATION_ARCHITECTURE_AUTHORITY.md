@@ -75,7 +75,35 @@ The canonical implementation is `src/data/public-status.ts`:
 | RESEARCH | `RESEARCH` | No performance, availability or completed-result claim. |
 | FUTURE VISION | `CONCEPT / FUTURE`, `PUBLIC INFORMATION ONLY` | Longer-term direction only. |
 
-## Phase A deferred items
+## Phase C What We're Building activation
+
+`/what-were-building/` is now the live visitor-friendly overview of current,
+research and future work. It is intentionally not a product catalogue: it has
+no prices, ordering, downloads, mailing, checkout or availability pathway.
+The page uses the canonical public-status model, with no Available or Coming
+Soon entry at this baseline.
+
+MicroGrow is shown as **IN DEVELOPMENT** and links to its retained deeper
+evidence route, `/projects/microgrow/`. It is a prototype / controlled
+validation project, not a commercially available product. Command Centre is
+also **IN DEVELOPMENT**: its public evidence route may be linked, but the
+overview must not imply finished integration, operational readiness or exposed
+controls.
+
+The overview uses a simple public relationship model: Vision → practical work
+and possible future products → engineering → intelligence → future ecosystem.
+It is communication context rather than internal architecture. NEOS, GAIA and
+Platform Core may be described only as bounded high-level directions, without
+technical capability, endpoint, runtime or integration claims.
+
+Projects remains the deeper evidence-led index and detail layer; it is not
+redirected or replaced. Ecosystem remains the deeper relationship explanation,
+and New Earth in Practice remains the illustrative bridge to everyday
+application rather than a catalogue or deployment claim. What We're Building
+is now a live header and footer destination; Digital Products remains deferred
+and unlinked until Phase D.
+
+## Deferred items
 
 - What We're Building route/page content.
 - Digital Products routes, catalogue, product pages, bundles, checkout and downloads.
