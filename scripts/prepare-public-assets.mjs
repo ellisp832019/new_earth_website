@@ -12,7 +12,6 @@ const files = [
   ['01_GLOBAL_SITE/heroes/vision_hero.png', 'vision_hero.png'],
   ['03_MANIFESTO/heroes/manifesto_hero.png', 'manifesto_hero.png'],
   ['04_BLUEPRINT/hero/blueprint_hero.png', 'blueprint_hero.png'],
-  ['05_SYSTEMS/projects/field_scanner_project.webp', 'field_scanner_project.webp'],
   ['09_BLOG/featured/journal_featured_home.webp', 'journal_featured_home.webp'],
   ['10_RESOURCES/featured/resources_featured_home.webp', 'resources_featured_home.webp'],
   ['10_RESOURCES/featured/faq_glossary_featured.webp', 'faq_glossary_featured.webp'],
@@ -35,6 +34,7 @@ const files = [
 ];
 
 await rm(new URL('../public/assets/new_earth_builders_logo.webp', import.meta.url), { force: true });
+await rm(new URL('../public/assets/field_scanner_project.webp', import.meta.url), { force: true });
 
 for (const [relativeSource, publicName] of files) {
   const source = new URL(`../ASSETS/${relativeSource}`, import.meta.url);
