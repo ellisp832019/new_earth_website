@@ -1,0 +1,33 @@
+---
+import { journalAuthor, journalCategory, type JournalArticle } from '../data/journal';
+
+interface Props {
+  article: JournalArticle;
+}
+
+const { article } = Astro.props;
+const category = journalCategory(article.category);
+const author = journalAuthor(article.author);
+---
+
+<article class="journal-card">
+  {article.heroAsset?.approvedForPublicUse ? <img src={article.heroAsset.publicPath} alt={article.heroAsset.alt} loading="lazy" /> : null}
+  <div class="journal-card__content">
+    <p class="journal-card__meta"><span>{category?.label}</span><span aria-hidden="true">·</span><time datetime={article.publishedDate}>{article.publishedDate}</time></p>
+    <h2><a href={`/journal/${article.slug}/`}>{article.title}</a></h2>
+    <p>{article.summary}</p>
+    <p class="journal-card__byline">By {author?.label} · {article.readingTime}</p>
+    <a class="text-link" href={`/journal/${article.slug}/`}>Read article <span aria-hidden="true">→</span></a>
+  </div>
+</article>
+
+<style>
+  .journal-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .journal-card > img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .journal-card__content { padding: clamp(1.25rem, 3vw, 1.75rem); }
+  .journal-card h2 { margin-top: .65rem; }
+  .journal-card h2 a { color: inherit; text-decoration: none; }
+  .journal-card h2 a:hover { text-decoration: underline; }
+  .journal-card__meta, .journal-card__byline { color: var(--muted); font-size: .82rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; }
+  .journal-card__meta { display: flex; flex-wrap: wrap; gap: .45rem; }
+</style>

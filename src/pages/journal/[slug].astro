@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { journalAuthor, journalCategory, publishedJournalArticles, type JournalArticle } from '../../data/journal';
+
+export function getStaticPaths() { return publishedJournalArticles.map((article) => ({ params: { slug: article.slug }, props: { article } })); }
+interface Props { article: JournalArticle; }
+const { article } = Astro.props;
+const category = journalCategory(article.category);
+const author = journalAuthor(article.author);
+const socialImagePath = article.socialAsset?.approvedForPublicUse ? article.socialAsset.publicPath : undefined;
+---
+
+<BaseLayout title={article.title} description={article.summary} canonical={`/journal/${article.slug}/`} socialImagePath={socialImagePath}>
+  <article class="shell journal-article"><header><p class="eyebrow"><a href={`/journal/category/${article.category}/`}>{category?.label}</a></p><h1>{article.title}</h1><p class="lede">{article.summary}</p><p class="article-meta">By {author?.label} <span aria-hidden="true">·</span> <time datetime={article.publishedDate}>{article.publishedDate}</time> <span aria-hidden="true">·</span> {article.readingTime}</p></header>{article.heroAsset?.approvedForPublicUse ? <img class="article-hero" src={article.heroAsset.publicPath} alt={article.heroAsset.alt} /> : null}<div class="article-body">{article.body.map((paragraph) => <p>{paragraph}</p>)}</div><footer><p>Progress and learning are documented separately from current work overviews and project evidence.</p><nav class="page-actions" aria-label="Article next steps"><a class="button" href="/journal/">Journal</a><a class="button button--outline" href="/what-were-building/">What We’re Building</a></nav></footer></article>
+</BaseLayout>
+
+<style>
+  .journal-article { max-width: 820px; padding-block: clamp(4rem, 9vw, 7rem); }
+  header { border-bottom: 1px solid var(--line); padding-bottom: clamp(2.5rem, 6vw, 4rem); }
+  header h1 { max-width: 18ch; }
+  .eyebrow a { color: inherit; }
+  .article-meta { color: var(--muted); font-size: .9rem; font-weight: 750; }
+  .article-hero { display: block; width: 100%; margin-block: 2rem; border-radius: var(--radius); }
+  .article-body { max-width: 68ch; padding-block: clamp(2rem, 5vw, 3.5rem); font-size: 1.08rem; line-height: 1.8; }
+  footer { border-top: 1px solid var(--line); padding-top: 2rem; }
+  .button--outline { border: 1px solid var(--forest); background: transparent; color: var(--forest); }
+</style>

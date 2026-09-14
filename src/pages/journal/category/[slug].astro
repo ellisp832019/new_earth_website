@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import JournalArticleCard from '../../../components/JournalArticleCard.astro';
+import { journalCategories, publishedJournalArticles, type JournalCategoryId } from '../../../data/journal';
+
+export function getStaticPaths() { return journalCategories.map((category) => ({ params: { slug: category.id }, props: { category } })); }
+const { category } = Astro.props as { category: typeof journalCategories[number] };
+const articles = publishedJournalArticles.filter((article) => article.category === category.id as JournalCategoryId);
+---
+
+<BaseLayout title={`${category.label} Journal`} description={category.description} canonical={`/journal/category/${category.id}/`}>
+  <article class="shell category-page"><header><p class="eyebrow">Journal category</p><h1>{category.label}</h1><p class="lede">{category.description}</p></header><section aria-labelledby="category-entries"><h2 id="category-entries">{articles.length ? 'Published entries' : 'No published entries yet.'}</h2>{articles.length ? <div class="article-grid">{articles.map((article) => <JournalArticleCard article={article} />)}</div> : <p>This category is ready for approved Journal articles. Drafts and source material remain private until publication is explicitly approved.</p>}</section><nav class="page-actions" aria-label="Journal category next steps"><a class="button" href="/journal/">All Journal categories</a><a class="button button--outline" href="/what-were-building/">What We’re Building</a></nav></article>
+</BaseLayout>
+
+<style>
+  .category-page { max-width: 1050px; padding-block: clamp(4rem, 9vw, 7rem); }
+  header { max-width: 750px; padding-bottom: clamp(3rem, 7vw, 5rem); }
+  header h1 { max-width: 18ch; }
+  section { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
+  .article-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .button--outline { border: 1px solid var(--forest); background: transparent; color: var(--forest); }
+  @media (max-width: 760px) { .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .article-grid { grid-template-columns: 1fr; } }
+</style>
