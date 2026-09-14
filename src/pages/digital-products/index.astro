@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { productFamilies } from '../../data/products';
+---
+
+<BaseLayout title="Digital Products | New Earth" description="A future home for approved New Earth practical guides, conscious-living resources and bundles." canonical="/digital-products/">
+  <article class="shell products-page">
+    <header class="products-hero">
+      <p class="eyebrow">Digital Products</p>
+      <h1>Practical resources, prepared with care.</h1>
+      <p class="lede">New Earth Digital Products will bring approved guides, resources and future bundles into one customer-facing place. The first offers are being prepared; no purchase path is active.</p>
+    </header>
+
+    <section class="products-context" aria-labelledby="products-context-title">
+      <p class="eyebrow">How this area works</p>
+      <h2 id="products-context-title">Products are not projects or research.</h2>
+      <p>What We’re Building explains current and future work. Projects provides deeper evidence and current limitations. This area will only publish customer-facing offers after their title, creator, format, rights and delivery details are approved.</p>
+      <p class="availability-note"><strong>Current availability:</strong> no individual product is available or purchasable.</p>
+    </section>
+
+    <section class="product-families" aria-labelledby="product-families-title">
+      <p class="eyebrow">Future creator families</p>
+      <h2 id="product-families-title">Two distinct areas of work.</h2>
+      <div class="family-grid">
+        {productFamilies.map((family) => (
+          <article class="family-card">
+            <p class="family-card__creator">{family.creator}</p>
+            <h3>{family.title}</h3>
+            <p>{family.description}</p>
+            <p class="family-card__state">Individual product details are pending approval.</p>
+            <a class="text-link" href={family.route}>Explore this family <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="products-next" aria-labelledby="products-next-title">
+      <p class="eyebrow">What happens next</p>
+      <h2 id="products-next-title">Offers will appear when they are ready to stand on their own.</h2>
+      <p>Each future product will be published with clear attribution, status, format and delivery information. Until then, this is an information and discovery area only.</p>
+      <a class="button button--outline" href="/contact/">Contact New Earth</a>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .products-page { max-width: 1100px; padding-block: clamp(4rem, 9vw, 7rem); }
+  .products-hero { max-width: 760px; padding-bottom: clamp(3rem, 7vw, 5.5rem); }
+  .products-hero h1 { max-width: 14ch; }
+  .products-context, .product-families, .products-next { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
+  .products-context h2, .product-families > h2, .products-next h2 { max-width: 20ch; }
+  .availability-note { margin-top: 1.4rem; }
+  .family-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.75rem; }
+  .family-card { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); padding: clamp(1.3rem, 3vw, 2rem); }
+  .family-card h3, .family-card p { margin-top: 0; }
+  .family-card__creator { color: var(--muted); font-size: .82rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+  .family-card__state { margin-top: auto; color: var(--muted); font-size: .92rem; }
+  .products-next { padding-bottom: 0; }
+  .button--outline { border: 1px solid var(--forest); background: transparent; color: var(--forest); }
+  @media (max-width: 620px) { .family-grid { grid-template-columns: 1fr; } }
+</style>
