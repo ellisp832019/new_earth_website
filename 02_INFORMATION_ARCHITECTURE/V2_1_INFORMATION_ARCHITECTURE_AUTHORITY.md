@@ -89,3 +89,22 @@ Only live routes may be linked. Phase A leaves the existing header navigation
 unchanged because the two future primary destinations do not yet exist. The
 footer may group current live destinations according to the V2.1 model, while
 retaining all legal links and excluding blocked/private destinations.
+
+## Phase B company and shell refinement
+
+Phase B applies the approved bounded wording: New Earth is the wider vision and
+body of work; New Earth Advanced Technologies Ltd is one practical operating
+vehicle for selected technology, research, systems and future products aligned
+with that vision. The company is subordinate to the New Earth identity and does
+not represent external communities or a wider movement.
+
+The live header retains only existing routes. Contact replaces Contribute in the
+header so the future V2.1 contact destination is discoverable; `/get-involved/`
+remains available through the footer and existing contextual links. What We're
+Building and Digital Products remain deferred and unlinked until their routes
+exist.
+
+The footer retains the four Phase A groups. Its Company / Legal group separates
+company links, legal links and registered company metadata, using only verified
+company details. No commercial, mailing, analytics or provider capability is
+introduced by Phase B.
