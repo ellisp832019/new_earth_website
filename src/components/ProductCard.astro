@@ -1,20 +1,22 @@
 ---
 import PublicStatusBadge from './PublicStatusBadge.astro';
-import type { ProductRecord } from '../data/products';
+import { productFamilies, type ProductRecord } from '../data/products';
 
 interface Props {
   product: ProductRecord;
 }
 
 const { product } = Astro.props;
+const family = productFamilies.find((item) => item.id === product.family);
 ---
 
 <article class="product-card">
   <PublicStatusBadge status={product.publicStatus} />
-  <p class="product-card__creator">{product.creator}</p>
+  <p class="product-card__creator">{product.creator} · {family?.title}</p>
   <h2>{product.title}</h2>
   <p>{product.summary}</p>
   <p class="product-card__details"><strong>Format:</strong> {product.format}</p>
+  {product.priceDisplay ? <p class="product-card__details"><strong>Price:</strong> {product.priceDisplay}</p> : null}
   <a class="text-link" href={`/digital-products/${product.slug}/`}>View product details <span aria-hidden="true">→</span></a>
 </article>
 

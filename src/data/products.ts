@@ -1,4 +1,5 @@
 import type { PublicStatus } from './public-status';
+import type { ProductReadinessState } from './product-readiness';
 
 export type ProductFamilyId = 'practical-guides' | 'conscious-living';
 
@@ -14,14 +15,26 @@ export interface ProductRecord {
   id: string;
   slug: string;
   title: string;
+  shortTitle: string;
   family: ProductFamilyId;
   creator: string;
   summary: string;
   description: string;
   publicStatus: PublicStatus;
+  readinessState: ProductReadinessState;
+  readinessId: string;
+  version: string;
   format: string;
-  delivery: string;
+  priceDisplay?: string;
+  currency?: string;
+  coverAsset?: string;
+  socialAsset?: string;
+  availabilityNote: string;
+  deliveryNote: string;
+  supportNote: string;
+  rightsNote: string;
   rightsApproved: boolean;
+  published: boolean;
   publicEnabled: boolean;
   purchaseUrl?: string;
   bundleEligible: boolean;
