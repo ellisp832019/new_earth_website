@@ -7,7 +7,9 @@ const origin = 'https://new-earth.uk';
 const expectedRoutes = [
   '/', '/vision/', '/manifesto/', '/blueprint/', '/blueprint/pillars/',
   '/blueprint/inner-blueprint/', '/blueprint/transition-path/', '/ecosystem/',
-  '/new-earth-in-practice/', '/what-were-building/', '/projects/', '/projects/microgrow/',
+  '/new-earth-in-practice/', '/what-were-building/', '/digital-products/',
+  '/digital-products/practical-guides/', '/digital-products/conscious-living/',
+  '/projects/', '/projects/microgrow/',
   '/projects/command-centre/', '/journal/', '/about/', '/team/', '/founders-journey/',
   '/get-involved/', '/contact/', '/legal/', '/legal/privacy-policy/',
   '/legal/terms/', '/legal/cookie-policy/', '/legal/disclaimer/',

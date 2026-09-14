@@ -100,13 +100,42 @@ Projects remains the deeper evidence-led index and detail layer; it is not
 redirected or replaced. Ecosystem remains the deeper relationship explanation,
 and New Earth in Practice remains the illustrative bridge to everyday
 application rather than a catalogue or deployment claim. What We're Building
-is now a live header and footer destination; Digital Products remains deferred
-and unlinked until Phase D.
+is now a live header and footer destination. Digital Products is now a live,
+information-first destination with no active offer or purchase path.
+
+## Phase D Digital Products foundation
+
+`/digital-products/` is the customer-facing discovery area for approved New
+Earth offers. It has distinct family routes for New Earth Practical Guides
+(Peter-led) and New Earth Conscious Living (Hayley-led). These routes describe
+the families only; they do not imply that an individual guide, resource or
+bundle has been approved, published or made available.
+
+The public authority currently identifies creator families but does not verify
+an individual product title, creator attribution for a specific work, format,
+rights, delivery method, support commitment, price or purchase pathway. The
+reusable product model is therefore intentionally empty. A product card and
+detail-route template exist for future approved records, but no individual
+product detail route is built or indexed at this stage.
+
+Before a product record can be published, its public title, creator approval,
+rights clearance, format, delivery information, availability status and any
+purchase/support information must be approved. `AVAILABLE` requires a defined
+active pathway; `COMING_SOON` requires an approved identified offer. Neither
+label is used for an unspecified future product. Bundle-related fields are
+data-model preparation only, not a bundle offer or commerce capability.
+
+Digital Products is distinct from What We're Building, which explains work at
+a high level, and Projects, which remains the deeper evidence-led layer. No
+generic product imagery is used pending an approved product cover or social
+asset. The Phase D experience is text-first to preserve public asset and
+publication boundaries.
 
 ## Deferred items
 
 - What We're Building route/page content.
-- Digital Products routes, catalogue, product pages, bundles, checkout and downloads.
+- Individual Digital Products records, product covers, bundle offers, checkout,
+  payment, downloads, fulfilment, seller/VAT/refund information and support operations.
 - Mailing provider and analytics.
 - Journal article publication.
 - Dependency or Astro upgrades.
@@ -129,8 +158,9 @@ not represent external communities or a wider movement.
 The live header retains only existing routes. Contact replaces Contribute in the
 header so the future V2.1 contact destination is discoverable; `/get-involved/`
 remains available through the footer and existing contextual links. What We're
-Building and Digital Products remain deferred and unlinked until their routes
-exist.
+Building remains unlinked until its route exists. Digital Products is linked
+now that its Phase D information-first routes exist; individual offers remain
+approval-gated.
 
 The footer retains the four Phase A groups. Its Company / Legal group separates
 company links, legal links and registered company metadata, using only verified

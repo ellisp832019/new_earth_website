@@ -12,6 +12,9 @@ const routes = [
   '/ecosystem/',
   '/new-earth-in-practice/',
   '/what-were-building/',
+  '/digital-products/',
+  '/digital-products/practical-guides/',
+  '/digital-products/conscious-living/',
   '/projects/',
   ...publicProjects
     .filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED')

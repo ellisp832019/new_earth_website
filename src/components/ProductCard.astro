@@ -1,0 +1,26 @@
+---
+import PublicStatusBadge from './PublicStatusBadge.astro';
+import type { ProductRecord } from '../data/products';
+
+interface Props {
+  product: ProductRecord;
+}
+
+const { product } = Astro.props;
+---
+
+<article class="product-card">
+  <PublicStatusBadge status={product.publicStatus} />
+  <p class="product-card__creator">{product.creator}</p>
+  <h2>{product.title}</h2>
+  <p>{product.summary}</p>
+  <p class="product-card__details"><strong>Format:</strong> {product.format}</p>
+  <a class="text-link" href={`/digital-products/${product.slug}/`}>View product details <span aria-hidden="true">→</span></a>
+</article>
+
+<style>
+  .product-card { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: .9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); padding: clamp(1.3rem, 3vw, 2rem); }
+  .product-card h2, .product-card p { margin: 0; }
+  .product-card__creator { color: var(--muted); font-size: .82rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+  .product-card__details { font-size: .92rem; }
+</style>

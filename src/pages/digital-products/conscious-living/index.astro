@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import { publicProducts } from '../../../data/products';
+
+const products = publicProducts.filter((product) => product.family === 'conscious-living' && product.publicEnabled);
+---
+
+<BaseLayout title="New Earth Conscious Living | Digital Products" description="A future Digital Products family for approved New Earth conscious-living resources." canonical="/digital-products/conscious-living/">
+  <article class="shell family-page">
+    <header>
+      <p class="eyebrow">Digital Products · Hayley-led creator family</p>
+      <h1>New Earth Conscious Living</h1>
+      <p class="lede">A future home for approved conscious-living resources connected with New Earth.</p>
+    </header>
+    <section aria-labelledby="living-status-title">
+      <p class="eyebrow">Publication status</p>
+      <h2 id="living-status-title">No individual resource is published yet.</h2>
+      <p>No Hayley-authored product or content is represented here without specific approval. Product titles, formats, rights and delivery details will be shown only when they are ready to publish. There is no purchase or download path at this stage.</p>
+      {products.length ? <div class="product-grid">{products.map((product) => <ProductCard product={product} />)}</div> : null}
+    </section>
+    <nav class="page-actions" aria-label="Conscious Living next steps"><a class="button" href="/digital-products/">Digital Products</a><a class="button button--outline" href="/projects/">Explore project evidence</a></nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .family-page { max-width: 900px; padding-block: clamp(4rem, 9vw, 7rem); }
+  header { max-width: 700px; padding-bottom: clamp(3rem, 7vw, 5.5rem); }
+  header h1 { max-width: 15ch; }
+  section { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
+  section h2 { max-width: 20ch; }
+  .product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .button--outline { border: 1px solid var(--forest); background: transparent; color: var(--forest); }
+  @media (max-width: 620px) { .product-grid { grid-template-columns: 1fr; } }
+</style>
