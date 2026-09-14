@@ -6,26 +6,31 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$limits = ['name' => 100, 'email' => 254, 'organisation' => 150, 'message' => 5000];
+$limits = ['name' => 100, 'email' => 254, 'subject' => 160, 'organisation' => 150, 'message' => 5000];
 $name = trim((string) ($_POST['name'] ?? ''));
 $email = trim((string) ($_POST['email'] ?? ''));
-$audience = trim((string) ($_POST['audience'] ?? ''));
+$enquiryType = trim((string) ($_POST['enquiry_type'] ?? ''));
 $subject = trim((string) ($_POST['subject'] ?? ''));
 $organisation = trim((string) ($_POST['organisation'] ?? ''));
 $message = trim((string) ($_POST['message'] ?? ''));
 $honeypot = trim((string) ($_POST['website'] ?? ''));
 $started = (int) ($_POST['form_started'] ?? 0);
+$privacyAcknowledged = (string) ($_POST['privacy_ack'] ?? '') === 'yes';
 
-$audienceMap = [
-    'General / New Earth' => 'NE_CONTACT_GENERAL',
-    'Peter' => 'NE_CONTACT_PETER',
-    'Hayley' => 'NE_CONTACT_HAYLEY',
+$enquiryTypeMap = [
+    'General enquiry' => 'NE_CONTACT_GENERAL',
+    'Product / customer enquiry' => 'NE_CONTACT_GENERAL',
+    'Collaboration' => 'NE_CONTACT_GENERAL',
+    'Technical partnership' => 'NE_CONTACT_PETER',
+    'Trainee / intern expression of interest' => 'NE_CONTACT_GENERAL',
+    'Funding / investment interest' => 'NE_CONTACT_GENERAL',
+    'Event / speaking' => 'NE_CONTACT_GENERAL',
+    'Research' => 'NE_CONTACT_PETER',
 ];
-$subjects = ['General enquiry', 'Collaboration', 'MicroGrow', 'Technology & systems', 'New Earth / community', 'Conscious Living', 'Media / interview', 'Other'];
-$valid = $honeypot === '' && isset($audienceMap[$audience]) && in_array($subject, $subjects, true);
+$valid = $honeypot === '' && isset($enquiryTypeMap[$enquiryType]) && $privacyAcknowledged;
 foreach ($limits as $field => $limit) {
     $value = $$field;
-    if ($value === '' && in_array($field, ['name', 'email', 'message'], true)) $valid = false;
+    if ($value === '' && in_array($field, ['name', 'email', 'subject', 'message'], true)) $valid = false;
     if (strlen($value) > $limit) $valid = false;
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $valid = false;
@@ -36,7 +41,7 @@ if (!$valid) {
     exit;
 }
 
-$recipientVariable = $audienceMap[$audience] ?? '';
+$recipientVariable = $enquiryTypeMap[$enquiryType] ?? '';
 $recipient = $recipientVariable !== '' ? getenv($recipientVariable) : false;
 $sender = getenv('NE_CONTACT_SENDER');
 
@@ -60,9 +65,9 @@ function escape_html(string $value): string {
 $safeSender = header_safe_email($sender);
 $safeReplyTo = header_safe_email($email);
 $organisationLabel = $organisation !== '' ? $organisation : '-';
-$safeSubject = '[New Earth] ' . $audience . ' - ' . $subject;
+$safeSubject = '[New Earth] ' . $enquiryType;
 $textBody = "NEW EARTH CONTACT ENQUIRY\n\n"
-    . "Route: {$audience}\n"
+    . "Enquiry type: {$enquiryType}\n"
     . "Subject: {$subject}\n\n"
     . "Name: {$name}\n"
     . "Email: {$email}\n"
@@ -91,7 +96,7 @@ $htmlBody = '<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><titl
     . '<tr><td style="padding:0 32px 28px;">'
     . '<h1 style="margin:0 0 20px;color:#17372f;font-size:22px;line-height:1.25;">NEW CONTACT ENQUIRY</h1>'
     . '<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">'
-    . '<tr><td style="padding:8px 0;color:#234f43;font-weight:700;width:150px;">Route</td><td style="padding:8px 0;">' . escape_html($audience) . '</td></tr>'
+    . '<tr><td style="padding:8px 0;color:#234f43;font-weight:700;width:150px;">Enquiry type</td><td style="padding:8px 0;">' . escape_html($enquiryType) . '</td></tr>'
     . '<tr><td style="padding:8px 0;color:#234f43;font-weight:700;">Subject</td><td style="padding:8px 0;">' . escape_html($subject) . '</td></tr>'
     . '<tr><td style="padding:8px 0;color:#234f43;font-weight:700;">Name</td><td style="padding:8px 0;">' . escape_html($name) . '</td></tr>'
     . '<tr><td style="padding:8px 0;color:#234f43;font-weight:700;">Email</td><td style="padding:8px 0;">' . escape_html($email) . '</td></tr>'
