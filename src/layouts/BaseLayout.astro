@@ -4,7 +4,7 @@ import AssetImage from '../components/AssetImage.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
 import { assets, nav } from '../data/site';
 import { getExperienceContext } from '../data/experience';
-const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false, socialImagePath } = Astro.props;
+const { title, description='A living framework for conscious civilisation.', canonical='/', noindex=false, socialImagePath, socialImageAlt='New Earth — a living framework for conscious civilisation.' } = Astro.props;
 const localPreview=process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 const siteOrigin = Astro.site ?? new URL('https://new-earth.uk');
 const canonicalUrl = canonical ? new URL(canonical, siteOrigin).href : undefined;
@@ -27,10 +27,12 @@ const experienceContext = getExperienceContext(Astro.url.pathname);
     {canonicalUrl && <meta property="og:url" content={canonicalUrl}>}
     <meta property="og:site_name" content="New Earth">
     <meta property="og:image" content={socialImage}>
+    <meta property="og:image:alt" content={socialImageAlt}>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content={fullTitle}>
     <meta name="twitter:description" content={description}>
     <meta name="twitter:image" content={socialImage}>
+    <meta name="twitter:image:alt" content={socialImageAlt}>
     <title>{fullTitle}</title>
   </head>
   <body class={localPreview ? 'local-preview' : 'public-mode'} data-experience-context={experienceContext.id}>
