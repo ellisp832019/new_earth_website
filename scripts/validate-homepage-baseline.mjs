@@ -23,7 +23,7 @@ for (const [key, relativePath] of images) {
   if (!sourceExists || !source.includes(`assets.${key}`)) missingImages.push(relativePath.split('/').pop());
 }
 const h1 = (html.match(/<h1\b/g) || []).length;
-const nav = ['/vision/', '/blueprint/', '/ecosystem/', '/new-earth-in-practice/', '/projects/', '/journal/', '/about/', '/get-involved/'];
+const nav = ['/vision/', '/what-were-building/', '/blueprint/', '/ecosystem/', '/new-earth-in-practice/', '/projects/', '/journal/', '/about/', '/get-involved/'];
 const navMissing = nav.filter((href) => !html.includes(`href="${href}"`));
 const sourcePathLeak = /(?:[A-Z]:\\|ASSETS_REFERENCE|OWNER_CAPTURE_INBOX)/.test(html);
 const imageCount = images.filter(([key]) => source.includes(`assets.${key}`)).length;

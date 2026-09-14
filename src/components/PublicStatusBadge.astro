@@ -1,0 +1,18 @@
+---
+import { publicStatuses, type PublicStatus } from '../data/public-status';
+
+interface Props {
+  status: PublicStatus;
+}
+
+const { status } = Astro.props;
+const definition = publicStatuses[status];
+---
+
+<span class="public-status-badge" aria-label={`Public status: ${definition.label}. ${definition.meaning}`}>
+  <span aria-hidden="true">Status:</span> {definition.label}
+</span>
+
+<style>
+  .public-status-badge { display: inline-flex; align-items: center; gap: .35rem; width: max-content; max-width: 100%; padding: .28rem .62rem; border: 1px solid var(--line); border-radius: 999px; background: var(--context-surface, var(--sage)); color: var(--context-ink, var(--deep)); font-size: .72rem; font-weight: 800; letter-spacing: .07em; line-height: 1.35; text-transform: uppercase; }
+</style>

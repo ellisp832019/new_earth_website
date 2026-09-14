@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicStatusBadge from '../../components/PublicStatusBadge.astro';
+import { buildingItems } from '../../data/building';
+import type { PublicStatus } from '../../data/public-status';
+
+const horizons: { status: PublicStatus; label: string; introduction: string }[] = [
+  { status: 'IN_DEVELOPMENT', label: 'In active development', introduction: 'Practical work is underway. These projects are not presented as commercially available or production-ready.' },
+  { status: 'RESEARCH', label: 'Research', introduction: 'These directions are being explored. Their presence here does not imply a finished system, public service or outcome.' },
+  { status: 'FUTURE_VISION', label: 'Future vision', introduction: 'These are longer-term directions that help explain where the work may lead; they are not current delivery.' },
+];
+---
+
+<BaseLayout title="What We're Building" description="A grounded overview of practical New Earth work in development, research and future direction." canonical="/what-were-building/">
+  <article class="building-page shell">
+    <header class="building-hero">
+      <p class="eyebrow">Practical work, clearly described</p>
+      <h1>What we’re building</h1>
+      <p class="lede">New Earth is a wider vision and framework, with practical work developing alongside it. Some work is being prototyped, some is research, and some remains future direction. Being shown here does not mean it is for sale or ready for general use.</p>
+      <nav class="page-actions" aria-label="What we’re building next steps"><a class="button" href="#work-horizons">See the work</a><a class="button button--outline" href="/projects/">Explore project evidence</a></nav>
+    </header>
+
+    <section class="building-relationship" aria-labelledby="relationship-title">
+      <p class="eyebrow">How to read this area</p>
+      <h2 id="relationship-title">Overview first, evidence when you need it</h2>
+      <div class="relationship-grid">
+        <div><strong>New Earth</strong><span>The wider vision and framework.</span></div>
+        <div><strong>What we’re building</strong><span>A simple view of current, emerging and future work.</span></div>
+        <div><strong>Projects</strong><span>Deeper evidence, current limitations and project detail.</span></div>
+      </div>
+    </section>
+
+    <section id="work-horizons" class="building-horizons" aria-labelledby="horizons-title">
+      <p class="eyebrow">Public horizons</p>
+      <h2 id="horizons-title">Keep today, research and future direction distinct</h2>
+      {horizons.map(({ status, label, introduction }) => {
+        const items = buildingItems.filter((item) => item.status === status);
+        return <section class="building-horizon" aria-labelledby={`horizon-${status}`}>
+          <div class="building-horizon__heading"><div><h3 id={`horizon-${status}`}>{label}</h3><p>{introduction}</p></div><PublicStatusBadge status={status} /></div>
+          <div class="building-card-grid">
+            {items.map((item) => <article class="building-card">
+              <p class="building-card__category">{item.category}</p>
+              <h4>{item.name}</h4>
+              <p>{item.description}</p>
+              <p><strong>Current state:</strong> {item.currentState}</p>
+              <p class="building-card__future"><strong>Looking ahead:</strong> {item.futureDirection}</p>
+              {item.evidenceRoute && <a class="text-link" href={item.evidenceRoute}>See the evidence and limitations for {item.name} <span aria-hidden="true">→</span></a>}
+            </article>)}
+          </div>
+        </section>;
+      })}
+    </section>
+
+    <section class="building-ecosystem" aria-labelledby="ecosystem-title">
+      <p class="eyebrow">A simple ecosystem explanation</p>
+      <h2 id="ecosystem-title">From direction to a future ecosystem</h2>
+      <p>This public communication model describes the relationship between areas of work. It is not an internal architecture diagram and does not claim that every connection is complete.</p>
+      <ol class="ecosystem-pathway" aria-label="Vision, products, engineering, intelligence, future ecosystem">
+        <li><strong>Vision</strong><span>The wider direction and questions that guide the work.</span></li>
+        <li><strong>Practical work</strong><span>Projects and possible future products explored with clear evidence boundaries.</span></li>
+        <li><strong>Engineering</strong><span>Careful development of tools and systems that support practical work.</span></li>
+        <li><strong>Intelligence</strong><span>Bounded research into how understanding and assistance may support the work.</span></li>
+        <li><strong>Future ecosystem</strong><span>A longer-term possibility of coherent, human-centred relationships between these areas.</span></li>
+      </ol>
+      <p><a class="text-link" href="/ecosystem/">Explore the deeper Ecosystem relationship view <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <section class="building-closing" aria-labelledby="building-next-title">
+      <p class="eyebrow">Continue with context</p>
+      <h2 id="building-next-title">Follow the work at the right level</h2>
+      <p>Visit Projects for the deeper evidence behind selected work. New Earth in Practice remains an illustrative bridge between the wider vision and everyday application; it is not a project or product catalogue.</p>
+      <nav class="page-actions" aria-label="Further reading"><a class="button" href="/projects/">Explore Projects</a><a class="button button--outline" href="/new-earth-in-practice/">See New Earth in Practice</a></nav>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .building-page { max-width: 1100px; padding-block: clamp(4rem, 9vw, 7rem); }
+  .building-hero { max-width: 760px; padding-bottom: clamp(3rem, 7vw, 5.5rem); }
+  .building-hero h1 { max-width: 13ch; }
+  .building-relationship, .building-horizon, .building-ecosystem, .building-closing { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
+  .building-relationship h2, .building-horizons > h2, .building-ecosystem h2, .building-closing h2 { max-width: 19ch; }
+  .relationship-grid, .building-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.75rem; }
+  .relationship-grid div, .building-card { min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); padding: clamp(1.25rem, 2.5vw, 1.75rem); }
+  .relationship-grid strong, .relationship-grid span { display: block; }
+  .relationship-grid span { margin-top: .4rem; }
+  .building-horizons > .eyebrow { margin-bottom: .5rem; }
+  .building-horizon { padding-bottom: 0; }
+  .building-horizon__heading { display: flex; justify-content: space-between; align-items: start; gap: 1rem; }
+  .building-horizon__heading h3 { margin-bottom: .55rem; }
+  .building-horizon__heading p { max-width: 65ch; margin: 0; }
+  .building-card { background: var(--ivory); box-shadow: var(--shadow); }
+  .building-card__category { margin: 0 0 .5rem; color: var(--forest); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .building-card h4 { margin: 0 0 .7rem; color: var(--deep); font: 700 1.45rem/1.2 var(--serif); }
+  .building-card p { max-width: 62ch; }
+  .building-card__future { padding-top: .85rem; border-top: 1px solid var(--line); }
+  .ecosystem-pathway { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .8rem; list-style: none; margin: 2rem 0; padding: 0; }
+  .ecosystem-pathway li { position: relative; min-width: 0; padding: 1.15rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .ecosystem-pathway li:not(:last-child)::after { content: '→'; position: absolute; right: -.65rem; top: 50%; z-index: 1; color: var(--teal); font-weight: 800; transform: translateY(-50%); }
+  .ecosystem-pathway strong, .ecosystem-pathway span { display: block; }
+  .ecosystem-pathway span { margin-top: .45rem; font-size: .9rem; line-height: 1.5; }
+  .button--outline { border: 1px solid var(--forest); background: transparent; color: var(--forest); }
+  @media (max-width: 860px) { .relationship-grid, .building-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ecosystem-pathway { grid-template-columns: repeat(3, minmax(0, 1fr)); } .ecosystem-pathway li::after { content: none !important; } }
+  @media (max-width: 580px) { .relationship-grid, .building-card-grid, .ecosystem-pathway { grid-template-columns: 1fr; } .building-horizon__heading { align-items: start; flex-direction: column; } }
+</style>

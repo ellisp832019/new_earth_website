@@ -27,7 +27,7 @@ export const experienceContexts: Record<ExperienceContextId, ExperienceContext> 
 
 const routeContextRules: Array<[RegExp, ExperienceContextId]> = [
   [/^\/(vision|manifesto|blueprint)(\/|$)/, 'vision'],
-  [/^\/(ecosystem|projects)(\/|$)/, 'systems'],
+  [/^\/(ecosystem|projects|what-were-building)(\/|$)/, 'systems'],
   [/^\/new-earth-in-practice(\/|$)/, 'practice'],
   [/^\/get-involved(\/|$)/, 'contribution'],
   [/^\/contact(\/|$)/, 'community'],
