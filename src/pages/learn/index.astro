@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pathways = [
+  {
+    title: 'Understanding the framework',
+    description: 'Explore the Blueprint to understand the principles, questions and connected areas of life that give New Earth its direction.',
+    href: '/blueprint/',
+    linkLabel: 'Explore the Blueprint',
+  },
+  {
+    title: 'Starting with personal responsibility',
+    description: 'Begin with the Inner Blueprint for a grounded look at awareness, responsibility and the choices within personal control.',
+    href: '/blueprint/inner-blueprint/',
+    linkLabel: 'Read the Inner Blueprint',
+  },
+  {
+    title: 'Understanding local capability',
+    description: 'See how practical knowledge, stewardship and cooperation can help connect local capability with wider learning.',
+    href: '/new-earth-in-practice/',
+    linkLabel: 'See New Earth in Practice',
+  },
+];
+---
+
+<BaseLayout
+  title="Learn"
+  description="Useful public knowledge and practical understanding for exploring the New Earth framework."
+  canonical="/learn/"
+>
+  <article class="learn-page shell">
+    <header class="learn-hero">
+      <p class="eyebrow">Learn</p>
+      <h1>Useful knowledge for practical understanding.</h1>
+      <p class="lede">This area gathers clear public starting points for understanding the New Earth framework, reflecting on personal responsibility and exploring how local capability can connect with wider cooperation.</p>
+    </header>
+
+    <section class="learn-section" aria-labelledby="learn-pathways">
+      <div class="learn-section__intro">
+        <p class="eyebrow">Start here</p>
+        <h2 id="learn-pathways">Three useful ways into the work.</h2>
+      </div>
+      <div class="learn-pathways">
+        {pathways.map((pathway) => (
+          <article class="learn-card">
+            <h3>{pathway.title}</h3>
+            <p>{pathway.description}</p>
+            <a class="text-link" href={pathway.href}>{pathway.linkLabel} <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="learn-section learn-section--journal" aria-labelledby="learn-journal">
+      <div>
+        <p class="eyebrow">Journal</p>
+        <h2 id="learn-journal">The first entries are being prepared.</h2>
+      </div>
+      <div>
+        <p>The Journal will add approved writing and learning context when there is something useful and accurate to publish. There are no published Journal articles at present.</p>
+        <a class="text-link" href="/journal/">Visit the Journal <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .learn-page { padding-block: clamp(4rem, 9vw, 7rem); }
+  .learn-hero { max-width: 760px; padding-bottom: clamp(3rem, 7vw, 5rem); }
+  .learn-hero h1 { max-width: 16ch; }
+  .learn-hero .lede { max-width: 65ch; }
+  .learn-section { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 5rem); }
+  .learn-section__intro { max-width: 640px; }
+  .learn-section h2 { max-width: 18ch; }
+  .learn-pathways { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .learn-card { min-width: 0; padding: 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .learn-card h3 { margin-block: .35rem .65rem; }
+  .learn-card p { margin-bottom: 1.25rem; }
+  .learn-section--journal { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 7vw, 6rem); align-items: start; padding-bottom: 0; }
+  .learn-section--journal p { max-width: 62ch; }
+  @media (max-width: 760px) { .learn-pathways, .learn-section--journal { grid-template-columns: 1fr; } }
+  @media (max-width: 400px) { .learn-hero h1 { font-size: 2.4rem; } }
+</style>
