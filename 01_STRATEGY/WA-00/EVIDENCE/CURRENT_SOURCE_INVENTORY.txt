@@ -1,0 +1,30 @@
+﻿=== COMPONENTS ===
+AssetImage.astro
+ContentPage.astro
+EcosystemExplorer.astro
+ImageLightbox.astro
+JournalArticleCard.astro
+LegalPage.astro
+LightboxImage.astro
+LocalFirstPathway.astro
+ProductCard.astro
+PublicRelationshipMap.astro
+PublicStatusBadge.astro
+
+=== LAYOUTS ===
+BaseLayout.astro
+CorePageLayout.astro
+
+=== DATA ===
+building.ts
+experience.ts
+homepage-baseline.ts
+journal.ts
+product-readiness.ts
+products.ts
+projects.ts
+public-status.ts
+site.ts
+
+=== STYLES ===
+src\styles\global.css

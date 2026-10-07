@@ -1,0 +1,5 @@
+﻿new-earth-website-v2@ D:\Dev\Projects\New Earth - Website\NEW_EARTH_WEBSITE
++-- astro@5.18.2
++-- cross-env@10.1.0
+`-- typescript@5.9.3
+
