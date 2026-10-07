@@ -1,7 +1,10 @@
 ---
 import CorePageLayout from '../../layouts/CorePageLayout.astro';
 import { assets, pages } from '../../data/site';
-const page = pages.blueprint;
+const page = {
+  ...pages.blueprint,
+  links: [...pages.blueprint.links, ['Continue into useful learning', '/learn/']],
+};
 ---
 <CorePageLayout
   page={page}

@@ -12,6 +12,7 @@ const routes = [
   '/blueprint/transition-path/',
   '/ecosystem/',
   '/new-earth-in-practice/',
+  '/learn/',
   '/what-were-building/',
   '/digital-products/',
   '/digital-products/practical-guides/',
