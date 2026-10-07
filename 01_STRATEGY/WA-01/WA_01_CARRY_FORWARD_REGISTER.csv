@@ -1,0 +1,11 @@
+﻿ID,Severity,Finding,Disposition,Target
+CF-01,MAJOR,"Astro/PHP deployment and staging documentation does not yet match current runtime","Carry forward","Deployment/staging release gate"
+CF-02,MAJOR,"MicroGrow PUBLIC-ENABLED conflicts with visible PENDING OWNER REVIEW fact","Carry forward","Controlled public-status correction before future public release"
+CF-03,BOUNDARY,"Journal Knowledge and creator/product areas are readiness structures rather than live customer capability","Preserve boundary","WA-02 onward"
+CF-04,BOUNDARY,"Named systems must remain at evidence-supported public classifications","Preserve boundary","WA-02 onward"
+CF-05,BASELINE,"Governed publishing ownership and canonical-source integrations are unresolved","AWAITING BASELINE","Operating Baseline / future publishing architecture"
+MN-01,MINOR,"Dormant or empty dynamic routes","Carry forward","WA-02 / later engineering review"
+MN-02,MINOR,"Progress Journal and Building in Public messaging overlaps","Carry forward","WA-02 / WA-04"
+MN-03,MINOR,"Relationship map references broader system set than structured project catalogue","Carry forward","WA-02"
+MN-04,MINOR,"Generic social-image fallback on many routes","Carry forward","Later asset/SEO work"
+MN-05,MINOR,"Multiple overlapping status vocabularies","Carry forward","WA-02 / structured content design"
