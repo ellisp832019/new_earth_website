@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SimpleVisitorModel from '../../components/SimpleVisitorModel.astro';
+import { getDevelopmentSimpleVisitorModel, humanAuthorityProgression } from '../../data/simple-visitor-model';
+
+export function getStaticPaths() {
+  return import.meta.env.DEV ? [{ params: { preview: 'simple' } }] : [];
+}
+
+const { preview } = Astro.params;
+const groups = getDevelopmentSimpleVisitorModel();
+---
+
+<BaseLayout
+  title="Simple Visitor Model review"
+  description="Development-only review of a simple, human-centred New Earth ecosystem model."
+  canonical=""
+  noindex={true}
+>
+  <SimpleVisitorModel groups={groups} authorityProgression={humanAuthorityProgression} />
+</BaseLayout>
