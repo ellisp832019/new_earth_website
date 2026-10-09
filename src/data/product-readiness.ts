@@ -48,6 +48,7 @@ export const productReadinessStates = {
 } as const satisfies Record<ProductReadinessState, { publicStatus: PublicStatus; cta: string }>;
 
 const unresolved = (note: string): ReadinessField => ({ status: 'UNRESOLVED', note });
+const approved = (value: string, note: string): ReadinessField => ({ status: 'APPROVED', value, note });
 
 // This is a readiness control, not a product record. It is deliberately
 // unassigned because tracked authority identifies creator families but no
@@ -82,7 +83,37 @@ export const firstProductReadiness: ProductReadinessRecord = {
   privacyDataImplications: unresolved('Document provider, checkout, receipt and delivery data flows before activation.'),
 };
 
-export const productReadinessRecords: ProductReadinessRecord[] = [firstProductReadiness];
+export const aiMadeSimpleReadiness: ProductReadinessRecord = {
+  id: 'NE-DP-001-READINESS',
+  productId: 'NE-DP-001',
+  state: 'COMING_SOON',
+  title: approved('AI Made Simple', 'Verified product title for the local Coming Soon preview.'),
+  creator: approved('Peter Ellis', 'Verified creator attribution for the local Coming Soon preview.'),
+  family: approved('New Earth Practical Guides', 'Verified series/family for the local Coming Soon preview.'),
+  ownership: unresolved('Legal ownership configuration remains a launch gate.'),
+  rights: unresolved('Final commercial rights configuration remains a launch gate.'),
+  version: approved('Edition 1.1', 'Verified candidate edition; rc1 is retained in private release controls.'),
+  format: approved('Digital PDF learning pack', 'Verified preview format.'),
+  sourceFile: unresolved('Private source remains outside public delivery.'),
+  publicDeliveryFile: unresolved('No paid delivery file may be exposed before commerce approval.'),
+  coverAsset: approved('ai-made-simple-cover.png', 'Verified local-preview cover asset.'),
+  description: approved('Approved candidate public preview copy.', 'Supports the local Coming Soon presentation.'),
+  price: approved('Planned launch price — £9.99', 'Price direction only; not a current offer or tax-confirmed total.'),
+  currency: approved('GBP', 'Verified candidate price currency.'),
+  territory: unresolved('Selling territories remain a launch gate.'),
+  sellerOfRecord: unresolved('Legal seller remains a launch gate.'),
+  vatTaxTreatment: unresolved('VAT/tax treatment remains a launch gate.'),
+  refundCancellation: unresolved('Refund/cancellation terms remain a launch gate.'),
+  supportRoute: unresolved('Customer support route remains a launch gate.'),
+  deliveryMethod: unresolved('Delivery method remains a launch gate.'),
+  purchaseProvider: unresolved('Purchase provider remains a launch gate.'),
+  accessibility: approved('Selectable teaching text; printable, non-fillable worksheets; PDF/UA and assistive-technology testing not completed.', 'This is a limitation statement, not a claim of formal accessibility conformance.'),
+  publicStatus: approved('COMING_SOON', 'Not available for purchase or delivery.'),
+  seoSocialMetadata: approved('Candidate metadata and cover are available for local preview review.', 'Public publication remains separately gated.'),
+  privacyDataImplications: unresolved('Checkout, receipt, delivery and provider data flows remain a launch gate.'),
+};
+
+export const productReadinessRecords: ProductReadinessRecord[] = [firstProductReadiness, aiMadeSimpleReadiness];
 
 export const commerceActivationFields = [
   'title', 'creator', 'family', 'ownership', 'rights', 'version', 'format',
