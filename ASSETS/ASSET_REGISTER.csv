@@ -1,4 +1,8 @@
 Batch,Section,Folder,Filename,Size,Format,Status,Notes
+02C,DIGITAL_PRODUCTS,10_RESOURCES\digital-products\ai-made-simple,ai-made-simple-cover.png,1055x1491,png,IN_PROGRESS,NE-DP-001 edition 1.1 rc1 local preview only; source hash d55ce8db0e8665f06e651c223adecf0648c2d00e1e654a6f6c6e53ceef830d6c; Peter public-use approval pending
+02C,DIGITAL_PRODUCTS,10_RESOURCES\digital-products\ai-made-simple,ai-made-simple-clear-sample.png,816x1156,png,IN_PROGRESS,NE-DP-001 edition 1.1 rc1 local preview only; source hash 248b2c2db0e64803df6f3140352a4bc702bb00bafc99c49e3ffcb34b16a0b496; Peter public-use approval pending
+02C,DIGITAL_PRODUCTS,10_RESOURCES\digital-products\ai-made-simple,AI_Made_Simple_Sample.pdf,3 pages,pdf,IN_PROGRESS,NE-DP-001 edition 1.1 rc1 local preview only; source hash a3acfbce1b533c2d4a3a2f1877e6eea04872e0f76f74e5ca5d44449c423368cb; Peter public-use approval pending
+02C,DIGITAL_PRODUCTS,10_RESOURCES\digital-products\ai-made-simple,NE-DP-001_FREE_10_Things_You_Can_Ask_AI_v1.1.pdf,8 pages,pdf,IN_PROGRESS,NE-DP-001 edition 1.1 rc1 local preview only; source hash 5efbc788f27c150dd79a42943a8e02136166a978adda4421a9d7863c0c4cb19e; Peter public-use approval pending
 0,BRAND,00_BRAND\logos,new_earth_logo_concept_board.png,2000x2000,png,TODO,Main logo concept board
 0,BRAND,00_BRAND\logos,new-earth-logo-primary-v1.png,1254x1254,png,APPROVED,OWNER APPROVED - New Earth Primary Logo V1; first-party New Earth brand asset; authorised for header and footer; favicon candidate later
 0,BRAND,00_BRAND\logos,new-earth-emblem-v1.png,612x612,png,APPROVED,DERIVATIVE OF New Earth Primary Logo V1; first-party emblem crop for website header/footer; source pixels unchanged; no independent redesign

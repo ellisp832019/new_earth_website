@@ -1,6 +1,9 @@
 import type { APIRoute } from 'astro';
 import { journalCategories, publishedJournalArticles } from '../data/journal';
 import { publicProjects } from '../data/projects';
+import { publicProducts } from '../data/products';
+
+const includePreviewProducts = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
 
 const routes = [
   '/',
@@ -17,6 +20,9 @@ const routes = [
   '/digital-products/',
   '/digital-products/practical-guides/',
   '/digital-products/conscious-living/',
+  ...publicProducts
+    .filter((product) => product.publicEnabled && (includePreviewProducts || !product.previewOnly))
+    .map((product) => `/digital-products/${product.slug}/`),
   '/projects/',
   ...publicProjects
     .filter((project) => project.publicEnabled && project.publicStatus === 'PUBLIC-ENABLED')
