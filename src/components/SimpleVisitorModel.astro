@@ -1,0 +1,94 @@
+---
+import type { SimpleVisitorModelGroup, SimpleVisitorModelExample } from '../data/simple-visitor-model';
+
+type DisplayGroup = SimpleVisitorModelGroup & { examples: SimpleVisitorModelExample[] };
+
+interface Props {
+  groups: readonly DisplayGroup[];
+  authorityProgression: readonly string[];
+}
+
+const { groups, authorityProgression } = Astro.props;
+---
+
+<section class="simple-visitor-model shell" aria-labelledby="simple-visitor-model-title">
+  <div class="simple-visitor-model__intro">
+    <p class="eyebrow">Development-only visitor model</p>
+    <h1 id="simple-visitor-model-title">A simple view of how New Earth is intended to support people</h1>
+    <p class="lede">A calm introduction to the areas of purpose, responsibility and support that sit around New Earth.</p>
+    <p class="simple-visitor-model__qualification">These are areas of responsibility and support. Their arrangement does not show technical connections or ownership. The model includes existing work, research and capabilities whose implementation has not been confirmed.</p>
+  </div>
+
+  <div class="simple-visitor-model__bands">
+    {groups.map((group) => (
+      <section class:list={['simple-visitor-model__band', group.id === 'human-governance' && 'simple-visitor-model__band--governance']} aria-labelledby={`simple-visitor-model-${group.id}`}>
+        <h2 id={`simple-visitor-model-${group.id}`}>{group.title}</h2>
+        <p>{group.summary}</p>
+        <h3>Examples in this review</h3>
+        <ul>
+          {group.examples.map((example) => <li>{example.name}</li>)}
+        </ul>
+      </section>
+    ))}
+  </div>
+
+  <section class="simple-visitor-model__authority" aria-labelledby="simple-visitor-model-authority-title">
+    <p class="eyebrow">Human authority</p>
+    <h2 id="simple-visitor-model-authority-title">People remain responsible for important decisions</h2>
+    <p>AI and tooling support people. They do not replace human authority.</p>
+    <ol>
+      {authorityProgression.map((step) => <li>{step}</li>)}
+    </ol>
+    <p>These permission levels do not mean every capability is implemented or authorised.</p>
+  </section>
+
+  <details class="simple-visitor-model__details">
+    <summary>About these examples</summary>
+    <p>Authority confidence and implementation status describe different things. Confirmed authority does not prove operational readiness, and an unconfirmed implementation status does not mean work is in development.</p>
+    {groups.map((group) => (
+      <section aria-labelledby={`simple-visitor-model-detail-${group.id}`}>
+        <h2 id={`simple-visitor-model-detail-${group.id}`}>{group.title}</h2>
+        <ul>
+          {group.examples.map((example) => (
+            <li>
+              <strong>{example.name}</strong>
+              <span>Authority confidence: {example.authority.confidence.replaceAll('_', ' ')}.</span>
+              <span>Implementation status: {example.implementation.status.replaceAll('_', ' ')}.</span>
+              <span>{example.implementation.note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </details>
+</section>
+
+<style>
+  .simple-visitor-model { max-width: 1180px; padding-block: clamp(3rem, 8vw, 6rem); }
+  .simple-visitor-model__intro { max-width: 780px; }
+  .simple-visitor-model__intro h1 { max-width: 15ch; }
+  .simple-visitor-model__qualification { max-width: 70ch; margin-top: 1.5rem; padding: 1rem 1.2rem; border-left: 3px solid var(--gold); background: var(--sage); }
+  .simple-visitor-model__bands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: clamp(2rem, 5vw, 4rem); }
+  .simple-visitor-model__band { min-width: 0; padding: clamp(1.35rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .52); }
+  .simple-visitor-model__band:first-child, .simple-visitor-model__band:last-child { grid-column: 1 / -1; }
+  .simple-visitor-model__band--governance { border-color: var(--teal); background: color-mix(in srgb, var(--teal) 11%, var(--ivory)); box-shadow: inset 0 3px var(--teal); }
+  .simple-visitor-model__band h2 { font-size: clamp(1.75rem, 3vw, 2.35rem); }
+  .simple-visitor-model__band h3 { margin-top: 1.5rem; font-family: var(--sans); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+  .simple-visitor-model__band ul, .simple-visitor-model__details ul { margin: 0; padding-left: 1.25rem; }
+  .simple-visitor-model__band li { margin-block: .3rem; }
+  .simple-visitor-model__authority { max-width: 900px; margin: clamp(2.5rem, 6vw, 5rem) auto; padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--deep); color: var(--ivory); }
+  .simple-visitor-model__authority h2, .simple-visitor-model__authority .eyebrow { color: var(--ivory); }
+  .simple-visitor-model__authority .eyebrow { color: #e2c98b; }
+  .simple-visitor-model__authority ol { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0; padding: 0; list-style: none; }
+  .simple-visitor-model__authority li { padding: .55rem .7rem; border: 1px solid rgb(255 255 255 / .36); border-radius: 999px; font-size: .8rem; font-weight: 700; }
+  .simple-visitor-model__details { max-width: 900px; margin-inline: auto; padding: 1.25rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .45); }
+  .simple-visitor-model__details summary { color: var(--forest); cursor: pointer; font-weight: 800; }
+  .simple-visitor-model__details section { padding-top: 1.5rem; }
+  .simple-visitor-model__details h2 { font-size: 1.3rem; }
+  .simple-visitor-model__details li { display: grid; gap: .18rem; margin-block: 1rem; }
+  @media (max-width: 720px) {
+    .simple-visitor-model__bands { grid-template-columns: 1fr; }
+    .simple-visitor-model__band:first-child, .simple-visitor-model__band:last-child { grid-column: auto; }
+    .simple-visitor-model__authority ol { display: grid; grid-template-columns: 1fr; }
+  }
+</style>
