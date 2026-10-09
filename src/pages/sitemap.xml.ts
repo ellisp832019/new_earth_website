@@ -20,6 +20,7 @@ const routes = [
   '/digital-products/',
   '/digital-products/practical-guides/',
   '/digital-products/conscious-living/',
+  '/digital-products/the-fifth-dimension-lad/',
   ...publicProducts
     .filter((product) => product.publicEnabled && (includePreviewProducts || !product.previewOnly))
     .map((product) => `/digital-products/${product.slug}/`),
