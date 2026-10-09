@@ -33,6 +33,7 @@ const files = [
   ['ASSETS/10_RESOURCES/digital-products/ai-made-simple/ai-made-simple-clear-sample.png', 'digital-products/ai-made-simple/ai-made-simple-clear-sample.png'],
   ['ASSETS/10_RESOURCES/digital-products/ai-made-simple/AI_Made_Simple_Sample.pdf', 'digital-products/ai-made-simple/AI_Made_Simple_Sample.pdf'],
   ['ASSETS/10_RESOURCES/digital-products/ai-made-simple/NE-DP-001_FREE_10_Things_You_Can_Ask_AI_v1.1.pdf', 'digital-products/ai-made-simple/NE-DP-001_FREE_10_Things_You_Can_Ask_AI_v1.1.pdf'],
+  ['ASSETS/10_RESOURCES/digital-products/the-fifth-dimension-lad/the-fifth-dimension-lad-cover-v1-0-rc1.jpg', 'digital-products/the-fifth-dimension-lad/the-fifth-dimension-lad-cover-v1-0-rc1.jpg'],
 ];
 
 await mkdir(new URL('../public/local-assets/', import.meta.url), { recursive: true });

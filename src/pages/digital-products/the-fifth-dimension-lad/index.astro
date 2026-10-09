@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const localPreview = process.env.PUBLIC_ASSET_MODE !== 'PUBLIC';
+const coverPath = '/local-assets/digital-products/the-fifth-dimension-lad/the-fifth-dimension-lad-cover-v1-0-rc1.jpg';
+---
+
+<BaseLayout title="The Fifth Dimension, Lad | New Earth" description="A grounded, humorous publication by Peter Ellis exploring consciousness, self-sovereignty and practical questions for building the New Earth." canonical="/digital-products/the-fifth-dimension-lad/">
+  <article class="fifth-dimension">
+    <header class="fifth-dimension__hero">
+      <div class="shell fifth-dimension__hero-grid">
+        <div class="fifth-dimension__hero-copy">
+          <p class="eyebrow">A Peter Ellis publication</p>
+          <p class="fifth-dimension__status">Coming Soon</p>
+          <h1>The Fifth Dimension, Lad</h1>
+          <p class="fifth-dimension__subtitle">A Scouser’s Guide to Self-Sovereignty, Consciousness and Building the New Earth</p>
+          <p class="fifth-dimension__hook">Spiritual awakening is all well and good—but somebody still needs to do the plumbing.</p>
+          <p class="fifth-dimension__author">Written and independently published by Peter Ellis.</p>
+          <a class="button fifth-dimension__cta" href="#about-the-book">Explore what it’s about <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="fifth-dimension__cover-wrap">
+          {localPreview ? <img class="fifth-dimension__cover" src={coverPath} alt="Cover of The Fifth Dimension, Lad by Peter Ellis, with an imagined Liverpool waterfront beneath a glowing Earth." fetchpriority="high" /> : <div class="fifth-dimension__cover-placeholder" aria-hidden="true"><span>The Fifth Dimension, Lad</span></div>}
+          <p>Big ideas. Scouse humour. A practical blueprint.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="about-the-book" class="fifth-dimension__section shell" aria-labelledby="about-title">
+      <p class="eyebrow">About the publication</p>
+      <h2 id="about-title">A bit of wonder, with the lights on.</h2>
+      <div class="fifth-dimension__prose">
+        <p>Through grounded questions, humour and practical reflection, this publication explores consciousness, everyday responsibility, community and the systems we build together.</p>
+        <p>It brings big ideas back to ordinary life: our relationships, homes, choices and the ways we take part in a wider world.</p>
+      </div>
+    </section>
+
+    <section class="fifth-dimension__section fifth-dimension__section--tint" aria-labelledby="themes-title">
+      <div class="shell">
+        <p class="eyebrow">Three themes</p>
+        <h2 id="themes-title">Questions worth keeping close.</h2>
+        <div class="fifth-dimension__themes">
+          <article><h3>Stay connected to ordinary life</h3><p>Explore consciousness without losing touch with the responsibilities and relationships that make a life workable.</p></article>
+          <article><h3>Build personal capability</h3><p>Consider self-sovereignty as informed choice, meaningful control and personal responsibility—not isolation.</p></article>
+          <article><h3>Question what you are told</h3><p>Bring curiosity to technology, claims and systems, while keeping human judgement involved.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fifth-dimension__section shell fifth-dimension__grounded" aria-labelledby="grounded-title">
+      <p class="eyebrow">Grounded perspective</p>
+      <h2 id="grounded-title">Spiritual enough to open the imagination. Grounded enough to survive Liverpool.</h2>
+      <p class="lede">The book’s humour makes room for difficult questions without pretending to have a finished answer for everything.</p>
+    </section>
+
+    <section class="fifth-dimension__section fifth-dimension__section--disclaimer" aria-labelledby="metaphor-title">
+      <div class="shell">
+        <p class="eyebrow">Important context</p>
+        <h2 id="metaphor-title">A philosophical metaphor, not a ranking.</h2>
+        <p>The 3D / 4D / 5D framing is a spiritual and philosophical metaphor. It is not presented as a scientific model or as a ranking of people.</p>
+      </div>
+    </section>
+
+    <section class="fifth-dimension__closing" aria-labelledby="coming-soon-title">
+      <div class="shell">
+        <p class="eyebrow">Coming Soon</p>
+        <h2 id="coming-soon-title">The publication is being prepared.</h2>
+        <p>This page is a preview of the publication’s direction. It is not currently available to purchase, donate for, download or receive.</p>
+        <a class="button button--outline" href="/learn/">Explore useful learning</a>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .fifth-dimension { color: #1e2a33; }
+  .fifth-dimension__hero { overflow-x: clip; background: radial-gradient(circle at 85% 10%, #34576c 0, transparent 33rem), linear-gradient(135deg, #071923, #102d40); color: #f9f5eb; }
+  .fifth-dimension__hero-grid { display: grid; min-width: 0; grid-template-columns: minmax(0, 1.1fr) minmax(16rem, .75fr); align-items: center; gap: clamp(2.5rem, 8vw, 7rem); padding-block: clamp(4rem, 9vw, 7rem); }
+  .fifth-dimension__hero-copy { min-width: 0; max-width: 44rem; }
+  .fifth-dimension .eyebrow { color: #d9b56f; }
+  .fifth-dimension__status { display: inline-block; margin: 1.1rem 0 1.2rem; border: 1px solid #d9b56f; border-radius: 999px; padding: .35rem .8rem; color: #f7ddb0; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .fifth-dimension h1, .fifth-dimension h2, .fifth-dimension h3, .fifth-dimension p { margin-top: 0; }
+  .fifth-dimension h1 { max-width: 11ch; color: #fffaf0; font-family: var(--serif); font-size: clamp(3.25rem, 8vw, 6.5rem); line-height: .95; }
+  .fifth-dimension h2 { max-width: 20ch; color: inherit; font-family: var(--serif); font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.02; }
+  .fifth-dimension__subtitle { max-width: 35rem; margin: 1.75rem 0 1.25rem; color: #d9e6eb; font-size: clamp(1.15rem, 2.3vw, 1.45rem); line-height: 1.5; }
+  .fifth-dimension__hook { max-width: 37rem; color: #f5eee0; font-family: var(--serif); font-size: clamp(1.25rem, 2.5vw, 1.7rem); font-style: italic; line-height: 1.45; }
+  .fifth-dimension__author { color: #d9b56f; font-size: .95rem; font-weight: 700; }
+  .fifth-dimension__cta { margin-top: 1.25rem; background: #d9b56f; color: #102332; }
+  .fifth-dimension__cover-wrap { justify-self: center; max-width: 20rem; text-align: center; }
+  .fifth-dimension__cover { display: block; width: 100%; box-shadow: 0 1.5rem 3.5rem #000a; }
+  .fifth-dimension__cover-placeholder { display: grid; min-height: 29rem; place-items: center; border: 1px solid #d9b56f; background: linear-gradient(160deg, #315264, #0a1e2b); color: #f7ddb0; font-family: var(--serif); font-size: 2rem; line-height: 1.1; padding: 2rem; }
+  .fifth-dimension__cover-wrap p { margin: 1rem 0 0; color: #d9e6eb; font-size: .75rem; letter-spacing: .09em; text-transform: uppercase; }
+  .fifth-dimension__section { padding-block: clamp(4rem, 9vw, 7rem); }
+  .fifth-dimension__prose { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 4rem; max-width: 60rem; margin-top: 2rem; font-size: 1.1rem; }
+  .fifth-dimension__section--tint { background: #ede7da; }
+  .fifth-dimension__section--tint > .shell { width: min(1100px, calc(100% - 2rem)); margin-inline: auto; }
+  .fifth-dimension__themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+  .fifth-dimension__themes article { border-top: 3px solid #b99042; padding: 1.5rem 1.25rem; background: #fdfaf3; }
+  .fifth-dimension__themes h3 { font-family: var(--serif); font-size: 1.4rem; }
+  .fifth-dimension__grounded { text-align: center; }
+  .fifth-dimension__grounded h2, .fifth-dimension__grounded .lede { margin-inline: auto; }
+  .fifth-dimension__grounded .lede { max-width: 45rem; margin-top: 1.5rem; }
+  .fifth-dimension__section--disclaimer { background: #18384a; color: #edf4f1; }
+  .fifth-dimension__section--disclaimer h2 { color: #fff9eb; }
+  .fifth-dimension__section--disclaimer p { max-width: 48rem; margin: 1.5rem 0 0; }
+  .fifth-dimension__closing { background: #091b28; color: #e9f0ed; padding-block: clamp(4rem, 9vw, 7rem); text-align: center; }
+  .fifth-dimension__closing h2, .fifth-dimension__closing p { margin-inline: auto; }
+  .fifth-dimension__closing h2 { color: #fff9eb; }
+  .fifth-dimension__closing p { max-width: 45rem; margin-top: 1.5rem; }
+  .fifth-dimension__closing .button { margin-top: .5rem; border-color: #d9b56f; color: #fff9eb; }
+  @media (max-width: 760px) { .fifth-dimension__hero-grid, .fifth-dimension__prose, .fifth-dimension__themes { grid-template-columns: 1fr; } .fifth-dimension__hero-copy { text-align: center; } .fifth-dimension h1 { max-width: 100%; margin-inline: auto; font-size: clamp(2.75rem, 14vw, 3.8rem); overflow-wrap: anywhere; } .fifth-dimension__cover-wrap { max-width: 16rem; } }
+</style>
