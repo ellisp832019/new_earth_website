@@ -53,3 +53,93 @@ The public-build check must confirm that it contains no AI Made Simple route or 
 ## Rollback
 
 Remove the NE-DP-001 product and readiness records, product-specific preview route branch, preview sitemap entry, family wording adjustment, local asset allow-list entries, governed source assets and their asset-register rows. Regenerate the preview build and rerun the same checks. Do not remove any existing product-family, navigation, homepage or footer content.
+
+---
+
+## Future Series Planning Context - 9 October 2026
+
+Status: PLANNING PROPOSAL ONLY
+
+Peter has prepared:
+
+`AI_Made_Simple_Series_Proposal_v0.1_2026-10-09.txt`
+
+This proposes an "AI Made Simple learning pathway" within the existing
+New Earth Practical Guides series.
+
+The proposal reuses the existing product roadmap and does not change
+activation, commissioning or publication order.
+
+Proposed learning sequence:
+
+### BEGIN
+
+- NE-DP-001 - AI Made Simple
+  Beginner foundations, useful conversations, checking answers and privacy.
+
+### PRACTISE
+
+- NE-DP-002 - 100 Useful AI Prompts for Everyday Life
+  Proposed optional practice companion, not a required purchase.
+
+### APPLY AND CREATE
+
+- NE-DP-003 - The Everyday AI Toolkit
+  Proposed main practical follow-on focused on completing a useful project
+  and learning how to repeat the process.
+
+### OPTIONAL LATER BRANCHES
+
+- NE-DP-004 - AI at Work Made Simple
+- NE-DP-005 - Build Your Personal AI Assistant
+- NE-DP-006 - AI for Small Business: Your First 30 Days
+
+### MORE ADVANCED OPTIONS
+
+- NE-DP-018 - Private & Local AI Made Simple
+- NE-DP-019 - Personal Automation Made Simple
+
+### Governance
+
+- No new product IDs are created by this proposal.
+- NE-DP-002 remains queued.
+- No future title is activated.
+- No future route or product page is authorised.
+- No future price or launch date is approved.
+- EXP-001 remains unstarted.
+- Existing roadmap dependencies remain controlling.
+- Future commissioning depends on evidence and Peter approval.
+- Buying every guide must not be necessary.
+- Each future guide should stand alone and deliver a practical outcome.
+- ChatGPT is the proposed primary demonstration tool, but teaching principles
+  should remain transferable.
+- No OpenAI partnership, sponsorship, endorsement or brand permission is implied.
+- Peter reports that the OpenAI enquiry email has been sent; no response or
+  relationship is assumed.
+
+### Current website boundary
+
+Current website implementation remains limited to:
+
+`NE-DP-001 - AI Made Simple`
+
+Canonical route:
+
+`/digital-products/ai-made-simple/`
+
+Current presentation:
+
+`COMING_SOON`
+
+Commercial availability:
+
+`NOT AVAILABLE`
+
+`publish_authorized = false`
+
+Website implementation should remain reusable where practical, but this series
+proposal does not authorise speculative infrastructure, future product routes,
+catalogue cards, bundles, navigation items, "coming next" messaging or commerce.
+
+The full named proposal should be consulted before making any detailed future
+series decision. This note does not replace that source.
