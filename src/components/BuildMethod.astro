@@ -1,0 +1,118 @@
+---
+import type { BuildMethodGroup, BuildMethodStep } from '../data/building';
+
+interface Props {
+  steps: readonly BuildMethodStep[];
+  groups: readonly BuildMethodGroup[];
+  authorityProgression: readonly string[];
+  embedded?: boolean;
+  sectionId?: string;
+}
+
+const { steps, groups, authorityProgression, embedded = false, sectionId } = Astro.props;
+const Heading = embedded ? 'h2' : 'h1';
+const stepsByKey = new Map(steps.map((step) => [step.key, step]));
+---
+
+<section id={sectionId} class:list={['build-method', 'shell', embedded && 'build-method--embedded']} aria-labelledby="build-method-title">
+  <div class="build-method__intro">
+    {!embedded && <p class="eyebrow">How New Earth Builds</p>}
+    <Heading id="build-method-title">A deliberate path from useful ideas to evidence and learning</Heading>
+    <p class="lede">This is the public method New Earth is using and developing to move work forward deliberately. It explains how work can move from an idea toward evidence and learning; it does not claim that every lane is complete or follows the same timetable.</p>
+    <p>The method is distinct from human authority, which explains who may act and under what permission. It does not replace or rename New Earth’s internal operational control model.</p>
+  </div>
+
+  <div class="build-method__groups" aria-label="Five ways to orient within the build method">
+    {groups.map((group) => (
+      <section class="build-method__group" aria-labelledby={`build-method-group-${group.title.toLowerCase().replaceAll(/[^a-z]+/g, '-')}`}>
+        <h3 id={`build-method-group-${group.title.toLowerCase().replaceAll(/[^a-z]+/g, '-')}`}>{group.title}</h3>
+        <ol>
+          {group.stepKeys.map((key) => <li>{stepsByKey.get(key)?.label}</li>)}
+        </ol>
+      </section>
+    ))}
+  </div>
+
+  <div class="build-method__reuse">
+    <p class="eyebrow">Reuse before rebuild</p>
+    <h3>Begin with what is already useful</h3>
+    <p>Discover existing work, recover useful previous capability and reuse or adapt proven portions where safe. Reuse never overrides ownership, authority, evidence, safety, suitability, permission or current truth; new work is built only where it is justified.</p>
+  </div>
+
+  <section class="build-method__steps" aria-labelledby="build-method-steps-title">
+    <h3 id="build-method-steps-title">The full ten-step method</h3>
+    <ol>
+      {steps.map((step, index) => (
+        <li>
+          <article class="build-method__step">
+            <p class="build-method__number">Step {String(index + 1).padStart(2, '0')}</p>
+            <h4>{step.label}</h4>
+            <p>{step.summary}</p>
+            <details>
+              <summary>Question, evidence and boundary</summary>
+              <dl>
+                <div><dt>Question</dt><dd>{step.question}</dd></div>
+                <div><dt>Evidence and output</dt><dd>{step.evidenceOutput}</dd></div>
+                <div><dt>Human boundary</dt><dd>{step.humanBoundary}</dd></div>
+                <div><dt>What this does not mean</dt><dd>{step.doesNotMean}</dd></div>
+              </dl>
+            </details>
+          </article>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="build-method__authority" aria-labelledby="build-method-authority-title">
+    <p class="eyebrow">Human authority</p>
+    <h3 id="build-method-authority-title">Tools support people; they do not replace human responsibility</h3>
+    <p>AI and tools may observe, prepare, validate, summarise or recommend. Recommendations are not approvals, and consequential action remains governed. Explicit, bounded pre-authorisation is a separate case.</p>
+    <ol>
+      {authorityProgression.map((step) => <li>{step}</li>)}
+    </ol>
+  </section>
+
+  <section class="build-method__example" aria-labelledby="build-method-example-title">
+    <p class="eyebrow">Evidence example</p>
+    <h3 id="build-method-example-title">Keep current evidence bounded</h3>
+    <p>A current Command Centre screen can show the interface that was captured. Claims about integration or operational readiness need their own evidence.</p>
+    <p><a class="text-link" href="/projects/command-centre/">See the Command Centre evidence and limitations <span aria-hidden="true">→</span></a></p>
+  </section>
+
+  <p class="build-method__learning">Learning carries evidence and limitations into the next bounded decision. It is not an automatic loop: people still decide what should change, continue or stop.</p>
+</section>
+
+<style>
+  .build-method { max-width: 1100px; padding-block: clamp(3rem, 7vw, 5rem); }
+  .build-method__intro { max-width: 780px; }
+  .build-method__intro h1, .build-method__intro h2 { max-width: 18ch; }
+  .build-method__groups { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .85rem; margin-top: clamp(2rem, 5vw, 3.5rem); }
+  .build-method__group { min-width: 0; padding: 1.15rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); }
+  .build-method__group h3 { margin: 0 0 .75rem; color: var(--deep); font: 700 1.12rem/1.2 var(--serif); }
+  .build-method__group ol { margin: 0; padding-left: 1.1rem; }
+  .build-method__group li { margin-block: .4rem; font-size: .84rem; font-weight: 700; }
+  .build-method__reuse, .build-method__authority, .build-method__example { max-width: 920px; margin-top: clamp(2.5rem, 6vw, 4.5rem); padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius); }
+  .build-method__reuse { background: rgb(255 255 255 / .46); }
+  .build-method__reuse h3, .build-method__authority h3, .build-method__example h3 { margin-top: 0; }
+  .build-method__steps { margin-top: clamp(2.5rem, 6vw, 4.5rem); }
+  .build-method__steps > h3 { max-width: 22ch; font: 700 clamp(1.75rem, 4vw, 2.6rem)/1.08 var(--serif); }
+  .build-method__steps > ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.75rem 0 0; padding: 0; list-style: none; }
+  .build-method__step { height: 100%; padding: clamp(1.25rem, 3vw, 1.75rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--ivory); box-shadow: var(--shadow); }
+  .build-method__number { margin: 0 0 .55rem; color: var(--forest); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .build-method__step h4 { margin: 0 0 .65rem; color: var(--deep); font: 700 1.45rem/1.15 var(--serif); }
+  .build-method__step details { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .build-method__step summary { color: var(--forest); cursor: pointer; font-weight: 800; }
+  .build-method__step dl { display: grid; gap: 1rem; margin: 1rem 0 0; }
+  .build-method__step dl div { display: grid; gap: .25rem; }
+  .build-method__step dt { color: var(--deep); font-size: .76rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+  .build-method__step dd { margin: 0; }
+  .build-method__authority { background: var(--deep); color: var(--ivory); }
+  .build-method__authority h3, .build-method__authority .eyebrow { color: var(--ivory); }
+  .build-method__authority .eyebrow { color: #e2c98b; }
+  .build-method__authority ol { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+  .build-method__authority li { padding: .55rem .7rem; border: 1px solid rgb(255 255 255 / .36); border-radius: 999px; font-size: .8rem; font-weight: 700; }
+  .build-method__example { border-left: 3px solid var(--gold); background: var(--sage); }
+  .build-method__learning { max-width: 760px; margin: clamp(2.5rem, 6vw, 4.5rem) auto 0; font: 600 clamp(1.08rem, 2.3vw, 1.28rem)/1.55 var(--serif); text-align: center; }
+  @media (max-width: 920px) { .build-method__groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } .build-method__group:last-child { grid-column: 1 / -1; } }
+  @media (max-width: 640px) { .build-method__groups, .build-method__steps > ol { grid-template-columns: 1fr; } .build-method__group:last-child { grid-column: auto; } .build-method__authority ol { display: grid; grid-template-columns: 1fr; } }
+</style>
