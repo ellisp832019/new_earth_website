@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildMethod from '../../components/BuildMethod.astro';
 import PublicStatusBadge from '../../components/PublicStatusBadge.astro';
-import { buildingItems } from '../../data/building';
+import { buildingItems, buildMethodGroups, buildMethodSteps } from '../../data/building';
+import { humanAuthorityProgression } from '../../data/ecosystem';
 import type { PublicStatus } from '../../data/public-status';
 
 const horizons: { status: PublicStatus; label: string; introduction: string }[] = [
@@ -29,6 +31,8 @@ const horizons: { status: PublicStatus; label: string; introduction: string }[] 
         <div><strong>Projects</strong><span>Deeper evidence, current limitations and project detail.</span></div>
       </div>
     </section>
+
+    <BuildMethod steps={buildMethodSteps} groups={buildMethodGroups} authorityProgression={humanAuthorityProgression} embedded={true} sectionId="how-new-earth-builds" />
 
     <section id="work-horizons" class="building-horizons" aria-labelledby="horizons-title">
       <p class="eyebrow">Public horizons</p>
