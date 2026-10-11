@@ -6,15 +6,18 @@ type DisplayGroup = SimpleVisitorModelGroup & { examples: SimpleVisitorModelExam
 interface Props {
   groups: readonly DisplayGroup[];
   authorityProgression: readonly string[];
+  embedded?: boolean;
+  publicView?: boolean;
 }
 
-const { groups, authorityProgression } = Astro.props;
+const { groups, authorityProgression, embedded = false, publicView = false } = Astro.props;
+const Heading = embedded ? 'h2' : 'h1';
 ---
 
-<section class="simple-visitor-model shell" aria-labelledby="simple-visitor-model-title">
+<section class:list={['simple-visitor-model', 'shell', embedded && 'simple-visitor-model--embedded']} aria-labelledby="simple-visitor-model-title">
   <div class="simple-visitor-model__intro">
-    <p class="eyebrow">Development-only visitor model</p>
-    <h1 id="simple-visitor-model-title">A simple view of how New Earth is intended to support people</h1>
+    {!embedded && <p class="eyebrow">Development-only visitor model</p>}
+    <Heading id="simple-visitor-model-title">A simple view of how New Earth is intended to support people</Heading>
     <p class="lede">A calm introduction to the areas of purpose, responsibility and support that sit around New Earth.</p>
     <p class="simple-visitor-model__qualification">These are areas of responsibility and support. Their arrangement does not show technical connections or ownership. The model includes existing work, research and capabilities whose implementation has not been confirmed.</p>
   </div>
@@ -24,7 +27,7 @@ const { groups, authorityProgression } = Astro.props;
       <section class:list={['simple-visitor-model__band', group.id === 'human-governance' && 'simple-visitor-model__band--governance']} aria-labelledby={`simple-visitor-model-${group.id}`}>
         <h2 id={`simple-visitor-model-${group.id}`}>{group.title}</h2>
         <p>{group.summary}</p>
-        <h3>Examples in this review</h3>
+        <h3>{publicView ? 'Examples in this page' : 'Examples in this review'}</h3>
         <ul>
           {group.examples.map((example) => <li>{example.name}</li>)}
         </ul>
@@ -72,6 +75,7 @@ const { groups, authorityProgression } = Astro.props;
   .simple-visitor-model__band { min-width: 0; padding: clamp(1.35rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .52); }
   .simple-visitor-model__band:first-child, .simple-visitor-model__band:last-child { grid-column: 1 / -1; }
   .simple-visitor-model__band--governance { border-color: var(--teal); background: color-mix(in srgb, var(--teal) 11%, var(--ivory)); box-shadow: inset 0 3px var(--teal); }
+  .simple-visitor-model--embedded .simple-visitor-model__band--governance { grid-column: 1 / -1; }
   .simple-visitor-model__band h2 { font-size: clamp(1.75rem, 3vw, 2.35rem); }
   .simple-visitor-model__band h3 { margin-top: 1.5rem; font-family: var(--sans); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
   .simple-visitor-model__band ul, .simple-visitor-model__details ul { margin: 0; padding-left: 1.25rem; }

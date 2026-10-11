@@ -110,7 +110,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'new-earth-purpose', name: 'New Earth purpose and framework', group: 'purpose', context: 'PUBLIC_CONTEXT',
     summary: 'Public context for knowledge, practical tools and human-governed systems that support self-sovereignty.',
     authority: { summary: 'Provides public purpose and framework context; it does not assign operational authority.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: { status: 'NOT_APPLICABLE', note: 'A public purpose and framework is not a software lifecycle claim.', basis: reconciliation }, publication: 'REVIEW_REQUIRED', href: '/vision/',
+    implementation: { status: 'NOT_APPLICABLE', note: 'A public purpose and framework is not a software lifecycle claim.', basis: reconciliation }, publication: 'PUBLIC_APPROVED', href: '/vision/',
   },
   {
     key: 'omega', name: 'OMEGA', group: 'governance', context: 'INTERNAL_CAPABILITY',
@@ -122,7 +122,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'programme-control', name: 'Programme Control', group: 'governance', context: 'INTERNAL_CAPABILITY',
     summary: 'Programme context for priorities, sequencing, dependencies and lane state.',
     authority: { summary: 'Holds operational programme truth for priorities, sequencing, dependencies and lane state.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'REVIEW_REQUIRED',
+    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'programme-studio', name: 'Programme Studio', group: 'governance', context: 'INTERNAL_CAPABILITY',
@@ -134,7 +134,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'command-centre', name: 'New Earth Command Centre', group: 'governance', context: 'PUBLIC_CONTEXT',
     summary: 'Human review and control surface for seeing what is happening and approving important actions.',
     authority: { summary: 'Provides human review, approval, visibility and control context without replacing underlying system authority.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: { status: 'IN_DEVELOPMENT', note: 'Existing public evidence supports a controlled development baseline, not complete integration or approval functionality.', basis: reconciliation }, publication: 'REVIEW_REQUIRED', href: '/projects/command-centre/',
+    implementation: { status: 'IN_DEVELOPMENT', note: 'Existing public evidence supports a controlled development baseline, not complete integration or approval functionality.', basis: reconciliation }, publication: 'PUBLIC_APPROVED', href: '/projects/command-centre/',
   },
   {
     key: 'company-control', name: 'Company Control', group: 'governance', context: 'INTERNAL_CAPABILITY',
@@ -146,7 +146,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'platform-core', name: 'Platform Core', group: 'platform', context: 'INTERNAL_CAPABILITY',
     summary: 'Shared contracts, schemas, permissions and capability-boundary context.',
     authority: { summary: 'Defines shared contracts, schemas, permissions and capability boundaries.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: implementationUnconfirmed('Existing public material describes a future direction; no implementation maturity is asserted here.'), publication: 'REVIEW_REQUIRED',
+    implementation: implementationUnconfirmed('Existing public material describes a future direction; no implementation maturity is asserted here.'), publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'neos', name: 'NEOS', group: 'intelligence', context: 'INTERNAL_CAPABILITY',
@@ -158,7 +158,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'gaia', name: 'GAIA', group: 'intelligence', context: 'INTERNAL_CAPABILITY',
     summary: 'Reasoning and recommendation layer that helps people understand options and prepare decisions.',
     authority: { summary: 'Provides bounded reasoning, recommendation and planning support; it has no autonomous authority.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: { status: 'RESEARCH', note: 'Existing public classification remains research; no autonomous or public-service capability is asserted.', basis: reconciliation }, publication: 'REVIEW_REQUIRED',
+    implementation: { status: 'RESEARCH', note: 'Existing public classification remains research; no autonomous or public-service capability is asserted.', basis: reconciliation }, publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'local-ai-runtime', name: 'Local AI Runtime', group: 'intelligence', context: 'INTERNAL_CAPABILITY',
@@ -170,7 +170,7 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'knowledge-librarian', name: 'Knowledge / Librarian', group: 'knowledge', context: 'INTERNAL_CAPABILITY',
     summary: 'Governed knowledge and intelligent-intake capability context.',
     authority: { summary: 'Owns governed knowledge and intelligent intake capability boundaries.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: implementationUnconfirmed('The accepted authority boundary does not establish implementation maturity.'), publication: 'REVIEW_REQUIRED',
+    implementation: implementationUnconfirmed('The accepted authority boundary does not establish implementation maturity.'), publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'intelligent-file-intake', name: 'Intelligent File Intake', group: 'knowledge', context: 'INTERNAL_CAPABILITY',
@@ -188,19 +188,19 @@ export const ecosystemNodes: readonly EcosystemNode[] = [
     key: 'digital-product-foundry', name: 'Digital Product Foundry', group: 'publishing', context: 'INTERNAL_CAPABILITY',
     summary: 'Governed digital-product state and product-production context.',
     authority: { summary: 'Holds product-state and product-governance context; it is not programme control, a creator workspace or autonomous publishing authority.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'REVIEW_REQUIRED',
+    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'creator-workspaces', name: 'Creator workspaces', group: 'publishing', context: 'INTERNAL_CAPABILITY',
     summary: 'Creator file and content truth context.',
     authority: { summary: 'Holds creator file and content truth; this does not establish legal ownership beyond the accepted boundary.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'REVIEW_REQUIRED',
+    implementation: implementationUnconfirmed('No implementation maturity is asserted in this website dataset.'), publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'website-publication', name: 'Website / publication layer', group: 'publishing', context: 'PUBLIC_CONTEXT',
     summary: 'Publishing and presentation surface for approved public records.',
     authority: { summary: 'Presents approved public records and does not become canonical programme truth or autonomous publishing authority.', confidence: 'CONFIRMED', basis: reconciliation },
-    implementation: { status: 'ESTABLISHED', note: 'The current website implementation exists; autonomous publishing is not established.', basis: reconciliation }, publication: 'REVIEW_REQUIRED',
+    implementation: { status: 'ESTABLISHED', note: 'The current website implementation exists; autonomous publishing is not established.', basis: reconciliation }, publication: 'PUBLIC_APPROVED',
   },
   {
     key: 'infrastructure', name: 'Infrastructure', group: 'infrastructure', context: 'INTERNAL_CAPABILITY',

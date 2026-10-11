@@ -2,20 +2,74 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SimpleVisitorModel from '../../components/SimpleVisitorModel.astro';
 import { getDevelopmentSimpleVisitorModel, humanAuthorityProgression } from '../../data/simple-visitor-model';
+import EcosystemArchitectureView from '../../components/EcosystemArchitectureView.astro';
+import { getCandidateEcosystemGroups } from '../../data/ecosystem-presentation';
 
 export function getStaticPaths() {
-  return import.meta.env.DEV ? [{ params: { preview: 'simple' } }] : [];
+  return import.meta.env.DEV ? [{ params: { preview: 'simple' } }, { params: { preview: 'review' } }] : [];
 }
 
 const { preview } = Astro.params;
 const groups = getDevelopmentSimpleVisitorModel();
+const isReview = preview === 'review';
+const candidateGroups = getCandidateEcosystemGroups();
 ---
 
 <BaseLayout
-  title="Simple Visitor Model review"
-  description="Development-only review of a simple, human-centred New Earth ecosystem model."
+  title={isReview ? 'Ecosystem experience candidate review' : 'Simple Visitor Model review'}
+  description={isReview ? 'Development-only review of a fuller, human-centred New Earth ecosystem experience.' : 'Development-only review of a simple, human-centred New Earth ecosystem model.'}
   canonical=""
   noindex={true}
 >
-  <SimpleVisitorModel groups={groups} authorityProgression={humanAuthorityProgression} />
+  {isReview ? (
+    <article class="ecosystem-review">
+      <header class="ecosystem-review__intro shell">
+        <div class="ecosystem-review__intro-copy">
+          <p class="eyebrow">Development-only candidate</p>
+          <h1>A clearer way to explore the New Earth ecosystem</h1>
+          <p class="lede">New Earth brings together a wider vision, practical work, learning and tools intended to strengthen people’s knowledge, capability and informed choice. This page explains selected parts of that work and their responsibilities, without implying that everything is complete or connected.</p>
+          <p>It begins with local responsibility: people, homes, places and communities building capability and care while remaining connected through cooperation.</p>
+        </div>
+        <figure class="ecosystem-review__purpose-visual">
+          <img src="/local-assets/ecosystem/NE-ECOSYSTEM-VIS-001_purpose-framework.png" alt="Conceptual illustration connecting people, home, community, nature and the planet within the New Earth framework." width="1254" height="1254" />
+          <figcaption>Conceptual illustration for candidate review; it does not show implementation or technical connections.</figcaption>
+        </figure>
+      </header>
+      <SimpleVisitorModel groups={groups} authorityProgression={humanAuthorityProgression} embedded={true} />
+      <EcosystemArchitectureView groups={candidateGroups} />
+      <section class="ecosystem-review__context shell" aria-labelledby="ecosystem-review-context-title">
+        <h2 id="ecosystem-review-context-title">Continue into practical context</h2>
+        <p>New Earth brings Vision, Manifesto, Blueprint and the 12 Pillars into conversation with practical work, learning and participation. Projects explore selected work at its current stage; people can begin with the path that best fits their interest and capacity.</p>
+        <nav class="page-actions" aria-label="Explore New Earth context">
+          <a class="button" href="/blueprint/">Explore the Blueprint</a>
+          <a class="button button--outline" href="/new-earth-in-practice/">New Earth in Practice</a>
+          <a class="button button--outline" href="/projects/">See Projects</a>
+          <a class="button button--outline" href="/get-involved/">Contribute</a>
+        </nav>
+      </section>
+      <section class="ecosystem-review__boundary shell" aria-labelledby="ecosystem-review-boundary-title">
+        <h2 id="ecosystem-review-boundary-title">Website and company context</h2>
+        <p>This website shares approved information about the work. Decisions and approvals remain with the people and systems responsible for it.</p>
+        <p>New Earth is the wider vision and body of work. New Earth Advanced Technologies Ltd is the operating company supporting selected technology, research, systems and future products. This does not imply ownership of every creator work or New Earth capability.</p>
+      </section>
+    </article>
+  ) : <SimpleVisitorModel groups={groups} authorityProgression={humanAuthorityProgression} />}
 </BaseLayout>
+
+<style>
+  .ecosystem-review__intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .86fr); align-items: center; gap: clamp(2rem, 6vw, 5rem); max-width: 1180px; padding-block: clamp(3rem, 8vw, 6rem) 1rem; }
+  .ecosystem-review__intro-copy { min-width: 0; }
+  .ecosystem-review__intro h1 { max-width: 15ch; }
+  .ecosystem-review__intro-copy p:not(.eyebrow) { max-width: 62ch; font-size: 1.08rem; }
+  .ecosystem-review__purpose-visual { width: min(100%, 500px); margin: 0; justify-self: end; }
+  .ecosystem-review__purpose-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1rem 2.5rem rgb(41 57 49 / .08); }
+  .ecosystem-review__purpose-visual figcaption { margin-top: .8rem; color: var(--muted); font-size: .84rem; line-height: 1.45; }
+  .ecosystem-review__context, .ecosystem-review__boundary { max-width: 920px; padding-block: clamp(3rem, 6vw, 5rem); }
+  .ecosystem-review__context { border-top: 1px solid var(--line); }
+  .ecosystem-review__context h2, .ecosystem-review__boundary h2 { max-width: 20ch; }
+  .ecosystem-review__boundary { margin-bottom: clamp(3rem, 8vw, 6rem); padding: 1.5rem; border-left: 3px solid var(--gold); background: var(--sage); }
+  @media (max-width: 760px) {
+    .ecosystem-review__intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .ecosystem-review__purpose-visual { width: min(100%, 460px); justify-self: start; }
+  }
+</style>

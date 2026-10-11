@@ -26,13 +26,14 @@ if (data.simpleVisitorModelGroups.length !== 5) failures.push('Simple Visitor Mo
 if (JSON.stringify(data.simpleVisitorModelGroups.map((group) => group.id)) !== JSON.stringify(expectedIds)) failures.push('Display groups differ from the approved set.');
 const keys = data.simpleVisitorModelGroups.flatMap((group) => group.representativeKeys);
 if (JSON.stringify(keys) !== JSON.stringify(expectedKeys) || new Set(keys).size !== keys.length) failures.push('Representative selection differs from the approved unique key set.');
-if (data.ecosystemNodes.some((node) => node.publication !== 'REVIEW_REQUIRED')) failures.push('A source architecture record is no longer REVIEW_REQUIRED.');
-if (data.getPublicApprovedNodes().length !== 0 || data.getPublicApprovedRelationships().length !== 0) failures.push('Public selectors must expose zero records during review.');
+const expectedPublicKeys = ['new-earth-purpose', 'programme-control', 'command-centre', 'platform-core', 'gaia', 'knowledge-librarian', 'digital-product-foundry', 'creator-workspaces', 'website-publication'];
+if (JSON.stringify(data.getPublicApprovedNodes().map((node) => node.key)) !== JSON.stringify(expectedPublicKeys)) failures.push('Public selector differs from the approved nine-record set.');
+if (data.getPublicApprovedRelationships().length !== 0) failures.push('Public relationship selector must remain empty.');
 if (data.ecosystemRelationships.length !== 1) failures.push('Simple Visitor Model must not add relationships.');
 const progression = ['OBSERVE', 'RECOMMEND', 'PREPARE', 'EXECUTE WITH APPROVAL', 'PRE-AUTHORISED EXECUTION ONLY WHEN EXPLICITLY PERMITTED'];
 if (JSON.stringify(data.humanAuthorityProgression) !== JSON.stringify(progression)) failures.push('Human authority progression differs from the approved sequence.');
 if (privatePattern.test(adapterSource)) failures.push('Private implementation detail detected in visitor adapter.');
-if (!/import\.meta\.env\.DEV\s*\?\s*\[\{\s*params:\s*\{\s*preview:\s*'simple'\s*\}\s*\}\]\s*:\s*\[\]/.test(routeSource)) failures.push('Preview route is not explicitly constrained to local development and /simple/.');
+if (!/import\.meta\.env\.DEV\s*\?\s*\[\{\s*params:\s*\{\s*preview:\s*'simple'\s*\}\s*\}\s*,\s*\{\s*params:\s*\{\s*preview:\s*'review'\s*\}\s*\}\s*\]\s*:\s*\[\]/.test(routeSource)) failures.push('Preview route is not explicitly constrained to local development, /simple/ and /review/.');
 if (!/canonical=""/.test(routeSource) || !/noindex=\{true\}/.test(routeSource)) failures.push('Preview route must have no canonical URL and must be noindex.');
 if (!/simple-visitor-model__qualification/.test(componentSource)) failures.push('Visible visitor-model qualification is missing.');
 
@@ -49,5 +50,5 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exitCode = 1;
 } else {
-  console.log('Simple Visitor Model check passed: five groups, eight selected review examples, no public approval or incoming links.');
+  console.log('Simple Visitor Model check passed: five groups, eight approved representative examples, no public relationship or incoming preview links.');
 }
