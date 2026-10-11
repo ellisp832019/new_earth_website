@@ -49,8 +49,13 @@ const data = await import(`data:text/javascript;base64,${Buffer.from(transpiled.
   const approvedNodes = data.getPublicApprovedNodes();
   const approvedKeys = new Set(approvedNodes.map((node) => node.key));
   const approvedRelationships = data.getPublicApprovedRelationships();
+  const expectedApprovedKeys = new Set(['new-earth-purpose', 'programme-control', 'command-centre', 'knowledge-librarian', 'gaia', 'creator-workspaces', 'digital-product-foundry', 'platform-core', 'website-publication']);
+  const expectedPendingKeys = new Set(data.ecosystemNodes.map((node) => node.key).filter((key) => !expectedApprovedKeys.has(key)));
   if (approvedNodes.some((node) => node.publication !== 'PUBLIC_APPROVED')) failures.push('node selector exposes pending node');
+  if (approvedKeys.size !== expectedApprovedKeys.size || [...expectedApprovedKeys].some((key) => !approvedKeys.has(key))) failures.push('public selector differs from the approved nine-record set');
+  if (data.ecosystemNodes.filter((node) => node.publication === 'REVIEW_REQUIRED').length !== expectedPendingKeys.size || data.ecosystemNodes.filter((node) => node.publication === 'REVIEW_REQUIRED').some((node) => !expectedPendingKeys.has(node.key))) failures.push('review-required selector differs from the deferred eleven-record set');
   if (approvedRelationships.some((relationship) => relationship.publication !== 'PUBLIC_APPROVED' || !approvedKeys.has(relationship.from) || !approvedKeys.has(relationship.to))) failures.push('relationship selector exposes pending or dangling edge');
+  if (approvedRelationships.length !== 0 || data.ecosystemRelationships.some((relationship) => relationship.publication !== 'REVIEW_REQUIRED')) failures.push('architecture relationships must remain review-required and excluded');
 
   const authoritySequence = ['OBSERVE', 'RECOMMEND', 'PREPARE', 'EXECUTE WITH APPROVAL', 'PRE-AUTHORISED EXECUTION ONLY WHEN EXPLICITLY PERMITTED'];
   const buildSequence = ['DISCOVER', 'REUSE', 'DEFINE', 'BOUND', 'APPROVE', 'BUILD', 'TEST', 'REVIEW EVIDENCE', 'RELEASE DELIBERATELY', 'LEARN'];

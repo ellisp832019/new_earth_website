@@ -29,6 +29,7 @@ export type ProjectRecord = {
     caption: string;
     className?: string;
     publicEnabled?: boolean;
+    evidenceGroup?: 'CURRENT_V2' | 'EARLIER_DEVELOPMENT' | 'RELATED_CONTEXT';
   }[];
   developmentalVisual?: {
     src: string;
@@ -160,23 +161,35 @@ export const publicProjects: ProjectRecord[] = [{
   ],
   visualEvidence: [
     {
-      src: 'CC-VIS-001A_command-centre-hero-display.png',
-      alt: 'Current New Earth Command Centre overview showing programme control, system discovery and status surfaces.',
-      label: 'Command Centre overview',
-      caption: 'Current Command Centre overview display derivative, with service and status availability shown as captured.',
+      src: 'command-centre/CCV2-EVID-002_current-cockpit.jpg',
+      alt: 'New Earth Command Centre V2 daily operating cockpit showing read-only development-projection panels and current operating context.',
+      label: 'Current Command Centre V2 cockpit',
+      caption: 'Current Command Centre V2 Daily Operating Cockpit captured from the running local application. Visible UI evidence does not establish complete integration, backend readiness, approval functionality or production readiness.',
       className: 'visual-evidence--overview',
+      evidenceGroup: 'CURRENT_V2',
+    },
+    {
+      src: 'command-centre/CCV2-EVID-001_current-splash.jpg',
+      alt: 'New Earth Command Centre V2 splash screen captured from the running local application.',
+      label: 'Current Command Centre V2 splash',
+      caption: 'Current V2 splash identity/startup evidence captured from the running local application. It does not establish complete integration, backend readiness, approval functionality or production readiness.',
+      className: 'visual-evidence--splash',
+      evidenceGroup: 'CURRENT_V2',
+      publicEnabled: false,
     },
     {
       src: 'CC-VIS-002_command-palette.png',
       alt: 'Command Centre command palette showing search and open navigation actions.',
-      label: 'Command and navigation',
-      caption: 'Command Palette evidence for discovery and navigation actions; it does not imply unrestricted execution.',
+      label: 'Earlier development: command and navigation',
+      caption: 'Earlier development evidence for discovery and navigation actions; it does not imply unrestricted execution or current V2 completeness.',
+      evidenceGroup: 'EARLIER_DEVELOPMENT',
     },
     {
       src: 'CC-VIS-003_continue-work-authority.png',
       alt: 'Command Centre Continue Work view showing READY eligibility and NOT_DISPATCHED dispatch state.',
-      label: 'Bounded work preparation',
-      caption: 'Continue Work evidence showing READY / NOT_DISPATCHED; preparation is not dispatch or execution.',
+      label: 'Earlier development: bounded work preparation',
+      caption: 'Earlier development evidence showing READY / NOT_DISPATCHED; preparation is not dispatch or execution, and it is not current V2 completeness evidence.',
+      evidenceGroup: 'EARLIER_DEVELOPMENT',
     },
     {
       src: 'CC-VIS-004_neos-connected-context.png',
@@ -184,6 +197,7 @@ export const publicProjects: ProjectRecord[] = [{
       label: 'NEOS Windows Desktop - related engineering/project intelligence surface',
       caption: 'Related NEOS context, not Command Centre UI; NEOS remains the engineering and project intelligence owner.',
       className: 'visual-evidence--neos',
+      evidenceGroup: 'RELATED_CONTEXT',
       publicEnabled: false,
     },
   ],

@@ -1,0 +1,104 @@
+---
+import type { CandidateEcosystemRecord } from '../data/ecosystem-presentation';
+
+type CandidateGroup = {
+  group: string;
+  title: string;
+  records: CandidateEcosystemRecord[];
+};
+
+interface Props {
+  groups: CandidateGroup[];
+  publicView?: boolean;
+}
+
+const { groups, publicView = false } = Astro.props;
+const assetRoot = publicView ? '/assets' : '/local-assets';
+---
+
+<section class="ecosystem-architecture shell" aria-labelledby="ecosystem-architecture-title">
+  <div class="ecosystem-architecture__intro">
+    <p class="eyebrow">Explore the ecosystem</p>
+    <h2 id="ecosystem-architecture-title">{publicView ? 'Selected public ecosystem detail' : 'Selected public-safe detail for review'}</h2>
+    <p>Names identify selected responsibilities and capabilities. Implementation status is distinct from authority. Being named does not mean a capability is complete, and being grouped does not mean it is technically connected.</p>
+    <p>The website presents approved information about the work. It does not establish runtime integration.</p>
+  </div>
+
+  <div class="ecosystem-architecture__groups">
+    {groups.map((group) => (
+      <details class="ecosystem-architecture__group">
+        <summary>
+          <span>{group.title}</span>
+          <span class="ecosystem-architecture__count">{group.records.length} {group.records.length === 1 ? 'record' : 'records'}</span>
+        </summary>
+        <div class="ecosystem-architecture__cards">
+          {group.records.map((record) => (
+            <article class="ecosystem-architecture__card">
+              <p class="ecosystem-architecture__status">{record.implementationLabel}</p>
+              <h3>{record.name}</h3>
+              {record.subtitle && <p class="ecosystem-architecture__subtitle">{record.subtitle}</p>}
+              <p>{record.summary}</p>
+              {record.key === 'command-centre' && (
+                <figure class="ecosystem-architecture__evidence">
+                  <img src={`${assetRoot}/command-centre/CCV2-EVID-002_current-cockpit.jpg`} alt="New Earth Command Centre V2 daily operating cockpit showing read-only development-projection panels and current operating context." width="1266" height="713" />
+                  <figcaption>Current V2 visible UI evidence. This screenshot does not establish complete integration, backend readiness, approval functionality or production readiness.</figcaption>
+                </figure>
+              )}
+              {record.key === 'knowledge-librarian' && (
+                <figure class="ecosystem-architecture__evidence ecosystem-architecture__evidence--conceptual">
+                  <img src={`${assetRoot}/ecosystem/NE-ECOSYSTEM-VIS-004A_knowledge-librarian-ui-concept.png`} alt="Conceptual Knowledge / Librarian interface showing multiple knowledge sources being organised into contextual search, connected insights and related work." width="1536" height="1024" />
+                  <figcaption>Conceptual illustration of governed knowledge, organisation and access. It does not represent an implemented Knowledge / Librarian service.</figcaption>
+                </figure>
+              )}
+              {record.key === 'gaia' && (
+                <figure class="ecosystem-architecture__evidence ecosystem-architecture__evidence--conceptual">
+                  <img src={`${assetRoot}/ecosystem/NE-ECOSYSTEM-VIS-005A_gaia-reasoning-human-decision.png`} alt="Conceptual GAIA reasoning flow showing contextual information feeding analysis and recommendations, followed by human review and decision." width="1536" height="1024" />
+                  <figcaption>Conceptual illustration of GAIA supporting context, comparison and recommendations before human review and decision. It does not represent autonomous decision-making or execution.</figcaption>
+                </figure>
+              )}
+              <p class="ecosystem-architecture__qualification"><strong>Implementation:</strong> {record.implementationQualification}</p>
+              <details class="ecosystem-architecture__responsibility">
+                <summary>Responsibility and evidence context</summary>
+                <p><strong>Authority confidence:</strong> {record.authority.confidence.replaceAll('_', ' ')}.</p>
+                <p>{record.authority.summary}</p>
+                <p><strong>Implementation status:</strong> {record.implementationLabel}.</p>
+              </details>
+            </article>
+          ))}
+        </div>
+      </details>
+    ))}
+  </div>
+
+  <p class="ecosystem-architecture__note"><strong>Reading implementation status:</strong> “Implementation not confirmed here” is an evidence limit of this website record, not a failure state. “Existing implementation” does not certify full production readiness.</p>
+</section>
+
+<style>
+  .ecosystem-architecture { max-width: 1180px; padding-block: clamp(3rem, 7vw, 6rem); }
+  .ecosystem-architecture__intro { max-width: 780px; }
+  .ecosystem-architecture__intro h2 { max-width: 18ch; }
+  .ecosystem-architecture__groups { display: grid; gap: .85rem; margin-top: 2rem; }
+  .ecosystem-architecture__group { border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .48); overflow: hidden; }
+  .ecosystem-architecture__group summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.35rem; color: var(--deep); cursor: pointer; font-family: var(--serif); font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; }
+  .ecosystem-architecture__group summary:focus-visible, .ecosystem-architecture__responsibility summary:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+  .ecosystem-architecture__group[open] summary { border-bottom: 1px solid var(--line); background: var(--sage); }
+  .ecosystem-architecture__count { flex: 0 0 auto; font-family: var(--sans); font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; }
+  .ecosystem-architecture__cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: 1rem; }
+  .ecosystem-architecture__card { min-width: 0; padding: 1.35rem; border: 1px solid var(--line); border-radius: calc(var(--radius) - 3px); background: var(--ivory); }
+  .ecosystem-architecture__card h3 { margin-bottom: .35rem; font-size: 1.55rem; }
+  .ecosystem-architecture__status, .ecosystem-architecture__subtitle { margin: 0 0 .5rem; color: var(--forest); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .ecosystem-architecture__subtitle { color: var(--gold); }
+  .ecosystem-architecture__evidence { margin: 1rem 0; }
+  .ecosystem-architecture__evidence img { display: block; width: 100%; max-height: 15rem; object-fit: contain; border: 1px solid var(--line); border-radius: calc(var(--radius) - 3px); background: var(--deep); }
+  .ecosystem-architecture__evidence--conceptual img { background: var(--sage); }
+  .ecosystem-architecture__evidence figcaption { margin-top: .65rem; color: var(--muted); font-size: .82rem; line-height: 1.45; }
+  .ecosystem-architecture__qualification { padding-top: .9rem; border-top: 1px solid var(--line); font-size: .94rem; }
+  .ecosystem-architecture__responsibility { margin-top: 1rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+  .ecosystem-architecture__responsibility summary { color: var(--forest); cursor: pointer; font-size: .92rem; font-weight: 800; }
+  .ecosystem-architecture__responsibility p { font-size: .92rem; }
+  .ecosystem-architecture__note { max-width: 780px; margin: 1.5rem auto 0; padding: 1rem 1.2rem; border-left: 3px solid var(--gold); background: var(--sage); }
+  @media (max-width: 700px) {
+    .ecosystem-architecture__group summary { align-items: flex-start; flex-direction: column; }
+    .ecosystem-architecture__cards { grid-template-columns: 1fr; }
+  }
+</style>

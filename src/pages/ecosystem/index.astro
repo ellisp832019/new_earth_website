@@ -1,12 +1,91 @@
 ---
-import CorePageLayout from '../../layouts/CorePageLayout.astro';
-import { pages } from '../../data/site';
-const page = pages.ecosystem;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SimpleVisitorModel from '../../components/SimpleVisitorModel.astro';
+import EcosystemArchitectureView from '../../components/EcosystemArchitectureView.astro';
+import { getPublicApprovedSimpleVisitorModel, humanAuthorityProgression } from '../../data/simple-visitor-model';
+import { getPublicApprovedEcosystemGroups } from '../../data/ecosystem-presentation';
+
+const groups = getPublicApprovedSimpleVisitorModel();
+const ecosystemGroups = getPublicApprovedEcosystemGroups();
 ---
-<CorePageLayout
-  page={page}
+
+<BaseLayout
+  title="The New Earth Ecosystem | How the Parts Connect"
+  description="See how New Earth connects vision, framework, practical work, learning, people and human-governed systems."
   canonical="/ecosystem/"
-  searchTitle="The New Earth Ecosystem | How the Parts Connect"
-  metaDescription="See how New Earth connects vision, Blueprint, pillars, projects, research, people and participation."
-  relationshipMap={true}
-/>
+>
+  <article class="ecosystem-page">
+    <header class="ecosystem-page__intro shell">
+      <div class="ecosystem-page__intro-copy">
+        <p class="eyebrow">The New Earth ecosystem</p>
+        <h1>A clearer way to explore the New Earth ecosystem</h1>
+        <p class="lede">New Earth brings together a wider vision, practical work, learning and tools intended to strengthen people’s knowledge, capability and informed choice. This page explains selected parts of that work and their responsibilities, without implying that everything is complete or connected.</p>
+        <p>It begins with local responsibility: people, homes, places and communities building capability and care while remaining connected through cooperation.</p>
+      </div>
+      <figure class="ecosystem-page__purpose-visual">
+        <img src="/assets/ecosystem/NE-ECOSYSTEM-VIS-001_purpose-framework.png" alt="Conceptual illustration connecting people, home, community, nature and the planet within the New Earth framework." width="1254" height="1254" />
+        <figcaption>Conceptual illustration; it does not show implementation or technical connections.</figcaption>
+      </figure>
+    </header>
+
+    <section class="ecosystem-page__local-context shell" aria-labelledby="local-context-title">
+      <h2 id="local-context-title">Start with people, place and community</h2>
+      <div class="ecosystem-page__local-grid">
+        <section><h3>Person</h3><p>Wellbeing, awareness, learning, agency and skills can help people make informed choices and take meaningful responsibility.</p></section>
+        <section><h3>Home and place</h3><p>Food, resources, energy, habitat and environment are practical parts of everyday care and local capability.</p></section>
+        <section><h3>Community</h3><p>Knowledge, cooperation, participation, shared spaces and care can strengthen local capability.</p></section>
+      </div>
+      <p class="ecosystem-page__cooperation">Local first does not mean isolated. Communities can connect, share and cooperate while retaining meaningful local agency.</p>
+    </section>
+
+    <SimpleVisitorModel groups={groups} authorityProgression={humanAuthorityProgression} embedded={true} publicView={true} />
+    <EcosystemArchitectureView groups={ecosystemGroups} publicView={true} />
+
+    <section class="ecosystem-page__pathways shell" aria-labelledby="ecosystem-pathways-title">
+      <h2 id="ecosystem-pathways-title">Framework and practical pathways</h2>
+      <p>The <a href="/vision/">Vision</a> sets a direction. The <a href="/manifesto/">Manifesto</a> expresses the principles. The <a href="/blueprint/">Blueprint</a> provides a framework, while the <a href="/blueprint/pillars/">12 Pillars</a> offer connected areas of inquiry.</p>
+      <p>Practical work, learning and participation help bring these ideas into conversation with everyday life. Projects show selected work at its current stage; people can begin with the path that best fits their interest and capacity.</p>
+      <nav class="page-actions" aria-label="Explore New Earth pathways">
+        <a class="button" href="/new-earth-in-practice/">New Earth in Practice</a>
+        <a class="button button--outline" href="/projects/">Explore projects</a>
+        <a class="button button--outline" href="/projects/command-centre/">View Command Centre evidence</a>
+        <a class="button button--outline" href="/learn/">Explore useful learning</a>
+        <a class="button button--outline" href="/get-involved/">Contribute</a>
+      </nav>
+      <p class="ecosystem-page__journal">The <a href="/journal/">Journal</a> is the single destination for dated learning and progress as entries are prepared.</p>
+    </section>
+
+    <section class="ecosystem-page__boundary shell" aria-labelledby="ecosystem-boundary-title">
+      <h2 id="ecosystem-boundary-title">Public information and private systems</h2>
+      <p>This website shares approved public information about New Earth. Private dashboards, authenticated control surfaces, internal operational records, private runtime and configuration details, and Programme Control internals remain outside this public website.</p>
+    </section>
+
+    <section class="ecosystem-page__company shell" aria-labelledby="ecosystem-company-title">
+      <h2 id="ecosystem-company-title">Website and company context</h2>
+      <p>New Earth is the wider vision and body of work. New Earth Advanced Technologies Ltd supports selected technology, research, systems and future products. This does not imply ownership of every creator work or New Earth capability.</p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .ecosystem-page__intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .86fr); align-items: center; gap: clamp(2rem, 6vw, 5rem); max-width: 1180px; padding-block: clamp(3rem, 8vw, 6rem) 1rem; }
+  .ecosystem-page__intro-copy { min-width: 0; }
+  .ecosystem-page__intro h1 { max-width: 15ch; }
+  .ecosystem-page__intro-copy p:not(.eyebrow) { max-width: 62ch; font-size: 1.08rem; }
+  .ecosystem-page__purpose-visual { width: min(100%, 500px); margin: 0; justify-self: end; }
+  .ecosystem-page__purpose-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1rem 2.5rem rgb(41 57 49 / .08); }
+  .ecosystem-page__purpose-visual figcaption { margin-top: .8rem; color: var(--muted); font-size: .84rem; line-height: 1.45; }
+  .ecosystem-page__local-context, .ecosystem-page__pathways, .ecosystem-page__boundary, .ecosystem-page__company { max-width: 920px; padding-block: clamp(3rem, 6vw, 5rem); }
+  .ecosystem-page__local-context { border-top: 1px solid var(--line); }
+  .ecosystem-page__local-context h2, .ecosystem-page__pathways h2, .ecosystem-page__boundary h2, .ecosystem-page__company h2 { max-width: 20ch; }
+  .ecosystem-page__local-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .ecosystem-page__local-grid section { min-width: 0; padding: 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgb(255 255 255 / .48); }
+  .ecosystem-page__local-grid h3 { margin-top: 0; }
+  .ecosystem-page__cooperation { max-width: 68ch; margin-top: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--gold); }
+  .ecosystem-page__pathways { border-top: 1px solid var(--line); }
+  .ecosystem-page__pathways p { max-width: 70ch; }
+  .ecosystem-page__journal { margin-top: 1.5rem; color: var(--muted); }
+  .ecosystem-page__boundary { border-left: 3px solid var(--gold); background: var(--sage); padding-inline: 1.5rem; }
+  .ecosystem-page__company { margin-bottom: clamp(3rem, 8vw, 6rem); }
+  @media (max-width: 760px) { .ecosystem-page__intro, .ecosystem-page__local-grid { grid-template-columns: 1fr; } .ecosystem-page__intro { gap: 1.5rem; } .ecosystem-page__purpose-visual { width: min(100%, 460px); justify-self: start; } }
+</style>
