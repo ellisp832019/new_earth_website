@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 
 const read = (path) => readFile(new URL(path, import.meta.url), 'utf8');
-const [learnSource, journalSource, productsSource, readinessSource, buildingSource, homepageSource, sitemapSource, layoutSource, stylesSource, publicLearnOutput] = await Promise.all([
+const [learnSource, journalSource, productsSource, readinessSource, buildingSource, homepageSource, sitemapSource, layoutSource, stylesSource, publicLearnOutput, publicJournalOutput] = await Promise.all([
   read('../src/pages/learn/index.astro'),
   read('../src/data/journal.ts'),
   read('../src/data/products.ts'),
@@ -13,6 +13,7 @@ const [learnSource, journalSource, productsSource, readinessSource, buildingSour
   read('../src/layouts/BaseLayout.astro'),
   read('../src/styles/global.css'),
   read('../dist/learn/index.html'),
+  read('../dist/journal/index.html'),
 ]);
 
 const failures = [];
@@ -38,9 +39,13 @@ if (!buildingSource.includes('sectionId="how-new-earth-builds"')) failures.push(
 if (!learnSource.includes('The first entries are being prepared.') || !learnSource.includes('No Journal articles are published yet.')) failures.push('Journal note must be truthful and state that no articles are published.');
 if (/AI Made Simple|10 Things You Can Ask AI|AI_Made_Simple|\/local-assets\/|\/digital-products\/ai-made-simple\//.test(learnSource)) failures.push('Learn must not expose AI Made Simple, its free guide, preview routes or local assets.');
 if ((journalSource.match(/export const journalArticles: JournalArticle\[] = \[\];/) ?? []).length !== 1) failures.push('Journal published record count must remain zero.');
+if (/href=["']\/learn\//.test(homepageSource)) failures.push('Homepage must not introduce a Learn promotion or unpublished Learn resource link.');
+if (/href=["'][^"']*(?:\.zip|\.pdf|\/downloads?\/)/i.test(homepageSource)) failures.push('Homepage must not introduce an unpublished download link.');
+if (/published Journal articles|Journal articles are published/i.test(homepageSource)) failures.push('Homepage must not describe the Journal as published.');
+if (/article-card|journal-article/i.test(publicJournalOutput)) failures.push('Public Journal output must not expose unpublished articles.');
 if (!productsSource.includes("publicStatus: 'COMING_SOON'") || !productsSource.includes('previewOnly: true') || !readinessSource.includes("state: 'COMING_SOON'")) failures.push('Product or readiness state changed unexpectedly.');
 
-for (const path of ['src/pages/index.astro', 'src/pages/sitemap.xml.ts', 'src/layouts/BaseLayout.astro', 'src/styles/global.css', 'src/data/products.ts', 'src/data/product-readiness.ts', 'src/data/journal.ts']) {
+for (const path of ['src/pages/sitemap.xml.ts', 'src/layouts/BaseLayout.astro', 'src/styles/global.css', 'src/data/products.ts', 'src/data/product-readiness.ts']) {
   try {
     execFileSync('git', ['diff', '--quiet', 'main', '--', path]);
   } catch {
