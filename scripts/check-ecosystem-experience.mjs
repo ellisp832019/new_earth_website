@@ -74,8 +74,21 @@ if (!localAssetScript.includes(`ASSETS/05_SYSTEMS/ecosystem/visuals/${gaiaVisual
 if (!await access(new URL(`../ASSETS/05_SYSTEMS/ecosystem/visuals/${gaiaVisual}`, import.meta.url)).then(() => true, () => false)) failures.push('Approved GAIA conceptual source visual is missing.');
 for (const key of excludedKeys) if (presentationSource.includes(`'${key}'`)) failures.push(`Excluded review record appears in candidate adapter: ${key}`);
 
-for (const path of ['src/pages/index.astro', 'src/pages/sitemap.xml.ts', 'src/layouts/BaseLayout.astro']) {
+for (const path of ['src/pages/index.astro', 'src/layouts/BaseLayout.astro']) {
   try { execFileSync('git', ['diff', '--quiet', 'main', '--', path]); } catch { failures.push(`Protected existing file changed: ${path}`); }
+}
+
+const sitemapLiteralRoutes = (source) => [...source.matchAll(/^\s*'([^']+)',$/gm)].map((match) => match[1]);
+const baselineSitemapSource = execFileSync('git', ['show', 'main:src/pages/sitemap.xml.ts'], { encoding: 'utf8' });
+const baselineSitemapRoutes = sitemapLiteralRoutes(baselineSitemapSource);
+const currentSitemapRoutes = sitemapLiteralRoutes(sitemapSource);
+const addedSitemapRoutes = currentSitemapRoutes.filter((route) => !baselineSitemapRoutes.includes(route));
+const removedSitemapRoutes = baselineSitemapRoutes.filter((route) => !currentSitemapRoutes.includes(route));
+const authorisedSitemapRoute = '/what-were-building/operating-baseline/';
+if (JSON.stringify(addedSitemapRoutes) !== JSON.stringify([authorisedSitemapRoute]) || removedSitemapRoutes.length) failures.push('Sitemap delta must be exactly the authorised Operating Baseline canonical route.');
+if ((currentSitemapRoutes.filter((route) => route === authorisedSitemapRoute).length) !== 1) failures.push('Operating Baseline canonical route must appear exactly once in the sitemap.');
+for (const previewRoute of ['/ecosystem/simple/', '/ecosystem/review/', '/what-were-building/review/', '/what-were-building/operating-baseline/review/']) {
+  if (currentSitemapRoutes.includes(previewRoute)) failures.push(`Development-only route must not appear in sitemap: ${previewRoute}`);
 }
 
 const sourceFiles = await readdir(new URL('../src/', import.meta.url), { recursive: true });
