@@ -7,7 +7,7 @@ export const journalCategories = [
   { id: 'microgrow', label: 'MicroGrow', description: 'Bounded progress and learning related to the MicroGrow project.' },
   { id: 'digital-products', label: 'Digital Products', description: 'Creation, development and release context for approved future offers.' },
   { id: 'research', label: 'Research', description: 'Questions, investigations and learning that do not imply finished results.' },
-  { id: 'founder-journey', label: 'Founder Journey', description: 'Approved reflections on the founders’ developing work and learning.' },
+  { id: 'founder-journey', label: 'Founder Journey', description: 'Approved reflections on developing work, learning and the people contributing to New Earth.' },
   { id: 'conscious-living', label: 'Conscious Living', description: 'Approved writing connected with conscious living and practical wellbeing.' },
 ] as const;
 
