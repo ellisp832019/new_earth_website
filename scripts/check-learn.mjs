@@ -45,12 +45,24 @@ if (/published Journal articles|Journal articles are published/i.test(homepageSo
 if (/article-card|journal-article/i.test(publicJournalOutput)) failures.push('Public Journal output must not expose unpublished articles.');
 if (!productsSource.includes("publicStatus: 'COMING_SOON'") || !productsSource.includes('previewOnly: true') || !readinessSource.includes("state: 'COMING_SOON'")) failures.push('Product or readiness state changed unexpectedly.');
 
-for (const path of ['src/pages/sitemap.xml.ts', 'src/layouts/BaseLayout.astro', 'src/styles/global.css', 'src/data/products.ts', 'src/data/product-readiness.ts']) {
+for (const path of ['src/layouts/BaseLayout.astro', 'src/styles/global.css', 'src/data/products.ts', 'src/data/product-readiness.ts']) {
   try {
     execFileSync('git', ['diff', '--quiet', 'main', '--', path]);
   } catch {
     failures.push(`Protected surface changed: ${path}`);
   }
+}
+const sitemapLiteralRoutes = (source) => [...source.matchAll(/^\s*'([^']+)',$/gm)].map((match) => match[1]);
+const baselineSitemapSource = execFileSync('git', ['show', 'main:src/pages/sitemap.xml.ts'], { encoding: 'utf8' });
+const baselineSitemapRoutes = sitemapLiteralRoutes(baselineSitemapSource);
+const currentSitemapRoutes = sitemapLiteralRoutes(sitemapSource);
+const addedSitemapRoutes = currentSitemapRoutes.filter((route) => !baselineSitemapRoutes.includes(route));
+const removedSitemapRoutes = baselineSitemapRoutes.filter((route) => !currentSitemapRoutes.includes(route));
+const authorisedSitemapRoute = '/what-were-building/operating-baseline/';
+if (JSON.stringify(addedSitemapRoutes) !== JSON.stringify([authorisedSitemapRoute]) || removedSitemapRoutes.length) failures.push('Sitemap delta must be exactly the authorised Operating Baseline canonical route.');
+if ((currentSitemapRoutes.filter((route) => route === authorisedSitemapRoute).length) !== 1) failures.push('Operating Baseline canonical route must appear exactly once in the sitemap.');
+for (const previewRoute of ['/ecosystem/simple/', '/ecosystem/review/', '/what-were-building/review/', '/what-were-building/operating-baseline/review/']) {
+  if (currentSitemapRoutes.includes(previewRoute)) failures.push(`Development-only route must not appear in sitemap: ${previewRoute}`);
 }
 if (!/^\s*<h1>Useful knowledge for practical understanding\.<\/h1>/m.test(learnSource)) failures.push('Learn must retain exactly one approved H1.');
 if (!/<h2 id=\{`learn-\$\{category\.title/.test(learnSource) || !/<h3>\{pathway\.title\}<\/h3>/.test(learnSource)) failures.push('Learn must use semantic category headings and card H3s.');

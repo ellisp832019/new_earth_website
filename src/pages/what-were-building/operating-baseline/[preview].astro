@@ -1,0 +1,12 @@
+---
+import OperatingBaseline from '../../../components/OperatingBaseline.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return import.meta.env.DEV ? [{ params: { preview: 'review' } }] : [];
+}
+---
+
+<BaseLayout title="New Earth Operating Baseline — candidate review" description="Development-only review of the New Earth Operating Baseline public narrative." canonical="" noindex={true}>
+  <OperatingBaseline />
+</BaseLayout>

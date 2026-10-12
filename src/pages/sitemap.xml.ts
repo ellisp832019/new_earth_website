@@ -17,6 +17,7 @@ const routes = [
   '/new-earth-in-practice/',
   '/learn/',
   '/what-were-building/',
+  '/what-were-building/operating-baseline/',
   '/digital-products/',
   '/digital-products/practical-guides/',
   '/digital-products/conscious-living/',

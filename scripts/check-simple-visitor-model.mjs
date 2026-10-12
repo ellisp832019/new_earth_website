@@ -2,11 +2,12 @@ import { readFile, readdir } from 'node:fs/promises';
 import ts from 'typescript';
 
 const read = (path) => readFile(new URL(path, import.meta.url), 'utf8');
-const [ecosystemSource, adapterSource, routeSource, componentSource] = await Promise.all([
+const [ecosystemSource, adapterSource, routeSource, componentSource, sitemapSource] = await Promise.all([
   read('../src/data/ecosystem.ts'),
   read('../src/data/simple-visitor-model.ts'),
   read('../src/pages/ecosystem/[preview].astro'),
   read('../src/components/SimpleVisitorModel.astro'),
+  read('../src/pages/sitemap.xml.ts'),
 ]);
 
 const adapterModule = adapterSource.replace(/import\s*\{[\s\S]*?\}\s*from '\.\/ecosystem';\r?\n/, '');
@@ -36,6 +37,20 @@ if (privatePattern.test(adapterSource)) failures.push('Private implementation de
 if (!/import\.meta\.env\.DEV\s*\?\s*\[\{\s*params:\s*\{\s*preview:\s*'simple'\s*\}\s*\}\s*,\s*\{\s*params:\s*\{\s*preview:\s*'review'\s*\}\s*\}\s*\]\s*:\s*\[\]/.test(routeSource)) failures.push('Preview route is not explicitly constrained to local development, /simple/ and /review/.');
 if (!/canonical=""/.test(routeSource) || !/noindex=\{true\}/.test(routeSource)) failures.push('Preview route must have no canonical URL and must be noindex.');
 if (!/simple-visitor-model__qualification/.test(componentSource)) failures.push('Visible visitor-model qualification is missing.');
+
+const expectedOperatingBaselineSitemapRoute = '/what-were-building/operating-baseline/';
+const operatingBaselineSitemapEntries = sitemapSource.match(/'\/what-were-building\/operating-baseline\/'/g) ?? [];
+if (operatingBaselineSitemapEntries.length !== 1) {
+  failures.push(`Sitemap must contain exactly one canonical Operating Baseline route: ${expectedOperatingBaselineSitemapRoute}`);
+}
+for (const forbiddenSitemapRoute of [
+  '/ecosystem/simple/',
+  '/ecosystem/review/',
+  '/what-were-building/review/',
+  '/what-were-building/operating-baseline/review/',
+]) {
+  if (sitemapSource.includes(forbiddenSitemapRoute)) failures.push(`Development-only route must not appear in sitemap: ${forbiddenSitemapRoute}`);
+}
 
 const sourceFiles = await readdir(new URL('../src/', import.meta.url), { recursive: true });
 const incomingLinks = sourceFiles

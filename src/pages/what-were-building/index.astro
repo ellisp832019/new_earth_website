@@ -34,6 +34,14 @@ const horizons: { status: PublicStatus; label: string; introduction: string }[] 
 
     <BuildMethod steps={buildMethodSteps} groups={buildMethodGroups} authorityProgression={humanAuthorityProgression} embedded={true} sectionId="how-new-earth-builds" />
 
+    <section class="building-baseline" aria-labelledby="building-baseline-title">
+      <p class="eyebrow">Operating Baseline</p>
+      <h2 id="building-baseline-title">Building the company that can understand itself</h2>
+      <p>As New Earth grows, its tools, products and projects need more than individual progress. They need a reliable way to preserve what is true, who is responsible, what may happen next and what evidence supports each decision.</p>
+      <p>The Operating Baseline is the foundation being developed for that coherence. Its initial architecture, identity and programme-control foundations have been accepted; the wider operating model remains in development.</p>
+      <p><a class="text-link" href="/what-were-building/operating-baseline/">Explore the New Earth Operating Baseline <span aria-hidden="true">→</span></a></p>
+    </section>
+
     <section id="work-horizons" class="building-horizons" aria-labelledby="horizons-title">
       <p class="eyebrow">Public horizons</p>
       <h2 id="horizons-title">Keep today, research and future direction distinct</h2>
@@ -82,8 +90,9 @@ const horizons: { status: PublicStatus; label: string; introduction: string }[] 
   .building-page { max-width: 1100px; padding-block: clamp(4rem, 9vw, 7rem); }
   .building-hero { max-width: 760px; padding-bottom: clamp(3rem, 7vw, 5.5rem); }
   .building-hero h1 { max-width: 13ch; }
-  .building-relationship, .building-horizon, .building-ecosystem, .building-closing { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
-  .building-relationship h2, .building-horizons > h2, .building-ecosystem h2, .building-closing h2 { max-width: 19ch; }
+  .building-relationship, .building-baseline, .building-horizon, .building-ecosystem, .building-closing { border-top: 1px solid var(--line); padding-block: clamp(2.75rem, 6vw, 4.75rem); }
+  .building-relationship h2, .building-baseline h2, .building-horizons > h2, .building-ecosystem h2, .building-closing h2 { max-width: 19ch; }
+  .building-baseline { max-width: 780px; }
   .relationship-grid, .building-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.75rem; }
   .relationship-grid div, .building-card { min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--sage); padding: clamp(1.25rem, 2.5vw, 1.75rem); }
   .relationship-grid strong, .relationship-grid span { display: block; }

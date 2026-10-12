@@ -70,11 +70,22 @@ for (const path of sourceFiles.filter((path) => typeof path === 'string' && path
   const content = await readFile(new URL(`../src/${path.replaceAll('\\', '/')}`, import.meta.url), 'utf8');
   if (content.includes('/what-were-building/review/')) failures.push(`Incoming preview link found: src/${path}`);
 }
-if (sitemapSource.includes('/what-were-building/review/')) failures.push('Candidate route must not appear in the sitemap source.');
+const expectedOperatingBaselineSitemapRoute = '/what-were-building/operating-baseline/';
+const operatingBaselineSitemapEntries = sitemapSource.match(/'\/what-were-building\/operating-baseline\/'/g) ?? [];
+if (operatingBaselineSitemapEntries.length !== 1) {
+  failures.push(`Sitemap must contain exactly one canonical Operating Baseline route: ${expectedOperatingBaselineSitemapRoute}`);
+}
+for (const forbiddenSitemapRoute of [
+  '/what-were-building/review/',
+  '/what-were-building/operating-baseline/review/',
+  '/ecosystem/simple/',
+  '/ecosystem/review/',
+]) {
+  if (sitemapSource.includes(forbiddenSitemapRoute)) failures.push(`Development-only route must not appear in sitemap: ${forbiddenSitemapRoute}`);
+}
 
 for (const path of [
   'src/pages/index.astro',
-  'src/pages/sitemap.xml.ts',
   'src/layouts/BaseLayout.astro',
 ]) {
   try {
